@@ -20,7 +20,7 @@ const Links = () => {
           </a>
         </div>
         <div className='flex gap-3'>
-          <a className='btn btn--red' href="/curriculum.pdf" target="_blank" rel="noopener noreferrer">
+          <a className='btn btn--red' href="/Emmanuel-Cruz-CV.pdf" target="_blank" rel="noopener noreferrer">
             {t('sections.about.cv')} CV
             <AiOutlineDownload size={30}/>
           </a>
