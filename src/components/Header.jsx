@@ -16,7 +16,7 @@ const Header = () => {
 
   return(
     <header className='flex justify-between items-center p-4 h-20'>
-      <a className='my-auto z-10' href="#">
+      <a className='my-auto z-10' href="https://emmanuel-cruz.netlify.app/">
         <img className='w-8' src={theme === 'dark' ? logoBlanco : logoNegro} alt="Una letra e, entre corchetes" />
       </a>
       <ul className={`absolute inset-0 grid gap-12 text-center place-content-center z-10 ${
