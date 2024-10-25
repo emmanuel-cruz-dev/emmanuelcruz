@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
-import logo from '../assets/icons/logo-blanco.svg'
+import logoBlanco from '../assets/icons/logo-blanco.svg'
+import logoNegro from '../assets/icons/logo-negro.svg'
 import LanguageSwitcher from './LanguageSwitcher';
 import { useTheme } from './ThemeContext';
 import { useState } from 'react';
@@ -16,7 +17,7 @@ const Header = () => {
   return(
     <header className='flex justify-between items-center p-4 h-20'>
       <a className='my-auto z-10' href="#">
-        <img className='w-8' src={logo} alt="Una letra e, entre corchetes" />
+        <img className='w-8' src={theme === 'dark' ? logoBlanco : logoNegro} alt="Una letra e, entre corchetes" />
       </a>
       <ul className={`absolute inset-0 grid gap-12 text-center place-content-center z-10 ${
           theme === 'dark' ? 'bg-dark' : 'bg-light'
