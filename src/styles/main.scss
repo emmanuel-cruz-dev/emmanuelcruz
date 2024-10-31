@@ -9,6 +9,8 @@
 html {
   background-color: $light-background;
   color: $light-text;
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease;
 
   &.dark {
     background-color: $dark-background;
@@ -21,7 +23,11 @@ html {
   margin: 0;
   padding: 0;
   font-family: $font-family-poppins;
-  // border: 1px solid red;
+  //border: 1px solid red;
+}
+
+body {
+  transition: color 0.3s ease;
 }
 
 li {
@@ -42,10 +48,12 @@ img {
 /* NavBar */
 .bg-light {
   background-color: #ffffff; // Color de fondo para el tema claro
+  transition: background-color 0.3s ease;
 }
 
 .bg-dark {
   background-color: #111827; // Color de fondo para el tema oscuro
+  transition: background-color 0.3s ease;
 }
 
 .nav-item {
@@ -87,21 +95,31 @@ img {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 48px;
+  height: 40px;
   width: 100%;
-  border: 1px solid white;
+  max-width: 180px;
   color: $text-gray;
   font-weight: 500;
+  white-space: nowrap;
   letter-spacing: 0.05em;
+  background-color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
     color: $text-light;
-    background-color: $color-tertiary;
-    border-color: $color-tertiary;
   }
 
   &--red {
     background-color: $color-tertiary;
-    border-color: $color-tertiary;
+
+    &:hover {
+      background-color: #000;
+    }
   }
+}
+
+/* Secciones */
+
+.scroll-top {
+  scroll-margin-top: 80px; /* Ajusta a la altura de tu navbar */
 }

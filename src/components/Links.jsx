@@ -8,8 +8,8 @@ const Links = () => {
   const { t } = useTranslation(); // Accede a la función de traducción
 
   return (
-    <div className='flex flex-col gap-5'>
-      <p>{t('sections.about.description')}</p>
+    <div className='flex flex-col gap-5 md:gap-10'>
+      <p className='md:max-w-md'>{t('sections.hero.description')}</p>
       <div className='flex flex-col gap-5'>
         <div className='flex gap-4'>
           <a className='w-10 h-10 hover:text-colorTertiary transition-colors duration-500 ease-in-out' href="https://www.linkedin.com/in/emmanuel-cruz-6a242430b/" target='_blank' rel='noopener noreferrer'>
@@ -19,9 +19,9 @@ const Links = () => {
             <FaGithub className='w-full h-full' />
           </a>
         </div>
-        <div className='flex gap-3'>
-          <a className='btn btn--red' href="/Emmanuel-Cruz-CV.pdf" target="_blank" rel="noopener noreferrer">
-            {t('sections.about.cv')} CV
+        <div className='flex gap-2 md:gap-4'>
+          <a className='btn btn--red text-sm' href="/Emmanuel-Cruz-CV.pdf" target="_blank" rel="noopener noreferrer">
+            {t('sections.hero.cv')} CV
             <AiOutlineDownload size={30}/>
           </a>
           <EmailCopyButton />

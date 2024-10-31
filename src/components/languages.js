@@ -22,13 +22,23 @@ const resources = {
       },
       sections: {
         welcome: "Hello! I'm Emmanuel.",
-        about: {
+        hero: {
           title: "Frontend Developer",
           description:
-            "Passionate about technology and creativity. Always looking to learn and improve in the world of web development.",
+            "Passionate about technology and creativity, always looking for new opportunities to learn and improve in the world of web development.",
           cv: "Download",
           email: "Copy Email",
           emailCopied: "Email copied",
+        },
+        about: {
+          paragraph:
+            "Enthusiast of functional aesthetics and usability in projects. My interest in problem solving and creativity led me to the world of web development, where I constantly strive to learn and improve my skills. I am always looking for new opportunities for growth and collaboration with other professionals.",
+          contactMe: "Contact me",
+          courses: "online courses",
+          practice: "practice hours",
+          subtitle: "Want to see more",
+          copy: "Discover my latest projects, created with dedication and focus on every detail.",
+          button: "See more",
         },
         projects: {
           title: "Projects",
@@ -57,13 +67,23 @@ const resources = {
       },
       sections: {
         welcome: "Hola! Soy Emmanuel.",
-        about: {
+        hero: {
           title: "Desarrollador Frontend",
           description:
-            "Apasionado por la tecnología y la creatividad. Siempre en busca de aprender y mejorar en el mundo del desarrollo web.",
+            "Apasionado por la tecnología y la creatividad, siempre en busca de nuevas oportunidades para aprender y mejorar en el mundo del desarrollo web.",
           cv: "Descargar",
           email: "Copiar Email",
           emailCopied: "Email copiado",
+        },
+        about: {
+          paragraph:
+            "Entusiasta de la estética funcional y la usabilidad en los proyectos. Mi interés por la resolución de problemas y la creatividad me llevaron al mundo del desarrollo web, donde me esfuerzo constantemente por aprender y mejorar mis habilidades. Estoy siempre en búsqueda de nuevas oportunidades de crecimiento y colaboración con otros profesionales.",
+          contactMe: "Contactame",
+          courses: "cursos en línea",
+          practice: "horas de práctica",
+          subtitle: "Querés ver más",
+          copy: "Descubrí mis últimos proyectos, creados con dedicación y enfoque en cada detalle.",
+          button: "Ver más",
         },
         projects: {
           title: "Proyectos",

@@ -21,9 +21,9 @@ const EmailCopyButton = () => {
   return (
     <button 
       onClick={copyEmailToClipboard}
-      className='btn'
+      className='btn text-sm'
     >
-      {copied ? t('sections.about.emailCopied') : t('sections.about.email')}
+      {copied ? t('sections.hero.emailCopied') : t('sections.hero.email')}
       <span className="material-icons-outlined">mail</span>
     </button>
   );

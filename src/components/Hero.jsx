@@ -7,18 +7,24 @@ const Hero = () => {
   const { t } = useTranslation(); // Accede a la función de traducción
 
   return (
-    <section className='mx-4 md:mx-auto md:w-5/6'>
-      <article className="flex flex-col gap-6 sm:flex-row">
-        <div className='flex flex-col gap-2 my-auto'>
-          <h1 className='font-bold text-2xl'>{t('sections.welcome')}</h1>
-          <h2 className='font-bold text-xl'>{t('sections.about.title')}</h2>
+    <section className='py-4 mx-4 md:py-10 md:mx-auto md:w-5/6 xl:my-10'>
+      <article className="flex flex-col gap-4 sm:flex-row lg:w-11/12 lg:mx-auto lg:justify-evenly">
+        <div className='flex flex-col gap-2 my-auto md:gap-8'>
+          <div>
+            <h1 className='font-bold text-2xl'>{t('sections.welcome')}</h1>
+            <h2 className='font-bold text-xl'>{t('sections.hero.title')}</h2>
+          </div>
           <div className='hidden sm:flex'>
             <Links />
           </div>
         </div>
-        <div className='relative w-88 h-88'>
-          <figure className="w-full h-full rounded-full overflow-hidden">
-            <img className="w-full h-full object-cover" src={picture} alt="Imagen de perfil" />
+        <div className="min-w-[338px] w-[338px] mx-auto md:mx-0">
+          <figure className="w-80 h-80 mx-auto md:mx-0 rounded-full overflow-hidden">
+            <img 
+              className="w-full h-full object-cover rounded-full" 
+              src={picture} 
+              alt="Imagen de perfil" 
+            />
           </figure>
         </div>
         <div className='sm:hidden'>

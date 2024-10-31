@@ -15,15 +15,17 @@ const Header = () => {
   }
 
   return(
-    <header className='flex justify-between items-center p-4 h-20'>
-      <a className='my-auto z-10' href="https://emmanuel-cruz.netlify.app/">
+    <header className={`flex justify-between items-center p-4 h-20 md:sticky md:top-0 ${
+          theme === 'dark' ? 'bg-dark' : 'bg-light'
+        }`}>
+      <a className='my-auto z-20' href="https://emmanuel-cruz.netlify.app/">
         <img className='w-8' src={theme === 'dark' ? logoBlanco : logoNegro} alt="Una letra e, entre corchetes" />
       </a>
-      <ul className={`absolute inset-0 grid gap-12 text-center place-content-center z-10 ${
+      <ul className={`absolute inset-0 grid gap-12 text-center place-content-center z-10 whitespace-nowrap ${
           theme === 'dark' ? 'bg-dark' : 'bg-light'
         } ${isMenuOpen ? 'block' : 'hidden'} md:flex md:justify-between md:w-3/6 md:relative md:gap-4`}>
-        <li className='nav-item'>{t('navbar.home')}</li>
-        <li className='nav-item'>{t('navbar.about')}</li>
+        <li className='nav-item'><a href="#">{t('navbar.home')}</a></li>
+        <li className='nav-item'><a href="#about">{t('navbar.about')}</a></li>
         <li className='nav-item'>{t('navbar.projects')}</li>
         <li className='nav-item'>{t('navbar.skills')}</li>
         <li className='nav-item'>{t('navbar.contact')}</li>
