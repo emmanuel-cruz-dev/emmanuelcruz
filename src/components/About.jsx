@@ -13,16 +13,16 @@ const About = () => {
     <section className='py-10 scroll-top flex flex-col gap-8 w-11/12 mx-auto' id='about'>
       <h2 className='font-bold text-3xl text-center'>{t('navbar.about')}</h2>
       <article className="grid md:grid-cols-3 gap-4 md:mx-auto lg:w-11/12">
-        <div className="bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-4 justify-between p-6">
-        <div className='flex flex-col gap-4 lg:flex-row lg:justify-between'>
+        <div className="bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-8 justify-between p-6">
+        <div className='flex flex-col gap-8 lg:flex-row lg:justify-between'>
           <h3 className='font-bold text-2xl'>{t('sections.about.hi')} Emmanuel Cruz,<br />{t('sections.hero.title')}.</h3>
           <p className='text-sm lg:text-right lg:w-3/5'>{t('sections.about.paragraph')}</p>
         </div>
-          <div className='flex items-center gap-2 bg-black rounded-full px-5 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
-            <a href="#">
+          <div className='flex items-center gap-2 text-white bg-black rounded-full px-5 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
+            <a className='font-semibold' href="#">
               {t('sections.about.contactMe')}
             </a>
-            <span className="material-icons-outlined">
+            <span className="text-[28px] material-icons-outlined">
               keyboard_double_arrow_right
             </span>
           </div>
@@ -47,15 +47,15 @@ const About = () => {
               <p className='flex flex-col text-center'><span>+500</span>{t('sections.about.practice')}</p>
             </div>
           </div>
-          <div className="bg-gradient-to-br from-red-500/40 to-colorTertiary/60 rounded-xl w-full p-8 flex flex-col gap-4 justify-between">
-            <div className='flex flex-col gap-4'>
+          <div className="bg-gradient-to-br from-red-500/40 to-colorTertiary/60 rounded-xl w-full p-8 flex flex-col gap-8 justify-between">
+            <div className='flex flex-col gap-8'>
               <h3>{t('sections.about.subtitle')}?</h3>
               <p className='md:text-right'>{t('sections.about.copy')}
                 </p>
             </div>
-            <div className='flex items-center gap-2 bg-black rounded-full px-5 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
-              <a href='#'>{t('sections.about.button')}</a>
-              <span className="material-icons-outlined">
+            <div className='flex items-center gap-2 bg-black text-white rounded-full px-5 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
+              <a className='font-semibold' href='#'>{t('sections.about.button')}</a>
+              <span className="text-[28px] material-icons-outlined">
                 search
               </span>
             </div>
