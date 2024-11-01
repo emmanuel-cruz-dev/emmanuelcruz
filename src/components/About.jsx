@@ -15,10 +15,10 @@ const About = () => {
       <article className="grid md:grid-cols-3 gap-4 md:mx-auto lg:w-11/12">
         <div className="bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-8 justify-between p-6">
         <div className='flex flex-col gap-8 lg:flex-row lg:justify-between'>
-          <h3 className='font-bold text-2xl'>{t('sections.about.hi')} Emmanuel Cruz,<br />{t('sections.hero.title')}.</h3>
+          <h3 className='font-bold text-2xl'><span className='font-medium'>{t('sections.about.hi')}</span> Emmanuel Cruz,<br />{t('sections.hero.title')}.</h3>
           <p className='text-sm lg:text-right lg:w-3/5'>{t('sections.about.paragraph')}</p>
         </div>
-          <div className='flex items-center gap-2 text-white bg-black rounded-full px-5 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
+          <div className='flex items-center gap-2 text-white bg-black rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
             <a className='font-semibold' href="#">
               {t('sections.about.contactMe')}
             </a>
@@ -49,11 +49,11 @@ const About = () => {
           </div>
           <div className="bg-gradient-to-br from-red-500/40 to-colorTertiary/60 rounded-xl w-full p-8 flex flex-col gap-8 justify-between">
             <div className='flex flex-col gap-8'>
-              <h3>{t('sections.about.subtitle')}?</h3>
+              <h3 className='text-2xl font-medium'>{t('sections.about.subtitle')} <span className='font-bold lowercase'>{t('sections.about.button')}</span><span className='font-bold'>?</span></h3>
               <p className='md:text-right'>{t('sections.about.copy')}
                 </p>
             </div>
-            <div className='flex items-center gap-2 bg-black text-white rounded-full px-5 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
+            <div className='flex items-center gap-2 bg-black text-white rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
               <a className='font-semibold' href='#'>{t('sections.about.button')}</a>
               <span className="text-[28px] material-icons-outlined">
                 search
