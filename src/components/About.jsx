@@ -15,11 +15,16 @@ const About = () => {
       <article className="grid md:grid-cols-3 gap-4 md:mx-auto lg:w-11/12">
         <div className="bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-4 justify-between p-6">
         <div className='flex flex-col gap-4 lg:flex-row lg:justify-between'>
-          <h3 className='font-bold text-xl'>{t('sections.about.hi')} Emmanuel Cruz,<br />{t('sections.hero.title')}.</h3>
-          <p className='lg:text-right lg:w-3/5'>{t('sections.about.paragraph')}</p>
+          <h3 className='font-bold text-2xl'>{t('sections.about.hi')} Emmanuel Cruz,<br />{t('sections.hero.title')}.</h3>
+          <p className='text-sm lg:text-right lg:w-3/5'>{t('sections.about.paragraph')}</p>
         </div>
-          <div className='flex justify-between'>
-            <a href="#">{t('sections.about.contactMe')}</a>
+          <div className='flex items-center gap-2 bg-black rounded-full px-5 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
+            <a href="#">
+              {t('sections.about.contactMe')}
+            </a>
+            <span className="material-icons-outlined">
+              keyboard_double_arrow_right
+            </span>
           </div>
         </div>
         <div className="bg-gradient-to-br from-cyan-200/80 to-blue-400/80 rounded-xl p-2 overflow-hidden">
@@ -48,7 +53,12 @@ const About = () => {
               <p className='md:text-right'>{t('sections.about.copy')}
                 </p>
             </div>
-            <a href='#' className='inline-flex'>{t('sections.about.button')}</a>
+            <div className='flex items-center gap-2 bg-black rounded-full px-5 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary'>
+              <a href='#'>{t('sections.about.button')}</a>
+              <span className="material-icons-outlined">
+                search
+              </span>
+            </div>
           </div>
         </div>
         {/* <Commitment /> */}
