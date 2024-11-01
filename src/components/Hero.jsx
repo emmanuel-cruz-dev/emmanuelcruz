@@ -8,11 +8,11 @@ const Hero = () => {
 
   return (
     <section className='py-4 mx-4 md:py-10 md:mx-auto md:w-5/6 xl:my-10'>
-      <article className="flex flex-col gap-4 sm:flex-row lg:w-11/12 lg:mx-auto lg:justify-evenly">
+      <article className="flex flex-col gap-4 sm:flex-row lg:w-full lg:mx-auto lg:justify-between">
         <div className='flex flex-col gap-2 my-auto md:gap-8'>
           <div>
             <h1 className='font-bold text-2xl'>{t('sections.welcome')}</h1>
-            <h2 className='font-bold text-xl'>{t('sections.hero.title')}</h2>
+            <h2 className='font-bold text-xl capitalize'>{t('sections.hero.title')}.</h2>
           </div>
           <div className='hidden sm:flex'>
             <Links />

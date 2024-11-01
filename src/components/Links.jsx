@@ -9,7 +9,7 @@ const Links = () => {
 
   return (
     <div className='flex flex-col gap-5 md:gap-10'>
-      <p className='md:max-w-md'>{t('sections.hero.description')}</p>
+      <p className='max-w-md sm:w-screen'>{t('sections.hero.description')}</p>
       <div className='flex flex-col gap-5'>
         <div className='flex gap-4'>
           <a className='w-10 h-10 hover:text-colorTertiary transition-colors duration-500 ease-in-out' href="https://www.linkedin.com/in/emmanuel-cruz-6a242430b/" target='_blank' rel='noopener noreferrer'>
