@@ -26,9 +26,9 @@ const Header = () => {
         } ${isMenuOpen ? 'block' : 'hidden'} md:flex md:justify-between md:w-3/6 md:relative md:gap-4`}>
         <li className='nav-item'><a href="#">{t('navbar.home')}</a></li>
         <li className='nav-item'><a href="#about">{t('navbar.about')}</a></li>
-        <li className='nav-item'>{t('navbar.projects')}</li>
-        <li className='nav-item'>{t('navbar.skills')}</li>
-        <li className='nav-item'>{t('navbar.contact')}</li>
+        <li className='nav-item'><a href="#skills">{t('navbar.skills')}</a></li>
+        <li className='nav-item'><a href="#projects">{t('navbar.projects')}</a></li>
+        <li className='nav-item'><a href="#contact">{t('navbar.contact')}</a></li>
       </ul>
       <div className='flex gap-4 items-center z-10'>
         <button onClick={toggleTheme} aria-label='Toggle theme' className="flex items-center">
