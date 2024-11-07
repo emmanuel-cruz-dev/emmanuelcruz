@@ -31,6 +31,9 @@ const resources = {
           emailCopied: "¡Email copied!",
         },
         about: {
+          title: "A little about me",
+          description:
+            "Discover how my experience and skills can add value to your projects.",
           hi: "I'm",
           paragraph:
             "Enthusiast of functional aesthetics and usability in projects. My interest in problem solving and creativity led me to the world of web development, where I constantly strive to learn and improve my skills.",
@@ -40,6 +43,29 @@ const resources = {
           subtitle: "Want to",
           copy: "Discover my latest projects, created with dedication and focus on every detail.",
           button: "See more",
+        },
+        skills: {
+          title: "Tech Stack",
+          description:
+            "Technologies and methodologies that I use to take your projects to the next level",
+          subtitle1: "Web Development",
+          subtitle2: "Design and Prototyping",
+          subtitle3: "Frameworks and Libraries",
+          subtitle4: "Development Tools",
+          html: "Hypertext Markup Language",
+          css: "Cascading Style Sheets",
+          javascript: "Web programming language",
+          react: "JavaScript library for building user interfaces",
+          tailwind: "Utility CSS framework",
+          bootstrap: "Front-End development framework",
+          nodejs: "JavaScript runtime environment",
+          figma: "User interface design tool",
+          git: "Version control system",
+          github: "Collaborative development platform",
+          sass: "Syntactically Awesome Style Sheets",
+          webflow: "Web design and development platform",
+          photoshop: "Image editing software",
+          vscode: "Source code editor",
         },
         projects: {
           title: "Projects",
@@ -77,6 +103,9 @@ const resources = {
           emailCopied: "¡Email copiado!",
         },
         about: {
+          title: "Un poco sobre mi",
+          description:
+            "Descubrí cómo mi experiencia y habilidades pueden agregar valor a tus proyectos.",
           hi: "Soy",
           paragraph:
             "Entusiasta de la estética funcional y la usabilidad en los proyectos. Mi interés por la resolución de problemas y la creatividad me llevaron al mundo del desarrollo web, donde me esfuerzo constantemente por aprender y mejorar mis habilidades.",
@@ -86,6 +115,30 @@ const resources = {
           subtitle: "Querés",
           copy: "Descubrí mis últimos proyectos, creados con dedicación y enfoque en cada detalle.",
           button: "Ver más",
+        },
+        skills: {
+          title: "Stack Teconológico",
+          description:
+            "Tecnologías y metodologías que utilizo para llevar tus proyectos al siguiente nivel",
+          subtitle1: "Desarrollo Web",
+          subtitle2: "Diseño y Prototipado",
+          subtitle3: "Frameworks y Bibliotecas",
+          subtitle4: "Herramientas de Desarrollo",
+          html: "Lenguaje de Marcado de Hipertexto",
+          css: "Hojas de Estilo en Cascada",
+          javascript: "Lenguaje de programación web",
+          react:
+            "Biblioteca de JavaScript para construir interfaces de usuario",
+          tailwind: "Framework de CSS utilitario",
+          bootstrap: "Marco de desarrollo de Front-End",
+          nodejs: "Entorno de ejecución de JavaScript",
+          figma: "Herramienta de diseño de interfaz de usuario",
+          git: "Sistema de control de versiones",
+          github: "Plataforma de desarrollo colaborativo",
+          sass: "Hojas de Estilo Sintácticamente Asombrosas",
+          webflow: "Plataforma de diseño y desarrollo web",
+          photoshop: "Software de edición de imágenes",
+          vscode: "Editor de código fuente",
         },
         projects: {
           title: "Proyectos",
