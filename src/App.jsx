@@ -1,9 +1,10 @@
-import About from './components/About';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import ScrollToTopButton from './components/ScrollToTopButton';
-import Skills from './components/Skills';
-import './styles/main.scss';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Projects";
+import "./styles/main.scss";
 
 function App() {
   return (
@@ -13,8 +14,9 @@ function App() {
       <ScrollToTopButton />
       <About />
       <Skills />
+      <Projects />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

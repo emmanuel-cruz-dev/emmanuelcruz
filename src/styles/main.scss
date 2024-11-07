@@ -139,3 +139,16 @@ img {
 .up-btn:hover::after {
   background-color: #000;
 }
+
+/* Sección Habilidades */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding-block: 1.5rem;
+  white-space: nowrap;
+}
