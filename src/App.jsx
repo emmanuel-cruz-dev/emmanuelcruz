@@ -13,8 +13,8 @@ function App() {
       <Hero />
       <ScrollToTopButton />
       <About />
-      <Skills />
       <Projects />
+      <Skills />
     </>
   );
 }

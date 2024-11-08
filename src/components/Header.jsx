@@ -41,10 +41,10 @@ const Header = () => {
           <a href="#about">{t("navbar.about")}</a>
         </li>
         <li className="nav-item">
-          <a href="#skills">{t("navbar.skills")}</a>
+          <a href="#projects">{t("navbar.projects")}</a>
         </li>
         <li className="nav-item">
-          <a href="#projects">{t("navbar.projects")}</a>
+          <a href="#skills">{t("navbar.skills")}</a>
         </li>
         <li className="nav-item">
           <a href="#contact">{t("navbar.contact")}</a>
