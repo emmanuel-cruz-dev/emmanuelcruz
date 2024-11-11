@@ -207,3 +207,63 @@ img {
 .slick-dots li button:hover:before {
   opacity: 1;
 }
+
+// Footer
+.footer__list,
+.footer__link {
+  a {
+    transition: color 0.5s ease;
+
+    &:hover {
+      color: $color-tertiary;
+    }
+  }
+}
+
+.footer__title {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.footer__item {
+  h4 {
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+
+  a {
+    font-weight: 800;
+
+    &:hover h4 {
+      color: $color-tertiary;
+    }
+  }
+}
+
+.footer__paragraph {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.footer__list {
+  li {
+    padding: 0 10px; // ajusta el padding según sea necesario
+    position: relative;
+
+    &:not(:last-child)::after {
+      content: "|";
+      position: absolute;
+      right: -14px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    li:not(:last-child)::after {
+      content: "";
+    }
+  }
+}
