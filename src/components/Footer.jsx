@@ -1,6 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import { useTheme } from "./ThemeContext";
+import GesellImg from "../assets/images/ola-gesell.png";
+import freeCodeCampLogo from "../assets/images/freecodecamp-logo.jpg";
+import AlexCGLogo from "../assets/images/alexcg-logo.jpg";
+import ErosLogo from "../assets/images/eros-logo.jpg";
+import NephewsLogo from "../assets/images/nephews-logo.jpg";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -11,11 +16,7 @@ const Footer = () => {
       <article className="flex flex-col lg:flex-row gap-10 lg:gap-20 justify-between items-center px-20 py-16 border-b border-gray-600">
         <div className="flex flex-col items-center gap-7">
           <div className="flex flex-col items-center gap-3 w-44">
-            <img
-              className="w-36"
-              src="./src/assets/images/ola-gesell.png"
-              alt=""
-            />
+            <img className="w-36" src={GesellImg} alt="" />
             <div className="flex flex-col items-center gap-2">
               <h3 className="font-bold">Emmanuel Cruz</h3>
               <h4 className="text-sm">Desarrollador Frontend</h4>
@@ -66,7 +67,7 @@ const Footer = () => {
               className="flex gap-4 items-center border-b border-gray-600 pb-4"
             >
               <figure className="w-16">
-                <img src="./src/assets/images/freecodecamp-logo.jpg" alt="" />
+                <img src={freeCodeCampLogo} alt="" />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>freeCodeCamp Español</h4>
@@ -81,7 +82,7 @@ const Footer = () => {
               className="flex gap-4 items-center"
             >
               <figure className="w-16">
-                <img src="./src/assets/images/alexcg-logo.jpg" alt="" />
+                <img src={AlexCGLogo} alt="" />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>AlexCG Design</h4>
@@ -99,7 +100,7 @@ const Footer = () => {
               className="flex gap-4 items-center border-b border-gray-600 pb-4"
             >
               <figure className="w-16">
-                <img src="./src/assets/images/eros-logo.jpg" alt="" />
+                <img src={ErosLogo} alt="" />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>Eros Librería</h4>
@@ -114,7 +115,7 @@ const Footer = () => {
               className="flex gap-4 items-center"
             >
               <figure className="w-16">
-                <img src="./src/assets/images/nephews-logo.jpg" alt="" />
+                <img src={NephewsLogo} alt="" />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>N3phews Website</h4>
