@@ -6,10 +6,12 @@ import freeCodeCampLogo from "../assets/images/freecodecamp-logo.jpg";
 import AlexCGLogo from "../assets/images/alexcg-logo.jpg";
 import ErosLogo from "../assets/images/eros-logo.jpg";
 import NephewsLogo from "../assets/images/nephews-logo.jpg";
+import LastModifiedDate from "./LastModifiedDate";
 
 const Footer = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
+  const currentLanguage = "en";
 
   return (
     <footer className="footer bg-primary">
@@ -127,16 +129,11 @@ const Footer = () => {
           <div className="general flex flex-col gap-4">
             <h3 className="footer__title">General</h3>
             <ul className="text-sm leading-7">
-              <li>Buenos Aires, Argentina</li>
               <li>Derechos de autor</li>
               <li>Política de privacidad</li>
               <li>Términos y condiciones</li>
-              <li>
-                Última actualización:
-                <br />
-                11 de Noviembre 2024
-              </li>
             </ul>
+            <LastModifiedDate currentLanguage={currentLanguage} />
           </div>
         </div>
       </article>
@@ -160,14 +157,8 @@ const Footer = () => {
           </li>
         </ul>
         <p className="footer__link">
-          © 2024 - Powered by{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://emmanuel-cruz.netlify.app/"
-          >
-            Emmanuel
-          </a>
+          © 2024 · Desarrollado por <a href="#">Emmanuel Cruz</a> en Buenos
+          Aires, Argentina
         </p>
       </article>
     </footer>

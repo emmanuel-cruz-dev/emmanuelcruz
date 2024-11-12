@@ -77,6 +77,7 @@ const resources = {
         },
         // más secciones...
       },
+      lastUpdate: "Last updated",
     },
   },
   es: {
@@ -155,6 +156,7 @@ const resources = {
         },
         // más secciones...
       },
+      lastUpdate: "Última actualización",
     },
   },
 };
