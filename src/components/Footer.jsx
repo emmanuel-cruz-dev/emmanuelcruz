@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
-import { FaGithub, FaLinkedin, FaFileAlt } from "react-icons/fa";
 import GesellImg from "../assets/images/ola-gesell.png";
 import freeCodeCampLogo from "../assets/images/freecodecamp-logo.jpg";
 import AlexCGLogo from "../assets/images/alexcg-logo.jpg";
 import ErosLogo from "../assets/images/eros-logo.jpg";
 import NephewsLogo from "../assets/images/nephews-logo.jpg";
 import LastModifiedDate from "./LastModifiedDate";
+import LegalSection from "./LegalSection";
 
 const Footer = () => {
   const { i18n, t } = useTranslation();
@@ -16,45 +16,13 @@ const Footer = () => {
       <article className="flex flex-col lg:flex-row gap-10 justify-between items-center px-20 py-16 border-b border-gray-600">
         <div className="flex flex-col items-center gap-7">
           <div className="flex flex-col items-center gap-3 w-44">
-            <img className="w-36" src={GesellImg} alt="" />
+            <img className="w-32" src={GesellImg} alt="" />
             <div className="flex flex-col items-center gap-2">
               <h3 className="font-bold">Emmanuel Cruz</h3>
               <h4 className="text-sm capitalize">{t("sections.hero.title")}</h4>
               <p className="text-xs whitespace-nowrap">
                 "{t("footer.phrase")}."
               </p>
-            </div>
-          </div>
-
-          <div className="footer__social mx-auto">
-            <div className="flex gap-4 justify-center">
-              <a
-                title="Linkedin"
-                className="w-8 hover:text-colorTertiary transition-colors duration-500 ease-in-out"
-                href="https://www.linkedin.com/in/emmanuel-cruz-6a242430b/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaLinkedin className="w-full h-full" />
-              </a>
-              <a
-                title="Github"
-                className="w-8 hover:text-colorTertiary transition-colors duration-500 ease-in-out"
-                href="https://github.com/EmmaLCruz"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaGithub className="w-full h-full" />
-              </a>
-              <a
-                title="Curriculum Vitae"
-                className="w-8 hover:text-colorTertiary transition-colors duration-500 ease-in-out"
-                href="/Emmanuel-Cruz-CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFileAlt className="w-full h-full" />
-              </a>
             </div>
           </div>
         </div>
@@ -128,11 +96,12 @@ const Footer = () => {
 
           <div className="general flex flex-col gap-4 h-full">
             <h3 className="footer__title">General</h3>
-            <ul className="text-sm leading-7">
+            <LegalSection />
+            {/* <ul className="text-sm leading-7">
               <li>{t("footer.privacy")}</li>
               <li>{t("footer.terms")}</li>
               <li>{t("footer.rights")}</li>
-            </ul>
+            </ul> */}
             <div className="flex-grow"></div>
 
             <LastModifiedDate currentLanguage={currentLanguage} />
@@ -155,7 +124,7 @@ const Footer = () => {
             <a href="#skills">{t("navbar.skills")}</a>
           </li>
           <li>
-            <a href="#">{t("navbar.contact")}</a>
+            <a href="#contact">{t("navbar.contact")}</a>
           </li>
         </ul>
         <p className="footer__link">
