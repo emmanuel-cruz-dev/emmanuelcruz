@@ -14,7 +14,16 @@ const Contact = () => {
         <h3 className="text-lg">{t("sections.contact.description")}</h3>
       </div>
       <article className="flex flex-col md:flex-row gap-8 items-center justify-around">
-        <article>
+        <article className="flex flex-col text-center gap-4">
+          <div className="flex flex-col gap-4">
+            <h3>Trabajemos juntos!</h3>
+            <p>
+              Diseño y programo cosas sencillas y hermosas,
+              <br />
+              me encanta lo que hago. ¡Así de simple!
+            </p>
+            <p>Ubicado en Buenos aires, Argentina</p>
+          </div>
           <div className="flex gap-4 justify-center">
             <a
               title="Linkedin"
