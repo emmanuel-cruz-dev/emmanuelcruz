@@ -1,12 +1,39 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 
 const ContactForm = () => {
   const { t } = useTranslation();
 
+  const [status, setStatus] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault(); // Evita el comportamiento por defecto de redirección
+
+    const formData = new FormData(e.target);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => {
+        setStatus("Mensaje enviado con éxito.");
+        e.target.reset(); // Limpia el formulario después de enviar
+      })
+      .catch(() => {
+        setStatus("Ocurrió un error. Inténtalo de nuevo.");
+      });
+  };
+
   return (
     <div className="bg-white/30 rounded-lg shadow-md p-6 max-w-md mx-auto">
       <h2 className="text-2xl font-bold mb-4">Get in touch</h2>
-      <form className="text-sm" method="POST" data-netlify="true">
+      <form
+        className="text-sm"
+        method="POST"
+        data-netlify="true"
+        onSubmit={handleSubmit}
+      >
         <div className="grid grid-cols-2 gap-4">
           <div className="mb-4">
             <label
@@ -56,6 +83,7 @@ const ContactForm = () => {
           Enviar
         </button>
       </form>
+      {status && <p className="mt-4 text-center text-gray-600">{status}</p>}
     </div>
   );
 };
