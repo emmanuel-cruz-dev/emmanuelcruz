@@ -14,6 +14,10 @@ const Contact = () => {
         <h3 className="text-lg">{t("sections.contact.description")}</h3>
       </div>
       <article className="flex flex-col md:flex-row gap-8 items-center justify-around">
+        <article>
+          <ContactForm />
+        </article>
+
         <article className="flex flex-col text-center gap-4">
           <div className="flex flex-col gap-4">
             <h3>Trabajemos juntos!</h3>
@@ -62,10 +66,6 @@ const Contact = () => {
               <FaPaperPlane className="w-full h-full" />
             </a>
           </div>
-        </article>
-
-        <article>
-          <ContactForm />
         </article>
       </article>
     </section>
