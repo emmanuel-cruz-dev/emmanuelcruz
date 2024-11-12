@@ -20,9 +20,20 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    const { name, email, message } = formData;
     // Aquí iría la lógica para enviar el formulario
     console.log("Formulario enviado a:", myEmail);
     console.log("Datos del formulario:", formData);
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ name, email, message }),
+    })
+      .then((response) => response.json())
+      .then((data) => console.log(data))
+      .catch((error) => console.error(error));
     // Resetea el formulario después de enviar
     setFormData({ name: "", email: "", message: "" });
   };
