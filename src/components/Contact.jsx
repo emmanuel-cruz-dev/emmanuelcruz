@@ -13,7 +13,7 @@ const Contact = () => {
         </h2>
         <h3 className="text-lg">{t("sections.contact.description")}</h3>
       </div>
-      <article className="flex gap-8 items-center justify-around">
+      <article className="flex flex-col md:flex-row gap-8 items-center justify-around">
         <article>
           <div className="flex gap-4 justify-center">
             <a
