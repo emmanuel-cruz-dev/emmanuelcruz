@@ -9,9 +9,10 @@ import NephewsLogo from "../assets/images/nephews-logo.jpg";
 import LastModifiedDate from "./LastModifiedDate";
 
 const Footer = () => {
-  const { t } = useTranslation();
+  const { i18n, t } = useTranslation();
   const { theme } = useTheme();
-  const currentLanguage = "en";
+
+  const currentLanguage = i18n.language === "es" ? "es" : "en";
 
   return (
     <footer className="footer bg-primary">

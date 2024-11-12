@@ -7,8 +7,6 @@ const LastModifiedDate = ({ currentLanguage }) => {
   useEffect(() => {
     const formatDateByLanguage = (date) => {
       const options = {
-        hour: "numeric",
-        minute: "numeric",
         day: "numeric",
         month: "long",
         year: "numeric",
@@ -39,8 +37,8 @@ const LastModifiedDate = ({ currentLanguage }) => {
 
   return (
     <div className="flex items-center gap-2 text-gray-600">
-      <FaCalendarAlt className="w-7 h-7" />
-      <p className="text-sm">
+      <FaCalendarAlt className="w-8 h-8" />
+      <p className="text-xs">
         {lastUpdateText}:
         <br />
         <span className="font-medium">{lastModified}</span>
