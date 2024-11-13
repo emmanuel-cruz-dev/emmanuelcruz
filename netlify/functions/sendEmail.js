@@ -42,9 +42,14 @@ exports.handler = async (event, context) => {
       body: JSON.stringify({ message: "Mensaje enviado exitosamente" }),
     };
   } else {
+    const errorResponse = await response.json();
+    console.error("Error en la API de Resend:", errorResponse);
     return {
       statusCode: 500,
-      body: JSON.stringify({ message: "Error al enviar el mensaje" }),
+      body: JSON.stringify({
+        message: "Error al enviar el mensaje",
+        error: errorResponse,
+      }),
     };
   }
 };
