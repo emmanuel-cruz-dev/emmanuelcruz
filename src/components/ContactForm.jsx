@@ -6,7 +6,7 @@ const ContactForm = () => {
   return (
     <div className="bg-white/30 rounded-lg shadow-md p-6 max-w-md mx-auto">
       <h2 className="text-2xl font-bold mb-4">Get in touch</h2>
-      <form className="text-sm" method="POST" netlify>
+      <form className="text-sm" method="POST">
         <div className="grid grid-cols-2 gap-4">
           <div className="mb-4">
             <label
