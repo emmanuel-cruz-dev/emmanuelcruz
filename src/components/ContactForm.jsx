@@ -1,14 +1,39 @@
 import { useTranslation } from "react-i18next";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {
-  const { t } = useTranslation();
-
   const form = useRef();
+  const { t } = useTranslation();
+  const [isSending, setIsSending] = useState(false);
+  const [formValues, setFormValues] = useState({
+    user_name: "",
+    user_email: "",
+    message: "",
+  });
+
+  // Función que actualiza los valores de los campos
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
+  const cleanForm = () => {
+    setFormValues({
+      user_name: "",
+      user_email: "",
+      message: "",
+    });
+
+    setIsSending(false);
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSending(true);
 
     emailjs
       .sendForm("service_q56xg3q", "template_7xdnr2c", form.current, {
@@ -17,9 +42,11 @@ const ContactForm = () => {
       .then(
         () => {
           console.log("SUCCESS!");
+          cleanForm();
         },
         (error) => {
           console.log("FAILED...", error.text);
+          cleanForm();
         }
       );
   };
@@ -38,6 +65,8 @@ const ContactForm = () => {
               id="name"
               name="user_name"
               type="text"
+              value={formValues.user_name}
+              onChange={handleChange}
               placeholder="Tu nombre"
               className="w-full border bg-white/20 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
@@ -52,6 +81,8 @@ const ContactForm = () => {
               id="email"
               name="user_email"
               type="email"
+              value={formValues.user_email}
+              onChange={handleChange}
               placeholder="Email Address"
               className="w-full bg-white/20 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
@@ -64,6 +95,8 @@ const ContactForm = () => {
           <textarea
             id="message"
             name="message"
+            value={formValues.message}
+            onChange={handleChange}
             placeholder="Escribe un mensaje..."
             rows="5"
             className="w-full bg-white/20 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -72,9 +105,10 @@ const ContactForm = () => {
         </div>
         <button
           type="submit"
+          disabled={isSending}
           className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md"
         >
-          Enviar
+          {isSending ? "Enviando mensaje..." : "Enviar"}
         </button>
       </form>
     </div>
