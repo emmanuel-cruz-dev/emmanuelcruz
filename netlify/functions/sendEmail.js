@@ -1,35 +1,50 @@
-const { Resend } = require("@resend/node");
-const resend = new Resend(process.env.RESEND_API_KEY);
+const fetch = require("node-fetch"); // Usamos fetch para hacer solicitudes HTTP
 
-exports.handler = async function (event) {
+exports.handler = async (event, context) => {
+  // Si la petición no es POST, retorna un error
   if (event.httpMethod !== "POST") {
     return {
       statusCode: 405,
-      body: JSON.stringify({ error: "Method Not Allowed" }),
+      body: JSON.stringify({ message: "Método no permitido" }),
     };
   }
 
+  // Obtener los datos enviados desde el formulario
   const { name, email, message } = JSON.parse(event.body);
 
-  try {
-    await resend.emails.send({
-      from: "tu-email@tudominio.com",
-      to: "tu-destino@tudominio.com",
-      subject: `Nuevo mensaje de ${name}`,
-      html: `<p><strong>Nombre:</strong> ${name}</p>
-             <p><strong>Email:</strong> ${email}</p>
-             <p><strong>Mensaje:</strong> ${message}</p>`,
-    });
+  // Preparar los datos para la API de Resend
+  const data = {
+    personalizations: [{ to: [{ email: "emmanuelgerr@gmail.com" }] }],
+    from: { email: "Portfolio" },
+    subject: `Nuevo mensaje de ${name}`,
+    content: [
+      {
+        type: "text/plain",
+        value: `Nombre: ${name}\nEmail: ${email}\nMensaje: ${message}`,
+      },
+    ],
+  };
 
+  // Realizar la solicitud a la API de Resend usando la clave de la variable de entorno
+  const response = await fetch("https://api.resend.com/v1/emails", {
+    method: "POST",
+    headers: {
+      Authorization: `Bearer ${process.env.RESEND_API_KEY}`, // Aquí usamos la variable de entorno
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+
+  // Verificar si la solicitud fue exitosa
+  if (response.ok) {
     return {
       statusCode: 200,
-      body: JSON.stringify({ message: "Email enviado con éxito" }),
+      body: JSON.stringify({ message: "Mensaje enviado exitosamente" }),
     };
-  } catch (error) {
-    console.error("Error al enviar el email:", error);
+  } else {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Error al enviar el email" }),
+      body: JSON.stringify({ message: "Error al enviar el mensaje" }),
     };
   }
 };

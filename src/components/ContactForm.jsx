@@ -10,7 +10,7 @@ const ContactForm = () => {
       message: e.target.message.value,
     };
 
-    const response = await fetch("netlify/functions/sendEmail", {
+    const response = await fetch("/netlify/functions/sendEmail.js", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
