@@ -1,7 +1,7 @@
 import { Resend } from "resend";
 
 // Inicializa Resend con tu clave API
-const resend = new Resend("re_fX9Wvcy5_MqQoiy83icNHAymkKLDVVomS"); // Reemplaza con tu API key de Resend
+const resend = new Resend("re_CqSHXFbE_3nF4K9tqHixSGWySjoMjSvZK"); // Reemplaza con tu API key de Resend
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
