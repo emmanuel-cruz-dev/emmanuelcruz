@@ -15,7 +15,7 @@ exports.handler = async (event, context) => {
   // Preparar los datos para la API de Resend
   const data = {
     personalizations: [{ to: [{ email: "emmanuelgerr@gmail.com" }] }],
-    from: { email: "Portfolio" },
+    from: { email: email },
     subject: `Nuevo mensaje de ${name}`,
     content: [
       {
