@@ -1,4 +1,4 @@
-const fetch = require("node-fetch"); // Usamos fetch para hacer solicitudes HTTP
+import fetch from "node-fetch";
 
 exports.handler = async (event, context) => {
   // Si la petición no es POST, retorna un error
