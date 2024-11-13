@@ -68,6 +68,7 @@ const ContactForm = () => {
               value={formValues.user_name}
               onChange={handleChange}
               placeholder="Tu nombre"
+              title="Completa tu nombre"
               className="w-full border bg-white/20 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />

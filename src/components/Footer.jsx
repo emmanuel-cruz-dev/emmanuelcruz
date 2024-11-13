@@ -127,7 +127,7 @@ const Footer = () => {
             <a href="#contact">{t("navbar.contact")}</a>
           </li>
         </ul>
-        <p className="footer__link">
+        <p className="footer__link text-center">
           © 2024 · {t("footer.paragraph")} <a href="#">Emmanuel Cruz</a>{" "}
           {t("footer.place")} Buenos Aires, Argentina
         </p>
