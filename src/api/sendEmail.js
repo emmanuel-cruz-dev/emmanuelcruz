@@ -10,10 +10,11 @@ export default async function handler(req, res) {
     try {
       // Envia el correo
       await resend.sendEmail({
-        from: "Portfolio",
+        from: email,
         to: "emmanuelgerr@gmail.com",
         subject: `Nuevo mensaje de ${name}`,
-        html: `<p><strong>Nombre:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Mensaje:</strong> ${message}</p>`,
+        react: `<p><strong>Nombre:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Mensaje:</strong> ${message}</p>`,
+        text: "",
       });
 
       res.status(200).json({ success: true });
