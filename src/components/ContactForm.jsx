@@ -2,11 +2,33 @@ import { useTranslation } from "react-i18next";
 
 const ContactForm = () => {
   const { t } = useTranslation();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    };
+
+    const response = await fetch("/api/sendEmail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert("Mensaje enviado con éxito");
+    } else {
+      alert("Error al enviar el mensaje");
+    }
+  };
 
   return (
     <div className="bg-white/30 rounded-lg shadow-md p-6 max-w-md mx-auto">
       <h2 className="text-2xl font-bold mb-4">Get in touch</h2>
-      <form className="text-sm" method="POST">
+      <form className="text-sm" method="POST" onSubmit={handleSubmit}>
         <div className="grid grid-cols-2 gap-4">
           <div className="mb-4">
             <label
@@ -56,7 +78,6 @@ const ContactForm = () => {
           Enviar
         </button>
       </form>
-      {status && <p className="mt-4 text-center text-gray-600">{status}</p>}
     </div>
   );
 };
