@@ -8,7 +8,7 @@ const Links = () => {
 
   return (
     <div className="flex flex-col gap-5 md:gap-10">
-      <p className="max-w-[21rem] xl:max-w-[30rem] text-xs md:text-sm">
+      <p className="max-w-[21rem] xl:max-w-[30rem] md:text-sm">
         {t("sections.hero.description")}
       </p>
       <div className="flex flex-col gap-8">

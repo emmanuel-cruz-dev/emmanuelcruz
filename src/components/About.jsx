@@ -32,7 +32,7 @@ const About = () => {
             </p>
           </div>
           <button className="flex items-center gap-2 text-white bg-black rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary">
-            <a className="font-semibold" href="#">
+            <a className="font-semibold" href="#contact">
               {t("sections.about.contactMe")}
             </a>
             <span className="text-[28px] material-icons-outlined">
@@ -104,7 +104,7 @@ const About = () => {
               </p>
             </div>
             <button className="flex items-center gap-2 bg-black text-white rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary">
-              <a className="font-semibold" href="#">
+              <a className="font-semibold" href="#projects">
                 {t("sections.about.button")}
               </a>
               <span className="text-[28px] material-icons-outlined">

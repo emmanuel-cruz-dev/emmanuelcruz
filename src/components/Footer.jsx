@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className="footer bg-black text-white select-none">
-      <article className="flex flex-col lg:flex-row gap-10 justify-between items-center p-16 border-b border-gray-600">
+      <article className="flex flex-col lg:flex-row gap-10 justify-between items-center py-20 p-16 border-b border-gray-600">
         <div className="flex flex-col items-center gap-7">
           <div className="flex flex-col items-center gap-3 w-44">
             <img className="w-32" src={GesellImg} alt="" />
