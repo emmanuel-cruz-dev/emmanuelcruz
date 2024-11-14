@@ -1,17 +1,21 @@
 import BlackCat from "../assets/images/black-cat.png";
-import {
-  FaMapMarkerAlt,
-  FaGithub,
-  FaLinkedin,
-  FaFileAlt,
-  FaPaperPlane,
-} from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
 import Toast from "./Toast";
+import SocialLinks from "./SocialLinks";
 
 const Contact = () => {
+  const [toast, setToast] = useState({ show: false, type: "", message: "" });
   const { t } = useTranslation();
+
+  const showToast = (type, message) => {
+    setToast({ show: true, type, message });
+    setTimeout(() => {
+      setToast({ ...toast, show: false });
+    }, 5000); // Oculta el toast después de 5 segundos
+  };
 
   return (
     <section className="scroll-top py-10 w-11/12 mx-auto" id="contact">
@@ -23,7 +27,7 @@ const Contact = () => {
       </div>
       <article className="flex flex-col gap-10 justify-between py-16">
         <article className="flex flex-col md:flex-row gap-8 items-center justify-around">
-          <article>
+          <article className="order-2 md:order-none">
             <ContactForm />
           </article>
 
@@ -36,51 +40,30 @@ const Contact = () => {
               />
             </figure>
             <div className="flex flex-col gap-2">
-              <h3>Trabajemos juntos!</h3>
-
               <span className="flex items-center gap-2">
                 <FaMapMarkerAlt /> Ubicado en Buenos aires, Argentina
               </span>
             </div>
             <div className="flex gap-4 justify-center">
-              <a
-                title="Linkedin"
-                className="w-8 hover:text-colorTertiary transition-colors duration-500 ease-in-out"
-                href="https://www.linkedin.com/in/emmanuel-cruz-6a242430b/"
-                target="_blank"
-                rel="noopener noreferrer"
+              <SocialLinks />
+              <button
+                onClick={() =>
+                  showToast("success", "¡Éxito! Mensaje enviado correctamente.")
+                }
+                className="w-20 bg-black hover:bg-green-500"
               >
-                <FaLinkedin className="w-full h-full" />
-              </a>
-              <a
-                title="Github"
-                className="w-8 hover:text-colorTertiary transition-colors duration-500 ease-in-out"
-                href="https://github.com/EmmaLCruz"
-                target="_blank"
-                rel="noopener noreferrer"
+                Success
+              </button>
+              <button
+                onClick={() =>
+                  showToast(
+                    "error",
+                    "Algo salió mal. Volvé a intentarlo más tarde."
+                  )
+                }
+                className="w-20 bg-black hover:bg-colorTertiary"
               >
-                <FaGithub className="w-full h-full" />
-              </a>
-              <a
-                title="Curriculum Vitae"
-                className="w-8 hover:text-colorTertiary transition-colors duration-500 ease-in-out"
-                href="/Emmanuel-Cruz-CV.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaFileAlt className="w-full h-full" />
-              </a>
-              <a
-                title="Email"
-                className="w-8 hover:text-colorTertiary transition-colors duration-500 ease-in-out"
-                href="mailto:emmanuelgerr@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FaPaperPlane className="w-full h-full" />
-              </a>
-              <button className=" w-20 btn--red" onClick={() => {}}>
-                Toast
+                Error
               </button>
             </div>
           </article>
@@ -90,11 +73,11 @@ const Contact = () => {
           message="¡Éxito! Mensaje enviado correctamente."
           type="success"
         /> */}
-
-        <Toast
+        <Toast type={toast.type} message={toast.message} show={toast.show} />
+        {/* <Toast
           message="Algo salió mal. Volvé a intentarlo más tarde."
           type="error"
-        />
+        /> */}
       </article>
     </section>
   );

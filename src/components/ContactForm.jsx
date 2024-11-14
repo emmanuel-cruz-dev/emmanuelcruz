@@ -53,7 +53,9 @@ const ContactForm = () => {
 
   return (
     <div className="bg-white/30 rounded-lg shadow-md p-6 max-w-md mx-auto">
-      <h2 className="text-2xl font-bold mb-4">Get in touch</h2>
+      <h2 className="text-2xl font-bold mb-4">
+        {t("sections.contact.subtitle")}
+      </h2>
       <form className="text-sm" ref={form} onSubmit={sendEmail}>
         <div className="grid grid-cols-2 gap-4">
           <div className="mb-4">
@@ -67,7 +69,7 @@ const ContactForm = () => {
               type="text"
               value={formValues.user_name}
               onChange={handleChange}
-              placeholder="Tu nombre"
+              placeholder={t("sections.contact.name")}
               title="Completa tu nombre"
               className="w-full border bg-white/20 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
@@ -84,7 +86,7 @@ const ContactForm = () => {
               type="email"
               value={formValues.user_email}
               onChange={handleChange}
-              placeholder="Email Address"
+              placeholder={t("sections.contact.email")}
               className="w-full bg-white/20 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
@@ -98,7 +100,7 @@ const ContactForm = () => {
             name="message"
             value={formValues.message}
             onChange={handleChange}
-            placeholder="Escribe un mensaje..."
+            placeholder={t("sections.contact.message")}
             rows="5"
             className="w-full bg-white/20 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
@@ -109,7 +111,9 @@ const ContactForm = () => {
           disabled={isSending}
           className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md"
         >
-          {isSending ? "Enviando mensaje..." : "Enviar"}
+          {isSending
+            ? t("sections.contact.sending")
+            : t("sections.contact.send")}
         </button>
       </form>
     </div>

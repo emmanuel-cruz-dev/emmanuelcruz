@@ -37,8 +37,8 @@ const LastModifiedDate = ({ currentLanguage }) => {
 
   return (
     <div className="flex items-center gap-2 text-gray-600">
-      <FaCalendarAlt className="w-7 h-7" />
-      <p className="text-xs">
+      <FaCalendarAlt className="w-8 h-8" />
+      <p className="text-[10px]">
         {lastUpdateText}:
         <br />
         <span className="whitespace-nowrap">{lastModified}</span>

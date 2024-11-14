@@ -19,13 +19,15 @@ const resources = {
         phrase: "There is no plan B for success",
         channels: "Code Channels",
         freecodecamp: "Technical courses in spanish",
-        alexcg: "Modern web development",
+        platzi: "Online professional learning",
         projects: "Projects in progress",
         eros: "Bookstore website",
         nephews: "Artists platform",
-        privacy: "Privacy policy",
-        terms: "Terms of service",
-        rights: "All rights reserved",
+        award: "Achievements",
+        congratulations:
+          "Congratulations! You've reached the epic end of my portfolio. You've earned the",
+        rank: "professional navigator",
+        thanks: "medal. Thanks for visiting!",
         paragraph: "Developed by",
         place: "in",
       },
@@ -84,10 +86,21 @@ const resources = {
           title: "I'm just a message away",
           description:
             "Available for projects, inquiries, and collaborations. Don't hesitate to write me.",
+          subtitle: "Get in touch",
+          name: "Name",
+          email: "Email Address",
+          message: "Message...",
+          send: "Send",
+          sending: "Sending message...",
         },
         projects: {
           title: "Featured Works",
           description: "Explore a sample of my work and skills in action.",
+          pollos:
+            "This site brings the fictional restaurant from Breaking Bad into the digital world. Inspired by the visual style of restaurants like KFC, this site combines an attractive design with details that refer to the series. Explore a visual experience that will make you feel like you're in a real Gus Fring franchise.",
+          button: "Visit site",
+          portfolio:
+            "This project showcases my ability to create responsive and efficient web interfaces, featuring dark mode options and language selection. Here you will find projects that reflect my commitment to detail, performance, and functionality in frontend development",
         },
         // más secciones...
       },
@@ -110,18 +123,20 @@ const resources = {
         phrase: "No hay plan B para el éxito",
         channels: "Canales de código",
         freecodecamp: "Cursos técnicos en español",
-        alexcg: "Desarrollo web moderno",
+        platzi: "Aprendizaje profesional en línea",
         projects: "Proyectos en Curso",
         eros: "Sitio web de librería",
         nephews: "Plataforma de artistas",
-        privacy: "Política de privacidad",
-        terms: "Términos del servicio",
-        rights: "Derechos reservados",
+        award: "Logros",
+        congratulations:
+          "¡Felicidades! Alcanzaste el épico final de mi portfolio. Te ganaste la medalla de",
+        rank: "navegante profesional.",
+        thanks: "¡Gracias por tu visita!",
         paragraph: "Desarrollado por",
         place: "en",
       },
       sections: {
-        welcome: "Hola! Soy Emmanuel.",
+        welcome: "Hola! Soy Emmanuel",
         hero: {
           title: "desarrollador frontend",
           description:
@@ -176,11 +191,22 @@ const resources = {
           title: "Estoy a un mensaje de distancia",
           description:
             "Disponible para proyectos, consultas y colaboraciones. No dudes en escribirme.",
+          subtitle: "Contactame",
+          name: "Nombre",
+          email: "Correo electrónico",
+          message: "Mensaje...",
+          send: "Enviar",
+          sending: "Enviando mensaje...",
         },
         projects: {
           title: "Trabajos Destacados",
           description:
             "Explora una muestra de mi trabajo y habilidades en acción.",
+          pollos:
+            "Este sitio lleva el restaurante ficticio de Breaking Bad al mundo digital. Inspirado en el estilo visual de restaurantes como KFC, esta página combina un diseño atractivo con detalles que remiten a la serie. Explora una experiencia visual que te hará sentir en una verdadera franquicia de Gus Fring.",
+          button: "Visitar sitio",
+          portfolio:
+            "Este proyecto demuestra mi habilidad para crear interfaces web responsivas y eficientes, cuenta con opciones de modo oscuro y selección de idioma. Aquí encontrarás proyectos que reflejan mi compromiso con el detalle, el rendimiento y la funcionalidad en desarrollo frontend",
         },
         // más secciones...
       },
@@ -196,7 +222,7 @@ i18n
     lng: "es", // idioma por defecto
     fallbackLng: "en", // idioma de respaldo
     interpolation: {
-      escapeValue: false, // React ya se encarga de esto
+      escapeValue: false,
     },
   });
 

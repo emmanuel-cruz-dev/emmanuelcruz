@@ -1,32 +1,26 @@
-@use "variables" as *;
-
+@charset "UTF-8";
 @import "../styles/slick.css";
 @import "../styles/slick-theme.css";
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 /* Estilos globales */
-
 html {
-  background-color: $light-background;
-  color: $light-text;
+  background-color: #ffffff;
+  color: #000000;
   scroll-behavior: smooth;
   transition: background-color 0.3s ease;
-
-  &.dark {
-    background-color: $dark-background;
-    color: $dark-text;
-  }
+}
+html.dark {
+  background-color: #111827;
+  color: #ffffff;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: $font-family-poppins;
-  //border: 1px solid red;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -50,50 +44,43 @@ img {
 
 /* NavBar */
 .bg-light {
-  background-color: #ffffff; // Color de fondo para el tema claro
+  background-color: #ffffff;
   transition: background-color 0.3s ease;
 }
 
 .bg-dark {
-  background-color: #111827; // Color de fondo para el tema oscuro
+  background-color: #111827;
   transition: background-color 0.3s ease;
 }
 
 .nav-item {
   position: relative;
-  // display: inline-block;
   font-weight: 500;
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.5rem;
-    height: 2px; // Altura del subrayado
-    width: 100%; // Ancho inicial
-    background: linear-gradient(
-      to right,
-      rgba(255, 0, 51, 0.8),
-      rgba(77, 0, 15, 0.8)
-    );
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out; // Animación suave
-  }
-
-  &:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
+}
+.nav-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.5rem;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, rgba(255, 0, 51, 0.8), rgba(77, 0, 15, 0.8));
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+.nav-item:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .nav__label {
   position: relative;
+  width: -moz-fit-content;
   width: fit-content;
 }
 
 /* Hero */
-
 .btn {
   display: flex;
   justify-content: space-evenly;
@@ -101,40 +88,35 @@ img {
   height: 40px;
   width: 100%;
   max-width: 172px;
-  color: $text-gray;
+  color: #e0e0e0;
   font-weight: 500;
   white-space: nowrap;
   letter-spacing: 0.05em;
   background-color: #000;
   transition: background-color 0.3s ease, color 0.3s ease;
-
-  &:hover {
-    color: $text-light;
-  }
-
-  &--red {
-    background-color: $color-tertiary;
-
-    &:hover {
-      background-color: #000;
-    }
-  }
+}
+.btn:hover {
+  color: #fff;
+}
+.btn--red {
+  background-color: #ff0033;
+}
+.btn--red:hover {
+  background-color: #000;
 }
 
 /* Margen de secciones */
-
 .scroll-top {
   scroll-margin-top: 80px; /* Ajusta a la altura de tu navbar */
 }
 
 /* Efecto rellenado botón ir arriba */
-
 .up-btn::after {
   content: "";
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: $color-tertiary;
+  background-color: #ff0033;
   border-radius: 50%;
   transition: background-color 0.3s ease;
 }
@@ -144,7 +126,6 @@ img {
 }
 
 /* Sección Habilidades */
-
 .card {
   display: flex;
   flex-direction: column;
@@ -165,7 +146,8 @@ img {
 .slick-slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   display: block; /* Esto elimina el espacio extra debajo de la imagen */
 }
 
@@ -179,36 +161,33 @@ img {
   height: 100% !important;
 }
 
-// Estilos para los puntos de navegación
 .slick-dots {
   position: absolute;
-  bottom: 10px; // Ajusta según la distancia que quieras del borde inferior
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   display: flex !important;
   align-items: center;
   justify-content: center;
-  gap: 8px; // Espaciado entre los puntos
+  gap: 8px;
   z-index: 10;
 }
 
 .slick-dots li button:before {
-  font-size: 14px; // Tamaño de los puntos
-  color: #8b8b8bb0; // Color de los puntos
+  font-size: 14px;
+  color: rgba(139, 139, 139, 0.6901960784);
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
 }
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: $color-tertiary;
+  color: #ff0033;
 }
 
 .slick-dots li button:hover:before {
   opacity: 1;
 }
-
-// Proyectos
 
 .card__btn {
   display: flex;
@@ -218,32 +197,27 @@ img {
   width: 100%;
   max-width: 144px;
   font-size: 0.9em;
-  color: $text-light;
+  color: #fff;
   font-weight: 500;
   white-space: nowrap;
   letter-spacing: 0.05em;
   background-color: #000;
   transition: background-color 0.3s ease, color 0.3s ease;
-
-  &:hover {
-    background-color: $color-tertiary;
-  }
-
-  span {
-    font-size: 1.2rem;
-  }
+}
+.card__btn:hover {
+  background-color: #ff0033;
+}
+.card__btn span {
+  font-size: 1.2rem;
 }
 
-// Footer
-.footer__list,
-.footer__link {
-  a {
-    transition: color 0.5s ease;
-
-    &:hover {
-      color: $color-tertiary;
-    }
-  }
+.footer__list a,
+.footer__link a {
+  transition: color 0.5s ease;
+}
+.footer__list a:hover,
+.footer__link a:hover {
+  color: #ff0033;
 }
 
 .footer__title {
@@ -253,17 +227,12 @@ img {
   letter-spacing: 1px;
 }
 
-.footer__item {
-  h4 {
-    font-weight: 600;
-    transition: color 0.3s ease;
-  }
-
-  a {
-    &:hover h4 {
-      color: $color-tertiary;
-    }
-  }
+.footer__item h4 {
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.footer__item a:hover h4 {
+  color: #ff0033;
 }
 
 .footer__paragraph {
@@ -271,28 +240,23 @@ img {
   font-weight: normal;
 }
 
-.footer__list {
-  li {
-    padding: 0 10px; // ajusta el padding según sea necesario
-    position: relative;
-
-    &:not(:last-child)::after {
-      content: "|";
-      position: absolute;
-      right: -14px;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    li:not(:last-child)::after {
-      content: "";
-    }
+.footer__list li {
+  padding: 0 10px;
+  position: relative;
+}
+.footer__list li:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -14px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media screen and (max-width: 768px) {
+  .footer__list li:not(:last-child)::after {
+    content: "";
   }
 }
 
-// Notificacion Toast
 .toast-container {
   position: fixed;
   bottom: 20px;
@@ -304,8 +268,6 @@ img {
 .toast {
   display: flex;
   align-items: center;
-  // background-color: #333;
-  // background-color: $color-tertiary;
   color: #fff;
   padding: 16px;
   border-radius: 8px;
@@ -326,7 +288,7 @@ img {
 }
 
 .toast-close {
-  background: #ffffff3a;
+  background: rgba(255, 255, 255, 0.2274509804);
   border: none;
   border-radius: 4px;
   color: #fff;
@@ -343,7 +305,6 @@ img {
   bottom: 0;
   left: 0;
   height: 4px;
-  // background-color: #4caf50;
   transition: width 0.1s linear;
 }
 
@@ -357,7 +318,6 @@ img {
     opacity: 1;
   }
 }
-
 .slide-out {
   animation: slideOut 0.5s ease forwards;
 }
@@ -367,4 +327,4 @@ img {
     transform: translateX(100%);
     opacity: 0;
   }
-}
+}/*# sourceMappingURL=main.css.map */
