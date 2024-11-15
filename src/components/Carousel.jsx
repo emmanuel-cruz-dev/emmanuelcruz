@@ -13,7 +13,7 @@ const Carousel = ({ img1, img2, img3 }) => {
   };
 
   return (
-    <div>
+    <div className="projects__item__slider overflow-hidden">
       <Slider {...settings}>
         <div>
           <img src={img1} alt="" />

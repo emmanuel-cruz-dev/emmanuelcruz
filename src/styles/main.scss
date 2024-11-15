@@ -182,7 +182,7 @@ img {
 // Estilos para los puntos de navegación
 .slick-dots {
   position: absolute;
-  bottom: 10px; // Ajusta según la distancia que quieras del borde inferior
+  bottom: 8px; // Ajusta según la distancia que quieras del borde inferior
   left: 50%;
   transform: translateX(-50%);
   display: flex !important;
@@ -232,6 +232,26 @@ img {
   span {
     font-size: 1.2rem;
   }
+}
+
+.projects__item__card {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.projects__item:hover .projects__item__card {
+  opacity: 1;
+}
+
+.projects__item__btn {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.projects__item__card__container:hover .projects__item__btn {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 // Footer

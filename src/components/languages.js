@@ -101,6 +101,7 @@ const resources = {
           button: "Visit site",
           portfolio:
             "This project showcases my ability to create responsive and efficient web interfaces, featuring dark mode options and language selection. Here you will find projects that reflect my commitment to detail, performance, and functionality in frontend development",
+          link: "More details",
         },
         // más secciones...
       },
@@ -207,6 +208,7 @@ const resources = {
           button: "Visitar sitio",
           portfolio:
             "Este proyecto demuestra mi habilidad para crear interfaces web responsivas y eficientes, cuenta con opciones de modo oscuro y selección de idioma. Aquí encontrarás proyectos que reflejan mi compromiso con el detalle, el rendimiento y la funcionalidad en desarrollo frontend",
+          link: "Más detalles",
         },
         // más secciones...
       },

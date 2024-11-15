@@ -7,6 +7,7 @@ import Projects from "./components/Projects";
 import "./styles/main.scss";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Commitment from "./components/Commitment";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <ScrollToTopButton />
       <About />
+      <Commitment />
       <Projects />
       <Skills />
       <Contact />
