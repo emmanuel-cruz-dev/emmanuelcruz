@@ -100,9 +100,10 @@ img {
   align-items: center;
   height: 40px;
   width: 100%;
-  max-width: 172px;
+  max-width: 12rem;
   color: $text-gray;
-  font-weight: 500;
+  text-transform: uppercase;
+  font-weight: 600;
   white-space: nowrap;
   letter-spacing: 0.05em;
   background-color: #000;

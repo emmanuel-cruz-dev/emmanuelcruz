@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaFileAlt, FaPaperPlane } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPaperPlane } from "react-icons/fa";
 
 const SocialLinks = () => {
   return (
@@ -21,15 +21,7 @@ const SocialLinks = () => {
       >
         <FaGithub className="w-full h-full" />
       </a>
-      <a
-        title="Curriculum Vitae"
-        className="w-8 hover:text-colorTertiary transition-colors duration-500 ease-in-out"
-        href="/Emmanuel-Cruz-CV.pdf"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FaFileAlt className="w-full h-full" />
-      </a>
+
       <a
         title="Email"
         className="w-8 hover:text-colorTertiary transition-colors duration-500 ease-in-out"
