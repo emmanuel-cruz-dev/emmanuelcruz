@@ -56,7 +56,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-            <div className="flex flex-col lg:justify-around gap-6 p-4 pl-8 lg:gap-4 bg-slate-600 z-20">
+            <div className="flex flex-col lg:justify-around gap-6 p-4 lg:pl-8 lg:gap-4 bg-slate-600 z-20">
               <div className="flex flex-col gap-4 lg:gap-2">
                 <h2 className="font-bold text-lg lg:text-2xl">
                   Los Pollos Hermanos
@@ -130,7 +130,7 @@ const Projects = () => {
               <Carousel img1={Back1} img2={Back2} img3={Back3} />
             </div>
 
-            <div className="flex flex-col lg:justify-around gap-6 p-4 pl-8 lg:gap-4 bg-slate-600 z-20">
+            <div className="flex flex-col lg:justify-around gap-6 p-4 lg:pl-8 lg:gap-4 bg-slate-600 z-20">
               <div className="flex flex-col gap-4 lg:gap-2">
                 <h2 className="font-bold text-lg lg:text-2xl">
                   Emmanuel Cruz | Portfolio
