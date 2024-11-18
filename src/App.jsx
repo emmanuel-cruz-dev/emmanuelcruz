@@ -16,7 +16,7 @@ function App() {
       <Hero />
       <ScrollToTopButton />
       <About />
-      <Commitment />
+      {/* <Commitment /> */}
       <Projects />
       <Skills />
       <Contact />

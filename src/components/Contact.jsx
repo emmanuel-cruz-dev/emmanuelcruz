@@ -26,26 +26,13 @@ const Contact = () => {
         <h3 className="text-lg">{t("sections.contact.description")}</h3>
       </div>
       <article className="flex flex-col gap-10 justify-between py-16">
-        <article className="flex flex-col md:flex-row gap-8 items-center justify-around">
-          <article className="order-2 md:order-none">
+        <article className="flex flex-col md:flex-row gap-4">
+          <article className="order-2 md:order-none flex-1">
             <ContactForm />
           </article>
 
-          <article className="flex flex-col text-center gap-4">
-            <figure>
-              <img
-                className="w-40 mx-auto rounded-full"
-                src={BlackCat}
-                alt="Foto de perfil"
-              />
-            </figure>
-            <div className="flex flex-col gap-2">
-              <span className="flex items-center gap-2">
-                <FaMapMarkerAlt /> Ubicado en Buenos aires, Argentina
-              </span>
-            </div>
-            <div className="flex gap-4 justify-center">
-              <SocialLinks />
+          <article className="contact__info flex flex-col gap-4 justify-end py-4 flex-1 mx-auto">
+            <div className="buttons hidden">
               <button
                 onClick={() =>
                   showToast("success", "¡Éxito! Mensaje enviado correctamente.")
@@ -65,6 +52,18 @@ const Contact = () => {
               >
                 Error
               </button>
+            </div>
+
+            <div className="flex flex-col gap-3 bg-black/80 text-white p-4 w-fit mx-auto select-none">
+              <div className="flex justify-center items-center gap-2">
+                <span className="text-xl">
+                  <FaMapMarkerAlt />
+                </span>
+                Buenos aires, Argentina
+              </div>
+              {/* <div className="contact__social-links flex justify-center items-center">
+                <SocialLinks />
+              </div> */}
             </div>
           </article>
         </article>

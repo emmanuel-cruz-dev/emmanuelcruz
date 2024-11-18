@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header
-      className={`flex justify-between items-center p-4 h-20 md:sticky md:top-0 z-30 ${
+      className={`flex justify-between items-center p-4 px-10 h-20 md:sticky md:top-0 z-30 ${
         theme === "dark" ? "bg-dark" : "bg-light"
       }`}
     >

@@ -14,9 +14,27 @@ import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
 import SassLogo from "../assets/icons/sass-logo.png";
 import { FaGithub, FaGlobe, FaEye } from "react-icons/fa";
 import Carousel from "./Carousel";
+import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   const { t } = useTranslation();
+
+  const project3 = {
+    title: "Emmanuel Cruz | Portfolio",
+    description: t("sections.projects.portfolio"),
+    img1: Back1,
+    img2: Back2,
+    img3: Back3,
+    href: "#",
+    // technologies: [
+    //   { name: "React", img: ReactLogo },
+    //   { name: "Tailwind CSS", img: TailwindLogo },
+    //   { name: "Sass", img: SassLogo },
+    // ],
+    link: "https://emmanuel-cruz.netlify.app/",
+    github: "https://github.com/EmmaLCruz/emmanuelcruz",
+  };
+
   return (
     <section
       className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
@@ -180,6 +198,8 @@ const Projects = () => {
               </div>
             </div>
           </article>
+          {/* Proyecto 3 */}
+          <ProjectsCard {...project3} />
         </div>
       </article>
     </section>

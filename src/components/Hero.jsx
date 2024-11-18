@@ -10,10 +10,10 @@ const Hero = () => {
       <article className="flex flex-col justify-around flex-wrap gap-4 sm:flex-row md:mx-auto">
         <div className="flex flex-col gap-2 my-auto md:gap-8">
           <div className="flex flex-col gap-3">
-            <h1 className="font-bold text-3xl lg:text-4xl">
+            <h1 className="font-bold text-3xl lg:text-5xl">
               {t("sections.welcome")}.
             </h1>
-            <h2 className="font-bold text-2xl lg:text-3xl capitalize">
+            <h2 className="font-bold text-2xl lg:text-4xl capitalize">
               {t("sections.hero.title")}.
             </h2>
           </div>

@@ -52,12 +52,16 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="bg-white/30 rounded-lg shadow-md p-6 max-w-md mx-auto">
-      <h2 className="text-2xl font-bold mb-4">
+    <div className="flex flex-col justify-around gap-4 bg-white/30 shadow-md p-6 max-w-md mx-auto h-full">
+      <h2 className="text-2xl font-bold mb-4 xl:text-3xl">
         {t("sections.contact.subtitle")}
       </h2>
-      <form className="text-sm" ref={form} onSubmit={sendEmail}>
-        <div className="grid grid-cols-2 gap-4">
+      <form
+        className="text-sm flex flex-col justify-between h-full"
+        ref={form}
+        onSubmit={sendEmail}
+      >
+        <div className="grid lg:grid-cols-2 lg:gap-4">
           <div className="mb-4">
             <label
               htmlFor="name"
@@ -71,7 +75,7 @@ const ContactForm = () => {
               onChange={handleChange}
               placeholder={t("sections.contact.name")}
               title="Completa tu nombre"
-              className="w-full border bg-white/20 border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full border bg-white/20 border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
@@ -87,7 +91,7 @@ const ContactForm = () => {
               value={formValues.user_email}
               onChange={handleChange}
               placeholder={t("sections.contact.email")}
-              className="w-full bg-white/20 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full bg-white/20 border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
           </div>
@@ -102,14 +106,14 @@ const ContactForm = () => {
             onChange={handleChange}
             placeholder={t("sections.contact.message")}
             rows="5"
-            className="w-full bg-white/20 border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full bg-white/20 border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required
           ></textarea>
         </div>
         <button
           type="submit"
           disabled={isSending}
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md"
+          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4"
         >
           {isSending
             ? t("sections.contact.sending")

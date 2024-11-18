@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
 import Logro from "../assets/icons/logro.png";
-import GesellImg from "../assets/images/ola-gesell.png";
+import LogoBlanco from "../assets/icons/logo-blanco.png";
 import freeCodeCampLogo from "../assets/images/freecodecamp-logo.jpg";
 import PlatziLogo from "../assets/images/platzi-logo.jpg";
 import ErosLogo from "../assets/images/eros-logo.jpg";
 import NephewsLogo from "../assets/images/nephews-logo.jpg";
 import LastModifiedDate from "./LastModifiedDate";
+import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
   const { i18n, t } = useTranslation();
@@ -14,17 +15,16 @@ const Footer = () => {
   return (
     <footer className="footer bg-black text-white select-none">
       <article className="flex flex-col lg:flex-row gap-10 justify-between items-center py-20 p-16 border-b border-gray-600">
-        <div className="flex flex-col items-center gap-7">
-          <div className="flex flex-col items-center gap-3 w-44">
-            <img className="w-32" src={GesellImg} alt="" />
-            <div className="flex flex-col items-center gap-2">
-              <h3 className="font-bold">Emmanuel Cruz</h3>
-              <h4 className="text-sm capitalize">{t("sections.hero.title")}</h4>
-              <p className="text-xs whitespace-nowrap">
-                "{t("footer.phrase")}."
-              </p>
-            </div>
+        <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col items-center gap-4 w-44">
+            <img
+              className="w-24"
+              src={LogoBlanco}
+              alt="Logo, una letra e entre corchetes"
+            />
+            <p className="text-xs whitespace-nowrap">"{t("footer.phrase")}."</p>
           </div>
+          <SocialLinks />
         </div>
 
         <div className="flex flex-col md:flex-row justify-between gap-8 lg:gap-12">
@@ -94,7 +94,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="achievements footer__item flex flex-col gap-4 h-full max-w-64">
+          <div className="achievements footer__item flex flex-col gap-4 h-full max-w-56">
             <h3 className="footer__title">{t("footer.award")}</h3>
 
             <p className="text-sm">
@@ -104,7 +104,7 @@ const Footer = () => {
               </span>{" "}
               {t("footer.thanks")}
             </p>
-            <img className="w-12 mx-auto" src={Logro} alt="" />
+            <img className="w-14 mx-auto" src={Logro} alt="" />
           </div>
         </div>
       </article>

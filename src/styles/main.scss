@@ -100,7 +100,8 @@ img {
   align-items: center;
   height: 40px;
   width: 100%;
-  max-width: 12rem;
+  // max-width: 12rem;
+  font-size: 1em;
   color: $text-gray;
   text-transform: uppercase;
   font-weight: 600;
@@ -253,6 +254,30 @@ img {
 .projects__item__card__container:hover .projects__item__btn {
   opacity: 1;
   transform: translateX(0);
+}
+
+// Contacto
+
+.contact__info {
+  background-image: url("../assets/images/mapa-argentina.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 28rem;
+  min-height: 24rem;
+}
+
+@media (min-width: 768px) {
+  .contact__info {
+    max-width: 100%;
+  }
+}
+
+.contact__social-links {
+  a {
+    width: 24px;
+  }
 }
 
 // Footer

@@ -21,6 +21,7 @@ import WebflowLogo from "../assets/icons/webflow-logo.png";
 import MobileFirstLogo from "../assets/icons/mobilefirst-logo.png";
 import ResponsiveLogo from "../assets/icons/responsive-logo.png";
 import BemLogo from "../assets/icons/bem-logo.png";
+import SkillsCard from "./SkillsCard";
 
 const Skills = () => {
   const { t } = useTranslation();
@@ -36,213 +37,145 @@ const Skills = () => {
         </div>
         <article className="flex flex-col gap-8">
           {/* Desarrollo Web */}
-          <article className="flex flex-col gap-8 items-center w-fit mx-auto text-center bg-sky-300/20 rounded-md py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+          <article className="flex flex-col gap-8 items-center w-fit mx-auto text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
             <h4 className="font-semibold text-xl">
               {t("sections.skills.subtitle1")}
             </h4>
             <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-              <div className="card">
-                <img
-                  src={HTMLLogo}
-                  alt="HTML Logo"
-                  title={t("sections.skills.html")}
-                  className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <p className="font-semibold">HTML</p>
-              </div>
+              <SkillsCard
+                title={t("sections.skills.html")}
+                src={HTMLLogo}
+                alt="HTML"
+              />
 
-              <div className="card">
-                <img
-                  src={CssLogo}
-                  alt="CSS Logo"
-                  title={t("sections.skills.css")}
-                  className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <p className="font-semibold">CSS</p>
-              </div>
+              <SkillsCard
+                title={t("sections.skills.css")}
+                src={CssLogo}
+                alt="CSS"
+              />
 
-              <div className="card">
-                <img
-                  src={JavascriptLogo}
-                  alt="Javascript Logo"
-                  title={t("sections.skills.javascript")}
-                  className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <p className="font-semibold">JavaScript</p>
-              </div>
+              <SkillsCard
+                title={t("sections.skills.javascript")}
+                src={JavascriptLogo}
+                alt="Javascript"
+              />
 
-              <div className="card">
-                <img
-                  src={ReactLogo}
-                  alt="React Logo"
-                  title={t("sections.skills.react")}
-                  className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <p className="font-semibold">React</p>
-              </div>
+              <SkillsCard
+                title={t("sections.skills.react")}
+                src={ReactLogo}
+                alt="React"
+              />
 
-              <div className="card">
-                <img
-                  src={NodeLogo}
-                  alt="Node Logo"
-                  title={t("sections.skills.nodejs")}
-                  className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <p className="font-semibold">Node.js</p>
-              </div>
+              <SkillsCard
+                title={t("sections.skills.nodejs")}
+                src={NodeLogo}
+                alt="Node.js"
+              />
 
-              <div className="card">
-                <img
-                  src={SassLogo}
-                  alt="Sass Logo"
-                  title={t("sections.skills.sass")}
-                  className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <p className="font-semibold">Sass</p>
-              </div>
+              <SkillsCard
+                title={t("sections.skills.sass")}
+                src={SassLogo}
+                alt="Sass"
+              />
 
-              <div className="card">
-                <img
-                  src={GitLogo}
-                  alt="Git Logo"
-                  title={t("sections.skills.git")}
-                  className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                />
-                <p className="font-semibold">Git</p>
-              </div>
+              <SkillsCard
+                title={t("sections.skills.git")}
+                src={GitLogo}
+                alt="Git"
+              />
             </article>
           </article>
 
           <div className="flex flex-wrap gap-8 justify-center">
             {/* Frameworks y Bibliotecas */}
-            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 rounded-md py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
               <h4 className="font-semibold text-xl">
                 {t("sections.skills.subtitle2")}
               </h4>
               <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-                <div className="card">
-                  <img
-                    src={TailwindLogo}
-                    alt="Tailwind Logo"
-                    title={t("sections.skills.tailwind")}
-                    className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  <p className="font-semibold">Tailwind CSS</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.tailwind")}
+                  src={TailwindLogo}
+                  alt="Tailwind"
+                />
 
-                <div className="card">
-                  <img
-                    src={BootstrapLogo}
-                    alt="Bootstrap Logo"
-                    title={t("sections.skills.bootstrap")}
-                    className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  <p className="font-semibold">Bootstrap</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.bootstrap")}
+                  src={BootstrapLogo}
+                  alt="Bootstrap"
+                />
               </article>
             </article>
 
             {/* Herramientas de Desarrollo */}
-            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 rounded-md py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
               <h4 className="font-semibold text-xl">
                 {t("sections.skills.subtitle3")}
               </h4>
               <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-                <div className="card">
-                  <img
-                    src={VsCodeLogo}
-                    alt="Visual Studio Code Logo"
-                    title={t("sections.skills.vscode")}
-                    className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  <p className="font-semibold">Visual Studio Code</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.vscode")}
+                  src={VsCodeLogo}
+                  alt="Visual Studio Code"
+                />
 
-                <div className="card">
-                  <img
-                    src={GithubLogo}
-                    alt="Github Logo"
-                    title={t("sections.skills.github")}
-                    className="w-16 opacity-60 hover:opacity-100 transition-all duration-300"
-                  />
-                  <p className="font-semibold">GitHub</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.github")}
+                  src={GithubLogo}
+                  alt="GitHub"
+                />
               </article>
             </article>
 
             {/* Diseño y Prototipado */}
-            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 rounded-md py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
               <h4 className="font-semibold text-xl">
                 {t("sections.skills.subtitle4")}
               </h4>
               <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-                <div className="card">
-                  <img
-                    src={FigmaLogo}
-                    alt="Figma Logo"
-                    title={t("sections.skills.figma")}
-                    className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  <p className="font-semibold">Figma</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.figma")}
+                  src={FigmaLogo}
+                  alt="Figma"
+                />
 
-                <div className="card">
-                  <img
-                    src={PhotoshopLogo}
-                    alt="Photoshop Logo"
-                    title={t("sections.skills.photoshop")}
-                    className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  <p className="font-semibold">Photoshop</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.photoshop")}
+                  src={PhotoshopLogo}
+                  alt="Photoshop"
+                />
 
-                <div className="card">
-                  <img
-                    src={WebflowLogo}
-                    alt="Webflow Logo"
-                    title={t("sections.skills.webflow")}
-                    className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  <p className="font-semibold">Webflow</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.webflow")}
+                  src={WebflowLogo}
+                  alt="Webflow"
+                />
               </article>
             </article>
 
             {/* Metodologías */}
-            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 rounded-md py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
               <h4 className="font-semibold text-xl">
                 {t("sections.skills.subtitle5")}
               </h4>
               <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-                <div className="card">
-                  <img
-                    src={MobileFirstLogo}
-                    alt="Mobile-first Design Logo"
-                    title={t("sections.skills.mobileFirst")}
-                    className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  <p className="font-semibold">Mobile-first</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.mobileFirst")}
+                  src={MobileFirstLogo}
+                  alt="Mobile-first Design"
+                />
 
-                <div className="card">
-                  <img
-                    src={ResponsiveLogo}
-                    alt="Responsive Design Logo"
-                    title={t("sections.skills.responsive")}
-                    className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
-                  />
-                  <p className="font-semibold">Responsive Design</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.responsive")}
+                  src={ResponsiveLogo}
+                  alt="Responsive Design"
+                />
 
-                <div className="card">
-                  <img
-                    src={BemLogo}
-                    alt="BEM Logo"
-                    title={t("sections.skills.bem")}
-                    className="w-16 opacity-60 hover:opacity-100 transition-all duration-300"
-                  />
-                  <p className="font-semibold">BEM</p>
-                </div>
+                <SkillsCard
+                  title={t("sections.skills.bem")}
+                  src={BemLogo}
+                  alt="BEM"
+                />
               </article>
             </article>
           </div>
