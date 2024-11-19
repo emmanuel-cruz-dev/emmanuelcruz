@@ -10,13 +10,13 @@
 /* Estilos globales */
 
 html {
-  background-color: $light-background;
+  background: $light-background;
   color: $light-text;
   scroll-behavior: smooth;
   transition: background-color 0.3s ease;
 
   &.dark {
-    background-color: $dark-background;
+    background: $dark-background;
     color: $dark-text;
   }
 }

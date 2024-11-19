@@ -1,6 +1,8 @@
 import { FaGithub, FaGlobe, FaEye } from "react-icons/fa";
 import Carousel from "./Carousel";
 import { useTranslation } from "react-i18next";
+import ResponsiveLogo from "../assets/icons/responsiveweb-card-logo.png";
+import DarkMode from "../assets/icons/darkmode-logo.png";
 import idiomasLogo from "../assets/icons/idiomas-logo.png";
 
 const ProjectsCard = ({
@@ -10,37 +12,43 @@ const ProjectsCard = ({
   img2,
   img3,
   href,
+  flyer,
+  technologies,
   link,
   github,
 }) => {
   const { t } = useTranslation();
   const icons = {
     responsive: (
-      <span className="uppercase font-bold text-[0.75rem] text-white">
-        100% responsive
-      </span>
+      <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.3rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-7">
+        <img src={ResponsiveLogo} alt="Logo de responsive" className="w-9" />
+        <span className="uppercase font-bold text-[0.75rem] text-white">
+          100% responsive
+        </span>
+      </div>
     ),
     dark: (
-      <span className="uppercase font-bold text-[0.75rem] text-white">
-        dark/light modo
-      </span>
+      <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.3rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-7">
+        <img src={DarkMode} alt="Logo de darkmode" className="w-9" />
+        <span className="uppercase font-bold text-[0.75rem] text-white">
+          dark/light modo
+        </span>
+      </div>
     ),
     language: (
-      <span title={t("navbar.systemMode")} className="material-icons-outlined">
-        multilenguaje
-      </span>
+      <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.3rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-7">
+        <img src={idiomasLogo} alt="Logo de idiomas" className="w-9" />
+        <span className="uppercase font-bold text-[0.75rem] text-white">
+          multilenguage
+        </span>
+      </div>
     ),
   };
 
   return (
-    <article className="projects__item flex w-full flex-col lg:flex-row lg:w-10/12 overflow-hidden mx-auto">
+    <article className="projects__item flex w-full flex-col lg:flex-row xl:w-10/12 overflow-hidden mx-auto">
       <div className="projects__item__card__container lg:w-[28rem] relative">
-        <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.3rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-6">
-          {/* <img src={flyerLogo} alt={`${flyerLogo}`} className="w-9" /> */}
-          <span className="uppercase font-bold text-[0.75rem] text-white">
-            100% responsive
-          </span>
-        </div>
+        {flyer && icons[flyer]}
         <Carousel img1={img1} img2={img2} img3={img3} />
         <div className="absolute bottom-3 left-3 overflow-hidden rounded-full">
           <a
@@ -59,32 +67,20 @@ const ProjectsCard = ({
           <h2 className="font-bold text-lg lg:text-2xl">{title}</h2>
           <p className="text-sm xl:w-11/12">{description}</p>
         </div>
-        {/* <div className="flex gap-1">
-          <img
-            src={HTMLLogo}
-            alt="HTML Logo"
-            title={t("sections.skills.html")}
-            className="w-10"
-          />
-          <img
-            src={CssLogo}
-            alt="CSS Logo"
-            title={t("sections.skills.css")}
-            className="w-10"
-          />
-          <img
-            src={JavascriptLogo}
-            alt="Javascript Logo"
-            title={t("sections.skills.javascript")}
-            className="w-10"
-          />
-          <img
-            src={JqueryLogo}
-            alt="Jquery Logo"
-            title={t("sections.skills.javascript")}
-            className="w-10"
-          />
-        </div> */}
+
+        <div className="technologies flex gap-1">
+          {technologies.map((tech, index) => (
+            <div key={index} className="technology-item">
+              <img
+                src={tech.img}
+                alt={`${tech.name} logo`}
+                className="technology-logo w-10"
+                title={tech.name}
+              />
+            </div>
+          ))}
+        </div>
+
         <div className="buttons flex gap-4">
           <a
             className="card__btn"

@@ -3,8 +3,6 @@ import Back1 from "../assets/images/back1.jpg";
 import Back2 from "../assets/images/back2.jpg";
 import Back3 from "../assets/images/back3.jpg";
 
-import ResponsiveLogo from "../assets/icons/responsiveweb-card-logo.png";
-import DarkMode from "../assets/icons/darkmode-logo.png";
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
 import JavascriptLogo from "../assets/icons/javascript-logo.png";
@@ -12,25 +10,42 @@ import JqueryLogo from "../assets/icons/jquery-logo.png";
 import ReactLogo from "../assets/icons/react-logo.png";
 import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
 import SassLogo from "../assets/icons/sass-logo.png";
-import { FaGithub, FaGlobe, FaEye } from "react-icons/fa";
-import Carousel from "./Carousel";
 import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   const { t } = useTranslation();
 
-  const project3 = {
+  const project1 = {
+    title: "Los Pollos Hermanos",
+    description: t("sections.projects.pollos"),
+    img1: Back1,
+    img2: Back2,
+    img3: Back3,
+    href: "#",
+    flyer: "responsive",
+    technologies: [
+      { name: "HTML", img: HTMLLogo },
+      { name: "CSS", img: CssLogo },
+      { name: "Javascript", img: JavascriptLogo },
+      { name: "Jquery", img: JqueryLogo },
+    ],
+    link: "https://emmalcruz.github.io/los-pollos-hermanos-website/",
+    github: "https://github.com/EmmaLCruz/los-pollos-hermanos-website",
+  };
+
+  const project2 = {
     title: "Emmanuel Cruz | Portfolio",
     description: t("sections.projects.portfolio"),
     img1: Back1,
     img2: Back2,
     img3: Back3,
     href: "#",
-    // technologies: [
-    //   { name: "React", img: ReactLogo },
-    //   { name: "Tailwind CSS", img: TailwindLogo },
-    //   { name: "Sass", img: SassLogo },
-    // ],
+    flyer: "language",
+    technologies: [
+      { name: "React", img: ReactLogo },
+      { name: "Tailwind CSS", img: TailwindLogo },
+      { name: "Sass", img: SassLogo },
+    ],
     link: "https://emmanuel-cruz.netlify.app/",
     github: "https://github.com/EmmaLCruz/emmanuelcruz",
   };
@@ -49,7 +64,13 @@ const Projects = () => {
       <article>
         <div className="card-container flex flex-col gap-8 mx-auto">
           {/* Proyecto 1 */}
-          <article className="projects__item flex w-full flex-col lg:flex-row lg:w-10/12 overflow-hidden mx-auto">
+          <ProjectsCard {...project1} />
+
+          {/* Proyecto 2 */}
+          <ProjectsCard {...project2} />
+
+          {/* Proyecto 3 */}
+          {/* <article className="projects__item flex w-full flex-col lg:flex-row lg:w-10/12 overflow-hidden mx-auto">
             <div className="projects__item__card__container lg:w-[28rem] relative">
               <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.3rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-6">
                 <img
@@ -134,10 +155,10 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-          </article>
+          </article> */}
 
-          {/* Proyecto 2 */}
-          <article className="projects__item flex w-full flex-col lg:flex-row lg:w-10/12 overflow-hidden mx-auto">
+          {/* Proyecto 4 */}
+          {/* <article className="projects__item flex w-full flex-col lg:flex-row lg:w-10/12 overflow-hidden mx-auto">
             <div className="lg:w-[28rem] relative">
               <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.3rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-6">
                 <img src={DarkMode} alt="DarkMode Logo" className="w-9" />
@@ -197,9 +218,7 @@ const Projects = () => {
                 </a>
               </div>
             </div>
-          </article>
-          {/* Proyecto 3 */}
-          <ProjectsCard {...project3} />
+          </article> */}
         </div>
       </article>
     </section>
