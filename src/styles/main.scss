@@ -318,6 +318,13 @@ img {
   }
 }
 
+@media screen and (max-width: 768px) {
+  .footer__item {
+    width: 88vw;
+    max-width: 100%;
+  }
+}
+
 .footer__paragraph {
   font-size: 14px;
   font-weight: normal;

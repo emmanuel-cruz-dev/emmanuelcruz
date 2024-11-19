@@ -22,7 +22,7 @@ const Footer = () => {
               src={LogoBlanco}
               alt="Logo, una letra e entre corchetes"
             />
-            <p className="text-xs whitespace-nowrap">"{t("footer.phrase")}."</p>
+            <p className="whitespace-nowrap">"{t("footer.phrase")}."</p>
           </div>
           <SocialLinks />
         </div>
