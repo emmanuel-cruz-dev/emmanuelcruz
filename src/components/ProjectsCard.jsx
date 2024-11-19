@@ -13,6 +13,9 @@ const ProjectsCard = ({
   github,
 }) => {
   const { t } = useTranslation();
+  const flyerItem =
+    "3 opciones: 1. Responsive, 2. Dark/light, 3. Multi-lenguaje";
+
   return (
     <article className="projects__item flex w-full flex-col lg:flex-row lg:w-10/12 overflow-hidden mx-auto">
       <div className="projects__item__card__container lg:w-[28rem] relative">

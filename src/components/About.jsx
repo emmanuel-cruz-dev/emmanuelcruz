@@ -31,15 +31,17 @@ const About = () => {
               {t("sections.about.paragraph")}
             </p>
           </div>
-          <a
-            href="#contact"
-            className="flex items-center gap-2 text-white font-semibold bg-black rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary"
-          >
-            {t("sections.about.contactMe")}
-            <span className="text-[28px] material-icons-outlined">
-              keyboard_double_arrow_right
-            </span>
-          </a>
+          <div className="flex justify-end">
+            <a
+              href="#contact"
+              className="flex items-center gap-2 text-white font-semibold bg-black rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary"
+            >
+              {t("sections.about.contactMe")}
+              <span className="text-[28px] material-icons-outlined">
+                keyboard_double_arrow_right
+              </span>
+            </a>
+          </div>
         </div>
         <div className="bg-gradient-to-br from-[#F5F5F5]/80 to-[#E0E0E0]/80 rounded-xl p-4 overflow-hidden">
           <figure className="flex justify-self-end bg-gradient-to-bl from-gray-300 to-white rounded-full p-2 aspect-square w-12">
@@ -104,15 +106,17 @@ const About = () => {
                 {t("sections.about.copy")}
               </p>
             </div>
-            <a
-              href="#projects"
-              className="flex items-center font-semibold gap-2 bg-black text-white rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary"
-            >
-              {t("sections.about.button")}
-              <span className="text-[28px] material-icons-outlined">
-                search
-              </span>
-            </a>
+            <div className="flex justify-end">
+              <a
+                href="#projects"
+                className="flex items-center font-semibold gap-2 bg-black text-white rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary"
+              >
+                {t("sections.about.button")}
+                <span className="text-[28px] material-icons-outlined">
+                  search
+                </span>
+              </a>
+            </div>
           </div>
         </div>
         {/* <Commitment /> */}

@@ -4,7 +4,7 @@ import Back2 from "../assets/images/back2.jpg";
 import Back3 from "../assets/images/back3.jpg";
 
 import ResponsiveLogo from "../assets/icons/responsiveweb-card-logo.png";
-import DarkModeLogo from "../assets/icons/darkmode-logo.png";
+import DarkMode from "../assets/icons/darkmode-logo.png";
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
 import JavascriptLogo from "../assets/icons/javascript-logo.png";
@@ -140,7 +140,7 @@ const Projects = () => {
           <article className="projects__item flex w-full flex-col lg:flex-row lg:w-10/12 overflow-hidden mx-auto">
             <div className="lg:w-[28rem] relative">
               <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.3rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-6">
-                <img src={DarkModeLogo} alt="Responsive Logo" className="w-9" />
+                <img src={DarkMode} alt="DarkMode Logo" className="w-9" />
                 <span className="uppercase font-bold text-[0.75rem] text-white">
                   dark/light mode
                 </span>

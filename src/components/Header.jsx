@@ -14,9 +14,13 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <header
-      className={`flex justify-between items-center p-4 px-10 h-20 md:sticky md:top-0 z-30 ${
+      className={`flex justify-between items-center p-4 px-6 lg:px-10 h-20 md:sticky md:top-0 z-30 ${
         theme === "dark" ? "bg-dark" : "bg-light"
       }`}
     >
@@ -34,19 +38,19 @@ const Header = () => {
           isMenuOpen ? "block" : "hidden"
         } md:flex md:justify-between md:w-3/6 md:relative md:gap-4`}
       >
-        <li className="nav-item">
+        <li onClick={closeMenu} className="nav-item">
           <a href="#">{t("navbar.home")}</a>
         </li>
-        <li className="nav-item">
+        <li onClick={closeMenu} className="nav-item">
           <a href="#about">{t("navbar.about")}</a>
         </li>
-        <li className="nav-item">
+        <li onClick={closeMenu} className="nav-item">
           <a href="#projects">{t("navbar.projects")}</a>
         </li>
-        <li className="nav-item">
+        <li onClick={closeMenu} className="nav-item">
           <a href="#skills">{t("navbar.skills")}</a>
         </li>
-        <li className="nav-item">
+        <li onClick={closeMenu} className="nav-item">
           <a href="#contact">{t("navbar.contact")}</a>
         </li>
       </ul>
