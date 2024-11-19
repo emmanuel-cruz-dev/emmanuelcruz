@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import logoBlanco from "../assets/icons/logo-blanco.svg";
-import logoNegro from "../assets/icons/logo-negro.svg";
+import logoBlanco from "../assets/icons/logo-blanco.png";
+import logoNegro from "../assets/icons/logo-negro.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTheme } from "./ThemeContext";
 import { useState } from "react";
@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header
-      className={`flex justify-between items-center p-4 px-6 lg:px-10 h-20 md:sticky md:top-0 z-30 ${
+      className={`flex justify-between items-center p-4 px-6 lg:px-10 h-20 sticky top-0 z-30 ${
         theme === "dark" ? "bg-dark" : "bg-light"
       }`}
     >
@@ -35,8 +35,8 @@ const Header = () => {
         className={`absolute inset-0 grid gap-12 text-center place-content-center z-10 whitespace-nowrap ${
           theme === "dark" ? "bg-dark" : "bg-light"
         } ${
-          isMenuOpen ? "block" : "hidden"
-        } md:flex md:justify-between md:w-3/6 md:relative md:gap-4`}
+          isMenuOpen ? "block h-screen" : "hidden"
+        } md:flex md:justify-between md:w-3/6 md:relative md:gap-4 md:h-auto`}
       >
         <li onClick={closeMenu} className="nav-item">
           <a href="#">{t("navbar.home")}</a>

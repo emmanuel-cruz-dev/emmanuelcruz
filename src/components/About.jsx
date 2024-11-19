@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import Logo from "../assets/icons/logo-negro.svg";
+import Logo from "../assets/icons/logo-negro.png";
 import Screens from "../assets/images/responsive-screens.png";
 import Background from "../assets/images/front_end-background.webp";
 import { useTheme } from "./ThemeContext";
@@ -20,8 +20,8 @@ const About = () => {
       </div>
       <article className="grid md:grid-cols-3 gap-4 md:mx-auto lg:w-11/12">
         <div className="bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-8 justify-between p-6">
-          <div className="flex flex-col gap-8 lg:flex-row lg:justify-between">
-            <h4 className="font-bold text-2xl">
+          <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
+            <h4 className="font-bold text-2xl lg:w-3/5">
               <span className="font-medium">{t("sections.about.hi")}</span>{" "}
               Emmanuel Cruz,
               <br />
@@ -44,9 +44,9 @@ const About = () => {
           </div>
         </div>
         <div className="bg-gradient-to-br from-[#F5F5F5]/80 to-[#E0E0E0]/80 rounded-xl p-4 overflow-hidden">
-          <figure className="flex justify-self-end bg-gradient-to-bl from-gray-300 to-white rounded-full p-2 aspect-square w-12">
+          <figure className="flex justify-self-end items-center bg-gradient-to-bl from-gray-300 to-white rounded-full w-14 h-14">
             <img
-              className="h-full"
+              className="w-9 h-7 mx-auto"
               src={Logo}
               alt="Una letra e, entre corchetes"
             />
@@ -94,7 +94,7 @@ const About = () => {
                 : " from-colorTertiary/70 to-red-800"
             } rounded-xl w-full p-6 flex flex-col gap-8 justify-between`}
           >
-            <div className="flex flex-col gap-8 md:flex-row">
+            <div className="flex flex-col gap-6 md:flex-row">
               <h3 className="text-2xl font-medium">
                 {t("sections.about.subtitle")}{" "}
                 <span className="font-bold lowercase">

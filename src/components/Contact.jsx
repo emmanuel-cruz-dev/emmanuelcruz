@@ -31,7 +31,7 @@ const Contact = () => {
             <ContactForm />
           </article>
 
-          <article className="contact__info flex flex-col gap-4 justify-end py-4 flex-1 mx-auto">
+          <article className="contact__info hidden md:flex flex-col gap-4 justify-end py-4 flex-1 mx-auto">
             <div className="buttons hidden">
               <button
                 onClick={() =>
