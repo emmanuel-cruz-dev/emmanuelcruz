@@ -46,7 +46,7 @@ const About = () => {
         <div className="bg-gradient-to-br from-[#F5F5F5]/80 to-[#E0E0E0]/80 rounded-xl p-4 overflow-hidden">
           <figure className="flex justify-self-end items-center bg-gradient-to-bl from-gray-300 to-white rounded-full w-14 h-14">
             <img
-              className="w-9 h-7 mx-auto"
+              className="w-9 mx-auto"
               src={Logo}
               alt="Una letra e, entre corchetes"
             />
