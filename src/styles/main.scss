@@ -95,9 +95,15 @@ img {
 /* Hero */
 
 .hero__img {
+  transition: transform 0.3s ease;
+
   @media (max-width: 640px) {
     margin: auto;
   }
+}
+
+.hero__img:hover {
+  transform: scale(1.03) rotate(-8deg);
 }
 
 .btn {

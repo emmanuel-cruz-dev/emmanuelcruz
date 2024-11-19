@@ -21,7 +21,7 @@ const Projects = () => {
     img1: Back1,
     img2: Back2,
     img3: Back3,
-    href: "#",
+    href: "/details",
     flyer: "responsive",
     technologies: [
       { name: "HTML", img: HTMLLogo },
@@ -39,7 +39,7 @@ const Projects = () => {
     img1: Back1,
     img2: Back2,
     img3: Back3,
-    href: "#",
+    href: "/details",
     flyer: "language",
     technologies: [
       { name: "React", img: ReactLogo },
@@ -52,7 +52,7 @@ const Projects = () => {
 
   return (
     <section
-      className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
+      className="py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
       id="projects"
     >
       <div className="text-center mb-5">

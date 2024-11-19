@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import ResponsiveLogo from "../assets/icons/responsiveweb-card-logo.png";
 import DarkMode from "../assets/icons/darkmode-logo.png";
 import idiomasLogo from "../assets/icons/idiomas-logo.png";
+import { Link } from "react-router-dom";
 
 const ProjectsCard = ({
   title,
@@ -51,15 +52,13 @@ const ProjectsCard = ({
         {flyer && icons[flyer]}
         <Carousel img1={img1} img2={img2} img3={img3} />
         <div className="absolute bottom-3 left-3 overflow-hidden rounded-full">
-          <a
-            href={href}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            to={href}
             title={t("sections.projects.link")}
             className="projects__item__btn w-11 h-11 bg-black/70 text-white text-2xl z-10 rounded-full cursor-pointer flex justify-center items-center hover:bg-black transition-colors duration-300"
           >
             <FaEye />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="flex flex-col lg:justify-around gap-6 p-4 lg:pl-8 lg:gap-4 bg-slate-600 z-20">

@@ -10,10 +10,7 @@ const About = () => {
   const { theme } = useTheme();
 
   return (
-    <section
-      className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto"
-      id="about"
-    >
+    <section className="py-10 flex flex-col gap-8 w-11/12 mx-auto" id="about">
       <div className="text-center mb-5">
         <h2 className="font-bold text-3xl mb-4">{t("sections.about.title")}</h2>
         <h3 className="text-lg">{t("sections.about.description")}</h3>

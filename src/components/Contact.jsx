@@ -18,7 +18,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="scroll-top py-10 w-11/12 mx-auto" id="contact">
+    <section className="py-10 w-11/12 mx-auto" id="contact">
       <div className="text-center mb-5">
         <h2 className="font-bold text-3xl mb-4">
           {t("sections.contact.title")}
