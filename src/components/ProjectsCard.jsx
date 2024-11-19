@@ -1,6 +1,7 @@
 import { FaGithub, FaGlobe, FaEye } from "react-icons/fa";
 import Carousel from "./Carousel";
 import { useTranslation } from "react-i18next";
+import idiomasLogo from "../assets/icons/idiomas-logo.png";
 
 const ProjectsCard = ({
   title,
@@ -13,8 +14,23 @@ const ProjectsCard = ({
   github,
 }) => {
   const { t } = useTranslation();
-  const flyerItem =
-    "3 opciones: 1. Responsive, 2. Dark/light, 3. Multi-lenguaje";
+  const icons = {
+    responsive: (
+      <span className="uppercase font-bold text-[0.75rem] text-white">
+        100% responsive
+      </span>
+    ),
+    dark: (
+      <span className="uppercase font-bold text-[0.75rem] text-white">
+        dark/light modo
+      </span>
+    ),
+    language: (
+      <span title={t("navbar.systemMode")} className="material-icons-outlined">
+        multilenguaje
+      </span>
+    ),
+  };
 
   return (
     <article className="projects__item flex w-full flex-col lg:flex-row lg:w-10/12 overflow-hidden mx-auto">
