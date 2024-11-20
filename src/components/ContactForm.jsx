@@ -52,7 +52,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="flex flex-col justify-around gap-4 bg-white/30 shadow-md p-6 max-w-md mx-auto h-full">
+    <div className="flex flex-col justify-around gap-4 bg-white/30 shadow-md p-6 max-w-lg xl:max-w-md mx-auto md:mx-0 h-full">
       <h2 className="text-2xl font-bold mb-4 xl:text-3xl">
         {t("sections.contact.subtitle")}
       </h2>
@@ -74,7 +74,7 @@ const ContactForm = () => {
               value={formValues.user_name}
               onChange={handleChange}
               placeholder={t("sections.contact.name")}
-              title="Completa tu nombre"
+              title={t("sections.contact.nameTitle")}
               className="w-full border bg-white/20 border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
@@ -91,6 +91,7 @@ const ContactForm = () => {
               value={formValues.user_email}
               onChange={handleChange}
               placeholder={t("sections.contact.email")}
+              title={t("sections.contact.emailTitle")}
               className="w-full bg-white/20 border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             />
@@ -105,6 +106,7 @@ const ContactForm = () => {
             value={formValues.message}
             onChange={handleChange}
             placeholder={t("sections.contact.message")}
+            title={t("sections.contact.messageTitle")}
             rows="5"
             className="w-full bg-white/20 border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
             required

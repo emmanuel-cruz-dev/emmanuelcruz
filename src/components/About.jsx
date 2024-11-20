@@ -65,7 +65,7 @@ const About = () => {
         </figure>
         <div className="flex flex-col md:flex-row gap-4 md:col-span-3 lg:col-span-2">
           <div className="h-full flex md:flex-col gap-4 md:w-3/6">
-            <div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-full rounded-xl py-4">
+            <div className="bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4">
               <p className="text-center text-lg leading-8">
                 <span className="text-3xl font-extrabold">
                   <span className="text-colorTertiary">+</span>10
@@ -74,7 +74,7 @@ const About = () => {
                 {t("sections.about.courses")}
               </p>
             </div>
-            <div className="bg-gradient-to-r from-cyan-500 to-blue-500 w-full h-full rounded-xl py-4">
+            <div className="bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4">
               <p className="text-center text-lg leading-8">
                 <span className="text-3xl font-extrabold">
                   <span className="text-colorTertiary">+</span>500

@@ -32,6 +32,7 @@ const Header = () => {
           alt="Una letra e, entre corchetes"
         />
       </a>
+
       <ul
         className={`absolute inset-0 grid gap-12 text-center place-content-center z-10 whitespace-nowrap ${
           theme === "dark" ? "bg-dark" : "bg-light"

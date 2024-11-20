@@ -92,6 +92,9 @@ const resources = {
           message: "Message...",
           send: "Send",
           sending: "Sending message...",
+          nameTitle: "Please enter your name",
+          emailTitle: "Please enter your email address",
+          messageTitle: "Please enter your message",
         },
         projects: {
           title: "Featured Works",
@@ -198,6 +201,9 @@ const resources = {
           message: "Mensaje...",
           send: "Enviar",
           sending: "Enviando mensaje...",
+          nameTitle: "Ingresa tu nombre",
+          emailTitle: "Ingresa tu correo electrónico",
+          messageTitle: "Ingresa tu mensaje",
         },
         projects: {
           title: "Trabajos Destacados",

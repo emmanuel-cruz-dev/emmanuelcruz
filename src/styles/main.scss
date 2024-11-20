@@ -95,7 +95,7 @@ img {
 /* Hero */
 
 .hero__img {
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, filter 0.3s ease-in-out;
 
   @media (max-width: 640px) {
     margin: auto;

@@ -1,3 +1,4 @@
+import { useTheme } from "./ThemeContext";
 import { FaGithub, FaGlobe, FaEye } from "react-icons/fa";
 import Carousel from "./Carousel";
 import { useTranslation } from "react-i18next";
@@ -19,6 +20,7 @@ const ProjectsCard = ({
   github,
 }) => {
   const { t } = useTranslation();
+  const { theme } = useTheme();
   const icons = {
     responsive: (
       <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.3rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-7">
@@ -61,7 +63,11 @@ const ProjectsCard = ({
           </Link>
         </div>
       </div>
-      <div className="flex flex-col lg:justify-around gap-6 p-4 lg:pl-8 lg:gap-4 bg-slate-600 z-20">
+      <div
+        className={`flex flex-col lg:justify-around gap-6 p-4 lg:pl-8 lg:gap-4 ${
+          theme === "dark" ? "bg-slate-700" : "bg-slate-300"
+        } z-20`}
+      >
         <div className="flex flex-col gap-4 lg:gap-2">
           <h2 className="font-bold text-lg lg:text-2xl">{title}</h2>
           <p className="text-sm xl:w-11/12">{description}</p>
