@@ -1,4 +1,3 @@
-import BlackCat from "../assets/images/black-cat.png";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
