@@ -1,6 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import ScrollToTopButton from "./components/ScrollToTopButton";
+import Education from "./components/Education";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
@@ -22,6 +23,9 @@ function App() {
         </section>
         <section className="scroll-top" id="about">
           <About />
+        </section>
+        <section className="scroll-top" id="certifications">
+          <Education />
         </section>
         <section className="scroll-top" id="projects">
           <Projects />

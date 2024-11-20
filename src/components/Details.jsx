@@ -1,13 +1,19 @@
 const Details = () => {
   return (
-    <section className="h-screen text-center font-bold pt-14 px-20 bg-slate-400">
-      <h1 className="text-3xl mb-6">Detalles de Proyecto: tuki</h1>
-      <p className="text-lg">
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
-        nobis? Quasi praesentium rem distinctio quo eaque nobis sapiente iusto
-        ullam et possimus excepturi voluptate in, voluptas alias enim, nemo
-        architecto.
-      </p>
+    <section
+      className="py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
+      id="details"
+    >
+      <div className="text-center mb-5">
+        <h2 className="font-bold text-3xl mb-4">
+          {/* {t("sections.projects.title")} */}
+          Los Pollos Hermanos
+        </h2>
+        <h3 className="text-lg">Descripción</h3>
+      </div>
+      <article>
+        <div className="card-container flex flex-col gap-8 mx-auto"></div>
+      </article>
     </section>
   );
 };

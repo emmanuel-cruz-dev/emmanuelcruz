@@ -8,6 +8,7 @@ const resources = {
       navbar: {
         home: "Home",
         about: "About Me",
+        certifications: "Certifications",
         projects: "Projects",
         skills: "Skills",
         contact: "Contact",
@@ -54,6 +55,15 @@ const resources = {
           subtitle: "Want to",
           copy: "Discover my latest projects, created with dedication and focus on every detail.",
           button: "See more",
+        },
+        certifications: {
+          title: "Formation and Certifications",
+          description:
+            "Courses, titles and certifications that support my knowledge and skills",
+          platzi:
+            "Course that encompasses the fundamentals of programming and computational logic",
+          javascript:
+            "Certification dedicated to the development of algorithms and data structures in JavaScript",
         },
         skills: {
           title: "Tech Stack",
@@ -116,6 +126,7 @@ const resources = {
       navbar: {
         home: "Inicio",
         about: "Sobre mí",
+        certifications: "Certificaciones",
         projects: "Proyectos",
         skills: "Habilidades",
         contact: "Contacto",
@@ -162,6 +173,15 @@ const resources = {
           subtitle: "Querés",
           copy: "Descubrí mis últimos proyectos, creados con dedicación y enfoque en cada detalle.",
           button: "Ver más",
+        },
+        certifications: {
+          title: "Formación y Certificaciones",
+          description:
+            "Cursos, títulos y certificaciones que avalan mis conocimientos y habilidades",
+          platzi:
+            "Curso que abarca fundamentos de programación y lógica computacional",
+          javascript:
+            "Certificación dedicada al desarrollo de algoritmos y estructuras de datos en JavaScript",
         },
         skills: {
           title: "Stack Tecnológico",

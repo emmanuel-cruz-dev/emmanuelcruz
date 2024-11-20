@@ -38,13 +38,16 @@ const Header = () => {
           theme === "dark" ? "bg-dark" : "bg-light"
         } ${
           isMenuOpen ? "block h-screen" : "hidden"
-        } md:flex md:justify-between md:w-3/6 md:relative md:gap-4 md:h-auto`}
+        } md:flex md:justify-between md:w-3/6 md:relative md:gap-4 md:h-auto xl:w-4/6`}
       >
         <li onClick={closeMenu} className="nav-item">
           <Link to="/#hero">{t("navbar.home")}</Link>
         </li>
         <li onClick={closeMenu} className="nav-item">
           <Link to="/#about">{t("navbar.about")}</Link>
+        </li>
+        <li onClick={closeMenu} className="nav-item">
+          <Link to="/#certifications">{t("navbar.certifications")}</Link>
         </li>
         <li onClick={closeMenu} className="nav-item">
           <Link to="/#projects">{t("navbar.projects")}</Link>
