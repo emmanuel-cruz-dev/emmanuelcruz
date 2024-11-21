@@ -13,8 +13,8 @@ import AcademiaBATitulo from "../assets/images/academia-ba-mini.jpg";
 import NucbaTitulo from "../assets/images/nucba-mini.jpg";
 
 import PlatziTituloGrande from "../assets/images/platzi.jpg";
-import freeCodeCampJavascriptGrande from "../assets/images/freecodecamp-javascript.jpg";
-import freeCodeCampResponsiveGrande from "../assets/images/freecodecamp-responsive.jpg";
+import JavascriptGrande from "../assets/images/freecodecamp-javascript.jpg";
+import ResponsiveGrande from "../assets/images/freecodecamp-responsive.jpg";
 import AcademiaBATituloGrande from "../assets/images/academia-ba.jpg";
 import NucbaTituloGrande from "../assets/images/nucba.jpg";
 
@@ -29,8 +29,8 @@ const Education = () => {
 
   const certificates = [
     PlatziTituloGrande,
-    freeCodeCampJavascriptGrande,
-    freeCodeCampResponsiveGrande,
+    JavascriptGrande,
+    ResponsiveGrande,
     AcademiaBATituloGrande,
     NucbaTituloGrande,
   ];
