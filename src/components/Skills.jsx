@@ -27,7 +27,7 @@ const Skills = () => {
   const { t } = useTranslation();
 
   return (
-    <main className="py-10 w-11/12 mx-auto select-none" id="skills">
+    <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
       <section className="flex flex-col gap-8">
         <div className="text-center mb-5">
           <h2 className="font-bold text-3xl mb-4">

@@ -23,6 +23,7 @@ const Header = () => {
       className={`flex justify-between items-center p-4 px-6 lg:px-10 md:h-20 sticky top-0 z-30 ${
         theme === "dark" ? "bg-dark" : "bg-light"
       }`}
+      id="header"
     >
       <a className="my-auto z-20" href="https://emmanuel-cruz.netlify.app/">
         <img

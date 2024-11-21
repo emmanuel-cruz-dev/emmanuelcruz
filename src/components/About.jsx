@@ -3,14 +3,16 @@ import Logo from "../assets/icons/logo-negro.png";
 import Screens from "../assets/images/responsive-screens.png";
 import Background from "../assets/images/front_end-background.webp";
 import { useTheme } from "./ThemeContext";
-import Commitment from "./Commitment";
 
 const About = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
   return (
-    <section className="py-10 flex flex-col gap-8 w-11/12 mx-auto" id="about">
+    <section
+      className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto"
+      id="about"
+    >
       <div className="text-center mb-5">
         <h2 className="font-bold text-3xl mb-4">{t("sections.about.title")}</h2>
         <h3 className="text-lg">{t("sections.about.description")}</h3>
@@ -116,7 +118,6 @@ const About = () => {
             </div>
           </div>
         </div>
-        {/* <Commitment /> */}
       </article>
     </section>
   );

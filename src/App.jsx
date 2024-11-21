@@ -15,10 +15,10 @@ function App() {
       <Header />
       <Hero />
       <ScrollToTopButton />
-      <Education />
       <About />
-      <Skills />
+      <Education />
       <Projects />
+      <Skills />
       <Contact />
       <Footer />
     </>

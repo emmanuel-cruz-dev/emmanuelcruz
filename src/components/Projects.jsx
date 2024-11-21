@@ -50,7 +50,7 @@ const Projects = () => {
 
   return (
     <section
-      className="py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
+      className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
       id="projects"
     >
       <div className="text-center mb-5">

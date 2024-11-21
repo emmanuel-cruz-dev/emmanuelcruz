@@ -14,7 +14,7 @@ const Footer = () => {
 
   return (
     <footer className="footer bg-black text-white select-none">
-      <article className="flex flex-col lg:flex-row gap-10 justify-between items-center py-20 p-16 border-b border-gray-600">
+      <article className="flex flex-col lg:flex-row gap-10 justify-between xl:justify-evenly items-center py-20 p-16 border-b border-gray-600">
         <div className="flex flex-col items-center gap-6">
           <div className="flex flex-col items-center gap-4 w-44">
             <img
@@ -120,6 +120,9 @@ const Footer = () => {
             </li>
             <li>
               <a href="#about">{t("navbar.about")}</a>
+            </li>
+            <li>
+              <a href="#certifications">{t("navbar.certifications")}</a>
             </li>
             <li>
               <a href="#projects">{t("navbar.projects")}</a>

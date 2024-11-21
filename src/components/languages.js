@@ -8,7 +8,7 @@ const resources = {
       navbar: {
         home: "Home",
         about: "About Me",
-        certifications: "Certifications",
+        certifications: "Studies",
         projects: "Projects",
         skills: "Skills",
         contact: "Contact",
@@ -33,7 +33,7 @@ const resources = {
         place: "in",
       },
       sections: {
-        welcome: "Hello! I'm Emmanuel.",
+        welcome: "Hello! I'm Emmanuel",
         hero: {
           title: "frontend developer",
           description:
@@ -132,7 +132,7 @@ const resources = {
       navbar: {
         home: "Inicio",
         about: "Sobre mí",
-        certifications: "Certificaciones",
+        certifications: "Estudios",
         projects: "Proyectos",
         skills: "Habilidades",
         contact: "Contacto",

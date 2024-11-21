@@ -17,7 +17,10 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-10 w-11/12 xl:w-10/12 mx-auto" id="contact">
+    <section
+      className="scroll-top py-10 w-11/12 xl:w-10/12 mx-auto"
+      id="contact"
+    >
       <div className="text-center mb-5">
         <h2 className="font-bold text-3xl mb-4">
           {t("sections.contact.title")}
@@ -28,9 +31,6 @@ const Contact = () => {
       <article className="flex flex-row gap-4 py-16">
         <article className="order-2 md:order-none flex-1">
           <ContactForm />
-        </article>
-
-        <article className="contact__info hidden md:flex flex-col gap-4 py-4 flex-1 mx-auto">
           <div className="buttons hidden">
             <button
               onClick={() =>
@@ -52,17 +52,16 @@ const Contact = () => {
               Error
             </button>
           </div>
+        </article>
 
-          <div className="flex flex-col gap-3 bg-black/80 text-white p-4 w-fit mx-auto select-none">
-            <div className="flex justify-center items-center gap-2">
+        <article className="contact__info hidden md:block flex-1 select-none">
+          <div className="flex items-end h-full pb-3">
+            <div className="flex justify-center items-center gap-2 bg-black/80 text-white p-4 w-fit mx-auto">
               <span className="text-xl">
                 <FaMapMarkerAlt />
               </span>
               Buenos aires, Argentina
             </div>
-            {/* <div className="contact__social-links flex justify-center items-center">
-                <SocialLinks />
-              </div> */}
           </div>
         </article>
       </article>
