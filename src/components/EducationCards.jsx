@@ -1,7 +1,8 @@
 import PlatziTituloGrande from "../assets/images/platzi.jpg";
 import JavascriptGrande from "../assets/images/freecodecamp-javascript.jpg";
 import ResponsiveGrande from "../assets/images/freecodecamp-responsive.jpg";
-import AcademiaBATituloGrande from "../assets/images/academia-ba.jpg";
+import HTMLCSSTituloGrande from "../assets/images/html-css.jpg";
+import UXResearchTituloGrande from "../assets/images/ux-research.jpg";
 import NucbaTituloGrande from "../assets/images/nucba.jpg";
 
 import Gallery from "./Gallery";
@@ -24,7 +25,8 @@ const EducationCards = ({
     PlatziTituloGrande,
     JavascriptGrande,
     ResponsiveGrande,
-    AcademiaBATituloGrande,
+    HTMLCSSTituloGrande,
+    UXResearchTituloGrande,
     NucbaTituloGrande,
   ];
 

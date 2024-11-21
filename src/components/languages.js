@@ -66,8 +66,10 @@ const resources = {
             "Certification dedicated to the development of algorithms and data structures in JavaScript",
           responsive:
             "Certification with an emphasis on HTML, CSS, adaptable design and web accessibility",
-          academiaba:
+          htmlcss:
             "Theoretical and practical course to improve skills in advanced web design",
+          uxresearch:
+            "Focused on methodologies to understand needs, behaviors and motivations, optimizing the user experience",
           nucba:
             "Practical learning workshop for the use of no-code tools and applications based on artificial intelligence",
         },
@@ -190,8 +192,10 @@ const resources = {
             "Certificación dedicada al desarrollo de algoritmos y estructuras de datos en JavaScript",
           responsive:
             "Certificación con enfoque en HTML, CSS, diseño adaptable y accesibilidad web",
-          academiaba:
+          htmlcss:
             "Curso teórico práctico para perfeccionar habilidades en diseño web avanzado",
+          uxresearch:
+            "Enfocado en metodologías para entender necesidades, comportamientos y motivaciones, optimizando la experiencia de usuario",
           nucba:
             "Taller práctico de aprendizaje para el uso de herramientas no-code y aplicaciones basadas en inteligencia artificial",
         },
@@ -242,7 +246,7 @@ const resources = {
           description:
             "Explora una muestra de mi trabajo y habilidades en acción.",
           pollos:
-            "Este sitio lleva el restaurante ficticio de Breaking Bad al mundo digital. Inspirado en el estilo visual de restaurantes como KFC, esta página combina un diseño atractivo con detalles que remiten a la serie. Explora una experiencia visual que te hará sentir en una verdadera franquicia de Gus Fring.",
+            "Este sitio lleva el restaurante ficticio de Breaking Bad al mundo digital. Inspirado en el estilo visual de restaurantes como KFC, esta página combina un diseño atractivo con detalles que remiten a la serie. Explora una experiencia visual que te hará sentir en una franquicia de Gus Fring.",
           button: "Visitar sitio",
           portfolio:
             "Este proyecto demuestra mi habilidad para crear interfaces web responsivas y eficientes, cuenta con opciones de modo oscuro y selección de idioma. Aquí encontrarás proyectos que reflejan mi compromiso con el detalle, el rendimiento y la funcionalidad en desarrollo frontend",

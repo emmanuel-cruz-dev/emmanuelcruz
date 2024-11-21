@@ -6,8 +6,11 @@ const Hero = () => {
   const { t } = useTranslation(); // Accede a la función de traducción
 
   return (
-    <section className="scroll-top py-4 md:py-10 mx-auto w-11/12" id="hero">
-      <article className="flex flex-col justify-evenly gap-4 sm:flex-row w-full">
+    <section
+      className="scroll-top py-4 md:py-10 xl:py-16 mx-auto w-11/12"
+      id="hero"
+    >
+      <article className="flex flex-col justify-evenly xl:justify-around gap-4 sm:flex-row w-full">
         <div className="flex flex-col gap-2 my-auto md:gap-8">
           <div className="flex flex-col gap-3">
             <h1 className="font-bold text-3xl lg:text-4xl">
@@ -23,7 +26,7 @@ const Hero = () => {
         </div>
 
         <img
-          className="hero__img w-64 h-64 md:w-[22rem] md:h-[22rem] object-cover my-auto grayscale-[30%] hover:grayscale-0"
+          className="hero__img w-64 h-64 md:w-[22rem] md:h-[22rem] object-cover my-auto  hover:grayscale-0"
           src={picture}
           alt="Imagen de perfil"
         />

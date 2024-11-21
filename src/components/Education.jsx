@@ -9,7 +9,8 @@ import NucbaNegro from "../assets/icons/nucba-negro.png";
 import PlatziTitulo from "../assets/images/platzi-mini.jpg";
 import freeCodeCampJavascript from "../assets/images/freecodecamp-javascript-mini.jpg";
 import freeCodeCampResponsive from "../assets/images/freecodecamp-responsive-mini.jpg";
-import AcademiaBATitulo from "../assets/images/academia-ba-mini.jpg";
+import HTMLCSSTitulo from "../assets/images/html-css-mini.jpg";
+import UXResearchTitulo from "../assets/images/ux-research-mini.jpg";
 import NucbaTitulo from "../assets/images/nucba-mini.jpg";
 
 import { useTranslation } from "react-i18next";
@@ -52,25 +53,36 @@ const Education = () => {
   };
 
   const certificate4 = {
-    img: AcademiaBATitulo,
-    href: "https://academiabackend.com/",
+    img: HTMLCSSTitulo,
+    href: "https://academiaba.buenosaires.gob.ar/",
     logo: AcademiaBA,
     blackLogo: AcademiaBANegro,
     title: "HTML Y CSS AVANZADO",
     span: "Academia BA Emprende",
-    description: t("sections.certifications.academiaba"),
+    description: t("sections.certifications.htmlcss"),
     num: "3",
   };
 
   const certificate5 = {
+    img: UXResearchTitulo,
+    href: "https://academiaba.buenosaires.gob.ar/",
+    logo: AcademiaBA,
+    blackLogo: AcademiaBANegro,
+    title: "UX Research",
+    span: "Academia BA Emprende",
+    description: t("sections.certifications.uxresearch"),
+    num: "4",
+  };
+
+  const certificate6 = {
     img: NucbaTitulo,
-    href: "https://nucba.com/",
+    href: "https://www.nucba.com.ar/",
     logo: Nucba,
     blackLogo: NucbaNegro,
     title: "HERRAMIENTAS IA Y NO-CODE",
     span: "Nucba",
     description: t("sections.certifications.nucba"),
-    num: "4",
+    num: "5",
   };
 
   return (
@@ -99,6 +111,9 @@ const Education = () => {
 
         {/* Certificado 5 */}
         <EducationCards {...certificate5} />
+
+        {/* Certificado 6 */}
+        <EducationCards {...certificate6} />
       </article>
     </section>
   );

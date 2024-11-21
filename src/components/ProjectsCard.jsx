@@ -47,8 +47,8 @@ const ProjectsCard = ({
   };
 
   return (
-    <article className="scroll-top projects__item flex w-full flex-col lg:flex-row xl:w-10/12 overflow-hidden mx-auto">
-      <div className="projects__item__card__container lg:w-[28rem] relative">
+    <article className="scroll-top projects__item flex w-full md:w-6/12 flex-col xl:flex-row xl:w-10/12 mx-auto overflow-hidden">
+      <div className="projects__item__card__container relative xl:w-[28rem]">
         {flyer && icons[flyer]}
         <Carousel img1={img1} img2={img2} img3={img3} />
       </div>

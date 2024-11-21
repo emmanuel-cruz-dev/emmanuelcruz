@@ -34,11 +34,11 @@ const Header = () => {
       </a>
 
       <ul
-        className={`absolute inset-0 grid gap-12 text-center place-content-center z-10 whitespace-nowrap ${
+        className={`absolute inset-0 grid gap-12 text-center place-content-center z-10 ${
           theme === "dark" ? "bg-dark" : "bg-light"
         } ${
           isMenuOpen ? "block h-screen" : "hidden"
-        } md:flex md:justify-between md:w-3/6 md:relative md:gap-4 md:h-auto xl:w-4/6`}
+        } md:flex md:justify-between md:relative md:gap-4 md:h-auto xl:w-3/6`}
       >
         <li onClick={closeMenu} className="nav-item">
           <a href="#hero">{t("navbar.home")}</a>
@@ -59,6 +59,7 @@ const Header = () => {
           <a href="#contact">{t("navbar.contact")}</a>
         </li>
       </ul>
+
       <div className="flex gap-4 items-center z-10">
         <button
           onClick={toggleTheme}

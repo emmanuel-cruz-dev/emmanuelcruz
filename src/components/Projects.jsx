@@ -60,7 +60,7 @@ const Projects = () => {
         <h3 className="text-lg">{t("sections.projects.description")}</h3>
       </div>
       <article>
-        <div className="card-container flex flex-col gap-8 mx-auto">
+        <div className="card-container flex gap-8 flex-col md:flex-row mx-auto">
           {/* Proyecto 1 */}
           <ProjectsCard {...project1} />
 
