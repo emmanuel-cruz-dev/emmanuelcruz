@@ -4,7 +4,6 @@ import logoNegro from "../assets/icons/logo-negro.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTheme } from "./ThemeContext";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -41,22 +40,22 @@ const Header = () => {
         } md:flex md:justify-between md:w-3/6 md:relative md:gap-4 md:h-auto xl:w-4/6`}
       >
         <li onClick={closeMenu} className="nav-item">
-          <Link to="/#hero">{t("navbar.home")}</Link>
+          <a href="#hero">{t("navbar.home")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
-          <Link to="/#about">{t("navbar.about")}</Link>
+          <a href="#about">{t("navbar.about")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
-          <Link to="/#certifications">{t("navbar.certifications")}</Link>
+          <a href="#certifications">{t("navbar.certifications")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
-          <Link to="/#projects">{t("navbar.projects")}</Link>
+          <a href="#projects">{t("navbar.projects")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
-          <Link to="/#skills">{t("navbar.skills")}</Link>
+          <a href="#skills">{t("navbar.skills")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
-          <Link to="/#contact">{t("navbar.contact")}</Link>
+          <a href="#contact">{t("navbar.contact")}</a>
         </li>
       </ul>
       <div className="flex gap-4 items-center z-10">

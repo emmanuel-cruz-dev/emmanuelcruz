@@ -1,8 +1,8 @@
 import Platzi from "../assets/icons/platzi.png";
 import freeCodeCamp from "../assets/icons/freecodecamp.png";
 import freeCodeCampNegro from "../assets/icons/freecodecamp-negro.png";
-import AcademiaBANegro from "../assets/icons/academiaba.png";
-import AcademiaBA from "../assets/icons/academiaba-blanco.png";
+import AcademiaBANegro from "../assets/icons/academiaba-negro.png";
+import AcademiaBA from "../assets/icons/academiaba.png";
 import Nucba from "../assets/icons/nucba.png";
 import NucbaNegro from "../assets/icons/nucba-negro.png";
 
@@ -33,6 +33,7 @@ const Education = () => {
     img: freeCodeCampJavascript,
     href: "https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures-v8/",
     logo: freeCodeCamp,
+    blackLogo: freeCodeCampNegro,
     title: "JavaScript Algorithms and Data Structures",
     span: "freeCodeCamp",
     description: t("sections.certifications.javascript"),
@@ -43,6 +44,7 @@ const Education = () => {
     img: freeCodeCampResponsive,
     href: "https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/",
     logo: freeCodeCamp,
+    blackLogo: freeCodeCampNegro,
     title: "Responsive Web Design",
     span: "freeCodeCamp",
     description: t("sections.certifications.responsive"),
@@ -53,6 +55,7 @@ const Education = () => {
     img: AcademiaBATitulo,
     href: "https://academiabackend.com/",
     logo: AcademiaBA,
+    blackLogo: AcademiaBANegro,
     title: "HTML Y CSS AVANZADO",
     span: "Academia BA Emprende",
     description: t("sections.certifications.academiaba"),
@@ -63,6 +66,7 @@ const Education = () => {
     img: NucbaTitulo,
     href: "https://nucba.com/",
     logo: Nucba,
+    blackLogo: NucbaNegro,
     title: "HERRAMIENTAS IA Y NO-CODE",
     span: "Nucba",
     description: t("sections.certifications.nucba"),

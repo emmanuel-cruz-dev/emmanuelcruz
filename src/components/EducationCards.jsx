@@ -8,7 +8,16 @@ import Gallery from "./Gallery";
 import { useState } from "react";
 import { useTheme } from "./ThemeContext";
 
-const EducationCards = ({ img, href, logo, title, span, description, num }) => {
+const EducationCards = ({
+  img,
+  href,
+  logo,
+  blackLogo,
+  title,
+  span,
+  description,
+  num,
+}) => {
   const { theme } = useTheme();
 
   const certificates = [
@@ -40,7 +49,11 @@ const EducationCards = ({ img, href, logo, title, span, description, num }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="w-full cover" src={logo} alt="" />
+          <img
+            className="w-full cover"
+            src={blackLogo && theme !== "dark" ? blackLogo : logo}
+            alt=""
+          />
         </a>
         <div className="flex flex-col gap-2">
           <h3 className="font-bold text-xl">{title}</h3>

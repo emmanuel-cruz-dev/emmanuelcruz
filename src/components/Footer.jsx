@@ -7,7 +7,6 @@ import ErosLogo from "../assets/images/eros-logo.jpg";
 import NephewsLogo from "../assets/images/nephews-logo.jpg";
 import LastModifiedDate from "./LastModifiedDate";
 import SocialLinks from "./SocialLinks";
-import { Link } from "react-router-dom";
 
 const Footer = () => {
   const { i18n, t } = useTranslation();
@@ -117,19 +116,19 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <ul className="footer__list flex flex-col md:flex-row text-center gap-6 font-semibold">
             <li>
-              <Link to="/#hero">{t("navbar.home")}</Link>
+              <a href="#hero">{t("navbar.home")}</a>
             </li>
             <li>
-              <Link to="/#about">{t("navbar.about")}</Link>
+              <a href="#about">{t("navbar.about")}</a>
             </li>
             <li>
-              <Link to="/#projects">{t("navbar.projects")}</Link>
+              <a href="#projects">{t("navbar.projects")}</a>
             </li>
             <li>
-              <Link to="/#skills">{t("navbar.skills")}</Link>
+              <a href="#skills">{t("navbar.skills")}</a>
             </li>
             <li>
-              <Link to="/#contact">{t("navbar.contact")}</Link>
+              <a href="#contact">{t("navbar.contact")}</a>
             </li>
           </ul>
           <p className="footer__link text-center">

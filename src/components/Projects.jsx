@@ -21,7 +21,6 @@ const Projects = () => {
     img1: Back1,
     img2: Back2,
     img3: Back3,
-    href: "/details",
     flyer: "responsive",
     technologies: [
       { name: "HTML", img: HTMLLogo },
@@ -39,7 +38,6 @@ const Projects = () => {
     img1: Back1,
     img2: Back2,
     img3: Back3,
-    href: "/details",
     flyer: "language",
     technologies: [
       { name: "React", img: ReactLogo },
