@@ -1,8 +1,8 @@
 import Platzi from "../assets/icons/platzi.png";
 import freeCodeCamp from "../assets/icons/freecodecamp.png";
 import freeCodeCampNegro from "../assets/icons/freecodecamp-negro.png";
-import AcademiaBA from "../assets/icons/academiaba.png";
-import AcademiaBABlanco from "../assets/icons/academiaba-blanco.png";
+import AcademiaBANegro from "../assets/icons/academiaba.png";
+import AcademiaBA from "../assets/icons/academiaba-blanco.png";
 import Nucba from "../assets/icons/nucba.png";
 import NucbaNegro from "../assets/icons/nucba-negro.png";
 
@@ -12,40 +12,62 @@ import freeCodeCampResponsive from "../assets/images/freecodecamp-responsive-min
 import AcademiaBATitulo from "../assets/images/academia-ba-mini.jpg";
 import NucbaTitulo from "../assets/images/nucba-mini.jpg";
 
-import PlatziTituloGrande from "../assets/images/platzi.jpg";
-import JavascriptGrande from "../assets/images/freecodecamp-javascript.jpg";
-import ResponsiveGrande from "../assets/images/freecodecamp-responsive.jpg";
-import AcademiaBATituloGrande from "../assets/images/academia-ba.jpg";
-import NucbaTituloGrande from "../assets/images/nucba.jpg";
-
-import { useTheme } from "./ThemeContext";
 import { useTranslation } from "react-i18next";
-import { useState } from "react";
-import Gallery from "./Gallery";
+import EducationCards from "./EducationCards";
 
 const Education = () => {
-  const { theme } = useTheme();
   const { t } = useTranslation();
 
-  const certificates = [
-    PlatziTituloGrande,
-    JavascriptGrande,
-    ResponsiveGrande,
-    AcademiaBATituloGrande,
-    NucbaTituloGrande,
-  ];
-
-  const [isGalleryOpen, setGalleryOpen] = useState(false);
-  const [initialIndex, setInitialIndex] = useState(0);
-
-  const openGallery = (index) => {
-    console.log(index);
-
-    setInitialIndex(index);
-    setGalleryOpen(true);
+  // Objetos de certificados
+  const certificate1 = {
+    img: PlatziTitulo,
+    href: "https://platzi.com",
+    logo: Platzi,
+    title: "Programación Básica",
+    span: "Platzi",
+    description: t("sections.certifications.platzi"),
+    num: "0",
   };
 
-  const closeGallery = () => setGalleryOpen(false);
+  const certificate2 = {
+    img: freeCodeCampJavascript,
+    href: "https://www.freecodecamp.org/espanol/learn/javascript-algorithms-and-data-structures-v8/",
+    logo: freeCodeCamp,
+    title: "JavaScript Algorithms and Data Structures",
+    span: "freeCodeCamp",
+    description: t("sections.certifications.javascript"),
+    num: "1",
+  };
+
+  const certificate3 = {
+    img: freeCodeCampResponsive,
+    href: "https://www.freecodecamp.org/espanol/learn/2022/responsive-web-design/",
+    logo: freeCodeCamp,
+    title: "Responsive Web Design",
+    span: "freeCodeCamp",
+    description: t("sections.certifications.responsive"),
+    num: "2",
+  };
+
+  const certificate4 = {
+    img: AcademiaBATitulo,
+    href: "https://academiabackend.com/",
+    logo: AcademiaBA,
+    title: "HTML Y CSS AVANZADO",
+    span: "Academia BA Emprende",
+    description: t("sections.certifications.academiaba"),
+    num: "3",
+  };
+
+  const certificate5 = {
+    img: NucbaTitulo,
+    href: "https://nucba.com/",
+    logo: Nucba,
+    title: "HERRAMIENTAS IA Y NO-CODE",
+    span: "Nucba",
+    description: t("sections.certifications.nucba"),
+    num: "4",
+  };
 
   return (
     <section className="py-10 flex flex-col gap-8 w-11/12 mx-auto" id="details">
@@ -57,38 +79,22 @@ const Education = () => {
       </div>
       <article className="flex flex-col gap-6 xl:w-10/12 mx-auto">
         {/* Certificado 1 */}
-        <div className="certificates__card flex flex-col md:flex-row justify-between items-center border-b border-gray-600 pb-5 px-3">
-          <div className="flex flex-col md:flex-row items-center gap-6 xl:w-10/12">
-            <a
-              href="https://platzi.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img className="w-20 cover" src={Platzi} alt="" />
-            </a>
-            <div className="flex flex-col gap-2">
-              <h3 className="font-bold text-xl">Programación Básica</h3>
-              <p
-                className={`text-sm ${
-                  theme === "dark" ? "text-gray-400" : "text-gray-600"
-                }`}
-              >
-                <span className="font-bold text-colorTertiary">Platzi</span> -{" "}
-                {t("sections.certifications.platzi")}.
-              </p>
-            </div>
-          </div>
-
-          <figure
-            className="cursor-pointer -order-1 md:order-none"
-            onClick={() => openGallery(0)}
-          >
-            <img src={PlatziTitulo} className="lg:w-32" />
-          </figure>
-        </div>
+        <EducationCards {...certificate1} />
 
         {/* Certificado 2 */}
-        <div className="certificates__card flex justify-between items-center border-b border-gray-600 pb-5 px-3">
+        <EducationCards {...certificate2} />
+
+        {/* Certificado 3 */}
+        <EducationCards {...certificate3} />
+
+        {/* Certificado 4 */}
+        <EducationCards {...certificate4} />
+
+        {/* Certificado 5 */}
+        <EducationCards {...certificate5} />
+
+        {/* Certificado 2 */}
+        {/* <div className="certificates__card flex justify-between items-center border-b border-gray-600 pb-5 px-3">
           <div className="flex items-center gap-6 w-10/12">
             <a
               href="https://www.freecodecamp.org/espanol/learn"
@@ -121,10 +127,10 @@ const Education = () => {
           <figure className="cursor-pointer" onClick={() => openGallery(1)}>
             <img src={freeCodeCampJavascript} className="w-32" />
           </figure>
-        </div>
+        </div> */}
 
         {/* Certificado 3 */}
-        <div className="certificates__card flex justify-between items-center border-b border-gray-600 pb-5 px-3">
+        {/* <div className="certificates__card flex justify-between items-center border-b border-gray-600 pb-5 px-3">
           <div className="flex items-center gap-6 w-10/12">
             <a
               href="https://www.freecodecamp.org/espanol/learn"
@@ -158,10 +164,10 @@ const Education = () => {
           <figure className="cursor-pointer" onClick={() => openGallery(2)}>
             <img src={freeCodeCampResponsive} className="w-32" />
           </figure>
-        </div>
+        </div> */}
 
         {/* Certificado 4 */}
-        <div className="certificates__card flex justify-between items-center border-b border-gray-600 pb-5 px-3">
+        {/* <div className="certificates__card flex justify-between items-center border-b border-gray-600 pb-5 px-3">
           <div className="flex items-center gap-6 w-10/12">
             <a
               href="https://academiaba.buenosaires.gob.ar/"
@@ -195,10 +201,10 @@ const Education = () => {
           <figure className="cursor-pointer" onClick={() => openGallery(3)}>
             <img src={AcademiaBATitulo} className="w-32" />
           </figure>
-        </div>
+        </div> */}
 
         {/* Certificado 5 */}
-        <div className="certificates__card flex justify-between items-center border-b border-gray-600 pb-5 px-3">
+        {/* <div className="certificates__card flex justify-between items-center border-b border-gray-600 pb-5 px-3">
           <div className="flex items-center gap-6 w-10/12">
             <a
               href="https://www.nucba.com.ar/"
@@ -230,15 +236,8 @@ const Education = () => {
           <figure className="cursor-pointer" onClick={() => openGallery(4)}>
             <img src={NucbaTitulo} className="w-32 cover" />
           </figure>
-        </div>
+        </div> */}
       </article>
-
-      <Gallery
-        images={certificates}
-        initialIndex={initialIndex}
-        isOpen={isGalleryOpen}
-        onClose={closeGallery}
-      />
     </section>
   );
 };

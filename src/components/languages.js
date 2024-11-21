@@ -64,6 +64,12 @@ const resources = {
             "Course that encompasses the fundamentals of programming and computational logic",
           javascript:
             "Certification dedicated to the development of algorithms and data structures in JavaScript",
+          responsive:
+            "Certification with an emphasis on HTML, CSS, adaptable design and web accessibility",
+          academiaba:
+            "Theoretical and practical course to improve skills in advanced web design",
+          nucba:
+            "Practical learning workshop for the use of no-code tools and applications based on artificial intelligence",
         },
         skills: {
           title: "Tech Stack",
@@ -182,6 +188,12 @@ const resources = {
             "Curso que abarca fundamentos de programación y lógica computacional",
           javascript:
             "Certificación dedicada al desarrollo de algoritmos y estructuras de datos en JavaScript",
+          responsive:
+            "Certificación con enfoque en HTML, CSS, diseño adaptable y accesibilidad web",
+          academiaba:
+            "Curso teórico práctico para perfeccionar habilidades en diseño web avanzado",
+          nucba:
+            "Taller práctico de aprendizaje para el uso de herramientas no-code y aplicaciones basadas en inteligencia artificial",
         },
         skills: {
           title: "Stack Tecnológico",
