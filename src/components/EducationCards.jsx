@@ -46,11 +46,9 @@ const EducationCards = ({
   return (
     <motion.div
       key={num}
-      whileHover={{ scale: 1.05 }}
-      whileTap={{ scale: 0.95 }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
+      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
       viewport={{ once: true, amount: 0.2 }}
       className="certificates__card flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-600 pb-5 px-3"
     >

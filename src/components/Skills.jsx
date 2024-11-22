@@ -33,7 +33,7 @@ const Skills = () => {
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
           viewport={{ once: true, amount: 0.2 }}
           className="text-center mb-5"
         >
