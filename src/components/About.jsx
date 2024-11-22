@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import Logo from "../assets/icons/logo-negro.png";
 import Screens from "../assets/images/responsive-screens.png";
@@ -13,12 +14,27 @@ const About = () => {
       className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto"
       id="about"
     >
-      <div className="text-center mb-5">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
+        className="text-center mb-5"
+      >
         <h2 className="font-bold text-3xl mb-4">{t("sections.about.title")}</h2>
         <h3 className="text-lg">{t("sections.about.description")}</h3>
-      </div>
+      </motion.div>
       <article className="grid md:grid-cols-3 gap-4 md:mx-auto lg:w-11/12">
-        <div className="bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-8 justify-between p-6">
+        <motion.div
+          initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{
+            duration: 0.8,
+            ease: "easeInOut",
+          }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-8 justify-between p-6"
+        >
           <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
             <h4 className="font-bold text-2xl lg:w-3/5">
               <span className="font-medium">{t("sections.about.hi")}</span>{" "}
@@ -41,8 +57,14 @@ const About = () => {
               </span>
             </a>
           </div>
-        </div>
-        <div className="bg-gradient-to-br from-[#F5F5F5]/80 to-[#E0E0E0]/80 rounded-xl p-4 overflow-hidden">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, x: -80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="bg-gradient-to-br from-[#F5F5F5]/80 to-[#E0E0E0]/80 rounded-xl p-4 overflow-hidden"
+        >
           <figure className="flex justify-self-end items-center bg-gradient-to-bl from-gray-300 to-white rounded-full w-14 h-14">
             <img
               className="w-9 mx-auto"
@@ -55,18 +77,32 @@ const About = () => {
               className="-ml-4 -mb-2 min-w-80 lg:min-w-[21rem]"
               src={Screens}
               alt="Un celular y una notebook"
+              loading="lazy"
             />
           </figure>
-        </div>
-        <figure className="hidden lg:block rounded-xl overflow-hidden max-w-fit">
+        </motion.div>
+        <motion.figure
+          initial={{ opacity: 0, x: 80 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.8, ease: "easeInOut" }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="hidden lg:block rounded-xl overflow-hidden max-w-fit"
+        >
           <img
             className="object-cover w-full lg:w-full lg:h-full"
             src={Background}
-            alt=""
+            alt="Computadora de escritorio con fondo azul"
+            loading="lazy"
           />
-        </figure>
+        </motion.figure>
         <div className="flex flex-col md:flex-row gap-4 md:col-span-3 lg:col-span-2">
-          <div className="h-full flex md:flex-col gap-4 md:w-3/6">
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.2 }}
+            className="h-full flex md:flex-col gap-4 md:w-3/6"
+          >
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4">
               <p className="text-center text-lg leading-8">
                 <span className="text-3xl font-extrabold">
@@ -85,8 +121,12 @@ const About = () => {
                 {t("sections.about.practice")}
               </p>
             </div>
-          </div>
-          <div
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: "easeInOut" }}
+            viewport={{ once: true, amount: 0.2 }}
             className={`bg-gradient-to-br ${
               theme === "dark"
                 ? "from-red-500/40 to-accent/60"
@@ -116,7 +156,7 @@ const About = () => {
                 </span>
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </article>
     </section>

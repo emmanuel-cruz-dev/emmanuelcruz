@@ -21,6 +21,7 @@ const Footer = () => {
               className="w-24"
               src={LogoBlanco}
               alt="Logo, una letra e entre corchetes"
+              loading="lazy"
             />
             <p className="text-sm whitespace-nowrap">"{t("footer.phrase")}."</p>
           </div>
@@ -37,7 +38,7 @@ const Footer = () => {
               className="flex gap-4 items-center border-b border-gray-600 pb-4"
             >
               <figure className="w-16">
-                <img src={PlatziLogo} alt="" />
+                <img src={PlatziLogo} alt="Logo de Platzi" loading="lazy" />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>Platzi</h4>
@@ -52,7 +53,11 @@ const Footer = () => {
               className="flex gap-4 items-center"
             >
               <figure className="w-16">
-                <img src={freeCodeCampLogo} alt="" />
+                <img
+                  src={freeCodeCampLogo}
+                  alt="Logo de freeCodeCamp"
+                  loading="lazy"
+                />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>freeCodeCamp Español</h4>
@@ -70,7 +75,11 @@ const Footer = () => {
               className="flex gap-4 items-center border-b border-gray-600 pb-4"
             >
               <figure className="w-16">
-                <img src={ErosLogo} alt="" />
+                <img
+                  src={ErosLogo}
+                  alt="Logo de Eros Librería"
+                  loading="lazy"
+                />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>Eros Librería</h4>
@@ -85,7 +94,7 @@ const Footer = () => {
               className="flex gap-4 items-center"
             >
               <figure className="w-16">
-                <img src={NephewsLogo} alt="" />
+                <img src={NephewsLogo} alt="Logo de N3phews" loading="lazy" />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>N3phews</h4>
@@ -104,7 +113,12 @@ const Footer = () => {
               </span>{" "}
               {t("footer.thanks")}
             </p>
-            <img className="w-14 mx-auto" src={Logro} alt="" />
+            <img
+              className="w-14 mx-auto"
+              src={Logro}
+              alt="Icono de medalla"
+              loading="lazy"
+            />
           </div>
         </div>
       </article>

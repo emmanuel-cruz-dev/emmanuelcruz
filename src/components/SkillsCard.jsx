@@ -5,6 +5,7 @@ const SkillsCard = ({ src, alt, title }) => {
         src={src}
         alt={`${alt} logo`}
         title={title}
+        loading="lazy"
         className="w-16 grayscale hover:grayscale-0 transition-all duration-300"
       />
       <p className="font-semibold">{alt}</p>

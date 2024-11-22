@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import HTMLLogo from "../assets/icons/html-logo.png";
@@ -29,12 +30,18 @@ const Skills = () => {
   return (
     <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
       <section className="flex flex-col gap-8">
-        <div className="text-center mb-5">
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, ease: "easeInOut", delay: 0.4 }}
+          viewport={{ once: true, amount: 0.2 }}
+          className="text-center mb-5"
+        >
           <h2 className="font-bold text-3xl mb-4">
             {t("sections.skills.title")}
           </h2>
           <h3 className="text-lg">{t("sections.skills.description")}</h3>
-        </div>
+        </motion.div>
         <article className="flex flex-col gap-8">
           {/* Desarrollo Web */}
           <article className="flex flex-col gap-8 items-center w-fit mx-auto text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">

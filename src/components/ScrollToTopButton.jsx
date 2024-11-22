@@ -16,7 +16,7 @@ function ScrollToTopButton() {
       const newProgress = scrollTop / scrollHeight;
       setProgress(newProgress);
 
-      if (newProgress > 0.2) {
+      if (newProgress > 0.03) {
         setIsVisible(true);
       } else {
         setIsVisible(false);

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import EmailCopyButton from "./EmailCopyButton";
 import { AiOutlineDownload } from "react-icons/ai";
@@ -8,10 +9,20 @@ const Links = () => {
 
   return (
     <div className="flex flex-col gap-5 md:gap-10">
-      <p className="md:max-w-[30rem] text-md lg:text-lg">
+      <motion.p
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+        className="md:max-w-[30rem] text-md lg:text-lg"
+      >
         {t("sections.hero.description")}
-      </p>
-      <div className="flex flex-col gap-8">
+      </motion.p>
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.6 }}
+        className="flex flex-col gap-8"
+      >
         <SocialLinks />
         <div className="flex gap-2 md:gap-4">
           <a
@@ -25,7 +36,7 @@ const Links = () => {
           </a>
           <EmailCopyButton />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };
