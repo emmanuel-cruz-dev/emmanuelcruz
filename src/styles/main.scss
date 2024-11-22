@@ -7,7 +7,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Estilos globales */
+// --- Inicio: Estilos Globales --- //
 
 html {
   background: $light-background;
@@ -48,7 +48,16 @@ img {
   width: 100%;
 }
 
-/* NavBar */
+/* Margen de secciones */
+
+.scroll-top {
+  scroll-margin-top: 80px; /* Ajusta a la altura de tu navbar */
+}
+
+// --- Fin: Estilos Globales --- //
+
+// --- Inicio: NavBar --- //
+
 .bg-light {
   background-color: #ffffff; // Color de fondo para el tema claro
   transition: background-color 0.3s ease;
@@ -61,7 +70,6 @@ img {
 
 .nav-item {
   position: relative;
-  // display: inline-block;
   font-weight: 500;
 
   &::after {
@@ -69,8 +77,8 @@ img {
     position: absolute;
     left: 0;
     bottom: -0.5rem;
-    height: 2px; // Altura del subrayado
-    width: 100%; // Ancho inicial
+    height: 2px;
+    width: 100%;
     background: linear-gradient(
       to right,
       rgba(255, 0, 51, 0.8),
@@ -78,7 +86,7 @@ img {
     );
     transform: scaleX(0);
     transform-origin: bottom right;
-    transition: transform 0.3s ease-out; // Animación suave
+    transition: transform 0.3s ease-out;
   }
 
   &:hover::after {
@@ -92,7 +100,9 @@ img {
   width: fit-content;
 }
 
-/* Hero */
+// --- Fin: NavBar --- //
+
+// --- Inicio: Seccion Hero --- //
 
 .hero__img {
   transition: transform 0.3s ease, filter 0.3s ease-in-out;
@@ -127,7 +137,7 @@ img {
   }
 
   &--red {
-    background-color: $color-tertiary;
+    background-color: $color-accent;
 
     &:hover {
       background-color: #000;
@@ -135,11 +145,7 @@ img {
   }
 }
 
-/* Margen de secciones */
-
-.scroll-top {
-  scroll-margin-top: 80px; /* Ajusta a la altura de tu navbar */
-}
+// --- Fin: Seccion Hero --- //
 
 /* Efecto rellenado botón ir arriba */
 
@@ -148,7 +154,7 @@ img {
   position: absolute;
   width: 50px;
   height: 50px;
-  background-color: $color-tertiary;
+  background-color: $color-accent;
   border-radius: 50%;
   transition: background-color 0.3s ease;
 }
@@ -157,20 +163,8 @@ img {
   background-color: #000;
 }
 
-/* Sección Habilidades */
+// --- Inicio: Slider Carrusel --- //
 
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 0.75rem;
-  padding-block: 1.5rem;
-  white-space: nowrap;
-}
-
-/* Slick Carousel */
 .slick-slide {
   margin-bottom: 0;
   line-height: 0;
@@ -183,12 +177,10 @@ img {
   display: block; /* Esto elimina el espacio extra debajo de la imagen */
 }
 
-/* Asegurarse que el contenedor del slide también ocupe todo el espacio */
 .slick-slide > div {
   height: 100% !important;
 }
 
-/* El contenedor principal del carrusel también debe tener una altura definida */
 .slick-slider {
   height: 100% !important;
 }
@@ -196,13 +188,13 @@ img {
 // Estilos para los puntos de navegación
 .slick-dots {
   position: absolute;
-  bottom: 8px; // Ajusta según la distancia que quieras del borde inferior
+  bottom: 8px;
   left: 50%;
   transform: translateX(-50%);
   display: flex !important;
   align-items: center;
   justify-content: center;
-  gap: 8px; // Espaciado entre los puntos
+  gap: 8px;
   z-index: 10;
 }
 
@@ -215,14 +207,16 @@ img {
 
 .slick-dots li.slick-active button:before {
   opacity: 1;
-  color: $color-tertiary;
+  color: $color-accent;
 }
 
 .slick-dots li button:hover:before {
   opacity: 1;
 }
 
-// Proyectos
+// --- Fin: Slider Carrusel --- //
+
+// --- Inicio: Proyectos --- //
 
 .card__btn {
   display: flex;
@@ -240,7 +234,7 @@ img {
   transition: background-color 0.3s ease, color 0.3s ease;
 
   &:hover {
-    background-color: $color-tertiary;
+    background-color: $color-accent;
   }
 
   span {
@@ -268,7 +262,24 @@ img {
   transform: translateX(0);
 }
 
-// Contacto
+// --- Fin: Proyectos --- //
+
+// --- Inicio: Seccion Habilidades --- //
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding-block: 1.5rem;
+  white-space: nowrap;
+}
+
+// --- Fin: Seccion Habilidades --- //
+
+// --- Inicio: Contacto --- //
 
 .contact__info {
   background-image: url("../assets/images/mapa-argentina.jpg");
@@ -292,14 +303,17 @@ img {
   }
 }
 
-// Footer
+// --- Fin: Contacto --- //
+
+// --- Inicio: Footer --- //
+
 .footer__list,
 .footer__link {
   a {
     transition: color 0.5s ease;
 
     &:hover {
-      color: $color-tertiary;
+      color: $color-accent;
     }
   }
 }
@@ -319,7 +333,7 @@ img {
 
   a {
     &:hover h4 {
-      color: $color-tertiary;
+      color: $color-accent;
     }
   }
 }
@@ -357,7 +371,10 @@ img {
   }
 }
 
-// Notificacion Toast
+// --- Fin: Footer --- //
+
+// --- Inicio: Notificacion Toast --- //
+
 .toast-container {
   position: fixed;
   bottom: 20px;
@@ -370,7 +387,7 @@ img {
   display: flex;
   align-items: center;
   // background-color: #333;
-  // background-color: $color-tertiary;
+  // background-color: $color-accent;
   color: #fff;
   padding: 16px;
   border-radius: 8px;
@@ -433,3 +450,5 @@ img {
     opacity: 0;
   }
 }
+
+// --- Fin: Notificacion Toast --- //
