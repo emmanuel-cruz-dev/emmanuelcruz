@@ -32,7 +32,7 @@ const ProjectsCard = ({
       <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.6rem] bg-black z-10 rotate-45 pb-1 pt-5 px-7">
         <img src={DarkMode} alt="Logo de darkmode" className="w-9" />
         <span className="uppercase font-bold text-[0.75rem] text-white">
-          dark/light modo
+          modo dark/light
         </span>
       </div>
     ),

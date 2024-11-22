@@ -3,7 +3,9 @@ import Back1 from "../assets/images/back1.jpg";
 import Back2 from "../assets/images/back2.jpg";
 import Back3 from "../assets/images/back3.jpg";
 
-import BackPortfolio from "../assets/images/portfolio-card.jpg";
+import CardPortfolio1 from "../assets/images/card-portfolio1.jpg";
+import CardPortfolio2 from "../assets/images/card-portfolio2.jpg";
+import CardPortfolio3 from "../assets/images/card-portfolio3.jpg";
 
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
@@ -37,9 +39,9 @@ const Projects = () => {
   const project2 = {
     title: "Emmanuel Cruz | Portfolio",
     description: t("sections.projects.portfolio"),
-    img1: BackPortfolio,
-    img2: Back2,
-    img3: Back3,
+    img1: CardPortfolio1,
+    img2: CardPortfolio2,
+    img3: CardPortfolio3,
     flyer: "dark",
     technologies: [
       { name: "React", img: ReactLogo },
@@ -62,7 +64,7 @@ const Projects = () => {
         <h3 className="text-lg">{t("sections.projects.description")}</h3>
       </div>
       <article>
-        <div className="card-container flex gap-8 flex-col mx-auto">
+        <div className="card-container flex flex-wrap gap-8 mx-auto">
           {/* Proyecto 1 */}
           <ProjectsCard {...project1} />
 
