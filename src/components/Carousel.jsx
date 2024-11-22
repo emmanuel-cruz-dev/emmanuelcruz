@@ -8,7 +8,7 @@ const Carousel = ({ img1, img2, img3 }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000,
+    autoplaySpeed: 8000,
     arrows: false,
   };
 

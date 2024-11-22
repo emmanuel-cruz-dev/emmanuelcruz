@@ -64,7 +64,7 @@ const EducationCards = ({
               theme === "dark" ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            <span className="font-bold text-colorTertiary">{span}</span> -{" "}
+            <span className="font-bold text-accent">{span}</span> -{" "}
             {description}.
           </p>
         </div>

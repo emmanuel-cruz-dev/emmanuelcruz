@@ -33,7 +33,7 @@ const About = () => {
           <div className="flex justify-end">
             <a
               href="#contact"
-              className="flex items-center gap-2 text-white font-semibold bg-black rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary"
+              className="flex items-center gap-2 text-white font-semibold bg-black rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-accent"
             >
               {t("sections.about.contactMe")}
               <span className="text-[28px] material-icons-outlined">
@@ -70,7 +70,7 @@ const About = () => {
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4">
               <p className="text-center text-lg leading-8">
                 <span className="text-3xl font-extrabold">
-                  <span className="text-colorTertiary">+</span>10
+                  <span className="text-accent">+</span>10
                   <br />
                 </span>
                 {t("sections.about.courses")}
@@ -79,7 +79,7 @@ const About = () => {
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4">
               <p className="text-center text-lg leading-8">
                 <span className="text-3xl font-extrabold">
-                  <span className="text-colorTertiary">+</span>500
+                  <span className="text-accent">+</span>500
                   <br />
                 </span>
                 {t("sections.about.practice")}
@@ -89,8 +89,8 @@ const About = () => {
           <div
             className={`bg-gradient-to-br ${
               theme === "dark"
-                ? "from-red-500/40 to-colorTertiary/60"
-                : " from-colorTertiary/70 to-red-800"
+                ? "from-red-500/40 to-accent/60"
+                : " from-accent/70 to-red-800"
             } rounded-xl w-full p-6 flex flex-col gap-8 justify-between`}
           >
             <div className="flex flex-col gap-6 md:flex-row">
@@ -108,7 +108,7 @@ const About = () => {
             <div className="flex justify-end">
               <a
                 href="#projects"
-                className="flex items-center font-semibold gap-2 bg-black text-white rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-colorTertiary"
+                className="flex items-center font-semibold gap-2 bg-black text-white rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-accent"
               >
                 {t("sections.about.button")}
                 <span className="text-[28px] material-icons-outlined">

@@ -21,7 +21,7 @@ const ProjectsCard = ({
   const { theme } = useTheme();
   const icons = {
     responsive: (
-      <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.6rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-7">
+      <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.6rem] bg-accent z-10 rotate-45 pb-1 pt-5 px-7">
         <img src={ResponsiveLogo} alt="Logo de responsive" className="w-9" />
         <span className="uppercase font-bold text-[0.75rem] text-white">
           100% responsive
@@ -37,7 +37,7 @@ const ProjectsCard = ({
       </div>
     ),
     language: (
-      <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.6rem] bg-colorTertiary z-10 rotate-45 pb-1 pt-5 px-7">
+      <div className="projects__item__card absolute flex flex-col items-center -top-3 -right-[3.6rem] bg-accent z-10 rotate-45 pb-1 pt-5 px-7">
         <img src={idiomasLogo} alt="Logo de idiomas" className="w-9" />
         <span className="uppercase font-bold text-[0.75rem] text-white">
           multilenguage

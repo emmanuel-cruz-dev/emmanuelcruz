@@ -5,7 +5,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        colorTertiary: "#ff0033",
+        accent: "#ff0033",
       },
     },
   },
