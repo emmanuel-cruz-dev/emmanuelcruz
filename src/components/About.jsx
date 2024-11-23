@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import AnimatedComponent from "./AnimatedComponent";
 import { useTranslation } from "react-i18next";
 import Logo from "../assets/icons/logo-negro.png";
 import Screens from "../assets/images/responsive-screens.png";
@@ -14,16 +15,14 @@ const About = () => {
       className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto"
       id="about"
     >
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
-        viewport={{ once: true, amount: 0.2 }}
-        className="text-center mb-5"
-      >
-        <h2 className="font-bold text-3xl mb-4">{t("sections.about.title")}</h2>
-        <h3 className="text-lg">{t("sections.about.description")}</h3>
-      </motion.div>
+      <AnimatedComponent animation="fade" delay={1}>
+        <div className="text-center mb-5">
+          <h2 className="font-bold text-3xl mb-4">
+            {t("sections.about.title")}
+          </h2>
+          <h3 className="text-lg">{t("sections.about.description")}</h3>
+        </div>
+      </AnimatedComponent>
       <article className="grid md:grid-cols-3 gap-4 md:mx-auto lg:w-11/12">
         <motion.div
           initial={{ opacity: 0, x: 80 }}

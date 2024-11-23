@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import AnimatedComponent from "./AnimatedComponent";
+
 import PlatziTituloGrande from "../assets/images/platzi.jpg";
 import JavascriptGrande from "../assets/images/freecodecamp-javascript.jpg";
 import ResponsiveGrande from "../assets/images/freecodecamp-responsive.jpg";
@@ -44,60 +45,55 @@ const EducationCards = ({
   const closeGallery = () => setGalleryOpen(false);
 
   return (
-    <motion.div
-      key={num}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
-      viewport={{ once: true, amount: 0.2 }}
-      className="certificates__card flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-600 pb-5 px-3"
-    >
-      <div className="flex flex-col md:flex-row items-center gap-6 md:w-10/12">
-        <a
-          className="w-20 min-w-20 hidden md:block"
-          href={href}
-          target="_blank"
-          rel="noopener noreferrer"
+    <AnimatedComponent animation="slide" direction="up" delay={1}>
+      <div className="certificates__card flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-600 pb-5 px-3">
+        <div className="flex flex-col md:flex-row items-center gap-6 md:w-10/12">
+          <a
+            className="w-20 min-w-20 hidden md:block"
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="w-full cover"
+              src={blackLogo && theme !== "dark" ? blackLogo : logo}
+              alt={`Logo de ${span}`}
+              loading="lazy"
+            />
+          </a>
+          <div className="flex flex-col gap-2">
+            <h3 className="font-bold text-xl">{title}</h3>
+            <p
+              className={`md:text-sm w-11/12 ${
+                theme === "dark" ? "text-gray-400" : "text-gray-600"
+              }`}
+            >
+              <span className="font-bold text-accent">{span}</span> -{" "}
+              {description}.
+            </p>
+          </div>
+        </div>
+
+        <figure
+          className="cursor-pointer -order-1 md:order-none md:max-w-24 lg:max-w-32"
+          onClick={() => openGallery(num)}
         >
           <img
-            className="w-full cover"
-            src={blackLogo && theme !== "dark" ? blackLogo : logo}
-            alt={`Logo de ${span}`}
+            src={img}
+            className="lg:w-32"
+            alt={`Certificado de ${title}`}
             loading="lazy"
           />
-        </a>
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-xl">{title}</h3>
-          <p
-            className={`md:text-sm w-11/12 ${
-              theme === "dark" ? "text-gray-400" : "text-gray-600"
-            }`}
-          >
-            <span className="font-bold text-accent">{span}</span> -{" "}
-            {description}.
-          </p>
-        </div>
-      </div>
+        </figure>
 
-      <figure
-        className="cursor-pointer -order-1 md:order-none md:max-w-24 lg:max-w-32"
-        onClick={() => openGallery(num)}
-      >
-        <img
-          src={img}
-          className="lg:w-32"
-          alt={`Certificado de ${title}`}
-          loading="lazy"
+        <Gallery
+          images={certificates}
+          initialIndex={initialIndex}
+          isOpen={isGalleryOpen}
+          onClose={closeGallery}
         />
-      </figure>
-
-      <Gallery
-        images={certificates}
-        initialIndex={initialIndex}
-        isOpen={isGalleryOpen}
-        onClose={closeGallery}
-      />
-    </motion.div>
+      </div>
+    </AnimatedComponent>
   );
 };
 

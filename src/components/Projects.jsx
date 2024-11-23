@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import AnimatedComponent from "./AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
 import Back1 from "../assets/images/back1.jpg";
@@ -59,18 +59,14 @@ const Projects = () => {
       className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
       id="projects"
     >
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
-        viewport={{ once: true, amount: 0.2 }}
-        className="text-center mb-5"
-      >
-        <h2 className="font-bold text-3xl mb-4">
-          {t("sections.projects.title")}
-        </h2>
-        <h3 className="text-lg">{t("sections.projects.description")}</h3>
-      </motion.div>
+      <AnimatedComponent animation="fade" delay={1}>
+        <div className="text-center mb-5">
+          <h2 className="font-bold text-3xl mb-4">
+            {t("sections.projects.title")}
+          </h2>
+          <h3 className="text-lg">{t("sections.projects.description")}</h3>
+        </div>
+      </AnimatedComponent>
       <article>
         <div className="card-container flex flex-wrap gap-8 mx-auto">
           {/* Proyecto 1 */}

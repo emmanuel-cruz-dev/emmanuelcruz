@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import AnimatedComponent from "./AnimatedComponent";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -21,18 +21,14 @@ const Contact = () => {
       className="scroll-top py-10 w-11/12 xl:w-10/12 mx-auto"
       id="contact"
     >
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8, ease: "easeInOut", delay: 0.2 }}
-        viewport={{ once: true, amount: 0.2 }}
-        className="text-center mb-5"
-      >
-        <h2 className="font-bold text-3xl mb-4">
-          {t("sections.contact.title")}
-        </h2>
-        <h3 className="text-lg">{t("sections.contact.description")}</h3>
-      </motion.div>
+      <AnimatedComponent animation="fade" delay={1}>
+        <div className="text-center mb-5">
+          <h2 className="font-bold text-3xl mb-4">
+            {t("sections.contact.title")}
+          </h2>
+          <h3 className="text-lg">{t("sections.contact.description")}</h3>
+        </div>
+      </AnimatedComponent>
 
       <article className="flex flex-row gap-4 py-16">
         <article className="order-2 md:order-none flex-1">
