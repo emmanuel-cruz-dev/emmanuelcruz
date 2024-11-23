@@ -1,0 +1,47 @@
+// Clases para las animaciones
+.animated {
+  opacity: 0;
+  transition: all 2000ms ease-in-out;
+
+  &.fade {
+    &-in {
+      opacity: 1;
+    }
+  }
+
+  &.slide {
+    &.up {
+      transform: translateY(5rem);
+    }
+    &.down {
+      transform: translateY(-5rem);
+    }
+    &.left {
+      transform: translateX(5rem);
+    }
+    &.right {
+      transform: translateX(-5rem);
+    }
+
+    &-in {
+      transform: translate(0) !important;
+      opacity: 1;
+    }
+  }
+
+  &.scale {
+    transform: scale(0.75);
+
+    &-in {
+      transform: scale(1) !important;
+      opacity: 1;
+    }
+  }
+
+  // Delays
+  @for $i from 1 through 10 {
+    &.delay-#{$i} {
+      transition-delay: #{$i * 100}ms;
+    }
+  }
+}
