@@ -106,7 +106,9 @@ const Footer = () => {
 
           <AnimatedComponent animation="scale" delay={6}>
             <div className="achievements footer__item flex flex-col gap-4 h-full max-w-56">
-              <h3 className="footer__title">{t("footer.award")}</h3>
+              <AnimatedComponent animation="confetti">
+                <h3 className="footer__title">{t("footer.award")}</h3>
+              </AnimatedComponent>
 
               <p className="text-sm">
                 {t("footer.congratulations")}{" "}
@@ -115,6 +117,7 @@ const Footer = () => {
                 </span>{" "}
                 {t("footer.thanks")}
               </p>
+
               <AnimatedComponent animation="slide" direction="up" delay={9}>
                 <img
                   className="w-14 mx-auto"

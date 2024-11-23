@@ -3,6 +3,10 @@
   opacity: 0;
   transition: all 2000ms ease-in-out;
 
+  &.confetti {
+    opacity: 1;
+  }
+
   &.fade {
     &-in {
       opacity: 1;
@@ -12,9 +16,6 @@
   &.slide {
     &.up {
       transform: translateY(5rem);
-    }
-    &.down {
-      transform: translateY(-5rem);
     }
     &.left {
       transform: translateX(5rem);

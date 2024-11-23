@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import JSConfetti from "js-confetti";
 
 const AnimatedComponent = ({
   children,
@@ -8,12 +9,24 @@ const AnimatedComponent = ({
   delay = 0,
 }) => {
   const elementRef = useRef(null);
+  const jsConfetti = new JSConfetti();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
+            if (animation === "confetti") {
+              setTimeout(() => {
+                jsConfetti.addConfetti({
+                  emojis: ["💪🏻", "⚡️", "💥", "✨", "💫", "🏆", "👏", "🌟"],
+                  emojiSize: 40,
+                  confettiNumber: 200,
+                  gravity: 0.9,
+                  delay: 7000,
+                });
+              }, 1500);
+            }
             entry.target.classList.add(`${animation}-in`);
             observer.unobserve(entry.target);
           }
