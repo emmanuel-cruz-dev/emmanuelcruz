@@ -47,13 +47,12 @@ const About = () => {
             </p>
           </div>
           <div className="flex justify-end">
-            <a
-              href="#contact"
-              className="flex items-center gap-2 text-white font-semibold bg-black rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-accent"
-            >
-              {t("sections.about.contactMe")}
-              <span className="text-[28px] material-icons-outlined">
-                keyboard_double_arrow_right
+            <a href="#contact" className="btn__rounded tres">
+              <span className="flex items-center gap-2">
+                {t("sections.about.contactMe")}
+                <span className="text-[28px] material-icons-outlined">
+                  keyboard_double_arrow_right
+                </span>
               </span>
             </a>
           </div>
@@ -146,13 +145,12 @@ const About = () => {
               </p>
             </div>
             <div className="flex justify-end">
-              <a
-                href="#projects"
-                className="flex items-center font-semibold gap-2 bg-black text-white rounded-full px-6 py-3 w-fit transition-colors duration-300 hover:bg-accent"
-              >
-                {t("sections.about.button")}
-                <span className="text-[28px] material-icons-outlined">
-                  search
+              <a href="#projects" className="btn__rounded tres">
+                <span className="flex items-center gap-2">
+                  {t("sections.about.button")}
+                  <span className="text-[28px] material-icons-outlined">
+                    search
+                  </span>
                 </span>
               </a>
             </div>

@@ -26,13 +26,15 @@ const Links = () => {
         <SocialLinks />
         <div className="flex gap-2 md:gap-4">
           <a
-            className="btn btn--red text-sm py-7"
+            className="btn btn--red uno text-sm py-7"
             href="/Emmanuel-Cruz-CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >
-            {t("sections.hero.cv")} CV
-            <AiOutlineDownload size={30} />
+            <span className="flex items-center gap-2">
+              {t("sections.hero.cv")} CV
+              <AiOutlineDownload size={30} />
+            </span>
           </a>
           <EmailCopyButton />
         </div>

@@ -93,26 +93,30 @@ const ProjectsCard = ({
 
         <div className="buttons flex gap-4">
           <a
-            className="card__btn"
+            className="card__btn cuatro"
             href={link}
             target="_blank"
             rel="noopener noreferrer"
           >
-            {t("sections.projects.button")}
-            <span className="text-[1.25rem]">
-              <FaGlobe />
-            </span>
+            <div className="icono">
+              <span className="text-[1.25rem]">
+                <FaGlobe />
+              </span>
+            </div>
+            <span className="texto">{t("sections.projects.button")}</span>
           </a>
           <a
-            className="card__btn"
+            className="card__btn cuatro"
             href={github}
             target="_blank"
             rel="noopener noreferrer"
           >
-            GitHub
-            <span>
-              <FaGithub />
-            </span>
+            <div className="icono">
+              <span className="text-[1.35rem]">
+                <FaGithub />
+              </span>
+            </div>
+            <span className="texto">Github</span>
           </a>
         </div>
       </div>
