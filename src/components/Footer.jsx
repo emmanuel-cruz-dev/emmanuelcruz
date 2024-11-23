@@ -7,6 +7,7 @@ import ErosLogo from "../assets/images/eros-logo.jpg";
 import NephewsLogo from "../assets/images/nephews-logo.jpg";
 import LastModifiedDate from "./LastModifiedDate";
 import SocialLinks from "./SocialLinks";
+import AnimatedComponent from "./AnimatedComponent";
 
 const Footer = () => {
   const { i18n, t } = useTranslation();
@@ -103,23 +104,27 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="achievements footer__item flex flex-col gap-4 h-full max-w-56">
-            <h3 className="footer__title">{t("footer.award")}</h3>
+          <AnimatedComponent animation="scale" delay={6}>
+            <div className="achievements footer__item flex flex-col gap-4 h-full max-w-56">
+              <h3 className="footer__title">{t("footer.award")}</h3>
 
-            <p className="text-sm">
-              {t("footer.congratulations")}{" "}
-              <span className="font-semibold italic capitalize">
-                {t("footer.rank")}
-              </span>{" "}
-              {t("footer.thanks")}
-            </p>
-            <img
-              className="w-14 mx-auto"
-              src={Logro}
-              alt="Icono de medalla"
-              loading="lazy"
-            />
-          </div>
+              <p className="text-sm">
+                {t("footer.congratulations")}{" "}
+                <span className="font-semibold italic capitalize">
+                  {t("footer.rank")}
+                </span>{" "}
+                {t("footer.thanks")}
+              </p>
+              <AnimatedComponent animation="slide" direction="up" delay={9}>
+                <img
+                  className="w-14 mx-auto"
+                  src={Logro}
+                  alt="Icono de medalla"
+                  loading="lazy"
+                />
+              </AnimatedComponent>
+            </div>
+          </AnimatedComponent>
         </div>
       </article>
 
@@ -148,10 +153,12 @@ const Footer = () => {
               <a href="#contact">{t("navbar.contact")}</a>
             </li>
           </ul>
-          <p className="footer__link text-center">
-            © 2024 · {t("footer.paragraph")} <a href="#">Emmanuel Cruz</a>{" "}
-            {t("footer.place")} Buenos Aires, Argentina
-          </p>
+          <AnimatedComponent animation="fade">
+            <p className="footer__link text-center">
+              © 2024 · {t("footer.paragraph")} <a href="#">Emmanuel Cruz</a>{" "}
+              {t("footer.place")} Buenos Aires, Argentina
+            </p>
+          </AnimatedComponent>
         </div>
         <div className="w-[150px] hidden md:block"></div>
       </article>
