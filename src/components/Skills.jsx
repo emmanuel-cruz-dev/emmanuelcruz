@@ -1,3 +1,5 @@
+import { useTheme } from "./ThemeContext";
+
 import AnimatedComponent from "./AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
@@ -26,6 +28,7 @@ import SkillsCard from "./SkillsCard";
 
 const Skills = () => {
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
   return (
     <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
@@ -40,7 +43,11 @@ const Skills = () => {
         </AnimatedComponent>
         <article className="flex flex-col gap-8">
           {/* Desarrollo Web */}
-          <article className="flex flex-col gap-8 items-center w-fit mx-auto text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+          <article
+            className={`${
+              theme === "dark" ? "shadow__dark" : "shadow__light"
+            } flex flex-col gap-8 items-center w-fit mx-auto text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
+          >
             <h4 className="font-semibold text-xl">
               {t("sections.skills.subtitle1")}
             </h4>
@@ -91,7 +98,11 @@ const Skills = () => {
 
           <div className="flex flex-wrap gap-8 justify-center">
             {/* Frameworks y Bibliotecas */}
-            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+            <article
+              className={`${
+                theme === "dark" ? "shadow__dark" : "shadow__light"
+              } w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
+            >
               <h4 className="font-semibold text-xl">
                 {t("sections.skills.subtitle2")}
               </h4>
@@ -111,7 +122,11 @@ const Skills = () => {
             </article>
 
             {/* Herramientas de Desarrollo */}
-            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+            <article
+              className={` ${
+                theme === "dark" ? "shadow__dark" : "shadow__light"
+              } w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
+            >
               <h4 className="font-semibold text-xl">
                 {t("sections.skills.subtitle3")}
               </h4>
@@ -131,7 +146,11 @@ const Skills = () => {
             </article>
 
             {/* Diseño y Prototipado */}
-            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+            <article
+              className={`${
+                theme === "dark" ? "shadow__dark" : "shadow__light"
+              } w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
+            >
               <h4 className="font-semibold text-xl">
                 {t("sections.skills.subtitle4")}
               </h4>
@@ -157,7 +176,11 @@ const Skills = () => {
             </article>
 
             {/* Metodologías */}
-            <article className="w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300">
+            <article
+              className={`${
+                theme === "dark" ? "shadow__dark" : "shadow__light"
+              } w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
+            >
               <h4 className="font-semibold text-xl">
                 {t("sections.skills.subtitle5")}
               </h4>

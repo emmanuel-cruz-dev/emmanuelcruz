@@ -68,7 +68,7 @@ const Projects = () => {
         </div>
       </AnimatedComponent>
       <article>
-        <div className="card-container flex flex-wrap gap-8 mx-auto">
+        <div className="card-container flex flex-wrap gap-12 mx-auto">
           {/* Proyecto 1 */}
           <ProjectsCard {...project1} />
 

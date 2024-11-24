@@ -54,6 +54,16 @@ span {
   font-weight: 700;
 }
 
+.shadow__light {
+  box-shadow: 8px 8px 16px rgba(165, 177, 198, 0.8),
+    -8px -8px 16px rgba(255, 255, 255, 0.8);
+}
+
+.shadow__dark {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.8),
+    -8px -8px 16px rgba(39, 46, 61, 0.8);
+}
+
 /* Margen de secciones */
 
 .scroll-top {

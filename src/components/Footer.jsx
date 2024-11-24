@@ -106,9 +106,7 @@ const Footer = () => {
 
           <AnimatedComponent animation="scale" delay={6}>
             <div className="achievements footer__item flex flex-col gap-4 h-full max-w-56">
-              <AnimatedComponent animation="confetti">
-                <h3 className="footer__title">{t("footer.award")}</h3>
-              </AnimatedComponent>
+              <h3 className="footer__title">{t("footer.award")}</h3>
 
               <p className="text-sm">
                 {t("footer.congratulations")}{" "}
