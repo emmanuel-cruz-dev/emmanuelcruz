@@ -31,7 +31,7 @@ const Hero = () => {
 
         <AnimatedComponent animation="scale">
           <img
-            className="hero__img w-64 h-64 md:w-[22rem] md:h-[22rem] object-cover my-auto grayscale-[30%] hover:grayscale-0"
+            className="hero__img w-64 h-64 md:w-[22rem] md:h-[22rem] object-cover my-auto grayscale-[20%] hover:grayscale-0"
             src={picture}
             alt="Imagen de perfil"
           />

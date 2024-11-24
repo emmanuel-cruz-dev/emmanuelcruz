@@ -23,7 +23,11 @@ const About = () => {
         </div>
       </AnimatedComponent>
       <article className="grid md:grid-cols-3 gap-4 md:mx-auto lg:w-11/12">
-        <div className="bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-8 justify-between p-6">
+        <div
+          className={`${
+            theme === "dark" ? "shadow__dark" : "shadow__light"
+          } bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-8 justify-between p-6`}
+        >
           <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
             <h4 className="font-bold text-2xl lg:w-3/5">
               <span className="font-medium">{t("sections.about.hi")}</span>{" "}
@@ -36,7 +40,12 @@ const About = () => {
             </p>
           </div>
           <div className="flex justify-end">
-            <a href="#contact" className="btn__rounded tres">
+            <a
+              href="#contact"
+              className={`${
+                theme === "dark" ? "btn__shadow__dark" : "btn__shadow__light"
+              } btn__rounded tres`}
+            >
               <span className="flex items-center gap-2">
                 {t("sections.about.contactMe")}
                 <span className="text-[28px] material-icons-outlined">
@@ -46,7 +55,11 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="bg-gradient-to-br from-[#F5F5F5]/80 to-[#E0E0E0]/80 rounded-xl p-4 overflow-hidden">
+        <div
+          className={`${
+            theme === "dark" ? "shadow__dark" : "shadow__light"
+          } bg-gradient-to-br from-[#F5F5F5]/80 to-[#E0E0E0]/80 rounded-xl p-4 overflow-hidden`}
+        >
           <figure className="flex justify-self-end items-center bg-gradient-to-bl from-gray-300 to-white rounded-full w-14 h-14">
             <img
               className="w-9 mx-auto"
@@ -63,7 +76,11 @@ const About = () => {
             />
           </figure>
         </div>
-        <figure className="hidden lg:block rounded-xl overflow-hidden max-w-fit">
+        <figure
+          className={`${
+            theme === "dark" ? "shadow__dark" : "shadow__light"
+          } hidden lg:block rounded-xl overflow-hidden max-w-fit`}
+        >
           <img
             className="object-cover w-full lg:w-full lg:h-full"
             src={Background}
@@ -73,7 +90,11 @@ const About = () => {
         </figure>
         <div className="flex flex-col md:flex-row gap-4 md:col-span-3 lg:col-span-2">
           <div className="h-full flex md:flex-col gap-4 md:w-3/6">
-            <div className="bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4">
+            <div
+              className={`${
+                theme === "dark" ? "shadow__dark" : "shadow__light"
+              } bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4`}
+            >
               <p className="text-center text-lg leading-8">
                 <span className="text-3xl font-extrabold">
                   <span className="text-accent">+</span>10
@@ -82,7 +103,9 @@ const About = () => {
                 {t("sections.about.courses")}
               </p>
             </div>
-            <div className="bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4">
+            <div
+              className={`bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4`}
+            >
               <p className="text-center text-lg leading-8">
                 <span className="text-3xl font-extrabold">
                   <span className="text-accent">+</span>500
@@ -95,8 +118,8 @@ const About = () => {
           <div
             className={`bg-gradient-to-br ${
               theme === "dark"
-                ? "from-red-500/40 to-accent/60"
-                : " from-accent/70 to-red-800"
+                ? "from-red-500/40 to-accent/60 shadow__dark"
+                : " from-accent/70 to-red-800 shadow__light"
             } rounded-xl w-full p-6 flex flex-col gap-8 justify-between`}
           >
             <div className="flex flex-col gap-6 md:flex-row">
@@ -112,7 +135,14 @@ const About = () => {
               </p>
             </div>
             <div className="flex justify-end">
-              <a href="#projects" className="btn__rounded tres">
+              <a
+                href="#projects"
+                className={`${
+                  theme === "dark"
+                    ? "btn__shadow__dark--red"
+                    : "btn__shadow__light--red"
+                } btn__rounded tres`}
+              >
                 <span className="flex items-center gap-2">
                   {t("sections.about.button")}
                   <span className="text-[28px] material-icons-outlined">

@@ -1,3 +1,4 @@
+import { useTheme } from "./ThemeContext";
 import AnimatedComponent from "./AnimatedComponent";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { useState } from "react";
@@ -8,6 +9,7 @@ import Toast from "./Toast";
 const Contact = () => {
   const [toast, setToast] = useState({ show: false, type: "", message: "" });
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
   const showToast = (type, message) => {
     setToast({ show: true, type, message });
@@ -56,7 +58,11 @@ const Contact = () => {
           </div>
         </article>
 
-        <article className="contact__info hidden md:block flex-1 select-none">
+        <article
+          className={`${
+            theme === "dark" ? "shadow__dark" : "shadow__light"
+          } contact__info hidden md:block flex-1 select-none`}
+        >
           <div className="flex items-end h-full pb-3">
             <div className="flex justify-center items-center gap-2 bg-black/80 text-white p-4 w-fit mx-auto">
               <span className="text-xl">

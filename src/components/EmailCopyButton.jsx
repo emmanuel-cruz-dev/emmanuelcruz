@@ -1,8 +1,10 @@
+import { useTheme } from "./ThemeContext";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 const EmailCopyButton = () => {
-  const { t } = useTranslation(); // Accede a la función de traducción
+  const { t } = useTranslation();
+  const { theme } = useTheme();
   const email = "emmanuelgerr@gmail.com";
   const [copied, setCopied] = useState(false);
 
@@ -19,7 +21,12 @@ const EmailCopyButton = () => {
   };
 
   return (
-    <button onClick={copyEmailToClipboard} className="btn dos text-sm py-7">
+    <button
+      onClick={copyEmailToClipboard}
+      className={`${
+        theme === "dark" ? "shadow__dark" : "shadow__light"
+      } btn btn dos text-sm py-7`}
+    >
       <span className="flex items-center gap-2">
         {copied ? t("sections.hero.emailCopied") : t("sections.hero.email")}
         <span className="material-icons-outlined">mail</span>
