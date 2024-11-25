@@ -14,7 +14,7 @@ const Footer = () => {
   const currentLanguage = i18n.language === "es" ? "es" : "en";
 
   return (
-    <footer className="footer bg-black text-white select-none">
+    <footer className="footer text-white select-none">
       <article className="flex flex-col lg:flex-row gap-10 justify-between xl:justify-evenly items-center py-20 p-16 border-b border-gray-600">
         <div className="flex flex-col items-center gap-6">
           <div className="flex flex-col items-center gap-4 w-44">
@@ -108,9 +108,9 @@ const Footer = () => {
             <div className="achievements footer__item flex flex-col gap-4 h-full max-w-56">
               <h3 className="footer__title">{t("footer.award")}</h3>
 
-              <p className="text-sm">
+              <p className="footer__paragraph">
                 {t("footer.congratulations")}{" "}
-                <span className="font-semibold italic capitalize">
+                <span className="font-semibold italic capitalize text-white">
                   {t("footer.rank")}
                 </span>{" "}
                 {t("footer.thanks")}
@@ -142,9 +142,6 @@ const Footer = () => {
               <a href="#about">{t("navbar.about")}</a>
             </li>
             <li>
-              <a href="#certifications">{t("navbar.certifications")}</a>
-            </li>
-            <li>
               <a href="#projects">{t("navbar.projects")}</a>
             </li>
             <li>
@@ -155,7 +152,7 @@ const Footer = () => {
             </li>
           </ul>
           <AnimatedComponent animation="fade">
-            <p className="footer__link text-center">
+            <p className="footer__link text-center text-slate-400">
               © 2024 · {t("footer.paragraph")} <a href="#">Emmanuel Cruz</a>{" "}
               {t("footer.place")} Buenos Aires, Argentina
             </p>

@@ -3,8 +3,25 @@
   opacity: 0;
   transition: all 2000ms ease-in-out;
 
-  &.confetti {
+  &.flip {
     opacity: 1;
+    .front {
+      transform: perspective(600px) rotateY(0deg);
+    }
+
+    .back {
+      transform: perspective(600px) rotateY(180deg);
+    }
+
+    &-in {
+      .front {
+        transform: perspective(600px) rotateY(180deg);
+      }
+
+      .back {
+        transform: perspective(600px) rotateY(360deg);
+      }
+    }
   }
 
   &.fade {
@@ -15,7 +32,7 @@
 
   &.slide {
     &.up {
-      transform: translateY(5rem);
+      transform: translateY(3.2rem);
     }
     &.left {
       transform: translateX(5rem);
@@ -41,7 +58,10 @@
 
   // Delays
   @for $i from 1 through 10 {
-    &.delay-#{$i} {
+    // &.delay-#{$i} {
+    //   transition-delay: #{$i * 100}ms;
+    // }
+    .animated.delay-#{$i} {
       transition-delay: #{$i * 100}ms;
     }
   }

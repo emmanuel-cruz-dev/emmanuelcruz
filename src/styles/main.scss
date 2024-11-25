@@ -431,6 +431,93 @@ span {
 
 // --- Fin: Seccion Habilidades --- //
 
+// --- Inicio: Flip Cards --- //
+
+.cards__front-back {
+  position: relative;
+  width: 21rem;
+  height: 25rem;
+}
+
+.cards__front-back > div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  padding-inline: 1.5rem;
+  backface-visibility: hidden;
+}
+
+// Card 1
+.cards__front-back .front1 {
+  transform: perspective(600px) rotateY(0deg);
+  transition: transform 1.5s ease-in-out 0.4s;
+}
+
+.cards__front-back .back1 {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #ff6b6b;
+  color: #000;
+  transition: transform 1.5s ease-in-out 0.4s;
+}
+
+.flip-in .cards__front-back .front1 {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.flip-in .cards__front-back .back1 {
+  transform: perspective(600px) rotateY(360deg);
+}
+
+// Card 2
+.cards__front-back .front2 {
+  transform: perspective(600px) rotateX(0deg);
+  transition: transform 1.5s ease-in-out 0.8s;
+}
+
+.cards__front-back .back2 {
+  transform: perspective(600px) rotateX(180deg);
+  background-color: #2cffc0;
+  color: #000;
+  transition: transform 1.5s ease-in-out 0.8s;
+}
+
+.flip-in .cards__front-back .front2 {
+  transform: perspective(600px) rotateX(-180deg);
+}
+
+.flip-in .cards__front-back .back2 {
+  transform: perspective(600px) rotateX(0deg);
+}
+
+// Card 3
+.cards__front-back .front3 {
+  transform: perspective(600px) rotateY(0deg);
+  transition: transform 1.5s ease-in-out 1.2s;
+}
+
+.cards__front-back .back3 {
+  transform: perspective(600px) rotateY(180deg);
+  background-color: #fbec5d;
+  color: #000;
+  transition: transform 1.5s ease-in-out 1.2s;
+}
+
+.flip-in .cards__front-back .front3 {
+  transform: perspective(600px) rotateY(-180deg);
+}
+
+.flip-in .cards__front-back .back3 {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+// --- Fin: Flip Cards --- //
+
 // --- Inicio: Contacto --- //
 
 .contact__info {
@@ -458,6 +545,10 @@ span {
 // --- Fin: Contacto --- //
 
 // --- Inicio: Footer --- //
+
+.footer {
+  background: linear-gradient(0deg, #000, #1a1a1a);
+}
 
 .footer__list,
 .footer__link {
@@ -498,6 +589,7 @@ span {
 }
 
 .footer__paragraph {
+  color: rgba(255, 255, 255, 0.7);
   font-size: 14px;
   font-weight: normal;
 }

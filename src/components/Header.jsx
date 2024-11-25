@@ -49,9 +49,6 @@ const Header = () => {
           <a href="#about">{t("navbar.about")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
-          <a href="#certifications">{t("navbar.certifications")}</a>
-        </li>
-        <li onClick={closeMenu} className="nav-item">
           <a href="#projects">{t("navbar.projects")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
