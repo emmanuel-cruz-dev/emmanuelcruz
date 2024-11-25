@@ -23,7 +23,7 @@ const FlipCards = () => {
           </h3>
         </div>
       </AnimatedComponent>
-      <article className="flip-cards__container flex flex-col lg:flex-row justify-center gap-9 text-black">
+      <article className="flip-cards__container flex flex-col flex-wrap md:flex-row justify-center items-center gap-9 text-black">
         {/* Flip Card 1 */}
         <AnimatedComponent animation="flip">
           <div className="cards__front-back">
