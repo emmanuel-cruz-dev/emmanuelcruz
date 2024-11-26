@@ -57,13 +57,13 @@ const ContactForm = () => {
     <div
       className={`${
         theme === "dark" ? "shadow__dark" : "shadow__light"
-      } flex flex-col justify-around gap-4 bg-white/30 p-6 max-w-lg xl:max-w-md mx-auto md:mx-0 h-full`}
+      } flex flex-col gap-4 p-6 py-8 max-w-lg xl:max-w-md mx-auto md:mx-0 h-full`}
     >
       <h2 className="text-2xl font-bold mb-4 xl:text-3xl">
         {t("sections.contact.subtitle")}
       </h2>
       <form
-        className="text-sm flex flex-col justify-between h-full"
+        className="text-sm flex flex-col justify-around h-full"
         ref={form}
         onSubmit={sendEmail}
       >

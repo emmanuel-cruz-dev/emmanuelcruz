@@ -43,7 +43,7 @@ const resources = {
           emailCopied: "¡Email copied!",
         },
         about: {
-          title: "A little about me",
+          title: "A Little About Me",
           description:
             "Discover how my experience and skills can add value to your projects.",
           hi: "I'm",
@@ -100,8 +100,22 @@ const resources = {
           responsive: "Adaptive design for any device",
           bem: "Block Element Modifier",
         },
+        services: {
+          title: "Building Digital Experiences",
+          description:
+            "These core principles guide every line of code and design, ensuring that every project is accessible, engaging, and efficient",
+          cardTitle1: "Usability Above All",
+          cardDescription1:
+            "Every design decision is focused on delivering an engaging, frictionless experience",
+          cardTitle2: "Speed ​​that Matters",
+          cardDescription2:
+            "A well-optimized site delivers fast results, both in speed and search engine rankings",
+          cardTitle3: "Perfect in Every Screen",
+          cardDescription3:
+            "From mobile to desktop, a design that intuitively adjusts to each format with fluidity is essential",
+        },
         contact: {
-          title: "I'm just a message away",
+          title: "I'm Just a Message Away",
           description:
             "Available for projects, inquiries, and collaborations. Don't hesitate to write me.",
           subtitle: "Get in touch",
@@ -169,7 +183,7 @@ const resources = {
           emailCopied: "¡Email copiado!",
         },
         about: {
-          title: "Un poco sobre mi",
+          title: "Un Poco Sobre Mi",
           description:
             "Descubrí cómo mi experiencia y habilidades pueden agregar valor a tus proyectos.",
           hi: "Soy",
@@ -227,8 +241,22 @@ const resources = {
           responsive: "Diseño adaptable a cualquier dispositivo",
           bem: "Modelo de elementos en bloque",
         },
+        services: {
+          title: "Construyendo Experiencias Digitales",
+          description:
+            "Estos principios fundamentales guían cada línea de código y diseño, asegurando que cada proyecto sea accesible, atractivo y eficiente",
+          cardTitle1: "Usabilidad ante Todo",
+          cardDescription1:
+            "Cada decisión de diseño está enfocada en ofrecer una experiencia atractiva y sin fricciones",
+          cardTitle2: "Velocidad que Importa",
+          cardDescription2:
+            "Un sitio bien optimizado ofrece resultados rápidos, tanto en velocidad como en posicionamiento web",
+          cardTitle3: "Perfecto en Cada Pantalla",
+          cardDescription3:
+            "Desde móviles hasta escritorios, un diseño que se ajusta intuitivamente a cada formato con fluidez es esencial",
+        },
         contact: {
-          title: "Estoy a un mensaje de distancia",
+          title: "Estoy a un Mensaje de Distancia",
           description:
             "Disponible para proyectos, consultas y colaboraciones. No dudes en escribirme.",
           subtitle: "Contactame",

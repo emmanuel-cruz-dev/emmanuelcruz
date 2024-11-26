@@ -439,6 +439,13 @@ span {
   height: 25rem;
 }
 
+@media screen and (max-width: 640px) {
+  .cards__front-back {
+    width: 91vw;
+    height: 24rem;
+  }
+}
+
 .cards__front-back > div {
   position: absolute;
   width: 100%;
@@ -448,7 +455,7 @@ span {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 0.75rem;
+  gap: 1rem;
   padding-inline: 1.5rem;
   backface-visibility: hidden;
 }
@@ -462,7 +469,6 @@ span {
 .cards__front-back .back1 {
   transform: perspective(600px) rotateY(180deg);
   background-color: #ff6b6b;
-  color: #000;
   transition: transform 1.5s ease-in-out 0.4s;
 }
 
@@ -483,7 +489,6 @@ span {
 .cards__front-back .back2 {
   transform: perspective(600px) rotateX(180deg);
   background-color: #2cffc0;
-  color: #000;
   transition: transform 1.5s ease-in-out 0.8s;
 }
 
@@ -504,7 +509,6 @@ span {
 .cards__front-back .back3 {
   transform: perspective(600px) rotateY(180deg);
   background-color: #fbec5d;
-  color: #000;
   transition: transform 1.5s ease-in-out 1.2s;
 }
 
@@ -547,7 +551,7 @@ span {
 // --- Inicio: Footer --- //
 
 .footer {
-  background: linear-gradient(0deg, #000, #1a1a1a);
+  background: linear-gradient(0deg, #000, #131313);
 }
 
 .footer__list,

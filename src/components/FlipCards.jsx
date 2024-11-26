@@ -15,15 +15,12 @@ const FlipCards = () => {
       <AnimatedComponent animation="fade" delay={1}>
         <div className="text-center mb-5">
           <h2 className="font-bold text-3xl mb-4">
-            Construyendo Experiencias Digitales
+            {t("sections.services.title")}
           </h2>
-          <h3 className="text-lg">
-            Estos principios fundamentales guían cada línea de código y diseño,
-            y aseguran que cada proyecto sea accesible, atractivo y eficiente.
-          </h3>
+          <h3 className="text-lg">{t("sections.services.description")}.</h3>
         </div>
       </AnimatedComponent>
-      <article className="flip-cards__container flex flex-col flex-wrap md:flex-row justify-center items-center gap-9 text-black">
+      <article className="flip-cards__container flex flex-col lg:flex-row justify-center items-center gap-9 text-black">
         {/* Flip Card 1 */}
         <AnimatedComponent animation="flip">
           <div className="cards__front-back">
@@ -33,11 +30,10 @@ const FlipCards = () => {
                 <img className="w-full h-full cover" src={FlipCard1} alt="" />
               </figure>
               <div className="flip-card__content flex flex-col gap-2">
-                <h3 className="font-bold text-xl">Usabilidad ante Todo</h3>
-                <p>
-                  Cada decisión de diseño está enfocada en ofrecer una
-                  experiencia atractiva y sin fricciones.
-                </p>
+                <h3 className="font-bold text-lg">
+                  {t("sections.services.cardTitle1")}
+                </h3>
+                <p>{t("sections.services.cardDescription1")}.</p>
               </div>
             </div>
           </div>
@@ -52,11 +48,10 @@ const FlipCards = () => {
                 <img className="w-full h-full cover" src={FlipCard2} alt="" />
               </figure>
               <div className="flip-card__content flex flex-col gap-2">
-                <h3 className="font-bold text-xl">Velocidad que Importa</h3>
-                <p>
-                  Un sitio bien optimizado ofrece resultados rápidos, tanto en
-                  velocidad como en posicionamiento web.
-                </p>
+                <h3 className="font-bold text-lg">
+                  {t("sections.services.cardTitle2")}
+                </h3>
+                <p>{t("sections.services.cardDescription2")}.</p>
               </div>
             </div>
           </div>
@@ -71,11 +66,10 @@ const FlipCards = () => {
                 <img className="w-full h-full cover" src={FlipCard3} alt="" />
               </figure>
               <div className="flip-card__content flex flex-col gap-2">
-                <h3 className="font-bold text-xl">Perfecto en Cada Pantalla</h3>
-                <p>
-                  Un diseño que responde a las necesidades de cada dispositivo
-                  es esencial para impactar a tu audiencia.
-                </p>
+                <h3 className="font-bold text-lg">
+                  {t("sections.services.cardTitle3")}
+                </h3>
+                <p>{t("sections.services.cardDescription3")}.</p>
               </div>
             </div>
           </div>
