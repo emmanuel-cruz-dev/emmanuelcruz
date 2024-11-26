@@ -121,7 +121,7 @@ const ContactForm = () => {
         <button
           type="submit"
           disabled={isSending}
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4"
+          className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 transition-colors duration-300"
         >
           {isSending
             ? t("sections.contact.sending")
