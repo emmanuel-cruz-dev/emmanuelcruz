@@ -21,7 +21,7 @@ const Footer = () => {
             <img
               className="w-24"
               src={LogoBlanco}
-              alt="Logo, una letra e entre corchetes"
+              alt="Logo de Emmanuel Cruz,el cual es una letra e entre corchetes"
               loading="lazy"
             />
             <p className="text-sm whitespace-nowrap">"{t("footer.phrase")}."</p>
@@ -120,7 +120,7 @@ const Footer = () => {
                 <img
                   className="w-14 mx-auto"
                   src={Logro}
-                  alt="Icono de medalla"
+                  alt="Icono de premio, se ve una mano sosteniendo una medalla."
                   loading="lazy"
                 />
               </AnimatedComponent>

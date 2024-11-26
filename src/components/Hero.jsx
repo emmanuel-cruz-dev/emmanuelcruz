@@ -37,7 +37,7 @@ const Hero = () => {
             <img
               className="w-full cover grayscale-[20%] hover:grayscale-0"
               src={picture}
-              alt="Imagen de perfil"
+              alt="Imagen de perfil de Emmanuel Cruz"
             />
           </figure>
         </AnimatedComponent>
