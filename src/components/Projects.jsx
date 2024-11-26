@@ -1,9 +1,9 @@
 import AnimatedComponent from "./AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import Back1 from "../assets/images/back1.jpg";
-import Back2 from "../assets/images/back2.jpg";
-import Back3 from "../assets/images/back3.jpg";
+import CardPollosHermanos1 from "../assets/images/card-pollos-hermanos1.jpg";
+import CardPollosHermanos2 from "../assets/images/card-pollos-hermanos2.jpg";
+import CardPollosHermanos3 from "../assets/images/card-pollos-hermanos3.jpg";
 
 import CardPortfolio1 from "../assets/images/card-portfolio1.jpg";
 import CardPortfolio2 from "../assets/images/card-portfolio2.jpg";
@@ -24,9 +24,9 @@ const Projects = () => {
   const project1 = {
     title: "Los Pollos Hermanos",
     description: t("sections.projects.pollos"),
-    img1: Back1,
-    img2: Back2,
-    img3: Back3,
+    img1: CardPollosHermanos1,
+    img2: CardPollosHermanos2,
+    img3: CardPollosHermanos3,
     flyer: "responsive",
     technologies: [
       { name: "HTML", img: HTMLLogo },
