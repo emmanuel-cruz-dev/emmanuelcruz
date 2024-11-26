@@ -20,7 +20,7 @@ const Contact = () => {
 
   return (
     <section
-      className="scroll-top py-10 w-11/12 xl:w-10/12 mx-auto"
+      className="scroll-top py-10 w-11/12 xl:w-10/12 mx-auto relative"
       id="contact"
     >
       <AnimatedComponent animation="fade" delay={1}>
@@ -35,22 +35,17 @@ const Contact = () => {
       <article className="flex flex-row gap-4 py-16">
         <article className="order-2 md:order-none flex-1">
           <ContactForm />
-          <div className="buttons hidden">
+          <div className="buttons">
             <button
               onClick={() =>
-                showToast("success", "¡Éxito! Mensaje enviado correctamente.")
+                showToast("success", t("sections.contact.success"))
               }
               className="w-20 bg-black hover:bg-green-500"
             >
               Success
             </button>
             <button
-              onClick={() =>
-                showToast(
-                  "error",
-                  "Algo salió mal. Volvé a intentarlo más tarde."
-                )
-              }
+              onClick={() => showToast("error", t("sections.contact.error"))}
               className="w-20 bg-black hover:bg-colorTertiary"
             >
               Error
@@ -78,7 +73,9 @@ const Contact = () => {
           message="¡Éxito! Mensaje enviado correctamente."
           type="success"
         /> */}
-      <Toast type={toast.type} message={toast.message} show={toast.show} />
+      <div className="toast__container">
+        <Toast type={toast.type} message={toast.message} show={toast.show} />
+      </div>
       {/* <Toast
           message="Algo salió mal. Volvé a intentarlo más tarde."
           type="error"

@@ -18,7 +18,7 @@ const resources = {
       },
       footer: {
         phrase: "There is no plan B for success",
-        channels: "Code Channels",
+        channels: "Recommended channels",
         freecodecamp: "Technical courses in spanish",
         platzi: "Online professional learning",
         projects: "Projects in progress",
@@ -127,6 +127,8 @@ const resources = {
           nameTitle: "Please enter your name",
           emailTitle: "Please enter your email address",
           messageTitle: "Please enter your message",
+          success: "Success! Message sent successfully.",
+          error: "Something went wrong. Please try again later.",
         },
         projects: {
           title: "Featured Works",
@@ -158,7 +160,7 @@ const resources = {
       },
       footer: {
         phrase: "No hay plan B para el éxito",
-        channels: "Canales de código",
+        channels: "Canales recomendados",
         freecodecamp: "Cursos técnicos en español",
         platzi: "Aprendizaje profesional en línea",
         projects: "Proyectos en Curso",
@@ -268,6 +270,8 @@ const resources = {
           nameTitle: "Ingresa tu nombre",
           emailTitle: "Ingresa tu correo electrónico",
           messageTitle: "Ingresa tu mensaje",
+          success: "¡Éxito! Mensaje enviado correctamente.",
+          error: "Algo salió mal. Intenta de nuevo más tarde.",
         },
         projects: {
           title: "Trabajos Destacados",
