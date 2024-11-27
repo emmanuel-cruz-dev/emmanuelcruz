@@ -22,8 +22,8 @@ const resources = {
         freecodecamp: "Technical courses in spanish",
         platzi: "Online professional learning",
         projects: "Course practices",
-        eros: "Bookstore website",
-        nephews: "Artists platform",
+        foodie: "Cooking recipes website",
+        baristas: "Coffee shop website",
         award: "Achievements",
         congratulations:
           "Congratulations! You've reached the epic end of my portfolio. You've earned the",
@@ -165,8 +165,8 @@ const resources = {
         freecodecamp: "Cursos técnicos en español",
         platzi: "Aprendizaje profesional en línea",
         projects: "Prácticas de cursos",
-        eros: "Sitio web de librería",
-        nephews: "Plataforma de artistas",
+        foodie: "Web de recetas de cocina",
+        baristas: "Sitio web de cafetería",
         award: "Logros",
         congratulations:
           "¡Felicidades! Alcanzaste el épico final de mi portfolio. Te ganaste la medalla de",

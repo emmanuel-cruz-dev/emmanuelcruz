@@ -3,8 +3,8 @@ import Logro from "../assets/icons/logro.png";
 import LogoBlanco from "../assets/icons/logo-blanco.png";
 import freeCodeCampLogo from "../assets/images/freecodecamp-logo.jpg";
 import PlatziLogo from "../assets/images/platzi-logo.jpg";
-import ErosLogo from "../assets/images/eros-logo.jpg";
-import NephewsLogo from "../assets/images/nephews-logo.jpg";
+import FoodieLogo from "../assets/images/foodie-logo.jpg";
+import BaristasLogo from "../assets/images/baristas-logo.jpg";
 import LastModifiedDate from "./LastModifiedDate";
 import SocialLinks from "./SocialLinks";
 import AnimatedComponent from "./AnimatedComponent";
@@ -72,34 +72,30 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://eros-libreria.vercel.app/"
+              href="https://emmalcruz.github.io/foodie/"
               className="flex gap-4 items-center border-b border-gray-600 pb-4"
             >
               <figure className="w-16">
-                <img
-                  src={ErosLogo}
-                  alt="Logo de Eros Librería"
-                  loading="lazy"
-                />
+                <img src={FoodieLogo} alt="Logo de Foodie" loading="lazy" />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
-                <h4>Eros Librería</h4>
-                <p className="footer__paragraph">{t("footer.eros")}.</p>
+                <h4>Foodie</h4>
+                <p className="footer__paragraph">{t("footer.foodie")}.</p>
               </div>
             </a>
 
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://n3phews.vercel.app/"
+              href="https://emmalcruz.github.io/baristas/"
               className="flex gap-4 items-center"
             >
               <figure className="w-16">
-                <img src={NephewsLogo} alt="Logo de N3phews" loading="lazy" />
+                <img src={BaristasLogo} alt="Logo de Baristas" loading="lazy" />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
-                <h4>N3phews</h4>
-                <p className="footer__paragraph">{t("footer.nephews")}.</p>
+                <h4>Baristas</h4>
+                <p className="footer__paragraph">{t("footer.baristas")}.</p>
               </div>
             </a>
           </div>
