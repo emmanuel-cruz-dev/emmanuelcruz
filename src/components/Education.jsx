@@ -89,7 +89,7 @@ const Education = () => {
 
   return (
     <section
-      className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto"
+      className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
       id="certifications"
     >
       <AnimatedComponent animation="fade" delay={1}>

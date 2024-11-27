@@ -27,9 +27,9 @@ const Header = () => {
       }`}
       id="header"
     >
-      <a className="my-auto z-20" href="https://emmanuel-cruz.netlify.app/">
+      <a className="my-auto z-20" href="/">
         <img
-          className="w-8"
+          className="w-8 opacity-80 hover:opacity-100 transition-all duration-500 ease-in-out"
           src={theme === "dark" ? logoBlanco : logoNegro}
           alt="Una letra e, entre corchetes"
         />
@@ -63,7 +63,7 @@ const Header = () => {
         <button
           onClick={toggleTheme}
           aria-label="Toggle theme"
-          className="flex items-center"
+          className="flex items-center opacity-85 hover:opacity-100 transition-all duration-500 ease-in-out"
         >
           {theme === "dark" ? (
             <span

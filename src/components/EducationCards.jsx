@@ -1,4 +1,7 @@
 import AnimatedComponent from "./AnimatedComponent";
+import { useTheme } from "./ThemeContext";
+import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import PlatziTituloGrande from "../assets/images/platzi.jpg";
 import JavascriptGrande from "../assets/images/freecodecamp-javascript.jpg";
@@ -8,8 +11,6 @@ import UXResearchTituloGrande from "../assets/images/ux-research.jpg";
 import NucbaTituloGrande from "../assets/images/nucba.jpg";
 
 import Gallery from "./Gallery";
-import { useState } from "react";
-import { useTheme } from "./ThemeContext";
 
 const EducationCards = ({
   img,
@@ -22,6 +23,7 @@ const EducationCards = ({
   num,
 }) => {
   const { theme } = useTheme();
+  const { t } = useTranslation();
 
   const certificates = [
     PlatziTituloGrande,
@@ -57,6 +59,7 @@ const EducationCards = ({
             <img
               className="w-full cover"
               src={blackLogo && theme !== "dark" ? blackLogo : logo}
+              title={t("sections.certifications.url")}
               alt={`Logo de ${span}`}
               loading="lazy"
             />
@@ -81,6 +84,7 @@ const EducationCards = ({
           <img
             src={img}
             className="lg:w-32"
+            title={t("sections.certifications.img")}
             alt={`Certificado de ${title}`}
             loading="lazy"
           />

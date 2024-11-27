@@ -115,6 +115,12 @@ span {
 .nav-item {
   position: relative;
   font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
 
   &::after {
     content: "";

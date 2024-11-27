@@ -21,7 +21,7 @@ const resources = {
         channels: "Recommended channels",
         freecodecamp: "Technical courses in spanish",
         platzi: "Online professional learning",
-        projects: "Projects in progress",
+        projects: "Course practices",
         eros: "Bookstore website",
         nephews: "Artists platform",
         award: "Achievements",
@@ -30,7 +30,6 @@ const resources = {
         rank: "professional navigator",
         thanks: "medal. Thanks for visiting!",
         paragraph: "Developed by",
-        place: "in",
       },
       sections: {
         welcome: "Hello! I'm Emmanuel",
@@ -72,6 +71,8 @@ const resources = {
             "Focused on methodologies to understand needs, behaviors and motivations, optimizing the user experience",
           nucba:
             "Practical learning workshop for the use of no-code tools and applications based on artificial intelligence",
+          url: "Go to website",
+          img: "Expand image",
         },
         skills: {
           title: "Tech Stack",
@@ -163,7 +164,7 @@ const resources = {
         channels: "Canales recomendados",
         freecodecamp: "Cursos técnicos en español",
         platzi: "Aprendizaje profesional en línea",
-        projects: "Proyectos en Curso",
+        projects: "Prácticas de cursos",
         eros: "Sitio web de librería",
         nephews: "Plataforma de artistas",
         award: "Logros",
@@ -172,7 +173,6 @@ const resources = {
         rank: "navegante profesional.",
         thanks: "¡Gracias por tu visita!",
         paragraph: "Desarrollado por",
-        place: "en",
       },
       sections: {
         welcome: "Hola! Soy Emmanuel",
@@ -214,6 +214,8 @@ const resources = {
             "Enfocado en metodologías para entender necesidades, comportamientos y motivaciones, optimizando la experiencia de usuario",
           nucba:
             "Taller práctico de aprendizaje para el uso de herramientas no-code y aplicaciones basadas en inteligencia artificial",
+          url: "Ir al sitio web",
+          img: "Expandir imagen",
         },
         skills: {
           title: "Stack Tecnológico",

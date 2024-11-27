@@ -9,7 +9,7 @@ const FlipCards = () => {
 
   return (
     <section
-      className="scroll-top py-10 flex flex-col gap-8 w-11/12 xl:w-10/12 mx-auto"
+      className="scroll-top py-10 flex flex-col gap-8 w-11/12 xl:w-10/12 mx-auto select-none"
       id="services"
     >
       <AnimatedComponent animation="fade" delay={1}>

@@ -17,7 +17,7 @@ const LanguageSwitcher = () => {
   }, [i18n.language]);
 
   return (
-    <div className="flex gap-2 cursor-pointer">
+    <div className="flex gap-2 cursor-pointer opacity-85 hover:opacity-100 transition-all duration-500 ease-in-out">
       <button title={t("navbar.title")} onClick={changeLanguage}>
         <FlagIcon code={currentLanguage === "es" ? "AR" : "US"} size={32} />
       </button>
