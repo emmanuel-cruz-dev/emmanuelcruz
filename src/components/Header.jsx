@@ -36,7 +36,7 @@ const Header = () => {
       </a>
 
       <ul
-        className={`absolute inset-0 grid gap-12 text-center place-content-center z-10 ${
+        className={`navbar__list absolute inset-0 grid gap-12 text-center place-content-center z-10 ${
           theme === "dark" ? "bg-dark" : "bg-light"
         } ${
           isMenuOpen ? "block h-screen" : "hidden"
@@ -84,7 +84,7 @@ const Header = () => {
         <LanguageSwitcher />
         <label
           className="nav__label flex items-center justify-center md:hidden"
-          htmlFor=""
+          htmlFor="toggle-menu"
           aria-label="Toggle menu"
         >
           <input

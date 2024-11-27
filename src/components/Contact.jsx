@@ -35,7 +35,7 @@ const Contact = () => {
       <article className="flex flex-row gap-4 py-16">
         <article className="order-2 md:order-none flex-1">
           <ContactForm />
-          <div className="buttons">
+          <div className="button hidden">
             <button
               onClick={() =>
                 showToast("success", t("sections.contact.success"))
