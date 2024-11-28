@@ -54,12 +54,22 @@ span {
   font-weight: 700;
 }
 
+/* Margen de secciones */
+
+.scroll-top {
+  scroll-margin-top: 80px; /* Ajusta a la altura de tu navbar */
+}
+
+// --- Fin: Estilos Globales --- //
+
+// --- Inicio: Efectos de Sombras --- //
+
 .navbar__shadow__light {
-  box-shadow: 0px 8px 16px rgba(165, 177, 198, 0.7); /* Sombra inferior suave */
+  box-shadow: 0px 8px 16px rgba(165, 177, 198, 0.7);
 }
 
 .navbar__shadow__dark {
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* Sombra inferior suave */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .shadow__light {
@@ -84,7 +94,7 @@ span {
 
 .btn__shadow__light--red {
   box-shadow: 8px 8px 16px rgba(68, 1, 3, 0.8),
-    -8px -8px 16px rgba(236, 62, 68, 0.8); /* Luz derivada (más clara) */
+    -8px -8px 16px rgba(236, 62, 68, 0.8);
 }
 
 .btn__shadow__dark--red {
@@ -92,13 +102,7 @@ span {
     -8px -8px 16px rgba(184, 37, 61, 0.8);
 }
 
-/* Margen de secciones */
-
-.scroll-top {
-  scroll-margin-top: 80px; /* Ajusta a la altura de tu navbar */
-}
-
-// --- Fin: Estilos Globales --- //
+// --- Fin: Efectos de Sombras --- //
 
 // --- Inicio: NavBar --- //
 
@@ -651,7 +655,7 @@ span {
   position: relative;
   overflow: hidden;
   min-width: 300px;
-  animation: slideIn 0.3s ease-out;
+  transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 .toast-icon {
@@ -681,8 +685,15 @@ span {
   bottom: 0;
   left: 0;
   height: 4px;
-  // background-color: #4caf50;
   transition: width 0.1s linear;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease forwards;
+}
+
+.slide-out {
+  animation: slideOut 0.5s ease forwards;
 }
 
 @keyframes slideIn {
@@ -696,13 +707,9 @@ span {
   }
 }
 
-.slide-out {
-  animation: slideOut 0.5s ease forwards;
-}
-
 @keyframes slideOut {
   to {
-    transform: translateX(100%);
+    transform: translateX(-100%);
     opacity: 0;
   }
 }

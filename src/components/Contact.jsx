@@ -1,22 +1,12 @@
 import { useTheme } from "./ThemeContext";
 import AnimatedComponent from "./AnimatedComponent";
 import { FaMapMarkerAlt } from "react-icons/fa";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
-import Toast from "./Toast";
 
 const Contact = () => {
-  const [toast, setToast] = useState({ show: false, type: "", message: "" });
   const { t } = useTranslation();
   const { theme } = useTheme();
-
-  const showToast = (type, message) => {
-    setToast({ show: true, type, message });
-    setTimeout(() => {
-      setToast({ ...toast, show: false });
-    }, 5000); // Oculta el toast después de 5 segundos
-  };
 
   return (
     <section
@@ -32,26 +22,10 @@ const Contact = () => {
         </div>
       </AnimatedComponent>
 
-      <article className="flex flex-row gap-4 py-16">
-        <article className="order-2 md:order-none flex-1">
+      <article className="flex gap-8 py-16">
+        <div className="flex-1">
           <ContactForm />
-          <div className="button hidden">
-            <button
-              onClick={() =>
-                showToast("success", t("sections.contact.success"))
-              }
-              className="w-20 bg-black hover:bg-green-500"
-            >
-              Success
-            </button>
-            <button
-              onClick={() => showToast("error", t("sections.contact.error"))}
-              className="w-20 bg-black hover:bg-colorTertiary"
-            >
-              Error
-            </button>
-          </div>
-        </article>
+        </div>
 
         <article
           className={`${
@@ -68,18 +42,6 @@ const Contact = () => {
           </div>
         </article>
       </article>
-
-      {/* <Toast
-          message="¡Éxito! Mensaje enviado correctamente."
-          type="success"
-        /> */}
-      <div className="toast__container">
-        <Toast type={toast.type} message={toast.message} show={toast.show} />
-      </div>
-      {/* <Toast
-          message="Algo salió mal. Volvé a intentarlo más tarde."
-          type="error"
-        /> */}
     </section>
   );
 };
