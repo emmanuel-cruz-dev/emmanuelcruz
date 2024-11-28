@@ -57,7 +57,11 @@ const Toast = ({ message, type, show, onClose }) => {
       <div className="toast-container">
         <div
           className={`toast select-none ${
-            isEntering ? "slide-in" : isVisibleSlide ? "" : "slide-out"
+            isEntering
+              ? "toast__slide-in"
+              : isVisibleSlide
+              ? ""
+              : "toast__slide-out"
           }`}
           style={{ backgroundColor: toastColor }}
         >

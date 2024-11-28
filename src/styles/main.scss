@@ -697,11 +697,11 @@ span {
   transition: width 0.1s linear;
 }
 
-.slide-in {
+.toast__slide-in {
   animation: slideIn 0.5s ease forwards;
 }
 
-.slide-out {
+.toast__slide-out {
   animation: slideOut 0.5s ease forwards;
 }
 
