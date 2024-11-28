@@ -125,11 +125,11 @@ const Footer = () => {
         </div>
       </article>
 
-      <article className="flex flex-col lg:flex-row gap-6 justify-between items-center p-8 uppercase text-xs">
+      <article className="flex flex-col lg:flex-row gap-8 justify-between items-center p-8 uppercase text-xs">
         <div className="order-last lg:order-first">
           <LastModifiedDate currentLanguage={currentLanguage} />
         </div>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-8 md:gap-4">
           <ul className="footer__list flex flex-col md:flex-row text-center gap-6 font-semibold">
             <li>
               <a href="#hero">{t("navbar.home")}</a>
