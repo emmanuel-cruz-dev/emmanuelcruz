@@ -73,7 +73,7 @@ const ContactForm = () => {
       <div
         className={`${
           theme === "dark" ? "shadow__dark" : "shadow__light"
-        } flex flex-col gap-4 p-6 py-8 mx-auto md:mx-0 max-w-96 md:max-w-none h-full`}
+        } flex flex-col gap-4 p-6 py-8 mx-auto md:mx-0 max-w-96 md:max-w-none lg:h-96`}
       >
         <h2 className="text-2xl font-bold mb-4 xl:text-3xl">
           {t("sections.contact.subtitle")}
