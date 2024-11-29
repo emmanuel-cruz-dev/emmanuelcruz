@@ -8,12 +8,12 @@ Este es mi portafolio como desarrollador frontend, un proyecto que marca un gran
 
 ## Capturas de pantalla
 <p align="center">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/hero-banner.jpg" alt="Vista principal" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/products-banner.jpg" alt="Productos" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/vegan-banner.jpg" alt="Vegano" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/testimonials-banner.jpg" alt="Testimonios" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/delivery-banner.jpg" alt="Delivery" width="400px">
-  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/newsletter-banner.jpg" alt="Newsletter" width="400px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/hero-banner.jpg" alt="Vista principal" width="400px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/about-banner.jpg" alt="About" width="400px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/education-banner.jpg" alt="Education" width="400px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/projects-banner.jpg" alt="Projects" width="400px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/stack-banner.jpg" alt="Stack" width="400px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/services-banner.jpg" alt="Services" width="400px">
 </p>
 
 
