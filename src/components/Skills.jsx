@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
 import JavascriptLogo from "../assets/icons/javascript-logo.png";
+import TypescriptLogo from "../assets/icons/typescript-logo.png";
 import ReactLogo from "../assets/icons/react-logo.png";
 import NodeLogo from "../assets/icons/nodejs-logo.png";
 import SassLogo from "../assets/icons/sass-logo.png";
@@ -71,27 +72,9 @@ const Skills = () => {
               />
 
               <SkillsCard
-                title={t("sections.skills.react")}
-                src={ReactLogo}
-                alt="React"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.nodejs")}
-                src={NodeLogo}
-                alt="Node.js"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.sass")}
-                src={SassLogo}
-                alt="Sass"
-              />
-
-              <SkillsCard
-                title={t("sections.skills.git")}
-                src={GitLogo}
-                alt="Git"
+                title={t("sections.skills.typescript")}
+                src={TypescriptLogo}
+                alt="TypeScript"
               />
             </article>
           </article>
@@ -108,9 +91,27 @@ const Skills = () => {
               </h4>
               <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
                 <SkillsCard
+                  title={t("sections.skills.react")}
+                  src={ReactLogo}
+                  alt="React"
+                />
+
+                <SkillsCard
+                  title={t("sections.skills.nodejs")}
+                  src={NodeLogo}
+                  alt="Node.js"
+                />
+
+                <SkillsCard
                   title={t("sections.skills.tailwind")}
                   src={TailwindLogo}
-                  alt="Tailwind"
+                  alt="Tailwind CSS"
+                />
+
+                <SkillsCard
+                  title={t("sections.skills.sass")}
+                  src={SassLogo}
+                  alt="Sass"
                 />
 
                 <SkillsCard
@@ -132,15 +133,20 @@ const Skills = () => {
               </h4>
               <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
                 <SkillsCard
-                  title={t("sections.skills.vscode")}
-                  src={VsCodeLogo}
-                  alt="Visual Studio Code"
+                  title={t("sections.skills.git")}
+                  src={GitLogo}
+                  alt="Git"
                 />
 
                 <SkillsCard
                   title={t("sections.skills.github")}
                   src={GithubLogo}
                   alt="GitHub"
+                />
+                <SkillsCard
+                  title={t("sections.skills.vscode")}
+                  src={VsCodeLogo}
+                  alt="Visual Studio Code"
                 />
               </article>
             </article>

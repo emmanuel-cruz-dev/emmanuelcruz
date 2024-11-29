@@ -1,5 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
+import { types } from "sass";
 
 // Carga de recursos de traducción
 const resources = {
@@ -86,6 +87,7 @@ const resources = {
           html: "Hypertext Markup Language",
           css: "Cascading Style Sheets",
           javascript: "Web programming language",
+          typescript: "Superset of JavaScript with static typing",
           react: "JavaScript library for building user interfaces",
           tailwind: "Utility CSS framework",
           bootstrap: "Front-End development framework",
@@ -229,6 +231,7 @@ const resources = {
           html: "Lenguaje de Marcado de Hipertexto",
           css: "Hojas de Estilo en Cascada",
           javascript: "Lenguaje de programación web",
+          typescript: "Superset de JavaScript con tipado estático",
           react:
             "Biblioteca de JavaScript para construir interfaces de usuario",
           tailwind: "Framework de CSS utilitario",
