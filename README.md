@@ -1,8 +1,38 @@
-# React + Vite
+![](https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/portfolio-banner.jpg)
+# Emmanuel Cruz | Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este es mi portafolio como desarrollador frontend, un proyecto que marca un gran paso en mi trayectoria, ya que refleja mis habilidades, estilo y creatividad. Fue desarrollado utilizando React, junto con Tailwind CSS y Sass para los estilos, herramientas que hicieron el proceso más ágil y moderno.
 
-Currently, two official plugins are available:
+## Demo en vivo
+[Visita la página aquí](https://emmanuel-cruz.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Capturas de pantalla
+<p align="center">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/hero-banner.jpg" alt="Vista principal" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/products-banner.jpg" alt="Productos" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/vegan-banner.jpg" alt="Vegano" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/testimonials-banner.jpg" alt="Testimonios" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/delivery-banner.jpg" alt="Delivery" width="400px">
+  <img src="https://github.com/EmmaLCruz/los-pollos-hermanos-website/blob/main/img/newsletter-banner.jpg" alt="Newsletter" width="400px">
+</p>
+
+
+## Tecnologías utilizadas
+- React
+- Tailwind CSS
+- Sass
+
+## Funcionalidades
+- Selector de idioma: Soporte para inglés y español.
+- Modo claro/oscuro: Personalización visual según las preferencias del usuario.
+- Diseño responsive: Adaptado a dispositivos de todos los tamaños.
+- Animaciones on-scroll: Interacciones dinámicas al desplazarse por la página.
+- Navbar funcional: Navegación fluida entre las secciones.
+- Galería de proyectos: Enlaces a versiones en vivo y repositorios de mis otros proyectos.
+
+Además, diseñé el sitio por completo, incluyendo algunas imágenes editadas en Photoshop, lo que me permitió personalizar cada detalle y plasmar mi visión de cómo debería lucir mi "casa virtual".
+
+Este proyecto no solo es una muestra de mis habilidades técnicas, sino también de mi dedicación y pasión por el desarrollo web. Es un lugar donde los visitantes pueden conocer mi trabajo y mis proyectos anteriores.
+
+## Estado
+- Completado por el momento, tengo más proyectos en curso que iré agregando.
