@@ -8,12 +8,12 @@ Este es mi portafolio como desarrollador frontend, un proyecto que marca un gran
 
 ## Capturas de pantalla
 <p align="center">
-  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/hero-banner.jpg" alt="Vista principal" width="400px">
-  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/about-banner.jpg" alt="About" width="400px">
-  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/education-banner.jpg" alt="Education" width="400px">
-  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/projects-banner.jpg" alt="Projects" width="400px">
-  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/stack-banner.jpg" alt="Stack" width="400px">
-  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/services-banner.jpg" alt="Services" width="400px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/hero-banner.jpg" alt="Vista principal" width="300px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/about-banner.jpg" alt="About" width="300px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/education-banner.jpg" alt="Education" width="300px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/projects-banner.jpg" alt="Projects" width="300px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/stack-banner.jpg" alt="Stack" width="300px">
+  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/services-banner.jpg" alt="Services" width="300px">
 </p>
 
 
