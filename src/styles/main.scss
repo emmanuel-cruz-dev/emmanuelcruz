@@ -485,62 +485,62 @@ span {
 
 // Card 1
 .cards__front-back .front1 {
-  transform: perspective(600px) rotateY(0deg);
-  transition: transform 1.5s ease-in-out 0.4s;
+  transform: perspective(800px) rotateY(0deg);
+  transition: transform 1.5s ease-in-out 0.3s;
 }
 
 .cards__front-back .back1 {
-  transform: perspective(600px) rotateY(180deg);
+  transform: perspective(800px) rotateY(180deg);
   background-color: #ff6b6b;
-  transition: transform 1.5s ease-in-out 0.4s;
+  transition: transform 1.5s ease-in-out 0.3s;
 }
 
 .flip-in .cards__front-back .front1 {
-  transform: perspective(600px) rotateY(180deg);
+  transform: perspective(800px) rotateY(180deg);
 }
 
 .flip-in .cards__front-back .back1 {
-  transform: perspective(600px) rotateY(360deg);
+  transform: perspective(800px) rotateY(360deg);
 }
 
 // Card 2
 .cards__front-back .front2 {
-  transform: perspective(600px) rotateX(0deg);
-  transition: transform 1.5s ease-in-out 0.8s;
+  transform: perspective(800px) rotateX(0deg);
+  transition: transform 1.5s ease-in-out 0.6s;
 }
 
 .cards__front-back .back2 {
-  transform: perspective(600px) rotateX(180deg);
+  transform: perspective(800px) rotateX(180deg);
   background-color: #2cffc0;
-  transition: transform 1.5s ease-in-out 0.8s;
+  transition: transform 1.5s ease-in-out 0.6s;
 }
 
 .flip-in .cards__front-back .front2 {
-  transform: perspective(600px) rotateX(-180deg);
+  transform: perspective(800px) rotateX(-180deg);
 }
 
 .flip-in .cards__front-back .back2 {
-  transform: perspective(600px) rotateX(0deg);
+  transform: perspective(800px) rotateX(0deg);
 }
 
 // Card 3
 .cards__front-back .front3 {
-  transform: perspective(600px) rotateY(0deg);
-  transition: transform 1.5s ease-in-out 1.2s;
+  transform: perspective(800px) rotateY(0deg);
+  transition: transform 1.5s ease-in-out 0.9s;
 }
 
 .cards__front-back .back3 {
-  transform: perspective(600px) rotateY(180deg);
+  transform: perspective(800px) rotateY(180deg);
   background-color: #fbec5d;
-  transition: transform 1.5s ease-in-out 1.2s;
+  transition: transform 1.5s ease-in-out 0.9s;
 }
 
 .flip-in .cards__front-back .front3 {
-  transform: perspective(600px) rotateY(-180deg);
+  transform: perspective(800px) rotateY(-180deg);
 }
 
 .flip-in .cards__front-back .back3 {
-  transform: perspective(600px) rotateY(0deg);
+  transform: perspective(800px) rotateY(0deg);
 }
 
 // --- Fin: Flip Cards --- //
