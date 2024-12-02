@@ -18,7 +18,7 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          vendor: ["react", "react-dom", "axios", "lodash"],
+          vendor: ["react", "react-dom"],
           utils: ["i18next", "react-i18next"],
           "yet-another-react-lightbox": ["yet-another-react-lightbox"],
           "react-slick": ["react-slick"],
