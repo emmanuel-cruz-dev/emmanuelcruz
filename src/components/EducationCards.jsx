@@ -3,12 +3,12 @@ import { useTheme } from "./ThemeContext";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import PlatziTituloGrande from "../assets/images/platzi.jpg";
-import JavascriptGrande from "../assets/images/freecodecamp-javascript.jpg";
-import ResponsiveGrande from "../assets/images/freecodecamp-responsive.jpg";
-import HTMLCSSTituloGrande from "../assets/images/html-css.jpg";
-import UXResearchTituloGrande from "../assets/images/ux-research.jpg";
-import NucbaTituloGrande from "../assets/images/nucba.jpg";
+import PlatziTituloGrande from "../assets/images/platzi.webp";
+import JavascriptGrande from "../assets/images/freecodecamp-javascript.webp";
+import ResponsiveGrande from "../assets/images/freecodecamp-responsive.webp";
+import HTMLCSSTituloGrande from "../assets/images/html-css.webp";
+import UXResearchTituloGrande from "../assets/images/ux-research.webp";
+import NucbaTituloGrande from "../assets/images/nucba.webp";
 
 import Gallery from "./Gallery";
 

@@ -1,13 +1,13 @@
 import AnimatedComponent from "./AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import CardPollosHermanos1 from "../assets/images/card-pollos-hermanos1.jpg";
-import CardPollosHermanos2 from "../assets/images/card-pollos-hermanos2.jpg";
-import CardPollosHermanos3 from "../assets/images/card-pollos-hermanos3.jpg";
+import CardPollosHermanos1 from "../assets/images/card-pollos-hermanos1.webp";
+import CardPollosHermanos2 from "../assets/images/card-pollos-hermanos2.webp";
+import CardPollosHermanos3 from "../assets/images/card-pollos-hermanos3.webp";
 
-import CardPortfolio1 from "../assets/images/card-portfolio1.jpg";
-import CardPortfolio2 from "../assets/images/card-portfolio2.jpg";
-import CardPortfolio3 from "../assets/images/card-portfolio3.jpg";
+import CardPortfolio1 from "../assets/images/card-portfolio1.webp";
+import CardPortfolio2 from "../assets/images/card-portfolio2.webp";
+import CardPortfolio3 from "../assets/images/card-portfolio3.webp";
 
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";

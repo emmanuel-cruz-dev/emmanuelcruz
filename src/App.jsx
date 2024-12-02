@@ -11,14 +11,6 @@ const Skills = lazy(() => import("./components/Skills"));
 const FlipCards = lazy(() => import("./components/FlipCards"));
 const Contact = lazy(() => import("./components/Contact"));
 
-// import ScrollToTopButton from "./components/ScrollToTopButton";
-// import About from "./components/About";
-// import Education from "./components/Education";
-// import Projects from "./components/Projects";
-// import Skills from "./components/Skills";
-// import FlipCards from "./components/FlipCards";
-// import Contact from "./components/Contact";
-
 import Footer from "./components/Footer";
 
 function App() {
