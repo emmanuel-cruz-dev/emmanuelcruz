@@ -90,6 +90,8 @@ const ProjectsCard = ({
                 className="technology-logo w-10"
                 title={tech.name}
                 loading="lazy"
+                width="900"
+                height="900"
               />
             </div>
           ))}

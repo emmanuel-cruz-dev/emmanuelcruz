@@ -16,13 +16,31 @@ const Carousel = ({ img1, img2, img3 }) => {
     <div className="projects__item__slider overflow-hidden">
       <Slider {...settings}>
         <div>
-          <img src={img1} alt="Tarjeta de proyecto" loading="lazy" />
+          <img
+            src={img1}
+            alt="Tarjeta de proyecto"
+            loading="lazy"
+            width="900"
+            height="600"
+          />
         </div>
         <div>
-          <img src={img2} alt="Tarjeta de proyecto" loading="lazy" />
+          <img
+            src={img2}
+            alt="Tarjeta de proyecto"
+            loading="lazy"
+            width="900"
+            height="600"
+          />
         </div>
         <div>
-          <img src={img3} alt="Tarjeta de proyecto" loading="lazy" />
+          <img
+            src={img3}
+            alt="Tarjeta de proyecto"
+            loading="lazy"
+            width="900"
+            height="600"
+          />
         </div>
       </Slider>
     </div>

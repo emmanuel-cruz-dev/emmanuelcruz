@@ -73,6 +73,8 @@ const About = () => {
               src={Screens}
               alt="Un celular y una notebook"
               loading="lazy"
+              width="700"
+              height="411"
             />
           </figure>
         </div>
@@ -86,6 +88,8 @@ const About = () => {
             src={Background}
             alt="Computadora de escritorio con fondo azul"
             loading="lazy"
+            width="600"
+            height="347"
           />
         </figure>
         <div className="flex flex-col md:flex-row gap-4 md:col-span-3 lg:col-span-2">

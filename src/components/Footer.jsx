@@ -23,6 +23,8 @@ const Footer = () => {
               src={LogoBlanco}
               alt="Logo de Emmanuel Cruz,el cual es una letra e entre corchetes"
               loading="lazy"
+              width="320"
+              height="320"
             />
             <p className="text-sm whitespace-nowrap">"{t("footer.phrase")}."</p>
           </div>
@@ -39,7 +41,13 @@ const Footer = () => {
               className="flex gap-4 items-center border-b border-gray-600 pb-4"
             >
               <figure className="w-16">
-                <img src={PlatziLogo} alt="Logo de Platzi" loading="lazy" />
+                <img
+                  src={PlatziLogo}
+                  alt="Logo de Platzi"
+                  loading="lazy"
+                  width="600"
+                  height="600"
+                />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>Platzi</h4>
@@ -58,6 +66,8 @@ const Footer = () => {
                   src={freeCodeCampLogo}
                   alt="Logo de freeCodeCamp"
                   loading="lazy"
+                  width="600"
+                  height="600"
                 />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
@@ -76,7 +86,13 @@ const Footer = () => {
               className="flex gap-4 items-center border-b border-gray-600 pb-4"
             >
               <figure className="w-16">
-                <img src={FoodieLogo} alt="Logo de Foodie" loading="lazy" />
+                <img
+                  src={FoodieLogo}
+                  alt="Logo de Foodie"
+                  loading="lazy"
+                  width="600"
+                  height="600"
+                />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>Foodie</h4>
@@ -91,7 +107,13 @@ const Footer = () => {
               className="flex gap-4 items-center"
             >
               <figure className="w-16">
-                <img src={BaristasLogo} alt="Logo de Baristas" loading="lazy" />
+                <img
+                  src={BaristasLogo}
+                  alt="Logo de Baristas"
+                  loading="lazy"
+                  width="600"
+                  height="600"
+                />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
                 <h4>Baristas</h4>
@@ -118,6 +140,8 @@ const Footer = () => {
                   src={Logro}
                   alt="Icono de premio, se ve una mano sosteniendo una medalla."
                   loading="lazy"
+                  width="512"
+                  height="512"
                 />
               </AnimatedComponent>
             </div>
