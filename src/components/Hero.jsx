@@ -1,6 +1,6 @@
 import { useTheme } from "./ThemeContext";
 import { useTranslation } from "react-i18next";
-import picture from "../assets/images/img-profile.jpg";
+import picture from "../assets/images/img-profile.webp";
 import Links from "./Links";
 import AnimatedComponent from "./AnimatedComponent";
 
@@ -38,7 +38,7 @@ const Hero = () => {
             } flex justify-center items-center w-64 h-64 md:w-[22rem] md:h-[22rem] my-auto`}
           >
             <img
-              className="w-full cover grayscale-[20%] hover:grayscale-0"
+              className="w-full cover hover:-rotate-2 transition-all duration-500 ease-in-out"
               src={picture}
               alt="Imagen de perfil de Emmanuel Cruz"
             />
