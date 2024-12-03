@@ -65,6 +65,8 @@ span {
 // --- Inicio: Loader --- //
 
 .loader-container {
+  overflow: hidden;
+
   &.fullscreen {
     position: fixed;
     top: 0;
