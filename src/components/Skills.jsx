@@ -146,7 +146,7 @@ const Skills = () => {
                 <SkillsCard
                   title={t("sections.skills.vscode")}
                   src={VsCodeLogo}
-                  alt="Visual Studio Code"
+                  alt="VS Code"
                 />
               </article>
             </article>
@@ -194,7 +194,7 @@ const Skills = () => {
                 <SkillsCard
                   title={t("sections.skills.mobileFirst")}
                   src={MobileFirstLogo}
-                  alt="Mobile-first Design"
+                  alt="Mobile-first"
                 />
 
                 <SkillsCard
