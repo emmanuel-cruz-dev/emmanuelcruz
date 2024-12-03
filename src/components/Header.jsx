@@ -32,6 +32,9 @@ const Header = () => {
           className="w-8 opacity-80 hover:opacity-100 transition-all duration-500 ease-in-out"
           src={theme === "dark" ? logoBlanco : logoNegro}
           alt="Una letra e, entre corchetes"
+          loading="lazy"
+          width="100"
+          height="100"
         />
       </a>
 

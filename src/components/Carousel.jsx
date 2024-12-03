@@ -20,8 +20,8 @@ const Carousel = ({ img1, img2, img3 }) => {
             src={img1}
             alt="Tarjeta de proyecto"
             loading="lazy"
-            width="900"
-            height="600"
+            width="500"
+            height="333"
           />
         </div>
         <div>
@@ -29,8 +29,8 @@ const Carousel = ({ img1, img2, img3 }) => {
             src={img2}
             alt="Tarjeta de proyecto"
             loading="lazy"
-            width="900"
-            height="600"
+            width="500"
+            height="333"
           />
         </div>
         <div>
@@ -38,8 +38,8 @@ const Carousel = ({ img1, img2, img3 }) => {
             src={img3}
             alt="Tarjeta de proyecto"
             loading="lazy"
-            width="900"
-            height="600"
+            width="500"
+            height="333"
           />
         </div>
       </Slider>

@@ -65,6 +65,9 @@ const About = () => {
               className="w-9 mx-auto"
               src={Logo}
               alt="Una letra e, entre corchetes"
+              loading="lazy"
+              width="100"
+              height="100"
             />
           </figure>
           <figure className="w-fit h-fit">

@@ -10,8 +10,7 @@ const Projects = lazy(() => import("./components/Projects"));
 const Skills = lazy(() => import("./components/Skills"));
 const FlipCards = lazy(() => import("./components/FlipCards"));
 const Contact = lazy(() => import("./components/Contact"));
-
-import Footer from "./components/Footer";
+const Footer = lazy(() => import("./components/Footer"));
 
 function App() {
   return (
@@ -19,15 +18,27 @@ function App() {
       <Header />
       <Hero />
       <Suspense fallback={<div>Loading...</div>}>
-        <ScrollToTopButton />
         <About />
+        <ScrollToTopButton />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Education />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Projects />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Skills />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <FlipCards />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
         <Contact />
       </Suspense>
-      <Footer />
+      <Suspense fallback={<div>Loading...</div>}>
+        <Footer />
+      </Suspense>
     </>
   );
 }

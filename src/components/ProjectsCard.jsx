@@ -27,6 +27,8 @@ const ProjectsCard = ({
           alt="Logo de responsive"
           className="w-9"
           loading="lazy"
+          width="100"
+          height="100"
         />
         <span className="uppercase font-bold text-[0.75rem] text-white">
           100% responsive
@@ -40,6 +42,8 @@ const ProjectsCard = ({
           alt="Logo de darkmode"
           className="w-9"
           loading="lazy"
+          width="100"
+          height="100"
         />
         <span className="uppercase font-bold text-[0.75rem] text-white">
           modo dark/light
@@ -53,6 +57,8 @@ const ProjectsCard = ({
           alt="Logo de idiomas"
           className="w-9"
           loading="lazy"
+          width="100"
+          height="100"
         />
         <span className="uppercase font-bold text-[0.75rem] text-white">
           multilenguage
@@ -90,8 +96,8 @@ const ProjectsCard = ({
                 className="technology-logo w-10"
                 title={tech.name}
                 loading="lazy"
-                width="900"
-                height="900"
+                width="100"
+                height="100"
               />
             </div>
           ))}

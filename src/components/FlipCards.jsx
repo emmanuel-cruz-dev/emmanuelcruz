@@ -32,8 +32,8 @@ const FlipCards = () => {
                   src={FlipCard1}
                   alt="Icono de un monitor de computadora."
                   loading="lazy"
-                  width="512"
-                  height="512"
+                  width="100"
+                  height="100"
                 />
               </figure>
               <div className="flip-card__content flex flex-col gap-2">
@@ -57,8 +57,8 @@ const FlipCards = () => {
                   src={FlipCard2}
                   alt="Icono de una nave espacial con un engranaje dentro, el cual es un logo de Search Engine Optimization (Optimización para motores de búsqueda)."
                   loading="lazy"
-                  width="512"
-                  height="512"
+                  width="100"
+                  height="100"
                 />
               </figure>
               <div className="flip-card__content flex flex-col gap-2">
@@ -82,8 +82,8 @@ const FlipCards = () => {
                   src={FlipCard3}
                   alt="Icono de Diseño responsivo, en el cual se ven 4 dispositivos de diferentes tamaños: notebook, tablet, celular y monitor de computadora."
                   loading="lazy"
-                  width="512"
-                  height="512"
+                  width="100"
+                  height="100"
                 />
               </figure>
               <div className="flip-card__content flex flex-col gap-2">

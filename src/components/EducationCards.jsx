@@ -62,8 +62,8 @@ const EducationCards = ({
               title={t("sections.certifications.url")}
               alt={`Logo de ${span}`}
               loading="lazy"
-              width="900"
-              height="900"
+              width="100"
+              height="100"
             />
           </a>
           <div className="flex flex-col gap-2">
@@ -89,8 +89,8 @@ const EducationCards = ({
             title={t("sections.certifications.img")}
             alt={`Certificado de ${title}`}
             loading="lazy"
-            width="700"
-            height="480"
+            width="160"
+            height="110"
           />
         </figure>
 
