@@ -19,12 +19,12 @@ const Footer = () => {
         <div className="flex flex-col items-center gap-6">
           <div className="flex flex-col items-center gap-4 w-44">
             <img
-              className="w-24"
+              className="w-20"
               src={LogoBlanco}
               alt="Logo de Emmanuel Cruz,el cual es una letra e entre corchetes"
               loading="lazy"
-              width="320"
-              height="320"
+              width="100"
+              height="100"
             />
             <p className="text-sm whitespace-nowrap">"{t("footer.phrase")}."</p>
           </div>
@@ -140,8 +140,8 @@ const Footer = () => {
                   src={Logro}
                   alt="Icono de premio, se ve una mano sosteniendo una medalla."
                   loading="lazy"
-                  width="512"
-                  height="512"
+                  width="100"
+                  height="100"
                 />
               </AnimatedComponent>
             </div>
