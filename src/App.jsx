@@ -1,8 +1,9 @@
 import { lazy, Suspense } from "react";
 import "./styles/main.scss";
-import Header from "./components/Header";
+import Loader from "./components/Loader";
 import Hero from "./components/Hero";
 
+const Header = lazy(() => import("./components/Header"));
 const ScrollToTopButton = lazy(() => import("./components/ScrollToTopButton"));
 const About = lazy(() => import("./components/About"));
 const Education = lazy(() => import("./components/Education"));
@@ -15,28 +16,30 @@ const Footer = lazy(() => import("./components/Footer"));
 function App() {
   return (
     <>
-      <Header />
+      <Suspense fallback={<Loader />}>
+        <Header />
+      </Suspense>
       <Hero />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <About />
         <ScrollToTopButton />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Education />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Projects />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Skills />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <FlipCards />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Contact />
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={<Loader />}>
         <Footer />
       </Suspense>
     </>
