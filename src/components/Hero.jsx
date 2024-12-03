@@ -13,7 +13,7 @@ const Hero = () => {
       className="scroll-top py-14 xl:py-16 mx-auto w-11/12 select-none"
       id="hero"
     >
-      <article className="flex flex-col justify-evenly xl:justify-around gap-6 sm:flex-row w-full">
+      <article className="flex flex-col justify-evenly xl:justify-around xl:items-center gap-6 sm:flex-row w-full">
         <div className="flex flex-col gap-2 my-auto md:gap-8">
           <AnimatedComponent delay={1} animation="slide" direction="right">
             <div className="flex flex-col gap-3">

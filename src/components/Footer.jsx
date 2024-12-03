@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import Logro from "../assets/icons/logro.png";
 import LogoBlanco from "../assets/icons/logo-blanco.png";
-import freeCodeCampLogo from "../assets/images/freecodecamp-logo.jpg";
-import PlatziLogo from "../assets/images/platzi-logo.jpg";
+import freeCodeCampLogo from "../assets/images/freecodecamp-logo.webp";
+import PlatziLogo from "../assets/images/platzi-logo.webp";
 import FoodieLogo from "../assets/images/foodie-logo.webp";
 import BaristasLogo from "../assets/images/baristas-logo.webp";
 import LastModifiedDate from "./LastModifiedDate";
@@ -45,8 +45,8 @@ const Footer = () => {
                   src={PlatziLogo}
                   alt="Logo de Platzi"
                   loading="lazy"
-                  width="600"
-                  height="600"
+                  width="100"
+                  height="100"
                 />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
@@ -66,8 +66,8 @@ const Footer = () => {
                   src={freeCodeCampLogo}
                   alt="Logo de freeCodeCamp"
                   loading="lazy"
-                  width="600"
-                  height="600"
+                  width="100"
+                  height="100"
                 />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
@@ -90,8 +90,8 @@ const Footer = () => {
                   src={FoodieLogo}
                   alt="Logo de Foodie"
                   loading="lazy"
-                  width="600"
-                  height="600"
+                  width="100"
+                  height="100"
                 />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
@@ -111,8 +111,8 @@ const Footer = () => {
                   src={BaristasLogo}
                   alt="Logo de Baristas"
                   loading="lazy"
-                  width="600"
-                  height="600"
+                  width="100"
+                  height="100"
                 />
               </figure>
               <div className="flex flex-col justify-evenly h-full">
