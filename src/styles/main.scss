@@ -158,6 +158,14 @@ span {
 
 // --- Inicio: Seccion Hero --- //
 
+.social__links {
+  width: 2rem;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
 @media (max-width: 640px) {
   .hero__img__container {
     margin: auto;

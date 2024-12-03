@@ -187,12 +187,12 @@ const resources = {
           emailCopied: "¡Email copiado!",
         },
         about: {
-          title: "Un Poco Sobre Mi",
+          title: "Un Poco Sobre mí",
           description:
             "Descubrí cómo mi experiencia y habilidades pueden agregar valor a tus proyectos.",
           hi: "Soy",
           paragraph:
-            "Entusiasta de la estética funcional y la usabilidad en los proyectos. Mi interés por la resolución de problemas y la creatividad me llevaron al mundo del desarrollo web, donde me esfuerzo constantemente por aprender y mejorar mis habilidades.",
+            "Entusiasta de la estética funcional y la usabilidad en los proyectos. Mi interés por la resolución de problemas y la creatividad me llevaron al mundo del desarrollo web, donde me esfuerzo por aprender y mejorar mis habilidades.",
           contactMe: "Contactame",
           courses: "cursos en línea",
           practice: "horas de práctica",

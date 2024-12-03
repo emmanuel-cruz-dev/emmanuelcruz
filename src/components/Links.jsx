@@ -12,7 +12,11 @@ const Links = () => {
   return (
     <div className="flex flex-col gap-5 md:gap-10">
       <AnimatedComponent delay={2} animation="slide" direction="left">
-        <p className="md:max-w-[30rem] text-md lg:text-lg">
+        <p
+          className={`${
+            theme === "dark" ? "text-gray-300" : "text-gray-600"
+          } md:max-w-[30rem] text-md lg:text-lg`}
+        >
           {t("sections.hero.description")}
         </p>
       </AnimatedComponent>

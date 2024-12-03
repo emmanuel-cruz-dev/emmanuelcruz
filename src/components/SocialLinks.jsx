@@ -5,7 +5,7 @@ const SocialLinks = () => {
     <div className="flex gap-4">
       <a
         title="Linkedin"
-        className="w-8 hover:text-accent transition-colors duration-500 ease-in-out"
+        className="social__links"
         href="https://www.linkedin.com/in/emmanuel-cruz-6a242430b/"
         target="_blank"
         rel="noopener noreferrer"
@@ -14,7 +14,7 @@ const SocialLinks = () => {
       </a>
       <a
         title="Github"
-        className="w-8 hover:text-accent transition-colors duration-500 ease-in-out"
+        className="social__links"
         href="https://github.com/EmmaLCruz"
         target="_blank"
         rel="noopener noreferrer"
@@ -24,7 +24,7 @@ const SocialLinks = () => {
 
       <a
         title="Email"
-        className="w-8 hover:text-accent transition-colors duration-500 ease-in-out"
+        className="social__links"
         href="mailto:emmanuelgerr@gmail.com"
         target="_blank"
         rel="noopener noreferrer"
