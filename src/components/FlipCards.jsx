@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import AnimatedComponent from "./AnimatedComponent";
-import FlipCard1 from "../assets/icons/flip-card1.jpg";
-import FlipCard2 from "../assets/icons/flip-card2.jpg";
-import FlipCard3 from "../assets/icons/flip-card3.jpg";
+import FlipCard1 from "../assets/icons/flip-card1.webp";
+import FlipCard2 from "../assets/icons/flip-card2.webp";
+import FlipCard3 from "../assets/icons/flip-card3.webp";
 
 const FlipCards = () => {
   const { t } = useTranslation();
