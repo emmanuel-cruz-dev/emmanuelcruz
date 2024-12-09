@@ -5,6 +5,25 @@ import Screens from "../assets/images/responsive-screens.png";
 import Background from "../assets/images/front_end-background.webp";
 import { useTheme } from "./ThemeContext";
 
+const CounterDivs = ({ num, title }) => {
+  const { theme } = useTheme();
+  return (
+    <div
+      className={`${
+        theme === "dark" ? "shadow__dark" : "shadow__light"
+      } bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4`}
+    >
+      <p className="text-center text-lg leading-8 font-semibold">
+        <span className="text-4xl font-extrabold">
+          <span className="text-accent">+</span>
+          {num}
+          <br />
+        </span>
+        {title}
+      </p>
+    </div>
+  );
+};
 const About = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
@@ -97,31 +116,8 @@ const About = () => {
         </figure>
         <div className="flex flex-col md:flex-row gap-4 md:col-span-3 lg:col-span-2">
           <div className="h-full flex md:flex-col gap-4 md:w-3/6">
-            <div
-              className={`${
-                theme === "dark" ? "shadow__dark" : "shadow__light"
-              } bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4`}
-            >
-              <p className="text-center text-lg leading-8 font-semibold">
-                <span className="text-4xl font-extrabold">
-                  <span className="text-accent">+</span>
-                  10
-                  <br />
-                </span>
-                {t("sections.about.courses")}
-              </p>
-            </div>
-            <div
-              className={`bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4`}
-            >
-              <p className="text-center text-lg leading-8 font-semibold">
-                <span className="text-4xl font-extrabold">
-                  <span className="text-accent">+</span>500
-                  <br />
-                </span>
-                {t("sections.about.practice")}
-              </p>
-            </div>
+            <CounterDivs num={10} title={t("sections.about.courses")} />
+            <CounterDivs num={500} title={t("sections.about.practice")} />
           </div>
           <div
             className={`bg-gradient-to-br ${
