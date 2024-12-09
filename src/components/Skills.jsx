@@ -27,6 +27,22 @@ import ResponsiveLogo from "../assets/icons/responsive-logo.png";
 import BemLogo from "../assets/icons/bem-logo.png";
 import SkillsCard from "./SkillsCard";
 
+const SkillsContainer = ({ title, children }) => {
+  const { theme } = useTheme();
+  return (
+    <article
+      className={`${
+        theme === "dark" ? "shadow__dark" : "shadow__light"
+      } w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
+    >
+      <h4 className="font-semibold text-xl">{title}</h4>
+      <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
+        {children}
+      </article>
+    </article>
+  );
+};
+
 const Skills = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
@@ -81,7 +97,38 @@ const Skills = () => {
 
           <div className="flex flex-wrap gap-8 justify-center">
             {/* Frameworks y Bibliotecas */}
-            <article
+            <SkillsContainer title={t("sections.skills.subtitle2")}>
+              <SkillsCard
+                title={t("sections.skills.react")}
+                src={ReactLogo}
+                alt="React"
+              />
+
+              <SkillsCard
+                title={t("sections.skills.nodejs")}
+                src={NodeLogo}
+                alt="Node.js"
+              />
+
+              <SkillsCard
+                title={t("sections.skills.tailwind")}
+                src={TailwindLogo}
+                alt="Tailwind CSS"
+              />
+
+              <SkillsCard
+                title={t("sections.skills.sass")}
+                src={SassLogo}
+                alt="Sass"
+              />
+
+              <SkillsCard
+                title={t("sections.skills.bootstrap")}
+                src={BootstrapLogo}
+                alt="Bootstrap"
+              />
+            </SkillsContainer>
+            {/* <article
               className={`${
                 theme === "dark" ? "shadow__dark" : "shadow__light"
               } w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
@@ -120,10 +167,28 @@ const Skills = () => {
                   alt="Bootstrap"
                 />
               </article>
-            </article>
+            </article> */}
 
             {/* Herramientas de Desarrollo */}
-            <article
+            <SkillsContainer title={t("sections.skills.subtitle3")}>
+              <SkillsCard
+                title={t("sections.skills.git")}
+                src={GitLogo}
+                alt="Git"
+              />
+
+              <SkillsCard
+                title={t("sections.skills.github")}
+                src={GithubLogo}
+                alt="GitHub"
+              />
+              <SkillsCard
+                title={t("sections.skills.vscode")}
+                src={VsCodeLogo}
+                alt="VS Code"
+              />
+            </SkillsContainer>
+            {/* <article
               className={` ${
                 theme === "dark" ? "shadow__dark" : "shadow__light"
               } w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
@@ -149,7 +214,7 @@ const Skills = () => {
                   alt="VS Code"
                 />
               </article>
-            </article>
+            </article> */}
 
             {/* Diseño y Prototipado */}
             <article
