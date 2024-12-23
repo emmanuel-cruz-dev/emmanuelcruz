@@ -84,7 +84,7 @@ const ProjectsCard = ({
       >
         <div className="flex flex-col gap-4 lg:gap-2">
           <h2 className="font-bold text-lg lg:text-2xl">{title}</h2>
-          <p className="text-sm xl:w-11/12">{description}</p>
+          <p className="text-sm xl:w-11/12">{description}.</p>
         </div>
 
         <div className="technologies flex gap-1">

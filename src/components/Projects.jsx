@@ -9,6 +9,8 @@ import CardPortfolio1 from "../assets/images/card-portfolio1.webp";
 import CardPortfolio2 from "../assets/images/card-portfolio2.webp";
 import CardPortfolio3 from "../assets/images/card-portfolio3.webp";
 
+import CardJinjer1 from "../assets/images/card-jinjer1.jpg";
+
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
 import JavascriptLogo from "../assets/icons/javascript-logo.png";
@@ -54,6 +56,23 @@ const Projects = () => {
     github: "https://github.com/EmmaLCruz/emmanuelcruz",
   };
 
+  const project3 = {
+    title: "Jinjer | Website",
+    description:
+      "Plataforma de artista inspirada en el diseño y la estética de páginas de bandas como Metallica y Megadeth. El sitio está dedicado a Jinjer, una banda de metal progresivo originaria de Ucrania",
+    img1: CardJinjer1,
+    img2: CardPollosHermanos2,
+    img3: CardPollosHermanos3,
+    flyer: "responsive",
+    technologies: [
+      { name: "React", img: ReactLogo },
+      { name: "Tailwind CSS", img: TailwindLogo },
+      { name: "Sass", img: SassLogo },
+    ],
+    link: "https://emmalcruz.github.io/los-pollos-hermanos-website/",
+    github: "",
+  };
+
   return (
     <section
       className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
@@ -73,6 +92,9 @@ const Projects = () => {
           <ProjectsCard {...project1} />
 
           {/* Proyecto 2 */}
+          <ProjectsCard {...project3} />
+
+          {/* Proyecto 3 */}
           <ProjectsCard {...project2} />
         </div>
       </article>
