@@ -10,6 +10,8 @@ import CardPortfolio2 from "../assets/images/card-portfolio2.webp";
 import CardPortfolio3 from "../assets/images/card-portfolio3.webp";
 
 import CardJinjer1 from "../assets/images/card-jinjer1.jpg";
+import CardJinjer2 from "../assets/images/card-jinjer2.jpg";
+import CardJinjer3 from "../assets/images/card-jinjer3.jpg";
 
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
@@ -60,8 +62,8 @@ const Projects = () => {
     title: "Jinjer | Website",
     description: t("sections.projects.jinjer"),
     img1: CardJinjer1,
-    img2: CardJinjer1,
-    img3: CardJinjer1,
+    img2: CardJinjer2,
+    img3: CardJinjer3,
     flyer: "language",
     technologies: [
       { name: "React", img: ReactLogo },
