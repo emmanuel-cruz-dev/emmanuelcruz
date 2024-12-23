@@ -58,8 +58,7 @@ const Projects = () => {
 
   const project3 = {
     title: "Jinjer | Website",
-    description:
-      "Plataforma de artista inspirada en el diseño y la estética de páginas de bandas como Metallica y Megadeth. El sitio está dedicado a Jinjer, una banda de metal progresivo originaria de Ucrania",
+    description: t("sections.projects.jinjer"),
     img1: CardJinjer1,
     img2: CardJinjer1,
     img3: CardJinjer1,
