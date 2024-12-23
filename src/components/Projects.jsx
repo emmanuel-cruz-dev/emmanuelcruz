@@ -61,16 +61,16 @@ const Projects = () => {
     description:
       "Plataforma de artista inspirada en el diseño y la estética de páginas de bandas como Metallica y Megadeth. El sitio está dedicado a Jinjer, una banda de metal progresivo originaria de Ucrania",
     img1: CardJinjer1,
-    img2: CardPollosHermanos2,
-    img3: CardPollosHermanos3,
-    flyer: "responsive",
+    img2: CardJinjer1,
+    img3: CardJinjer1,
+    flyer: "language",
     technologies: [
       { name: "React", img: ReactLogo },
       { name: "Tailwind CSS", img: TailwindLogo },
       { name: "Sass", img: SassLogo },
     ],
-    link: "https://emmalcruz.github.io/los-pollos-hermanos-website/",
-    github: "",
+    link: "https://jinjer.vercel.app/",
+    github: "https://github.com/EmmaLCruz/jinjer",
   };
 
   return (
