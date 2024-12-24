@@ -9,9 +9,9 @@ import CardPortfolio1 from "../assets/images/card-portfolio1.webp";
 import CardPortfolio2 from "../assets/images/card-portfolio2.webp";
 import CardPortfolio3 from "../assets/images/card-portfolio3.webp";
 
-import CardJinjer1 from "../assets/images/card-jinjer1.jpg";
-import CardJinjer2 from "../assets/images/card-jinjer2.jpg";
-import CardJinjer3 from "../assets/images/card-jinjer3.jpg";
+import CardJinjer1 from "../assets/images/card-jinjer1.webp";
+import CardJinjer2 from "../assets/images/card-jinjer2.webp";
+import CardJinjer3 from "../assets/images/card-jinjer3.webp";
 
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
