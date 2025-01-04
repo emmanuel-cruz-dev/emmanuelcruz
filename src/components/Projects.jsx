@@ -25,6 +25,55 @@ import ProjectsCard from "./ProjectsCard";
 const Projects = () => {
   const { t } = useTranslation();
 
+  const projects = [
+    {
+      title: "Los Pollos Hermanos",
+      description: t("sections.projects.pollos"),
+      img1: CardPollosHermanos1,
+      img2: CardPollosHermanos2,
+      img3: CardPollosHermanos3,
+      flyer: "responsive",
+      technologies: [
+        { name: "HTML", img: HTMLLogo },
+        { name: "CSS", img: CssLogo },
+        { name: "Javascript", img: JavascriptLogo },
+        { name: "Jquery", img: JqueryLogo },
+      ],
+      link: "https://emmalcruz.github.io/los-pollos-hermanos-website/",
+      github: "https://github.com/EmmaLCruz/los-pollos-hermanos-website",
+    },
+    {
+      title: "Emmanuel Cruz | Portfolio",
+      description: t("sections.projects.portfolio"),
+      img1: CardPortfolio1,
+      img2: CardPortfolio2,
+      img3: CardPortfolio3,
+      flyer: "dark",
+      technologies: [
+        { name: "React", img: ReactLogo },
+        { name: "Tailwind CSS", img: TailwindLogo },
+        { name: "Sass", img: SassLogo },
+      ],
+      link: "https://emmanuel-cruz.netlify.app/",
+      github: "https://github.com/EmmaLCruz/emmanuelcruz",
+    },
+    {
+      title: "Jinjer | Website",
+      description: t("sections.projects.jinjer"),
+      img1: CardJinjer1,
+      img2: CardJinjer2,
+      img3: CardJinjer3,
+      flyer: "language",
+      technologies: [
+        { name: "React", img: ReactLogo },
+        { name: "Tailwind CSS", img: TailwindLogo },
+        { name: "Sass", img: SassLogo },
+      ],
+      link: "https://jinjer.vercel.app/",
+      github: "https://github.com/EmmaLCruz/jinjer",
+    },
+  ];
+
   const project1 = {
     title: "Los Pollos Hermanos",
     description: t("sections.projects.pollos"),
@@ -89,14 +138,9 @@ const Projects = () => {
       </AnimatedComponent>
       <article>
         <div className="card-container flex flex-wrap gap-12 mx-auto">
-          {/* Proyecto 1 */}
-          <ProjectsCard {...project1} />
-
-          {/* Proyecto 2 */}
-          <ProjectsCard {...project3} />
-
-          {/* Proyecto 3 */}
-          <ProjectsCard {...project2} />
+          {projects.map((project, index) => (
+            <ProjectsCard key={index} {...project} />
+          ))}
         </div>
       </article>
     </section>
