@@ -149,6 +149,7 @@ const resources = {
         },
         // más secciones...
       },
+      scrollToTop: "Scroll to top",
       lastUpdate: "Last updated",
     },
   },
@@ -299,6 +300,7 @@ const resources = {
         },
         // más secciones...
       },
+      scrollToTop: "Ir hacia arriba",
       lastUpdate: "Última actualización",
     },
   },
