@@ -139,7 +139,11 @@ span {
 
 // --- Fin: Efectos de Sombras --- //
 
-// --- Inicio: NavBar --- //
+// --- Inicio: Header --- //
+
+.header {
+  font-size: 1.05em;
+}
 
 .bg-light {
   background-color: #ffffff; // Color de fondo para el tema claro
@@ -189,7 +193,7 @@ span {
   width: fit-content;
 }
 
-// --- Fin: NavBar --- //
+// --- Fin: Header --- //
 
 // --- Inicio: Seccion Hero --- //
 

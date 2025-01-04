@@ -20,7 +20,7 @@ const Header = () => {
 
   return (
     <header
-      className={`flex justify-between items-center p-4 px-6 lg:px-10 md:h-20 sticky top-0 z-30 ${
+      className={`header flex justify-between items-center p-4 px-6 lg:px-10 md:h-20 sticky top-0 z-30 ${
         theme === "dark"
           ? "bg-dark navbar__shadow__dark"
           : "bg-light navbar__shadow__light"
