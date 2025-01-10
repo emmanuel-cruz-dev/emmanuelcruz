@@ -79,18 +79,18 @@ const Projects = () => {
     {
       id: 4,
       title: "Literarium | Bookstore",
-      description: t("sections.projects.jinjer"),
+      description: t("sections.projects.literarium"),
       img1: CardJinjer1,
       img2: CardJinjer2,
       img3: CardJinjer3,
-      flyer: "language",
+      flyer: "responsive",
       technologies: [
         { name: "React", img: ReactLogo },
         { name: "TypeScript", img: TypeScriptLogo },
         { name: "Tailwind CSS", img: TailwindLogo },
       ],
-      link: "https://jinjer.vercel.app/",
-      github: "https://github.com/EmmaLCruz/jinjer",
+      link: "https://literarium.netlify.app/",
+      github: "https://github.com/EmmaLCruz/literarium",
     },
   ];
 
