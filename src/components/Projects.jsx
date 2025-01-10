@@ -16,6 +16,7 @@ import CardJinjer3 from "../assets/images/card-jinjer3.webp";
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
 import JavascriptLogo from "../assets/icons/javascript-logo.png";
+import TypeScriptLogo from "../assets/icons/typescript-logo.png";
 import JqueryLogo from "../assets/icons/jquery-logo.png";
 import ReactLogo from "../assets/icons/react-logo.png";
 import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
@@ -71,6 +72,22 @@ const Projects = () => {
         { name: "React", img: ReactLogo },
         { name: "Tailwind CSS", img: TailwindLogo },
         { name: "Sass", img: SassLogo },
+      ],
+      link: "https://jinjer.vercel.app/",
+      github: "https://github.com/EmmaLCruz/jinjer",
+    },
+    {
+      id: 4,
+      title: "Literarium | Bookstore",
+      description: t("sections.projects.jinjer"),
+      img1: CardJinjer1,
+      img2: CardJinjer2,
+      img3: CardJinjer3,
+      flyer: "language",
+      technologies: [
+        { name: "React", img: ReactLogo },
+        { name: "TypeScript", img: TypeScriptLogo },
+        { name: "Tailwind CSS", img: TailwindLogo },
       ],
       link: "https://jinjer.vercel.app/",
       github: "https://github.com/EmmaLCruz/jinjer",
