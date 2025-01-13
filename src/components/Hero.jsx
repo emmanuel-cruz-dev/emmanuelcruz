@@ -41,7 +41,6 @@ const Hero = () => {
               className="w-full cover hover:-rotate-2 transition-all duration-500 ease-in-out"
               src={picture}
               alt="Imagen de perfil de Emmanuel Cruz"
-              loading="lazy"
               width="500"
               height="500"
             />
