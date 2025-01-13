@@ -13,6 +13,8 @@ import CardJinjer1 from "../assets/images/card-jinjer1.webp";
 import CardJinjer2 from "../assets/images/card-jinjer2.webp";
 import CardJinjer3 from "../assets/images/card-jinjer3.webp";
 
+import CardLiterarium1 from "../assets/images/card-literarium1.jpg";
+
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
 import JavascriptLogo from "../assets/icons/javascript-logo.png";
@@ -61,22 +63,22 @@ const Projects = () => {
       link: "https://jinjer.vercel.app/",
       github: "https://github.com/EmmaLCruz/jinjer",
     },
-    // {
-    //   id: 3,
-    //   title: "Literarium | Bookstore",
-    //   description: t("sections.projects.literarium"),
-    //   img1: CardJinjer1,
-    //   img2: CardJinjer2,
-    //   img3: CardJinjer3,
-    //   flyer: "responsive",
-    //   technologies: [
-    //     { name: "React", img: ReactLogo },
-    //     { name: "TypeScript", img: TypeScriptLogo },
-    //     { name: "Tailwind CSS", img: TailwindLogo },
-    //   ],
-    //   link: "https://literarium.netlify.app/",
-    //   github: "https://github.com/EmmaLCruz/literarium",
-    // },
+    {
+      id: 3,
+      title: "Literarium | Bookstore",
+      description: t("sections.projects.literarium"),
+      img1: CardLiterarium1,
+      img2: CardLiterarium1,
+      img3: CardLiterarium1,
+      flyer: "responsive",
+      technologies: [
+        { name: "React", img: ReactLogo },
+        { name: "TypeScript", img: TypeScriptLogo },
+        { name: "Tailwind CSS", img: TailwindLogo },
+      ],
+      link: "https://literarium.netlify.app/",
+      github: "https://github.com/EmmaLCruz/literarium",
+    },
     {
       id: 4,
       title: "Emmanuel Cruz | Portfolio",
