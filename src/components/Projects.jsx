@@ -14,6 +14,8 @@ import CardJinjer2 from "../assets/images/card-jinjer2.webp";
 import CardJinjer3 from "../assets/images/card-jinjer3.webp";
 
 import CardLiterarium1 from "../assets/images/card-literarium1.jpg";
+import CardLiterarium2 from "../assets/images/card-literarium2.jpg";
+import CardLiterarium3 from "../assets/images/card-literarium3.jpg";
 
 import HTMLLogo from "../assets/icons/html-logo.png";
 import CssLogo from "../assets/icons/css-logo.png";
@@ -68,8 +70,8 @@ const Projects = () => {
       title: "Literarium | Bookstore",
       description: t("sections.projects.literarium"),
       img1: CardLiterarium1,
-      img2: CardLiterarium1,
-      img3: CardLiterarium1,
+      img2: CardLiterarium2,
+      img3: CardLiterarium3,
       flyer: "responsive",
       technologies: [
         { name: "React", img: ReactLogo },
