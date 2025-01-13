@@ -1,7 +1,7 @@
 import AnimatedComponent from "./AnimatedComponent";
 import { useTranslation } from "react-i18next";
 import Logo from "../assets/icons/logo-negro.png";
-import Screens from "../assets/images/responsive-screens.png";
+import Screens from "../assets/images/responsive-screens.avif";
 import Background from "../assets/images/front_end-background.webp";
 import { useTheme } from "./ThemeContext";
 
