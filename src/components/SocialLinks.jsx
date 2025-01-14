@@ -6,7 +6,7 @@ const SocialLinks = () => {
       <a
         title="Linkedin"
         className="social__links"
-        href="https://www.linkedin.com/in/emmanuel-cruz-6a242430b/"
+        href="https://www.linkedin.com/in/emmanuel-cruz-dev/"
         target="_blank"
         rel="noopener noreferrer"
       >
