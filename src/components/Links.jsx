@@ -28,7 +28,7 @@ const Links = () => {
               className={`${
                 theme === "dark" ? "shadow__dark" : "shadow__light"
               } btn btn--red uno text-sm py-7`}
-              href="/Emmanuel-Cruz-CV.pdf"
+              href="/emmanuel-cruz-CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
