@@ -46,7 +46,7 @@ const Projects = () => {
         { name: "Jquery", img: JqueryLogo },
       ],
       link: "https://emmalcruz.github.io/los-pollos-hermanos-website/",
-      github: "https://github.com/EmmaLCruz/los-pollos-hermanos-website",
+      github: "https://github.com/emmanuel-cruz-dev/los-pollos-hermanos-website",
     },
 
     {
@@ -63,7 +63,7 @@ const Projects = () => {
         { name: "Sass", img: SassLogo },
       ],
       link: "https://jinjer.vercel.app/",
-      github: "https://github.com/EmmaLCruz/jinjer",
+      github: "https://github.com/emmanuel-cruz-dev/jinjer",
     },
     {
       id: 3,
@@ -79,7 +79,7 @@ const Projects = () => {
         { name: "Tailwind CSS", img: TailwindLogo },
       ],
       link: "https://literarium.netlify.app/",
-      github: "https://github.com/EmmaLCruz/literarium",
+      github: "https://github.com/emmanuel-cruz-dev/literarium",
     },
     {
       id: 4,
@@ -95,7 +95,7 @@ const Projects = () => {
         { name: "Sass", img: SassLogo },
       ],
       link: "https://emmanuel-cruz.netlify.app/",
-      github: "https://github.com/EmmaLCruz/emmanuelcruz",
+      github: "https://github.com/emmanuel-cruz-dev/emmanuelcruz",
     },
   ];
 
