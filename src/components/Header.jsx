@@ -94,6 +94,7 @@ const Header = () => {
             className="absolute opacity-0 w-full h-full cursor-pointer"
             type="checkbox"
             onClick={toggleMenu}
+            id="toggle-menu"
           />
           {isMenuOpen ? (
             <span className="material-icons-outlined text-3xl">close</span>

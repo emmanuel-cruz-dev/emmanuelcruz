@@ -1,6 +1,5 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
-import { types } from "sass";
 
 // Carga de recursos de traducción
 const resources = {

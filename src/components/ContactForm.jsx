@@ -99,6 +99,7 @@ const ContactForm = () => {
                 title={t("sections.contact.nameTitle")}
                 className="w-full border bg-white/20 border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
+                autoComplete="off"
               />
             </div>
             <div className="mb-4">
@@ -116,6 +117,7 @@ const ContactForm = () => {
                 title={t("sections.contact.emailTitle")}
                 className="w-full bg-white/20 border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
                 required
+                autoComplete="off"
               />
             </div>
           </div>
