@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
           </AnimatedComponent>
 
-          <div className="hidden sm:flex">
+          <div className="hidden md:block">
             <Links />
           </div>
         </div>
@@ -47,7 +47,7 @@ const Hero = () => {
           </figure>
         </AnimatedComponent>
 
-        <div className="sm:hidden">
+        <div className="block md:hidden">
           <Links />
         </div>
       </article>
