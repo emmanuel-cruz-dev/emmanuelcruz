@@ -82,8 +82,9 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://emmalcruz.github.io/foodie/"
+              href="https://emmanuel-cruz-dev.github.io/foodie/"
               className="flex gap-4 items-center border-b border-gray-600 pb-4"
+              title={t("sections.projects.buttonTitle")}
             >
               <figure className="w-16">
                 <img
@@ -103,8 +104,9 @@ const Footer = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://emmalcruz.github.io/baristas/"
+              href="https://emmanuel-cruz-dev.github.io/baristas/"
               className="flex gap-4 items-center"
+              title={t("sections.projects.buttonTitle")}
             >
               <figure className="w-16">
                 <img
