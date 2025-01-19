@@ -39,6 +39,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               href="https://www.youtube.com/@Platzi"
               className="flex gap-4 items-center border-b border-gray-600 pb-4"
+              title={t("footer.recommended")}
             >
               <figure className="w-16">
                 <img
@@ -60,6 +61,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               href="https://www.youtube.com/@freecodecampes"
               className="flex gap-4 items-center"
+              title={t("footer.recommended")}
             >
               <figure className="w-16">
                 <img

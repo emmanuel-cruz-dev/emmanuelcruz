@@ -30,6 +30,7 @@ const resources = {
         rank: "professional navigator",
         thanks: "medal. Thanks for visiting!",
         paragraph: "Developed by",
+        recommended: "Go to YouTube channel",
       },
       sections: {
         welcome: "Hello! I'm Emmanuel",
@@ -181,6 +182,7 @@ const resources = {
         rank: "navegante profesional.",
         thanks: "¡Gracias por tu visita!",
         paragraph: "Desarrollado por",
+        recommended: "Ir al canal de YouTube",
       },
       sections: {
         welcome: "Hola! Soy Emmanuel",
