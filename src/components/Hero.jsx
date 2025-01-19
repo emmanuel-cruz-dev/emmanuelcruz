@@ -13,7 +13,7 @@ const Hero = () => {
       className="hero scroll-top py-14 mx-auto w-11/12 select-none"
       id="hero"
     >
-      <article className="flex flex-col justify-evenly xl:justify-around xl:items-center gap-6 sm:flex-row w-full">
+      <article className="flex flex-col md:flex-row justify-evenly xl:justify-around xl:items-center gap-6 w-full">
         <div className="flex flex-col gap-2 my-auto md:gap-8">
           <AnimatedComponent delay={1} animation="slide" direction="right">
             <div className="flex flex-col gap-3">
@@ -35,7 +35,7 @@ const Hero = () => {
           <figure
             className={`hero__img__container rounded-full overflow-hidden ${
               theme === "dark" ? "shadow__dark" : "shadow__light"
-            } flex justify-center items-center w-64 h-64 md:w-[22rem] md:h-[22rem] my-auto`}
+            } flex justify-center items-center w-64 h-64 md:w-[22rem] md:h-[22rem] my-auto mx-auto`}
           >
             <img
               className="w-full cover hover:-rotate-2 transition-all duration-500 ease-in-out"
