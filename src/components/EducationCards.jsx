@@ -80,12 +80,12 @@ const EducationCards = ({
         </div>
 
         <figure
-          className="cursor-pointer -order-1 md:order-none md:max-w-24 lg:max-w-32"
+          className="cursor-pointer -order-1 w-full md:order-none md:max-w-24 lg:max-w-32"
           onClick={() => openGallery(num)}
         >
           <img
             src={img}
-            className="lg:w-32"
+            className="w-full lg:w-32"
             title={t("sections.certifications.img")}
             alt={`Certificado de ${title}`}
             loading="lazy"
