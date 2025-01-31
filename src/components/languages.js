@@ -89,6 +89,8 @@ const resources = {
           javascript: "Web programming language",
           typescript: "Superset of JavaScript with static typing",
           react: "JavaScript library for building user interfaces",
+          reactNative:
+            "JavaScript framework for building native mobile aplications",
           tailwind: "Utility CSS framework",
           bootstrap: "Front-End development framework",
           nodejs: "JavaScript runtime environment",
@@ -242,6 +244,8 @@ const resources = {
           typescript: "Superset de JavaScript con tipado estático",
           react:
             "Biblioteca de JavaScript para construir interfaces de usuario",
+          reactNative:
+            "Framework de JavaScript para crear aplicaciones móviles nativas",
           tailwind: "Framework de CSS utilitario",
           bootstrap: "Marco de desarrollo de Front-End",
           nodejs: "Entorno de ejecución de JavaScript",

@@ -8,6 +8,7 @@ import CssLogo from "../assets/icons/css-logo.png";
 import JavascriptLogo from "../assets/icons/javascript-logo.png";
 import TypescriptLogo from "../assets/icons/typescript-logo.png";
 import ReactLogo from "../assets/icons/react-logo.png";
+import ReactNativeLogo from "../assets/icons/react-native-logo.png";
 import NodeLogo from "../assets/icons/nodejs-logo.png";
 import SassLogo from "../assets/icons/sass-logo.png";
 import GitLogo from "../assets/icons/git-logo.png";
@@ -92,6 +93,12 @@ const Skills = () => {
               title={t("sections.skills.react")}
               src={ReactLogo}
               alt="React"
+            />
+
+            <SkillsCard
+              title={t("sections.skills.reactNative")}
+              src={ReactNativeLogo}
+              alt="React Native"
             />
 
             <SkillsCard
