@@ -91,6 +91,7 @@ const resources = {
           react: "JavaScript library for building user interfaces",
           reactNative:
             "JavaScript framework for building native mobile aplications",
+          angular: "JavaScript framework for building web applications",
           tailwind: "Utility CSS framework",
           bootstrap: "Front-End development framework",
           nodejs: "JavaScript runtime environment",
@@ -246,6 +247,7 @@ const resources = {
             "Biblioteca de JavaScript para construir interfaces de usuario",
           reactNative:
             "Framework de JavaScript para crear aplicaciones móviles nativas",
+          angular: "Framework de JavaScript para construir aplicaciones web",
           tailwind: "Framework de CSS utilitario",
           bootstrap: "Marco de desarrollo de Front-End",
           nodejs: "Entorno de ejecución de JavaScript",
