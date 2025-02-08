@@ -43,10 +43,11 @@ const Projects = () => {
         { name: "HTML", img: HTMLLogo },
         { name: "CSS", img: CssLogo },
         { name: "Javascript", img: JavascriptLogo },
-        { name: "Jquery", img: JqueryLogo },
+        { name: "JQuery", img: JqueryLogo },
       ],
       link: "https://emmanuel-cruz-dev.github.io/los-pollos-hermanos-website/",
-      github: "https://github.com/emmanuel-cruz-dev/los-pollos-hermanos-website",
+      github:
+        "https://github.com/emmanuel-cruz-dev/los-pollos-hermanos-website",
     },
 
     {

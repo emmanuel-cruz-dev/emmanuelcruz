@@ -38,7 +38,7 @@ const Hero = () => {
             } flex justify-center items-center w-64 h-64 md:w-[22rem] md:h-[22rem] my-auto mx-auto`}
           >
             <img
-              className="w-full cover hover:-rotate-2 transition-all duration-500 ease-in-out"
+              className="w-full cover"
               src={picture}
               alt="Imagen de perfil de Emmanuel Cruz"
               width="500"
