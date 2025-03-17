@@ -8,7 +8,7 @@ const ScrollToTopButton = lazy(() =>
   import("./components/common/ScrollButton/ScrollToTopButton")
 );
 const About = lazy(() => import("./sections/About/About"));
-const Education = lazy(() => import("./components/Education"));
+const Education = lazy(() => import("./sections/Education/Education"));
 const Projects = lazy(() => import("./components/Projects"));
 const Skills = lazy(() => import("./components/Skills"));
 const FlipCards = lazy(() => import("./components/FlipCards"));

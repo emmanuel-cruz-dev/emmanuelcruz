@@ -1,16 +1,15 @@
-import AnimatedComponent from "./AnimatedComponent";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../../components/ThemeContext";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import PlatziTituloGrande from "../assets/images/platzi.webp";
-import JavascriptGrande from "../assets/images/freecodecamp-javascript.webp";
-import ResponsiveGrande from "../assets/images/freecodecamp-responsive.webp";
-import HTMLCSSTituloGrande from "../assets/images/html-css.webp";
-import UXResearchTituloGrande from "../assets/images/ux-research.webp";
-import NucbaTituloGrande from "../assets/images/nucba.webp";
+import PlatziTituloGrande from "../../assets/images/platzi.webp";
+import JavascriptGrande from "../../assets/images/freecodecamp-javascript.webp";
+import ResponsiveGrande from "../../assets/images/freecodecamp-responsive.webp";
+import HTMLCSSTituloGrande from "../../assets/images/html-css.webp";
+import UXResearchTituloGrande from "../../assets/images/ux-research.webp";
+import NucbaTituloGrande from "../../assets/images/nucba.webp";
 
-import Gallery from "./Gallery";
+import Gallery from "../../components/Gallery";
 
 const EducationCards = ({
   img,
@@ -38,8 +37,6 @@ const EducationCards = ({
   const [initialIndex, setInitialIndex] = useState(0);
 
   const openGallery = (index) => {
-    console.log(index);
-
     setInitialIndex(index);
     setGalleryOpen(true);
   };
@@ -47,7 +44,7 @@ const EducationCards = ({
   const closeGallery = () => setGalleryOpen(false);
 
   return (
-    <div className="certificates__card flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-600 pb-5 px-3">
+    <article className="certificates__card flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-600 pb-5 px-3">
       <div className="flex flex-col md:flex-row items-center gap-6 md:w-10/12">
         <a
           className="w-20 min-w-20 hidden md:block"
@@ -99,7 +96,7 @@ const EducationCards = ({
         isOpen={isGalleryOpen}
         onClose={closeGallery}
       />
-    </div>
+    </article>
   );
 };
 

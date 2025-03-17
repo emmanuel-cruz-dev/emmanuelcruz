@@ -1,19 +1,19 @@
-import AnimatedComponent from "./AnimatedComponent";
+import AnimatedComponent from "../../components/AnimatedComponent";
 
-import Platzi from "../assets/icons/platzi.png";
-import freeCodeCamp from "../assets/icons/freecodecamp.png";
-import freeCodeCampNegro from "../assets/icons/freecodecamp-negro.png";
-import AcademiaBANegro from "../assets/icons/academiaba-negro.png";
-import AcademiaBA from "../assets/icons/academiaba.png";
-import Nucba from "../assets/icons/nucba.png";
-import NucbaNegro from "../assets/icons/nucba-negro.png";
+import Platzi from "../../assets/icons/platzi.png";
+import freeCodeCamp from "../../assets/icons/freecodecamp.png";
+import freeCodeCampNegro from "../../assets/icons/freecodecamp-negro.png";
+import AcademiaBANegro from "../../assets/icons/academiaba-negro.png";
+import AcademiaBA from "../../assets/icons/academiaba.png";
+import Nucba from "../../assets/icons/nucba.png";
+import NucbaNegro from "../../assets/icons/nucba-negro.png";
 
-import PlatziTitulo from "../assets/images/platzi-mini.webp";
-import freeCodeCampJavascript from "../assets/images/freecodecamp-javascript-mini.webp";
-import freeCodeCampResponsive from "../assets/images/freecodecamp-responsive-mini.webp";
-import HTMLCSSTitulo from "../assets/images/html-css-mini.webp";
-import UXResearchTitulo from "../assets/images/ux-research-mini.webp";
-import NucbaTitulo from "../assets/images/nucba-mini.webp";
+import PlatziTitulo from "../../assets/images/platzi-mini.webp";
+import freeCodeCampJavascript from "../../assets/images/freecodecamp-javascript-mini.webp";
+import freeCodeCampResponsive from "../../assets/images/freecodecamp-responsive-mini.webp";
+import HTMLCSSTitulo from "../../assets/images/html-css-mini.webp";
+import UXResearchTitulo from "../../assets/images/ux-research-mini.webp";
+import NucbaTitulo from "../../assets/images/nucba-mini.webp";
 
 import { useTranslation } from "react-i18next";
 import EducationCards from "./EducationCards";
