@@ -1,6 +1,6 @@
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../../components/ThemeContext";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import Carousel from "./Carousel";
+import Carousel from "../../components/Carousel";
 import { useTranslation } from "react-i18next";
 import ResponsiveLogo from "../assets/icons/responsiveweb-card-logo.png";
 import DarkMode from "../assets/icons/darkmode-logo.png";
