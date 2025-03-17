@@ -1,20 +1,8 @@
-import { useTranslation } from "react-i18next";
 import { FlagIcon } from "react-flag-kit";
-import { useState, useEffect } from "react";
+import { useLanguageSwitcher } from "../hooks/useLanguageSwitcher";
 
 const LanguageSwitcher = () => {
-  const { i18n, t } = useTranslation();
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
-
-  const changeLanguage = () => {
-    const newLanguage = currentLanguage === "es" ? "en" : "es";
-    i18n.changeLanguage(newLanguage);
-    setCurrentLanguage(newLanguage);
-  };
-
-  useEffect(() => {
-    setCurrentLanguage(i18n.language);
-  }, [i18n.language]);
+  const { currentLanguage, changeLanguage, t } = useLanguageSwitcher();
 
   return (
     <div className="flex gap-2 cursor-pointer opacity-85 hover:opacity-100 transition-all duration-500 ease-in-out">
