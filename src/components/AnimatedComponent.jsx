@@ -1,4 +1,5 @@
 import { useAnimation } from "../hooks/useAnimation.js";
+import { getAnimationClasses } from "../utils/getAnimationClasses.js";
 
 const AnimatedComponent = ({
   children,
@@ -8,23 +9,12 @@ const AnimatedComponent = ({
   delay = 0,
 }) => {
   const elementRef = useAnimation({ threshold, animation });
-  // Construimos las clases basadas en los props
-  const getClasses = () => {
-    const classes = ["animated", animation];
-
-    if (animation === "slide") {
-      classes.push(direction);
-    }
-
-    if (delay > 0) {
-      classes.push(`delay-${delay}`);
-    }
-
-    return classes.join(" ");
-  };
 
   return (
-    <div ref={elementRef} className={getClasses()}>
+    <div
+      ref={elementRef}
+      className={getAnimationClasses({ animation, direction, delay })}
+    >
       {children}
     </div>
   );
