@@ -4,13 +4,13 @@ import { useRef, useState } from "react";
 import Toast from "../../components/Toast";
 import emailjs from "@emailjs/browser";
 
-const ContactForm = () => {
+const useContactForm = () => {
   const [toast, setToast] = useState({ show: false, type: "", message: "" });
   const [showToastItem, setShowToast] = useState(false);
 
   const form = useRef();
   const { t } = useTranslation();
-  const { theme } = useTheme();
+
   const [isSending, setIsSending] = useState(false);
   const [formValues, setFormValues] = useState({
     user_name: "",
@@ -67,6 +67,32 @@ const ContactForm = () => {
         }
       );
   };
+
+  return {
+    toast,
+    showToastItem,
+    isSending,
+    formValues,
+    form,
+    handleCloseToast,
+    handleChange,
+    sendEmail,
+  };
+};
+
+const ContactForm = () => {
+  const {
+    toast,
+    showToastItem,
+    isSending,
+    formValues,
+    form,
+    handleCloseToast,
+    handleChange,
+    sendEmail,
+  } = useContactForm();
+  const { t } = useTranslation();
+  const { theme } = useTheme();
 
   return (
     <article>
