@@ -1,32 +1,10 @@
 import { useTranslation } from "react-i18next";
-import AnimatedComponent from "./AnimatedComponent";
-import FlipCard1 from "../assets/icons/flip-card1.webp";
-import FlipCard2 from "../assets/icons/flip-card2.webp";
-import FlipCard3 from "../assets/icons/flip-card3.webp";
+import AnimatedComponent from "../../components/AnimatedComponent";
+import FlipCard1 from "../../assets/icons/flip-card1.webp";
+import FlipCard2 from "../../assets/icons/flip-card2.webp";
+import FlipCard3 from "../../assets/icons/flip-card3.webp";
+import { Card } from "./Card";
 
-const Card = ({ num, img, alt, title, description }) => {
-  return (
-    <div className="cards__front-back">
-      <div className={`front${num}`}></div>
-      <div className={`back${num}`}>
-        <figure className="w-24 h-24">
-          <img
-            className="w-full h-full cover"
-            src={img}
-            alt={alt}
-            loading="lazy"
-            width="100"
-            height="100"
-          />
-        </figure>
-        <div className="flip-card__content flex flex-col gap-2">
-          <h3 className="font-bold text-lg">{title}</h3>
-          <p>{description}.</p>
-        </div>
-      </div>
-    </div>
-  );
-};
 const FlipCards = () => {
   const { t } = useTranslation();
 
