@@ -1,29 +1,12 @@
-import AnimatedComponent from "./AnimatedComponent";
 import { useTranslation } from "react-i18next";
-import Logo from "../assets/icons/logo-negro.png";
-import Screens from "../assets/images/responsive-screens.avif";
-import Background from "../assets/images/front_end-background.webp";
-import { useTheme } from "./ThemeContext";
+import AnimatedComponent from "../../components/AnimatedComponent";
+import { useTheme } from "../../components/ThemeContext";
+import { CounterDivs } from "./CounterDivs";
 
-const CounterDivs = ({ num, title }) => {
-  const { theme } = useTheme();
-  return (
-    <div
-      className={`${
-        theme === "dark" ? "shadow__dark" : "shadow__light"
-      } bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4`}
-    >
-      <p className="text-center text-lg leading-8 font-semibold">
-        <span className="text-4xl font-extrabold">
-          <span className="text-accent">+</span>
-          {num}
-          <br />
-        </span>
-        {title}
-      </p>
-    </div>
-  );
-};
+import Logo from "../../assets/icons/logo-negro.png";
+import Screens from "../../assets/images/responsive-screens.avif";
+import Background from "../../assets/images/front_end-background.webp";
+
 const About = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();

@@ -7,7 +7,7 @@ const Header = lazy(() => import("./components/common/Header/Header"));
 const ScrollToTopButton = lazy(() =>
   import("./components/common/ScrollButton/ScrollToTopButton")
 );
-const About = lazy(() => import("./components/About"));
+const About = lazy(() => import("./sections/About/About"));
 const Education = lazy(() => import("./components/Education"));
 const Projects = lazy(() => import("./components/Projects"));
 const Skills = lazy(() => import("./components/Skills"));
