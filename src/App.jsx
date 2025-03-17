@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import "./styles/main.scss";
 import Loader from "./components/Loader";
-import Hero from "./components/Hero";
+import Hero from "./sections/Hero/Hero";
 
 const Header = lazy(() => import("./components/common/Header/Header"));
 const ScrollToTopButton = lazy(() =>
@@ -10,7 +10,7 @@ const ScrollToTopButton = lazy(() =>
 const About = lazy(() => import("./sections/About/About"));
 const Education = lazy(() => import("./sections/Education/Education"));
 const Projects = lazy(() => import("./components/Projects"));
-const Skills = lazy(() => import("./components/Skills"));
+const Skills = lazy(() => import("./sections/Skills/Skills"));
 const FlipCards = lazy(() => import("./components/FlipCards"));
 const Contact = lazy(() => import("./sections/Contact/Contact"));
 const Footer = lazy(() => import("./components/common/Footer/Footer"));

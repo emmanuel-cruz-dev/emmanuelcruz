@@ -1,53 +1,35 @@
-import { useTheme } from "./ThemeContext";
-
-import AnimatedComponent from "./AnimatedComponent";
+import AnimatedComponent from "../../components/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import HTMLLogo from "../assets/icons/html-logo.png";
-import CssLogo from "../assets/icons/css-logo.png";
-import JavascriptLogo from "../assets/icons/javascript-logo.png";
-import TypescriptLogo from "../assets/icons/typescript-logo.png";
-import ReactLogo from "../assets/icons/react-logo.png";
-import ReactNativeLogo from "../assets/icons/react-native-logo.png";
-import AngularLogo from "../assets/icons/angular-logo.png";
-import NodeLogo from "../assets/icons/nodejs-logo.png";
-import SassLogo from "../assets/icons/sass-logo.png";
-import GitLogo from "../assets/icons/git-logo.png";
+import HTMLLogo from "../../assets/icons/html-logo.png";
+import CssLogo from "../../assets/icons/css-logo.png";
+import JavascriptLogo from "../../assets/icons/javascript-logo.png";
+import TypescriptLogo from "../../assets/icons/typescript-logo.png";
+import ReactLogo from "../../assets/icons/react-logo.png";
+import ReactNativeLogo from "../../assets/icons/react-native-logo.png";
+import AngularLogo from "../../assets/icons/angular-logo.png";
+import NodeLogo from "../../assets/icons/nodejs-logo.png";
+import SassLogo from "../../assets/icons/sass-logo.png";
+import GitLogo from "../../assets/icons/git-logo.png";
 
-import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
-import BootstrapLogo from "../assets/icons/bootstrap-logo.png";
+import TailwindLogo from "../../assets/icons/tailwindcss-logo.png";
+import BootstrapLogo from "../../assets/icons/bootstrap-logo.png";
 
-import VsCodeLogo from "../assets/icons/vscode-logo.png";
-import GithubLogo from "../assets/icons/github-logo.png";
+import VsCodeLogo from "../../assets/icons/vscode-logo.png";
+import GithubLogo from "../../assets/icons/github-logo.png";
 
-import FigmaLogo from "../assets/icons/figma-logo.png";
-import PhotoshopLogo from "../assets/icons/photoshop-logo.png";
-import WebflowLogo from "../assets/icons/webflow-logo.png";
+import FigmaLogo from "../../assets/icons/figma-logo.png";
+import PhotoshopLogo from "../../assets/icons/photoshop-logo.png";
+import WebflowLogo from "../../assets/icons/webflow-logo.png";
 
-import MobileFirstLogo from "../assets/icons/mobilefirst-logo.png";
-import ResponsiveLogo from "../assets/icons/responsive-logo.png";
-import BemLogo from "../assets/icons/bem-logo.png";
+import MobileFirstLogo from "../../assets/icons/mobilefirst-logo.png";
+import ResponsiveLogo from "../../assets/icons/responsive-logo.png";
+import BemLogo from "../../assets/icons/bem-logo.png";
 import SkillsCard from "./SkillsCard";
-
-const SkillsContainer = ({ title, children }) => {
-  const { theme } = useTheme();
-  return (
-    <article
-      className={`${
-        theme === "dark" ? "shadow__dark" : "shadow__light"
-      } w-full md:w-fit flex flex-col gap-8 items-center text-center bg-sky-300/20 py-6 px-10 border-2 border-sky-300/20 hover:bg-transparent transition-colors duration-300`}
-    >
-      <h4 className="font-semibold text-xl">{title}</h4>
-      <article className="flex flex-wrap gap-6 lg:gap-14 justify-around items-center">
-        {children}
-      </article>
-    </article>
-  );
-};
+import SkillsContainer from "./SkillsContainer";
 
 const Skills = () => {
   const { t } = useTranslation();
-  const { theme } = useTheme();
 
   return (
     <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">

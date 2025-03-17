@@ -1,6 +1,6 @@
 const SkillsCard = ({ src, alt, title }) => {
   return (
-    <div className="card">
+    <article className="card">
       <img
         src={src}
         alt={`${alt} logo`}
@@ -11,7 +11,7 @@ const SkillsCard = ({ src, alt, title }) => {
         height="100"
       />
       <p className="font-semibold">{alt}</p>
-    </div>
+    </article>
   );
 };
 
