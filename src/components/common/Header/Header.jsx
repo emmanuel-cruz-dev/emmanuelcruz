@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
-import logoBlanco from "../assets/icons/logo-blanco.png";
-import logoNegro from "../assets/icons/logo-negro.png";
-import LanguageSwitcher from "./LanguageSwitcher";
-import { useTheme } from "./ThemeContext";
+import logoBlanco from "../../../assets/icons/logo-blanco.png";
+import logoNegro from "../../../assets/icons/logo-negro.png";
+import LanguageSwitcher from "../../LanguageSwitcher";
+import { useTheme } from "../../ThemeContext";
 import { useState } from "react";
 
 const Header = () => {

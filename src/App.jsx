@@ -3,7 +3,7 @@ import "./styles/main.scss";
 import Loader from "./components/Loader";
 import Hero from "./components/Hero";
 
-const Header = lazy(() => import("./components/Header"));
+const Header = lazy(() => import("./components/common/Header/Header"));
 const ScrollToTopButton = lazy(() =>
   import("./components/common/ScrollButton/ScrollToTopButton")
 );
