@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../../ThemeContext";
 import { useTranslation } from "react-i18next";
 
 function ScrollToTopButton() {

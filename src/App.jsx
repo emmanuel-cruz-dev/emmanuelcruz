@@ -4,7 +4,9 @@ import Loader from "./components/Loader";
 import Hero from "./components/Hero";
 
 const Header = lazy(() => import("./components/Header"));
-const ScrollToTopButton = lazy(() => import("./components/ScrollToTopButton"));
+const ScrollToTopButton = lazy(() =>
+  import("./components/common/ScrollButton/ScrollToTopButton")
+);
 const About = lazy(() => import("./components/About"));
 const Education = lazy(() => import("./components/Education"));
 const Projects = lazy(() => import("./components/Projects"));
