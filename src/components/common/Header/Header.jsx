@@ -3,20 +3,12 @@ import logoBlanco from "../../../assets/icons/logo-blanco.png";
 import logoNegro from "../../../assets/icons/logo-negro.png";
 import LanguageSwitcher from "../../LanguageSwitcher";
 import { useTheme } from "../../ThemeContext";
-import { useState } from "react";
+import { useMenu } from "../../../hooks/useMenu";
 
 const Header = () => {
   const { t } = useTranslation();
   const { theme, toggleTheme } = useTheme();
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-  };
+  const { isMenuOpen, toggleMenu, closeMenu } = useMenu();
 
   return (
     <header
