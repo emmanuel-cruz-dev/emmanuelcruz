@@ -12,6 +12,7 @@ import NucbaTituloGrande from "../../assets/images/nucba.webp";
 import Gallery from "../../components/Gallery";
 
 const EducationCards = ({
+  id,
   img,
   href,
   logo,
