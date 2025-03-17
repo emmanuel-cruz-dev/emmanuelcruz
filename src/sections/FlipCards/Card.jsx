@@ -1,6 +1,6 @@
 export const Card = ({ num, img, alt, title, description }) => {
   return (
-    <div className="cards__front-back">
+    <article className="cards__front-back">
       <div className={`front${num}`}></div>
       <div className={`back${num}`}>
         <figure className="w-24 h-24">
@@ -18,6 +18,6 @@ export const Card = ({ num, img, alt, title, description }) => {
           <p>{description}.</p>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
