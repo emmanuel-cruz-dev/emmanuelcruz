@@ -1,6 +1,6 @@
 import { useScrollToTop } from "../../../hooks/useScrollToTop";
 import { handleClick } from "../../../utils/handleClick";
-import { useTheme } from "../../ThemeContext";
+import { useTheme } from "../../../context/ThemeContext";
 import { useTranslation } from "react-i18next";
 
 function ScrollToTopButton() {

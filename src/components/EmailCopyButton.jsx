@@ -1,4 +1,4 @@
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../context/ThemeContext";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 

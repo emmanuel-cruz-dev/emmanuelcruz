@@ -1,4 +1,4 @@
-import { useTheme } from "../../components/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 
 const SkillsContainer = ({ title, children }) => {
   const { theme } = useTheme();

@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import AnimatedComponent from "../../components/AnimatedComponent";
-import { useTheme } from "../../components/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { CounterDivs } from "./CounterDivs";
 
 import Logo from "../../assets/icons/logo-negro.png";

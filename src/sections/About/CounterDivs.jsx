@@ -1,4 +1,4 @@
-import { useTheme } from "../../components/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 
 export const CounterDivs = ({ num, title }) => {
   const { theme } = useTheme();

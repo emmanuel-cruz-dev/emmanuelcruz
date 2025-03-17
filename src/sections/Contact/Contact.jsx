@@ -1,4 +1,4 @@
-import { useTheme } from "../../components/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import AnimatedComponent from "../../components/AnimatedComponent";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";

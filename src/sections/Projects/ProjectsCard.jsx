@@ -1,4 +1,4 @@
-import { useTheme } from "../../components/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import Carousel from "../../components/Carousel";
 import { useTranslation } from "react-i18next";
