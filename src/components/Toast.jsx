@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FaTimes, FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
 
-const Toast = ({ message, type, show, onClose }) => {
+const useToast = ({ show, onClose }) => {
   const [progress, setProgress] = useState(100);
   const [isVisibleSlide, setIsVisibleSlide] = useState(false);
   const [isEntering, setIsEntering] = useState(true);
@@ -47,6 +47,14 @@ const Toast = ({ message, type, show, onClose }) => {
     }, 500); // Espera la duración de la animación
   };
 
+  return { progress, isEntering, isVisibleSlide, handleClose };
+};
+
+const Toast = ({ message, type, show, onClose }) => {
+  const { progress, isEntering, isVisibleSlide, handleClose } = useToast({
+    show,
+    onClose,
+  });
   // Selecciona el icono y estilo según el tipo de notificación
   const icon = type === "success" ? <FaCheckCircle /> : <FaExclamationCircle />;
   const iconColor = type === "success" ? "#236d37" : "#731f23";
