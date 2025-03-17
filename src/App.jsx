@@ -12,7 +12,7 @@ const Education = lazy(() => import("./sections/Education/Education"));
 const Projects = lazy(() => import("./components/Projects"));
 const Skills = lazy(() => import("./components/Skills"));
 const FlipCards = lazy(() => import("./components/FlipCards"));
-const Contact = lazy(() => import("./components/Contact"));
+const Contact = lazy(() => import("./sections/Contact/Contact"));
 const Footer = lazy(() => import("./components/common/Footer/Footer"));
 
 function App() {

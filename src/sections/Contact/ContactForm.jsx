@@ -1,7 +1,7 @@
-import { useTheme } from "./ThemeContext";
+import { useTheme } from "../../components/ThemeContext";
 import { useTranslation } from "react-i18next";
 import { useRef, useState } from "react";
-import Toast from "./Toast";
+import Toast from "../../components/Toast";
 import emailjs from "@emailjs/browser";
 
 const ContactForm = () => {

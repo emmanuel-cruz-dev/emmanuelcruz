@@ -1,5 +1,5 @@
-import { useTheme } from "./ThemeContext";
-import AnimatedComponent from "./AnimatedComponent";
+import { useTheme } from "../../components/ThemeContext";
+import AnimatedComponent from "../../components/AnimatedComponent";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
