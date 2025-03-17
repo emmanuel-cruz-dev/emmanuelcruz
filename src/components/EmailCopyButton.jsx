@@ -1,28 +1,16 @@
 import { useTheme } from "../context/ThemeContext";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { useCopyToClipboard } from "../hooks/useCopyToClipboard";
 
 const EmailCopyButton = () => {
   const { t } = useTranslation();
   const { theme } = useTheme();
   const email = "emmanuelgerr@gmail.com";
-  const [copied, setCopied] = useState(false);
-
-  const copyEmailToClipboard = () => {
-    navigator.clipboard
-      .writeText(email)
-      .then(() => {
-        setCopied(true);
-        setTimeout(() => setCopied(false), 2000); // Restablece el estado después de 2 segundos
-      })
-      .catch((err) => {
-        console.error("Error al copiar el email: ", err);
-      });
-  };
+  const [copied, copyToClipboard] = useCopyToClipboard(email);
 
   return (
     <button
-      onClick={copyEmailToClipboard}
+      onClick={copyToClipboard}
       className={`${
         theme === "dark" ? "shadow__dark" : "shadow__light"
       } btn btn dos text-sm py-7`}

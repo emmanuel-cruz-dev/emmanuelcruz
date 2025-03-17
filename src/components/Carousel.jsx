@@ -13,7 +13,7 @@ const Carousel = ({ img1, img2, img3 }) => {
   };
 
   return (
-    <div className="projects__item__slider overflow-hidden">
+    <article className="projects__item__slider overflow-hidden">
       <Slider {...settings}>
         <div>
           <img
@@ -43,7 +43,7 @@ const Carousel = ({ img1, img2, img3 }) => {
           />
         </div>
       </Slider>
-    </div>
+    </article>
   );
 };
 
