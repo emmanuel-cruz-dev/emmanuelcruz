@@ -1,13 +1,14 @@
 import { useTranslation } from "react-i18next";
-import Logro from "../assets/icons/logro.png";
-import LogoBlanco from "../assets/icons/logo-blanco.png";
-import freeCodeCampLogo from "../assets/images/freecodecamp-logo.webp";
-import PlatziLogo from "../assets/images/platzi-logo.webp";
-import FoodieLogo from "../assets/images/foodie-logo.webp";
-import BaristasLogo from "../assets/images/baristas-logo.webp";
-import LastModifiedDate from "./LastModifiedDate";
-import SocialLinks from "./SocialLinks";
-import AnimatedComponent from "./AnimatedComponent";
+import Logro from "../../../assets/icons/logro.png";
+import LogoBlanco from "../../../assets/icons/logo-blanco.png";
+import freeCodeCampLogo from "../../../assets/images/freecodecamp-logo.webp";
+import PlatziLogo from "../../../assets/images/platzi-logo.webp";
+import FoodieLogo from "../../../assets/images/foodie-logo.webp";
+import BaristasLogo from "../../../assets/images/baristas-logo.webp";
+
+import LastModifiedDate from "../../LastModifiedDate";
+import SocialLinks from "../../SocialLinks";
+import AnimatedComponent from "../../AnimatedComponent";
 
 const Footer = () => {
   const { i18n, t } = useTranslation();
@@ -26,7 +27,9 @@ const Footer = () => {
               width="100"
               height="100"
             />
-            <p className="text-sm whitespace-nowrap">"{t("footer.phrase")}."</p>
+            <p className="text-sm whitespace-nowrap">
+              &quot;{t("footer.phrase")}.&quot;
+            </p>
           </div>
           <SocialLinks />
         </div>

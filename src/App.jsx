@@ -11,7 +11,7 @@ const Projects = lazy(() => import("./components/Projects"));
 const Skills = lazy(() => import("./components/Skills"));
 const FlipCards = lazy(() => import("./components/FlipCards"));
 const Contact = lazy(() => import("./components/Contact"));
-const Footer = lazy(() => import("./components/Footer"));
+const Footer = lazy(() => import("./components/common/Footer/Footer"));
 
 function App() {
   return (
