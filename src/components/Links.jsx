@@ -10,7 +10,7 @@ const Links = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="flex flex-col gap-5 md:gap-10">
+    <article className="flex flex-col gap-5 md:gap-10">
       <AnimatedComponent delay={2} animation="slide" direction="left">
         <p
           className={`${
@@ -41,7 +41,7 @@ const Links = () => {
           </div>
         </div>
       </AnimatedComponent>
-    </div>
+    </article>
   );
 };
 

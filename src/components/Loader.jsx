@@ -8,9 +8,9 @@ const Loader = ({ size = "medium", color = "red", fullScreen = true }) => {
   };
 
   return (
-    <div
+    <article
       className={`
-        loader-container 
+        loader-container
         ${
           fullScreen
             ? "fixed inset-0 flex items-center bg-[#111827] justify-center z-50"
@@ -20,16 +20,16 @@ const Loader = ({ size = "medium", color = "red", fullScreen = true }) => {
     >
       <div
         className={`
-          loader 
-          ${sizeClasses[size]} 
+          loader
+          ${sizeClasses[size]}
           ${colorClasses[color]}
-          border-[5px] 
-          border-t-transparent 
-          rounded-full 
+          border-[5px]
+          border-t-transparent
+          rounded-full
           animate-spin
         `}
       />
-    </div>
+    </article>
   );
 };
 
