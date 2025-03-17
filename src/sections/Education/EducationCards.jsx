@@ -1,15 +1,8 @@
-import { useTheme } from "../../components/ThemeContext";
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
-
-import PlatziTituloGrande from "../../assets/images/platzi.webp";
-import JavascriptGrande from "../../assets/images/freecodecamp-javascript.webp";
-import ResponsiveGrande from "../../assets/images/freecodecamp-responsive.webp";
-import HTMLCSSTituloGrande from "../../assets/images/html-css.webp";
-import UXResearchTituloGrande from "../../assets/images/ux-research.webp";
-import NucbaTituloGrande from "../../assets/images/nucba.webp";
-
+import { useTheme } from "../../components/ThemeContext";
 import Gallery from "../../components/Gallery";
+import { useGallery } from "../../hooks/useGallery";
+import { certificates } from "../../data/certificatesLarge";
 
 const EducationCards = ({
   id,
@@ -24,25 +17,8 @@ const EducationCards = ({
 }) => {
   const { theme } = useTheme();
   const { t } = useTranslation();
-
-  const certificates = [
-    PlatziTituloGrande,
-    JavascriptGrande,
-    ResponsiveGrande,
-    HTMLCSSTituloGrande,
-    UXResearchTituloGrande,
-    NucbaTituloGrande,
-  ];
-
-  const [isGalleryOpen, setGalleryOpen] = useState(false);
-  const [initialIndex, setInitialIndex] = useState(0);
-
-  const openGallery = (index) => {
-    setInitialIndex(index);
-    setGalleryOpen(true);
-  };
-
-  const closeGallery = () => setGalleryOpen(false);
+  const { isGalleryOpen, initialIndex, openGallery, closeGallery } =
+    useGallery();
 
   return (
     <article className="certificates__card flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-600 pb-5 px-3">
