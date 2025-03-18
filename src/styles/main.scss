@@ -1,25 +1,25 @@
 @use "variables" as *;
 @use "animations" as *;
+@use "globals";
+
+// Componentes
+@use "components/navbar";
+@use "components/footer";
+@use "components/loader";
+
+// Secciones
+@use "sections/hero";
+@use "sections/projects";
+@use "sections/skills";
+@use "sections/flipCards";
+@use "sections/contact";
 
 @import "../styles/slick.css";
 @import "../styles/slick-theme.css";
-@import "globals";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-// Componentes
-@import "components/navbar";
-@import "components/footer";
-@import "components/loader";
-
-// Secciones
-@import "sections/hero";
-@import "sections/projects";
-@import "sections/skills";
-@import "sections/flipCards";
-@import "sections/contact";
 
 /* Efecto rellenado botón ir arriba */
 
