@@ -46,8 +46,14 @@ const EducationCards = ({
               theme === "dark" ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            <span className="font-bold text-accent">{span}</span> -{" "}
-            {description}.
+            <strong
+              className={`${
+                theme === "dark" ? "text-neutral-200" : "text-accent"
+              }`}
+            >
+              {span}
+            </strong>{" "}
+            - {description}.
           </p>
         </div>
       </div>
