@@ -1,5 +1,10 @@
 import { useEffect, useState } from "react";
 
+const PROGRESS_INTERVAL_MS = 100;
+const TOAST_DURATION_MS = 5000;
+const SLIDE_OUT_DURATION_MS = 500;
+const PROGRESS_DECREMENT = 100 / (TOAST_DURATION_MS / PROGRESS_INTERVAL_MS);
+
 const useToast = ({ show, onClose }) => {
   const [progress, setProgress] = useState(100);
   const [isVisibleSlide, setIsVisibleSlide] = useState(false);
@@ -13,8 +18,8 @@ const useToast = ({ show, onClose }) => {
 
       // Temporizador para la barra de progreso
       const progressInterval = setInterval(() => {
-        setProgress((prev) => Math.max(0, prev - 100 / (5000 / 100)));
-      }, 100);
+        setProgress((prev) => Math.max(0, prev - PROGRESS_DECREMENT));
+      }, PROGRESS_INTERVAL_MS);
 
       // Oculta el toast después de 5 segundos
       const timeout = setTimeout(() => {
@@ -23,13 +28,13 @@ const useToast = ({ show, onClose }) => {
         // Espera a que termine la animación antes de desmontar el componente
         setTimeout(() => {
           onClose();
-        }, 500); // Duración de la animación `slide-out`
-      }, 5000);
+        }, SLIDE_OUT_DURATION_MS); // Duración de la animación `slide-out`
+      }, TOAST_DURATION_MS);
 
       // Remueve la clase de entrada después de la animación
       setTimeout(() => {
         setIsEntering(false);
-      }, 500);
+      }, SLIDE_OUT_DURATION_MS);
 
       return () => {
         clearInterval(progressInterval);
@@ -43,7 +48,7 @@ const useToast = ({ show, onClose }) => {
     setIsVisibleSlide(false);
     setTimeout(() => {
       onClose();
-    }, 500); // Espera la duración de la animación
+    }, SLIDE_OUT_DURATION_MS); // Espera la duración de la animación
   };
 
   return { progress, isEntering, isVisibleSlide, handleClose };
