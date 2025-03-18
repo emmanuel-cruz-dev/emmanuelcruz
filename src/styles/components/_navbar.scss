@@ -1,0 +1,55 @@
+// --- Inicio: Header --- //
+
+.header {
+  font-size: 1.05em;
+}
+
+.bg-light {
+  background-color: #ffffff; // Color de fondo para el tema claro
+  transition: background-color 0.3s ease;
+}
+
+.bg-dark {
+  background-color: #111827; // Color de fondo para el tema oscuro
+  transition: background-color 0.3s ease;
+}
+
+.nav-item {
+  position: relative;
+  font-weight: 500;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 0, 51, 0.8),
+      rgba(77, 0, 15, 0.8)
+    );
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+}
+
+.nav__label {
+  position: relative;
+  width: fit-content;
+}
+
+// --- Fin: Header --- //

@@ -64,7 +64,11 @@ img {
   bottom: -0.5rem;
   height: 2px;
   width: 100%;
-  background: linear-gradient(to right, rgba(255, 0, 51, 0.8), rgba(77, 0, 15, 0.8));
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 51, 0.8),
+    rgba(77, 0, 15, 0.8)
+  );
   transform: scaleX(0);
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
@@ -147,7 +151,7 @@ img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   display: block; /* Esto elimina el espacio extra debajo de la imagen */
 }
 
@@ -327,4 +331,4 @@ img {
     transform: translateX(100%);
     opacity: 0;
   }
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

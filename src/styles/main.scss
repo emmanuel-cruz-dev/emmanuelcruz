@@ -3,64 +3,16 @@
 
 @import "../styles/slick.css";
 @import "../styles/slick-theme.css";
+@import "globals";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-// --- Inicio: Estilos Globales --- //
+// Componentes
+@import "components/navbar";
 
-html {
-  background: $light-background;
-  color: $light-text;
-  scroll-behavior: smooth;
-  transition: background-color 0.3s ease;
-
-  &.dark {
-    background: $dark-background;
-    color: $dark-text;
-  }
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: $font-family-poppins;
-  //border: 1px solid red;
-}
-
-body {
-  transition: color 0.3s ease;
-}
-
-li {
-  list-style-type: none;
-  cursor: pointer;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-span {
-  font-family: $font-family-roboto;
-  font-weight: 700;
-}
-
-/* Margen de secciones */
-
-.scroll-top {
-  scroll-margin-top: 80px; /* Ajusta a la altura de tu navbar */
-}
-
-// --- Fin: Estilos Globales --- //
+// Secciones
 
 // --- Inicio: Loader --- //
 
@@ -138,62 +90,6 @@ span {
 }
 
 // --- Fin: Efectos de Sombras --- //
-
-// --- Inicio: Header --- //
-
-.header {
-  font-size: 1.05em;
-}
-
-.bg-light {
-  background-color: #ffffff; // Color de fondo para el tema claro
-  transition: background-color 0.3s ease;
-}
-
-.bg-dark {
-  background-color: #111827; // Color de fondo para el tema oscuro
-  transition: background-color 0.3s ease;
-}
-
-.nav-item {
-  position: relative;
-  font-weight: 500;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
-
-  &:hover {
-    opacity: 1;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -0.5rem;
-    height: 2px;
-    width: 100%;
-    background: linear-gradient(
-      to right,
-      rgba(255, 0, 51, 0.8),
-      rgba(77, 0, 15, 0.8)
-    );
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-  }
-
-  &:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-}
-
-.nav__label {
-  position: relative;
-  width: fit-content;
-}
-
-// --- Fin: Header --- //
 
 // --- Inicio: Seccion Hero --- //
 
