@@ -1,10 +1,14 @@
 import { FaCalendarAlt } from "react-icons/fa";
 import useLastModifiedDate from "../hooks/useLastModifiedDate";
 
+// Definir constantes para los textos
+const LAST_UPDATE_TEXT_ES = "Última actualización";
+const LAST_UPDATE_TEXT_EN = "Last update";
+
 const LastModifiedDate = ({ currentLanguage }) => {
   const lastModified = useLastModifiedDate(currentLanguage);
   const lastUpdateText =
-    currentLanguage === "es" ? "Última actualización" : "Last update";
+    currentLanguage === "es" ? LAST_UPDATE_TEXT_ES : LAST_UPDATE_TEXT_EN;
 
   return (
     <article className="flex items-center gap-2 text-gray-600">
