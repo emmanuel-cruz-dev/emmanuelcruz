@@ -1,0 +1,115 @@
+// --- Hero --- //
+
+.social__links {
+  width: 2rem;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  width: 100%;
+  max-width: 13rem;
+  font-size: 0.95em;
+  color: $text-gray;
+  text-transform: uppercase;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  background-color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    color: $text-light;
+  }
+
+  &--red {
+    background-color: $color-accent;
+  }
+
+  &.uno::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    z-index: 1;
+    bottom: -80px;
+    left: 0;
+    transition: 0.3s ease-in-out all;
+  }
+
+  &.uno:hover::after {
+    bottom: 0;
+  }
+
+  &.dos::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: $color-accent;
+    position: absolute;
+    z-index: 1;
+    bottom: -80px;
+    left: 0;
+    transition: 0.3s ease-in-out all;
+  }
+
+  &.dos:hover::after {
+    bottom: 0;
+  }
+}
+
+.btn__rounded {
+  background-color: #000;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding-block: 0.75rem;
+  padding-inline: 1.5rem;
+  width: fit-content;
+  transition: background-color 0.3s ease;
+  position: relative;
+  overflow: hidden;
+
+  span {
+    position: relative;
+    z-index: 2;
+    transition: color 0.3s ease;
+  }
+
+  &.tres::after {
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.8s ease-in-out, background 0.5s ease-in-out;
+    border-radius: 50%;
+    transform-origin: center;
+  }
+
+  &.tres:hover::after {
+    transform: scale(140);
+    background: $color-accent;
+  }
+}
+
+// --- Hero --- //
