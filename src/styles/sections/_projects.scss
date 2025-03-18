@@ -88,4 +88,57 @@
   transform: translateX(0);
 }
 
+// --- Inicio: Slider Carrusel --- //
+
+.slick-slide {
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block; /* Esto elimina el espacio extra debajo de la imagen */
+}
+
+.slick-slide > div {
+  height: 100% !important;
+}
+
+.slick-slider {
+  height: 100% !important;
+}
+
+// Estilos para los puntos de navegación
+.slick-dots {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  z-index: 10;
+}
+
+.slick-dots li button:before {
+  font-size: 14px; // Tamaño de los puntos
+  color: #8b8b8bb0; // Color de los puntos
+  opacity: 0.6;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: $color-accent;
+}
+
+.slick-dots li button:hover:before {
+  opacity: 1;
+}
+
+// --- Fin: Slider Carrusel --- //
+
 // --- Projects --- //
