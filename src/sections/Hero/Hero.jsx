@@ -1,7 +1,7 @@
 import { useTheme } from "../../context/ThemeContext";
 import { useTranslation } from "react-i18next";
 import picture from "../../assets/images/img-profile.webp";
-import Links from "../../components/Links";
+import Links from "../../components/ui/Links";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 
 const Hero = () => {

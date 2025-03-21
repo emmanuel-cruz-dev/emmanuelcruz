@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 import "./styles/main.scss";
-import Loader from "./components/Loader";
+import Loader from "./components/ui/Loader";
 import Hero from "./sections/Hero/Hero";
 
 const Header = lazy(() => import("./components/common/Header/Header"));
