@@ -1,5 +1,5 @@
 import { FaCalendarAlt } from "react-icons/fa";
-import useLastModifiedDate from "../hooks/useLastModifiedDate";
+import useLastModifiedDate from "../../hooks/useLastModifiedDate";
 
 // Definir constantes para los textos
 const LAST_UPDATE_TEXT_ES = "Última actualización";

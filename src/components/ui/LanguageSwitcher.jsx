@@ -1,5 +1,5 @@
 import { FlagIcon } from "react-flag-kit";
-import { useLanguageSwitcher } from "../hooks/useLanguageSwitcher";
+import { useLanguageSwitcher } from "../../hooks/useLanguageSwitcher";
 
 function LanguageSwitcher() {
   const { currentLanguage, changeLanguage, t } = useLanguageSwitcher();
