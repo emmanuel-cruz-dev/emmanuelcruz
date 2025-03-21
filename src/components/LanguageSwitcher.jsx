@@ -1,7 +1,7 @@
 import { FlagIcon } from "react-flag-kit";
 import { useLanguageSwitcher } from "../hooks/useLanguageSwitcher";
 
-const LanguageSwitcher = () => {
+function LanguageSwitcher() {
   const { currentLanguage, changeLanguage, t } = useLanguageSwitcher();
 
   return (
@@ -11,6 +11,6 @@ const LanguageSwitcher = () => {
       </button>
     </div>
   );
-};
+}
 
 export default LanguageSwitcher;

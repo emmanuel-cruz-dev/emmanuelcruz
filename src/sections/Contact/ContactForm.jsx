@@ -1,6 +1,6 @@
 import { useTheme } from "../../context/ThemeContext";
 import { useTranslation } from "react-i18next";
-import Toast from "../../components/Toast";
+import Toast from "../../components/ui/Toast";
 import { useContactForm } from "../../hooks/useContactForm";
 
 const ContactForm = () => {

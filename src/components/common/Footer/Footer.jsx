@@ -7,7 +7,7 @@ import FoodieLogo from "../../../assets/images/foodie-logo.webp";
 import BaristasLogo from "../../../assets/images/baristas-logo.webp";
 
 import LastModifiedDate from "../../LastModifiedDate";
-import SocialLinks from "../../SocialLinks";
+import SocialLinks from "../../ui/SocialLinks";
 import AnimatedComponent from "../../ui/AnimatedComponent";
 
 function Footer() {

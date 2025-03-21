@@ -1,6 +1,6 @@
 import { FaGithub, FaLinkedin, FaPaperPlane } from "react-icons/fa";
 
-const SocialLinks = () => {
+function SocialLinks() {
   return (
     <article className="flex gap-4">
       <a
@@ -33,6 +33,6 @@ const SocialLinks = () => {
       </a>
     </article>
   );
-};
+}
 
 export default SocialLinks;

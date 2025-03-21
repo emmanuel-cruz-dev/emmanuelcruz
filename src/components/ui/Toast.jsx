@@ -1,5 +1,5 @@
 import { FaTimes, FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
-import useToast from "../hooks/useToast";
+import useToast from "../../hooks/useToast";
 
 // Definir constantes para los tipos de notificación
 const SUCCESS = "success";
@@ -22,7 +22,7 @@ const Toast = ({ message, type, show, onClose }) => {
 
   return (
     show && (
-      <div className="toast-container">
+      <article className="toast-container">
         <div
           className={`toast select-none ${
             isEntering
@@ -45,7 +45,7 @@ const Toast = ({ message, type, show, onClose }) => {
             style={{ width: `${progress}%`, backgroundColor: iconColor }}
           ></div>
         </div>
-      </div>
+      </article>
     )
   );
 };
