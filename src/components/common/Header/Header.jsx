@@ -5,7 +5,7 @@ import LanguageSwitcher from "../../ui/LanguageSwitcher";
 import { useTheme } from "../../../context/ThemeContext";
 import { useMenu } from "../../../hooks/useMenu";
 
-const Header = () => {
+function Header() {
   const { t } = useTranslation();
   const { theme, toggleTheme } = useTheme();
   const { isMenuOpen, toggleMenu, closeMenu } = useMenu();
@@ -97,6 +97,6 @@ const Header = () => {
       </div>
     </header>
   );
-};
+}
 
 export default Header;

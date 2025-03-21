@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import Toast from "../../components/ui/Toast";
 import { useContactForm } from "../../hooks/useContactForm";
 
-const ContactForm = () => {
+function ContactForm() {
   const {
     toast,
     showToastItem,
@@ -112,6 +112,6 @@ const ContactForm = () => {
       </div>
     </article>
   );
-};
+}
 
 export default ContactForm;

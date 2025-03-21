@@ -5,7 +5,6 @@ import { useGallery } from "../../hooks/useGallery";
 import { certificates } from "../../data/certificatesLarge";
 
 const EducationCards = ({
-  id,
   img,
   href,
   logo,
