@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import AnimatedComponent from "../../components/AnimatedComponent";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import FlipCard1 from "../../assets/icons/flip-card1.webp";
 import FlipCard2 from "../../assets/icons/flip-card2.webp";
 import FlipCard3 from "../../assets/icons/flip-card3.webp";

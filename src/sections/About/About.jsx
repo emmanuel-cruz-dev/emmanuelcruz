@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import AnimatedComponent from "../../components/AnimatedComponent";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTheme } from "../../context/ThemeContext";
 import { CounterDivs } from "./CounterDivs";
 

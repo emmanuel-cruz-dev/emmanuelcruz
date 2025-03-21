@@ -8,7 +8,7 @@ import BaristasLogo from "../../../assets/images/baristas-logo.webp";
 
 import LastModifiedDate from "../../LastModifiedDate";
 import SocialLinks from "../../SocialLinks";
-import AnimatedComponent from "../../AnimatedComponent";
+import AnimatedComponent from "../../ui/AnimatedComponent";
 
 const Footer = () => {
   const { i18n, t } = useTranslation();

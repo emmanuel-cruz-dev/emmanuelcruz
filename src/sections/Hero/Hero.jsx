@@ -2,7 +2,7 @@ import { useTheme } from "../../context/ThemeContext";
 import { useTranslation } from "react-i18next";
 import picture from "../../assets/images/img-profile.webp";
 import Links from "../../components/Links";
-import AnimatedComponent from "../../components/AnimatedComponent";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 
 const Hero = () => {
   const { t } = useTranslation();

@@ -1,5 +1,5 @@
-import { useAnimation } from "../hooks/useAnimation.js";
-import { getAnimationClasses } from "../utils/getAnimationClasses.js";
+import { useAnimation } from "../../hooks/useAnimation";
+import { getAnimationClasses } from "../../utils/getAnimationClasses";
 
 const AnimatedComponent = ({
   children,

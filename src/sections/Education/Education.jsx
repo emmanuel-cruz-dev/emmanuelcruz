@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import AnimatedComponent from "../../components/AnimatedComponent";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import EducationCards from "./EducationCards";
 import getCertificates from "../../data/certificates";
 
