@@ -52,6 +52,7 @@ const getPProjects = (t) => [
     flyer: "language",
     technologies: [
       { name: "React", img: ReactLogo },
+      { name: "TypeScript", img: TypeScriptLogo },
       { name: "Tailwind CSS", img: TailwindLogo },
       { name: "Sass", img: SassLogo },
     ],
