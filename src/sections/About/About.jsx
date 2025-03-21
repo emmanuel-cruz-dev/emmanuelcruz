@@ -2,12 +2,11 @@ import { useTranslation } from "react-i18next";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTheme } from "../../context/ThemeContext";
 import { CounterDivs } from "./CounterDivs";
-
 import Logo from "../../assets/icons/logo-negro.png";
 import Screens from "../../assets/images/responsive-screens.avif";
 import Background from "../../assets/images/front_end-background.webp";
 
-const About = () => {
+function About() {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
@@ -143,6 +142,6 @@ const About = () => {
       </article>
     </section>
   );
-};
+}
 
 export default About;

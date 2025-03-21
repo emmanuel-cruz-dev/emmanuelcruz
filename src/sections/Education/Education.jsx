@@ -3,7 +3,7 @@ import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import EducationCards from "./EducationCards";
 import getCertificates from "../../data/certificates";
 
-const Education = () => {
+function Education() {
   const { t } = useTranslation();
   const certificates = getCertificates(t);
 
@@ -29,6 +29,6 @@ const Education = () => {
       </article>
     </section>
   );
-};
+}
 
 export default Education;

@@ -4,7 +4,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
 
-const Contact = () => {
+function Contact() {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
@@ -44,6 +44,6 @@ const Contact = () => {
       </article>
     </section>
   );
-};
+}
 
 export default Contact;

@@ -1,6 +1,6 @@
 import { useTheme } from "../../context/ThemeContext";
 import { FaGithub, FaGlobe } from "react-icons/fa";
-import Carousel from "../../components/Carousel";
+import Carousel from "../../components/ui/Carousel";
 import { useTranslation } from "react-i18next";
 import ProjectsIcons from "./ProjectsIcons";
 

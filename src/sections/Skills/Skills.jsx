@@ -28,7 +28,7 @@ import BemLogo from "../../assets/icons/bem-logo.png";
 import SkillsCard from "./SkillsCard";
 import SkillsContainer from "./SkillsContainer";
 
-const Skills = () => {
+function Skills() {
   const { t } = useTranslation();
 
   return (
@@ -220,6 +220,6 @@ const Skills = () => {
       </section>
     </main>
   );
-};
+}
 
 export default Skills;

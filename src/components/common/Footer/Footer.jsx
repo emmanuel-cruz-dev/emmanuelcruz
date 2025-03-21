@@ -10,12 +10,12 @@ import LastModifiedDate from "../../LastModifiedDate";
 import SocialLinks from "../../SocialLinks";
 import AnimatedComponent from "../../ui/AnimatedComponent";
 
-const Footer = () => {
+function Footer() {
   const { i18n, t } = useTranslation();
   const currentLanguage = i18n.language === "es" ? "es" : "en";
 
   return (
-    <footer className="footer text-white select-none">
+    <footer className="footer text-white select-none" id="footer">
       <article className="flex flex-col lg:flex-row gap-10 justify-between xl:justify-evenly items-center py-20 p-16 border-b border-gray-600">
         <div className="flex flex-col items-center gap-6">
           <div className="flex flex-col items-center gap-4 w-44">
@@ -189,6 +189,6 @@ const Footer = () => {
       </article>
     </footer>
   );
-};
+}
 
 export default Footer;

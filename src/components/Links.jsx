@@ -5,7 +5,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 import SocialLinks from "./SocialLinks";
 import AnimatedComponent from "./ui/AnimatedComponent";
 
-const Links = () => {
+function Links() {
   const { t } = useTranslation();
   const { theme } = useTheme();
 
@@ -43,6 +43,6 @@ const Links = () => {
       </AnimatedComponent>
     </article>
   );
-};
+}
 
 export default Links;

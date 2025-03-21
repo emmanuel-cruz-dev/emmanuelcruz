@@ -5,7 +5,7 @@ import FlipCard2 from "../../assets/icons/flip-card2.webp";
 import FlipCard3 from "../../assets/icons/flip-card3.webp";
 import { Card } from "./Card";
 
-const FlipCards = () => {
+function FlipCards() {
   const { t } = useTranslation();
 
   return (
@@ -57,6 +57,6 @@ const FlipCards = () => {
       </article>
     </section>
   );
-};
+}
 
 export default FlipCards;

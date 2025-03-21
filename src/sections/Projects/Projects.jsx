@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import ProjectsCard from "./ProjectsCard";
 import getPProjects from "../../data/projects";
 
-const Projects = () => {
+function Projects() {
   const { t } = useTranslation();
   const projects = getPProjects(t);
 
@@ -30,6 +30,6 @@ const Projects = () => {
       </article>
     </section>
   );
-};
+}
 
 export default Projects;
