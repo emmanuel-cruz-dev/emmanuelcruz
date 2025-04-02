@@ -180,8 +180,8 @@ function Footer() {
           </ul>
           <AnimatedComponent animation="fade">
             <p className="footer__link text-center text-slate-400">
-              © 2024 · {t("footer.paragraph")} <a href="#">Emmanuel Cruz</a> ·
-              Buenos Aires, Argentina
+              © 2024 · {t("footer.paragraph")} Emmanuel Cruz · Buenos Aires,
+              Argentina
             </p>
           </AnimatedComponent>
         </div>
