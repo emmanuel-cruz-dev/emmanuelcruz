@@ -19,7 +19,7 @@ function Header() {
       }`}
       id="header"
     >
-      <a className="my-auto z-20" href="/">
+      <a className="my-auto z-20" href="/" title={t("navbar.home")}>
         <img
           className="w-8 opacity-80 hover:opacity-100 transition-all duration-500 ease-in-out"
           src={theme === "dark" ? logoBlanco : logoNegro}
