@@ -38,7 +38,7 @@ function Hero() {
             } flex justify-center items-center w-64 h-64 md:w-[22rem] md:h-[22rem] my-auto mx-auto`}
           >
             <img
-              className="w-full cover"
+              className="w-full cover grayscale-[20%] hover:grayscale-0"
               src={picture}
               alt="Imagen de perfil de Emmanuel Cruz"
               width="500"

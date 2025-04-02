@@ -2,6 +2,12 @@
 
 // --- Hero --- //
 
+.hero__img__container {
+  img {
+    transition: filter 0.3s ease-in-out;
+  }
+}
+
 .social__links {
   width: 2rem;
 
