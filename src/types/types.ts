@@ -9,18 +9,6 @@ export interface ThemeProviderProps {
   children: ReactNode;
 }
 
-// export interface UseAnimationProps {
-//   threshold: number;
-//   animation: string;
-//   direction: string;
-//   delay: number;
-// }
-
-// export interface UseAnimationReturn {
-//   elementRef: RefObject<HTMLDivElement>;
-//   getClasses: () => string;
-// }
-
 export interface AnimatedComponentProps {
   children: ReactNode;
   threshold?: number;
@@ -97,9 +85,9 @@ export interface LastModifiedDateProps {
 }
 
 export interface LoaderProps {
-  size: string;
-  color: string;
-  fullScreen: boolean;
+  size?: string;
+  color?: string;
+  fullScreen?: boolean;
 }
 
 export interface ToastProps {
