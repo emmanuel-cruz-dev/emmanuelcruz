@@ -103,3 +103,11 @@ export interface UseAnimationProps {
 }
 
 export type UseAnimationReturn = RefObject<HTMLDivElement>;
+
+export type ToastType = "success" | "error" | "";
+
+export type FormValues = {
+  user_name: string;
+  user_email: string;
+  message: string;
+};
