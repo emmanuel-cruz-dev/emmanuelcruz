@@ -6,7 +6,7 @@ function EmailCopyButton() {
   const { t } = useTranslation();
   const { theme } = useTheme();
   const email = "emmanuelgerr@gmail.com";
-  const [copied, copyToClipboard] = useCopyToClipboard(email);
+  const { copied, copyToClipboard } = useCopyToClipboard(email);
 
   return (
     <button

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export const useCopyToClipboard = (text, resetInterval = 2000) => {
+export const useCopyToClipboard = (text: string, resetInterval = 2000) => {
   const [copied, setCopied] = useState(false);
 
   const copyToClipboard = () => {
@@ -15,5 +15,5 @@ export const useCopyToClipboard = (text, resetInterval = 2000) => {
       });
   };
 
-  return [copied, copyToClipboard];
+  return { copied, copyToClipboard };
 };

@@ -1,9 +1,16 @@
-const Loader = ({ size = "medium", color = "red", fullScreen = true }) => {
-  const sizeClasses = {
+import { LoaderProps } from "@/types/types";
+import { FC } from "react";
+
+const Loader: FC<LoaderProps> = ({
+  size = "medium",
+  color = "red",
+  fullScreen = true,
+}) => {
+  const sizeClasses: Record<string, string> = {
     medium: "w-14 h-14",
   };
 
-  const colorClasses = {
+  const colorClasses: Record<string, string> = {
     red: "border-accent",
   };
 

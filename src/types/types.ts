@@ -79,3 +79,13 @@ export interface ProjectsCardProps {
   technologies: TechnologiesProps[];
   link: string;
 }
+
+export interface LastModifiedDateProps {
+  currentLanguage: string;
+}
+
+export interface LoaderProps {
+  size: string;
+  color: string;
+  fullScreen: boolean;
+}
