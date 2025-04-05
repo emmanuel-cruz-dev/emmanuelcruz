@@ -1,4 +1,7 @@
-const SkillsCard = ({ src, alt, title }) => {
+import { SkillsCardProps } from "@/types/types";
+import { FC } from "react";
+
+const SkillsCard: FC<SkillsCardProps> = ({ src, alt, title }) => {
   return (
     <article className="card">
       <img

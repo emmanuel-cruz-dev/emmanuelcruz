@@ -1,4 +1,4 @@
-import { ReactNode, RefObject } from "react";
+import React, { ReactNode, RefObject } from "react";
 
 export interface ThemeContextType {
   theme: string;
@@ -62,6 +62,11 @@ export interface SkillsCardProps {
   src: string;
   alt: string;
   title: string;
+}
+
+export interface SkillsContainerProps {
+  title: string;
+  children: React.JSX.Element[];
 }
 
 export interface TechnologiesProps {

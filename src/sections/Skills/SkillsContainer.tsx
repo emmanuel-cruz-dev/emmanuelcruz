@@ -1,6 +1,8 @@
+import React, { FC } from "react";
 import { useTheme } from "../../hooks/useThemeProvider";
+import { SkillsContainerProps } from "../../types/types";
 
-const SkillsContainer = ({ title, children }) => {
+const SkillsContainer: FC<SkillsContainerProps> = ({ title, children }) => {
   const { theme } = useTheme();
 
   return (
