@@ -82,7 +82,6 @@ export interface ProjectsCardProps {
   img1: string;
   img2: string;
   img3: string;
-  // flyer: IconType;
   flyer: string;
   technologies: TechnologiesProps[];
   link: string;
@@ -90,7 +89,6 @@ export interface ProjectsCardProps {
 }
 
 export type ProjectsIconsProps = {
-  //type: IconType;
   type: string;
 };
 
@@ -153,4 +151,10 @@ export interface FlipCardProps {
   alt: string;
   title: string;
   description: string;
+}
+
+export interface GetAnimationClassesProps {
+  animation: string;
+  direction?: string;
+  delay?: number;
 }

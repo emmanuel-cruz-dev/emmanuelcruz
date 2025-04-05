@@ -1,7 +1,13 @@
-export const getAnimationClasses = ({ animation, direction, delay }) => {
+import { GetAnimationClassesProps } from "@/types/types";
+
+export const getAnimationClasses = ({
+  animation,
+  direction,
+  delay = 0,
+}: GetAnimationClassesProps): string => {
   const classes = ["animated", animation];
 
-  if (animation === "slide") {
+  if (animation === "slide" && direction) {
     classes.push(direction);
   }
 
