@@ -1,7 +1,11 @@
+import { UseAnimationProps, UseAnimationReturn } from "@/types/types";
 import { useEffect, useRef } from "react";
 
-export const useAnimation = ({ threshold = 0.1, animation }) => {
-  const elementRef = useRef(null);
+export const useAnimation = ({
+  threshold = 0.1,
+  animation,
+}: UseAnimationProps): UseAnimationReturn => {
+  const elementRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -16,13 +20,15 @@ export const useAnimation = ({ threshold = 0.1, animation }) => {
       { threshold }
     );
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
+    const currentElement = elementRef.current;
+
+    if (currentElement) {
+      observer.observe(currentElement);
     }
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
+      if (currentElement) {
+        observer.unobserve(currentElement);
       }
     };
   }, [threshold, animation]);

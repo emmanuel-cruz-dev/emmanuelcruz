@@ -9,17 +9,17 @@ export interface ThemeProviderProps {
   children: ReactNode;
 }
 
-export interface UseAnimationProps {
-  threshold: number;
-  animation: string;
-  direction: string;
-  delay: number;
-}
+// export interface UseAnimationProps {
+//   threshold: number;
+//   animation: string;
+//   direction: string;
+//   delay: number;
+// }
 
-export interface UseAnimationReturn {
-  elementRef: RefObject<HTMLDivElement>;
-  getClasses: () => string;
-}
+// export interface UseAnimationReturn {
+//   elementRef: RefObject<HTMLDivElement>;
+//   getClasses: () => string;
+// }
 
 export interface AnimatedComponentProps {
   children: ReactNode;
@@ -96,3 +96,10 @@ export interface ToastProps {
   show: boolean;
   onClose: () => void;
 }
+
+export interface UseAnimationProps {
+  threshold?: number;
+  animation: string;
+}
+
+export type UseAnimationReturn = RefObject<HTMLDivElement>;
