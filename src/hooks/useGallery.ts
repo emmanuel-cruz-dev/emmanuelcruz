@@ -4,7 +4,7 @@ export const useGallery = () => {
   const [isGalleryOpen, setGalleryOpen] = useState(false);
   const [initialIndex, setInitialIndex] = useState(0);
 
-  const openGallery = (index) => {
+  const openGallery = (index: number) => {
     setInitialIndex(index);
     setGalleryOpen(true);
   };

@@ -1,11 +1,12 @@
+import { Language, LastModified } from "../types/types";
 import { useEffect, useState } from "react";
 
-const useLastModifiedDate = (currentLanguage) => {
-  const [lastModified, setLastModified] = useState(null);
+const useLastModifiedDate = (currentLanguage: Language): LastModified => {
+  const [lastModified, setLastModified] = useState<LastModified>(null);
 
   useEffect(() => {
-    const formatDateByLanguage = (date) => {
-      const options = {
+    const formatDateByLanguage = (date: Date): string => {
+      const options: Intl.DateTimeFormatOptions = {
         day: "numeric",
         month: "long",
         year: "numeric",
@@ -16,7 +17,7 @@ const useLastModifiedDate = (currentLanguage) => {
     };
 
     // Intenta importar buildInfo.json, si falla usa la fecha actual
-    const getLastModified = async () => {
+    const getLastModified = async (): Promise<Date> => {
       try {
         const buildInfo = await import("../buildInfo.json");
         return new Date(buildInfo.lastModified);

@@ -3,8 +3,10 @@ import { useTheme } from "../../hooks/useThemeProvider";
 import Gallery from "../../components/ui/Gallery";
 import { useGallery } from "../../hooks/useGallery";
 import { certificates } from "../../data/certificatesLarge";
+import { FC } from "react";
+import { EducationCardsProps } from "../../types/types";
 
-const EducationCards = ({
+const EducationCards: FC<EducationCardsProps> = ({
   img,
   href,
   logo,

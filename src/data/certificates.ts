@@ -23,7 +23,7 @@ const getCertificates = (t: TFunction) => [
     title: "Programación Básica",
     span: "Platzi",
     description: t("sections.certifications.platzi"),
-    num: "0",
+    num: 0,
   },
   {
     id: 2,
@@ -34,7 +34,7 @@ const getCertificates = (t: TFunction) => [
     title: "JavaScript Algorithms and Data Structures",
     span: "freeCodeCamp",
     description: t("sections.certifications.javascript"),
-    num: "1",
+    num: 1,
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const getCertificates = (t: TFunction) => [
     title: "Responsive Web Design",
     span: "freeCodeCamp",
     description: t("sections.certifications.responsive"),
-    num: "2",
+    num: 2,
   },
   {
     id: 4,
@@ -56,7 +56,7 @@ const getCertificates = (t: TFunction) => [
     title: "HTML Y CSS AVANZADO",
     span: "Academia BA Emprende",
     description: t("sections.certifications.htmlcss"),
-    num: "3",
+    num: 3,
   },
   {
     id: 5,
@@ -67,7 +67,7 @@ const getCertificates = (t: TFunction) => [
     title: "UX Research",
     span: "Academia BA Emprende",
     description: t("sections.certifications.uxresearch"),
-    num: "4",
+    num: 4,
   },
   {
     id: 6,
@@ -78,7 +78,7 @@ const getCertificates = (t: TFunction) => [
     title: "HERRAMIENTAS IA Y NO-CODE",
     span: "Nucba",
     description: t("sections.certifications.nucba"),
-    num: "5",
+    num: 5,
   },
 ];
 

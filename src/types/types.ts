@@ -111,3 +111,7 @@ export type FormValues = {
   user_email: string;
   message: string;
 };
+
+export type Language = "es" | "en";
+
+export type LastModified = string | null;
