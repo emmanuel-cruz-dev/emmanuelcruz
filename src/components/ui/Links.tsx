@@ -1,4 +1,4 @@
-import { useTheme } from "../../context/ThemeContext";
+import { useTheme } from "../../hooks/useThemeProvider";
 import { useTranslation } from "react-i18next";
 import EmailCopyButton from "./EmailCopyButton";
 import { AiOutlineDownload } from "react-icons/ai";

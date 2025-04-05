@@ -1,4 +1,4 @@
-import { useTheme } from "../../context/ThemeContext";
+import { useTheme } from "../../hooks/useThemeProvider";
 
 const SkillsContainer = ({ title, children }) => {
   const { theme } = useTheme();

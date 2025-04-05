@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
-import { useTheme } from "../../context/ThemeContext";
+import { useTheme } from "../../hooks/useThemeProvider";
 import { CounterDivs } from "./CounterDivs";
 import Logo from "../../assets/icons/logo-negro.png";
 import Screens from "../../assets/images/responsive-screens.avif";

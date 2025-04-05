@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useTheme } from "../../context/ThemeContext";
+import { useTheme } from "../../hooks/useThemeProvider";
 import Gallery from "../../components/ui/Gallery";
 import { useGallery } from "../../hooks/useGallery";
 import { certificates } from "../../data/certificatesLarge";

@@ -1,4 +1,4 @@
-import { useTheme } from "../../context/ThemeContext";
+import { useTheme } from "../../hooks/useThemeProvider";
 import { useTranslation } from "react-i18next";
 import picture from "../../assets/images/img-profile.webp";
 import Links from "../../components/ui/Links";
