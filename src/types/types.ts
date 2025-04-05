@@ -132,3 +132,11 @@ export interface CounterDivsProps {
   num: number;
   title: string;
 }
+
+export interface FlipCardProps {
+  num: number;
+  img: string;
+  alt: string;
+  title: string;
+  description: string;
+}

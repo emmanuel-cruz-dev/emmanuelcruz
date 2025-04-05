@@ -1,4 +1,13 @@
-export const Card = ({ num, img, alt, title, description }) => {
+import { FlipCardProps } from "@/types/types";
+import { FC } from "react";
+
+export const Card: FC<FlipCardProps> = ({
+  num,
+  img,
+  alt,
+  title,
+  description,
+}) => {
   return (
     <article className="cards__front-back">
       <div className={`front${num}`}></div>

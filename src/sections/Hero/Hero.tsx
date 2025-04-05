@@ -31,7 +31,7 @@ function Hero() {
           </div>
         </div>
 
-        <AnimatedComponent animation="scale">
+        <AnimatedComponent animation="scale" delay={0}>
           <figure
             className={`hero__img__container rounded-full overflow-hidden ${
               theme === "dark" ? "shadow__dark" : "shadow__light"

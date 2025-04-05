@@ -23,7 +23,7 @@ function FlipCards() {
       </AnimatedComponent>
       <article className="flip-cards__container flex flex-col lg:flex-row justify-center items-center gap-9 text-black">
         {/* Flip Card 1 */}
-        <AnimatedComponent animation="flip">
+        <AnimatedComponent animation="flip" delay={0}>
           <Card
             num={1}
             img={FlipCard1}
@@ -34,7 +34,7 @@ function FlipCards() {
         </AnimatedComponent>
 
         {/* Flip Card 2 */}
-        <AnimatedComponent animation="flip">
+        <AnimatedComponent animation="flip" delay={0}>
           <Card
             num={2}
             img={FlipCard2}
@@ -45,7 +45,7 @@ function FlipCards() {
         </AnimatedComponent>
 
         {/* Flip Card 3 */}
-        <AnimatedComponent animation="flip">
+        <AnimatedComponent animation="flip" delay={0}>
           <Card
             num={3}
             img={FlipCard3}
