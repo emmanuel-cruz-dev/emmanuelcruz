@@ -3,8 +3,10 @@ import { FaGithub, FaGlobe } from "react-icons/fa";
 import Carousel from "../../components/ui/Carousel";
 import { useTranslation } from "react-i18next";
 import ProjectsIcons from "./ProjectsIcons";
+import { FC } from "react";
+import { ProjectsCardProps } from "@/types/types";
 
-const ProjectsCard = ({
+const ProjectsCard: FC<ProjectsCardProps> = ({
   title,
   description,
   img1,
@@ -25,7 +27,8 @@ const ProjectsCard = ({
       } projects__item flex w-full md:w-6/12 flex-col xl:flex-row xl:w-10/12 mx-auto overflow-hidden`}
     >
       <div className="projects__item__card__container relative xl:w-[28rem]">
-        {flyer && ProjectsIcons[flyer]}
+        {/* {flyer && ProjectsIcons[flyer]} */}
+        {flyer && <ProjectsIcons type={flyer} />}
         <Carousel img1={img1} img2={img2} img3={img3} />
       </div>
       <div

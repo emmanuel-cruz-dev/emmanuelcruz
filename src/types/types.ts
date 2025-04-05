@@ -69,16 +69,23 @@ export interface TechnologiesProps {
   name: string;
 }
 
+export type IconType = "responsive" | "darkMode" | "idiomas";
+
 export interface ProjectsCardProps {
   title: string;
   description: string;
   img1: string;
   img2: string;
   img3: string;
-  flyer: string;
+  flyer: IconType;
   technologies: TechnologiesProps[];
   link: string;
+  github: string;
 }
+
+export type ProjectsIconsProps = {
+  type: IconType;
+};
 
 export interface LastModifiedDateProps {
   currentLanguage: string;
