@@ -22,8 +22,9 @@ import CardJinjer3 from "../assets/images/card-jinjer3.webp";
 import CardLiterarium1 from "../assets/images/card-literarium1.webp";
 import CardLiterarium2 from "../assets/images/card-literarium2.webp";
 import CardLiterarium3 from "../assets/images/card-literarium3.webp";
+import { TFunction } from "i18next";
 
-const getPProjects = (t) => [
+const getPProjects = (t: TFunction) => [
   {
     id: 1,
     title: "Los Pollos Hermanos",

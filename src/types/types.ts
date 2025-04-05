@@ -89,3 +89,10 @@ export interface LoaderProps {
   color: string;
   fullScreen: boolean;
 }
+
+export interface ToastProps {
+  message: string;
+  type: string;
+  show: boolean;
+  onClose: () => void;
+}

@@ -83,7 +83,7 @@ function ContactForm() {
               onChange={handleChange}
               placeholder={t("sections.contact.message")}
               title={t("sections.contact.messageTitle")}
-              rows="5"
+              rows={5}
               className="w-full bg-white/20 border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             ></textarea>

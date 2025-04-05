@@ -1,4 +1,4 @@
-import { LoaderProps } from "@/types/types";
+import { LoaderProps } from "../../types/types";
 import { FC } from "react";
 
 const Loader: FC<LoaderProps> = ({

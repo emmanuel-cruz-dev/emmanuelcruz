@@ -12,8 +12,9 @@ import freeCodeCampResponsive from "../assets/images/freecodecamp-responsive-min
 import HTMLCSSTitulo from "../assets/images/html-css-mini.webp";
 import UXResearchTitulo from "../assets/images/ux-research-mini.webp";
 import NucbaTitulo from "../assets/images/nucba-mini.webp";
+import { TFunction } from "i18next";
 
-const getCertificates = (t) => [
+const getCertificates = (t: TFunction) => [
   {
     id: 1,
     img: PlatziTitulo,
