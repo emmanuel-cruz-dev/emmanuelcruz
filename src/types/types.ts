@@ -115,3 +115,15 @@ export type FormValues = {
 export type Language = "es" | "en";
 
 export type LastModified = string | null;
+
+export type UseToastProps = {
+  show: boolean;
+  onClose: () => void;
+};
+
+export type UseToastReturn = {
+  progress: number;
+  isVisibleSlide: boolean;
+  isEntering: boolean;
+  handleClose: () => void;
+};
