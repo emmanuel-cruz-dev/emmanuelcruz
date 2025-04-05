@@ -83,7 +83,7 @@ const getPProjects = (t: TFunction) => [
     img1: CardPortfolio1,
     img2: CardPortfolio2,
     img3: CardPortfolio3,
-    flyer: "dark",
+    flyer: "darkMode",
     technologies: [
       { name: "React", img: ReactLogo },
       { name: "Tailwind CSS", img: TailwindLogo },
