@@ -1,7 +1,9 @@
+import { FC } from "react";
 import { useAnimation } from "../../hooks/useAnimation";
 import { getAnimationClasses } from "../../utils/getAnimationClasses";
+import { AnimatedComponentProps } from "@/types/types";
 
-const AnimatedComponent = ({
+const AnimatedComponent: FC<AnimatedComponentProps> = ({
   children,
   threshold = 0.1,
   animation = "fade",
