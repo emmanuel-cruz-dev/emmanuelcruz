@@ -11,7 +11,7 @@ export const useContactForm = () => {
   }>({ show: false, type: "", message: "" });
   const [showToastItem, setShowToast] = useState(false);
   const { t } = useTranslation();
-  const form = useRef();
+  const form = useRef<HTMLFormElement | null>(null);
 
   const [isSending, setIsSending] = useState(false);
   const [formValues, setFormValues] = useState<FormValues>({

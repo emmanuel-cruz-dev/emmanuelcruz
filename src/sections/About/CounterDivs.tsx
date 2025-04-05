@@ -1,6 +1,8 @@
+import { FC } from "react";
 import { useTheme } from "../../hooks/useThemeProvider";
+import { CounterDivsProps } from "../../types/types";
 
-export const CounterDivs = ({ num, title }) => {
+export const CounterDivs: FC<CounterDivsProps> = ({ num, title }) => {
   const { theme } = useTheme();
 
   return (

@@ -127,3 +127,8 @@ export type UseToastReturn = {
   isEntering: boolean;
   handleClose: () => void;
 };
+
+export interface CounterDivsProps {
+  num: number;
+  title: string;
+}
