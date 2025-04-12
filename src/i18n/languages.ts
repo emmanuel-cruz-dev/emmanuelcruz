@@ -141,6 +141,8 @@ const resources = {
           description: "Explore a sample of my work and skills in action.",
           pollos:
             "This site brings the fictional restaurant from Breaking Bad into the digital world. Inspired by the visual style of restaurants like KFC, this site combines an attractive design with details that refer to the series. Explore a visual experience that will make you feel like you're in a real Gus Fring franchise",
+          lockKey:
+            "Password manager designed to offer secure and efficient credential management. The project was developed as part of a No Country work simulation, geared toward collaborative experiences. (Test version, not final)",
           portfolio:
             "This project showcases my ability to create responsive and efficient web interfaces, featuring dark mode options and language selection. Here you will find projects that reflect my commitment to detail, performance, and functionality in frontend development",
           jinjer:
@@ -298,6 +300,8 @@ const resources = {
             "Explora una muestra de mi trabajo y habilidades en acción.",
           pollos:
             "Este sitio lleva el restaurante ficticio de Breaking Bad al mundo digital. Inspirado en el estilo visual de restaurantes como KFC, esta página combina un diseño atractivo con detalles que remiten a la serie. Explora una experiencia visual que te hará sentir en una franquicia de Gus Fring",
+          lockKey:
+            "Administrador de contraseñas pensado para ofrecer una gestión segura y eficiente de credenciales. El proyecto fue desarrollado en el marco de una simulación laboral de No Country, orientada a experiencias colaborativas. (Versión de prueba, no final)",
           portfolio:
             "Este proyecto demuestra mi habilidad para crear interfaces web responsivas y eficientes, cuenta con opciones de modo oscuro y selección de idioma. Aquí encontrarás proyectos que reflejan mi compromiso con el detalle, el rendimiento y la funcionalidad en desarrollo frontend",
           jinjer:
