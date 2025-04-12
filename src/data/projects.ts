@@ -19,6 +19,10 @@ import CardJinjer1 from "../assets/images/card-jinjer1.webp";
 import CardJinjer2 from "../assets/images/card-jinjer2.webp";
 import CardJinjer3 from "../assets/images/card-jinjer3.webp";
 
+import CardLockKey1 from "../assets/images/card-lock-key1.jpg";
+import CardLockKey2 from "../assets/images/card-lock-key2.jpg";
+import CardLockKey3 from "../assets/images/card-lock-key3.jpg";
+
 import CardLiterarium1 from "../assets/images/card-literarium1.webp";
 import CardLiterarium2 from "../assets/images/card-literarium2.webp";
 import CardLiterarium3 from "../assets/images/card-literarium3.webp";
@@ -76,22 +80,22 @@ const getPProjects = (t: TFunction) => [
     link: "https://literarium.netlify.app/",
     github: "https://github.com/emmanuel-cruz-dev/literarium",
   },
-  // {
-  //   id: 4,
-  //   title: "LockKey | Gestor de Contraseñas",
-  //   description: t("sections.projects.lockKey"),
-  //   img1: CardPortfolio1,
-  //   img2: CardPortfolio2,
-  //   img3: CardPortfolio3,
-  //   flyer: "language",
-  //   technologies: [
-  //     { name: "React", img: ReactLogo },
-  //     { name: "TypeScript", img: TypeScriptLogo },
-  //     { name: "Tailwind CSS", img: TailwindLogo },
-  //   ],
-  //   link: "https://lock-key.vercel.app/",
-  //   github: "https://github.com/emmanuel-cruz-dev/lockkey-no-country-mvp",
-  // },
+  {
+    id: 4,
+    title: "LockKey | Gestor de Contraseñas",
+    description: t("sections.projects.lockKey"),
+    img1: CardLockKey1,
+    img2: CardLockKey2,
+    img3: CardLockKey3,
+    flyer: "language",
+    technologies: [
+      { name: "React", img: ReactLogo },
+      { name: "TypeScript", img: TypeScriptLogo },
+      { name: "Tailwind CSS", img: TailwindLogo },
+    ],
+    link: "https://lock-key.vercel.app/",
+    github: "https://github.com/emmanuel-cruz-dev/lockkey-no-country-mvp",
+  },
   {
     id: 5,
     title: "Emmanuel Cruz | Portfolio",
