@@ -61,17 +61,16 @@ const resources = {
           description:
             "Courses, titles and certifications that support my knowledge and skills",
           platzi:
-            "Course that encompasses the fundamentals of programming and computational logic",
+            "Technologies and tools: HTML, CSS, JavaScript, Node.js, Express, Git, and GitHub",
           javascript:
-            "Certification dedicated to the development of algorithms and data structures in JavaScript",
+            "Key concepts: Algorithms, data structures, Object-Oriented Programming (OOP) and Functional Programming (FP)",
           responsive:
-            "Certification with an emphasis on HTML, CSS, adaptable design and web accessibility",
+            "Technologies and tools: HTML, CSS, Flexbox, CSS Grid, Responsive Design and web accessibility",
           htmlcss:
-            "Theoretical and practical course to improve skills in advanced web design",
+            "Technologies and concepts: Semantic HTML, CSS, Responsive Design and Mobile first",
           uxresearch:
-            "Focused on methodologies to understand needs, behaviors and motivations, optimizing the user experience",
-          nucba:
-            "Practical learning workshop for the use of no-code tools and applications based on artificial intelligence",
+            "Tools and methodologies: Figma, Canva, Behance, UX research (quantitative/qualitative methods), heuristic analysis, user flows",
+          nucba: "Tools: Notion, Framer, Figma and Webflow",
           url: "Go to website",
           img: "Expand image",
         },
@@ -218,17 +217,16 @@ const resources = {
           description:
             "Cursos, títulos y certificaciones que avalan mis conocimientos y habilidades",
           platzi:
-            "Curso que abarca fundamentos de programación y lógica computacional",
+            "Tecnologías y herramientas: HTML, CSS, JavaScript, Node.js, Express, Git y GitHub",
           javascript:
-            "Certificación dedicada al desarrollo de algoritmos y estructuras de datos en JavaScript",
+            "Conceptos clave: Algoritmos, estructuras de datos, Programación Orientada a Objetos (OOP) y Programación Funcional (FP)",
           responsive:
-            "Certificación con enfoque en HTML, CSS, diseño adaptable y accesibilidad web",
+            "Tecnologías y herramientas: HTML, CSS, Flexbox, CSS Grid, Diseño Responsivo y accesibilidad web",
           htmlcss:
-            "Curso teórico práctico para perfeccionar habilidades en diseño web avanzado",
+            "Tecnologías y conceptos: HTML semántico, CSS, Diseño Responsivo y Mobile first",
           uxresearch:
-            "Enfocado en metodologías para entender necesidades, comportamientos y motivaciones, optimizando la experiencia de usuario",
-          nucba:
-            "Taller práctico de aprendizaje para el uso de herramientas no-code y aplicaciones basadas en inteligencia artificial",
+            "Herramientas y metodologías: Figma, Canva, Behance, investigación UX (métodos cuantitativos/cualitativos), análisis heurístico, user flows",
+          nucba: "Herramientas: Notion, Framer, Figma y Webflow",
           url: "Ir al sitio web",
           img: "Expandir imagen",
         },
