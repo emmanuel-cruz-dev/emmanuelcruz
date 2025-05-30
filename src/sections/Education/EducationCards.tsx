@@ -40,10 +40,11 @@ const EducationCards: FC<EducationCardsProps> = ({
             height="100"
           />
         </a>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-1">
           <h3 className="font-bold text-xl">{title}</h3>
+
           <p
-            className={`md:text-sm w-11/12 ${
+            className={`md:text-sm w-fit max-w-10/12 ${
               theme === "dark" ? "text-gray-400" : "text-gray-600"
             }`}
           >
@@ -53,8 +54,9 @@ const EducationCards: FC<EducationCardsProps> = ({
               }`}
             >
               {span}
-            </strong>{" "}
-            - {description}.
+            </strong>
+            <br />
+            {description}.
           </p>
         </div>
       </div>
