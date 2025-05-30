@@ -22,7 +22,7 @@ const EducationCards: FC<EducationCardsProps> = ({
     useGallery();
 
   return (
-    <article className="certificates__card flex flex-col md:flex-row justify-between items-center gap-6 border-b border-gray-600 pb-5 px-3">
+    <article className="certificates__card flex flex-col md:flex-row justify-between items-start md:items-center gap-6 border-b border-gray-600 pb-5 px-3">
       <div className="flex flex-col md:flex-row items-center gap-6 md:w-10/12">
         <a
           className="w-20 min-w-20 hidden md:block"
@@ -42,9 +42,8 @@ const EducationCards: FC<EducationCardsProps> = ({
         </a>
         <div className="flex flex-col gap-1">
           <h3 className="font-bold text-xl">{title}</h3>
-
           <p
-            className={`md:text-sm w-fit max-w-10/12 ${
+            className={`md:text-sm w-full lg:w-fit lg:max-w-10/12 ${
               theme === "dark" ? "text-gray-400" : "text-gray-600"
             }`}
           >
