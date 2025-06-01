@@ -49,7 +49,7 @@ const EducationCards: FC<EducationCardsProps> = ({
           >
             <strong
               className={`${
-                theme === "dark" ? "text-neutral-200" : "text-accent"
+                theme === "dark" ? "text-neutral-300" : "text-accent"
               }`}
             >
               {span}
