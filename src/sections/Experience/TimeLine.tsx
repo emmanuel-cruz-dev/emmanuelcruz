@@ -24,7 +24,7 @@ interface TimelineProps {
 const defaultExperiences: Experience[] = [
   {
     id: 1,
-    position: "Front Developer",
+    position: "Frontend Developer",
     company: "Foo Talent Group",
     period: "Abril 2025 | Presente",
     description:
@@ -34,7 +34,7 @@ const defaultExperiences: Experience[] = [
   },
   {
     id: 2,
-    position: "Desarrollador Web Junior",
+    position: "Desarrollador Frontend",
     company: "No Country",
     period: "Marzo - Abril | 2025",
     description:
@@ -44,7 +44,7 @@ const defaultExperiences: Experience[] = [
   },
   {
     id: 3,
-    position: "Desarrollador Web Freelance",
+    position: "Desarrollador Frontend",
     company: "No Country",
     period: "Febrero - Marzo | 2025",
     description:
@@ -70,7 +70,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
     experience;
 
   return (
-    <div className={`relative ${!isLast ? "mb-16 md:mb-0" : ""}`}>
+    <div className={`relative ${!isLast ? "pb-8 md:mb-0" : ""}`}>
       {/* Línea vertical (solo si no es el último elemento) */}
       {!isLast && (
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-600 z-0 hidden md:block" />
@@ -78,12 +78,12 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
 
       {/* Línea vertical para móvil */}
       {!isLast && (
-        <div className="absolute left-6 top-8 w-0.5 h-full bg-gradient-to-b from-emerald-500 to-emerald-600 z-0 md:hidden" />
+        <div className="absolute left-6 top-1/2 w-0.5 h-full bg-gray-600 z-0 md:hidden" />
       )}
 
       {/* Punto de conexión */}
       <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full z-10 hidden md:block" />
-      <div className="absolute left-6 top-8 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full z-10 md:hidden" />
+      <div className="absolute left-6 top-1/2 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full z-10 md:hidden" />
 
       {/* Contenido */}
       <div className="grid md:grid-cols-2 gap-20 items-center">
