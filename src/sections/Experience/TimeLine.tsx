@@ -90,13 +90,13 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
         {side === "left" ? (
           <>
             {/* Contenido a la izquierda */}
-            <div className="md:text-right ml-12 md:ml-0">
+            <div className="md:text-right ml-12 md:ml-0 z-10">
               <div
                 className={`
                 bg-gray-800 p-6 shadow-lg hover:shadow-xl transition-all duration-300
                 ${
                   side === "left"
-                    ? "border-r-4 border-emerald-500 md:border-l-0 border-l-4 md:border-r-4"
+                    ? "border-r-4 border-emerald-500 md:border-l-0 border-l-4 md:border-r-4 after:z-[-1] after:content-[''] after:absolute after:right-1/2 after:top-1/2 after:translate-y-[7px] after:w-12 after:h-0.5 after:bg-emerald-500"
                     : "border-l-4 border-emerald-500 rounded-l-xl"
                 }
               `}
@@ -135,10 +135,10 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
             {/* Espacio vacío a la izquierda */}
             <div className="hidden md:block" />
             {/* Contenido a la derecha */}
-            <div className="ml-12 md:ml-0">
+            <div className="ml-12 md:ml-0 z-10">
               <div
                 className={`
-                bg-gray-800 p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-emerald-500`}
+                bg-gray-800 p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-emerald-500  after:z-[-1] after:content-[''] after:absolute after:left-1/2 after:top-1/2 after:translate-y-[7px] after:w-12 after:h-0.5 after:bg-emerald-500`}
               >
                 <h3 className="text-2xl font-bold text-white mb-2">
                   {position}
@@ -174,8 +174,8 @@ const Timeline: React.FC<TimelineProps> = ({
   experiences = defaultExperiences,
 }) => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen py-12">
-      <div className="container mx-auto px-4">
+    <div className="bg-gray-900 text-white min-h-screen py-4">
+      <div className="mx-auto px-4">
         {/* Título de la sección */}
         {/* <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">

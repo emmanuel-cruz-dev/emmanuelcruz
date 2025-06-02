@@ -13,7 +13,7 @@ function Experience() {
           ágiles y contribuyendo con código limpio.
         </h3>
       </div>
-      <article>
+      <article className="w-full">
         <Timeline />
       </article>
     </section>
