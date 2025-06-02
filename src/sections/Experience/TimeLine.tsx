@@ -1,4 +1,4 @@
-import React from "react";
+import { FC } from "react";
 
 // Definimos los tipos TypeScript
 interface Experience {
@@ -65,7 +65,7 @@ const defaultExperiences: Experience[] = [
 ];
 
 // Componente para cada item del timeline
-const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
+const TimelineItem: FC<TimelineItemProps> = ({ experience, isLast }) => {
   const { position, company, period, description, technologies, side } =
     experience;
 
@@ -170,9 +170,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
 };
 
 // Componente principal del timeline
-const Timeline: React.FC<TimelineProps> = ({
-  experiences = defaultExperiences,
-}) => {
+const Timeline: FC<TimelineProps> = ({ experiences = defaultExperiences }) => {
   return (
     <div className="bg-gray-900 text-white min-h-screen">
       <div className="mx-auto px-4">
