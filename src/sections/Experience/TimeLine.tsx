@@ -82,18 +82,18 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
       )}
 
       {/* Punto de conexión */}
-      <div className="absolute left-1/2 top-8 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 border-4 border-gray-900 rounded-full z-10 hidden md:block" />
-      <div className="absolute left-6 top-8 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 border-4 border-gray-900 rounded-full z-10 md:hidden" />
+      <div className="absolute left-1/2 top-8 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full z-10 hidden md:block" />
+      <div className="absolute left-6 top-8 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full z-10 md:hidden" />
 
       {/* Contenido */}
-      <div className="grid md:grid-cols-2 gap-8 items-center">
+      <div className="grid md:grid-cols-2 gap-20 items-center">
         {side === "left" ? (
           <>
             {/* Contenido a la izquierda */}
             <div className="md:text-right ml-12 md:ml-0">
               <div
                 className={`
-                bg-gray-800 p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105
+                bg-gray-800 p-6 shadow-lg hover:shadow-xl transition-all duration-300
                 ${
                   side === "left"
                     ? "border-r-4 border-emerald-500 rounded-r-xl md:border-l-0 border-l-4 md:border-r-4 rounded-xl md:rounded-l-none md:rounded-r-xl"
@@ -138,7 +138,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
             <div className="ml-12 md:ml-0">
               <div
                 className={`
-                bg-gray-800 p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:transform hover:scale-105
+                bg-gray-800 p-6 shadow-lg hover:shadow-xl transition-all duration-300
                 border-l-4 border-emerald-500 rounded-xl md:rounded-r-none md:rounded-l-xl
               `}
               >

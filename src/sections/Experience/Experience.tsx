@@ -1,3 +1,5 @@
+import Timeline from "./TimeLine";
+
 function Experience() {
   return (
     <section
@@ -9,8 +11,8 @@ function Experience() {
         <h3 className="text-lg">Descripción de la sección</h3>
       </div>
       <article>
-        <div className="card-container flex flex-wrap gap-12 mx-auto">
-          {/* Mapeo de proyectos laborales */}
+        <div className="">
+          <Timeline />
         </div>
       </article>
     </section>
