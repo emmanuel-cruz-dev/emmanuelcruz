@@ -25,8 +25,8 @@ const defaultExperiences: Experience[] = [
   {
     id: 1,
     position: "Front Developer",
-    company: "Tech Solutions Inc.",
-    period: "2022 - Presente",
+    company: "Foo Talent Group",
+    period: "Abril 2025 | Presente",
     description:
       "Desarrollo de aplicaciones web modernas utilizando React, TypeScript y Tailwind CSS. Implementación de interfaces responsivas y optimización de rendimiento. Colaboración en equipos ágiles y mantenimiento de sistemas legacy.",
     technologies: ["React", "TypeScript", "Tailwind", "Next.js"],
@@ -35,8 +35,8 @@ const defaultExperiences: Experience[] = [
   {
     id: 2,
     position: "Desarrollador Web Junior",
-    company: "Digital Agency Pro",
-    period: "2020 - 2022",
+    company: "No Country",
+    period: "Marzo - Abril | 2025",
     description:
       "Desarrollo de sitios web corporativos y e-commerce. Maquetación de diseños usando HTML5, CSS3 y JavaScript vanilla. Integración con CMS como WordPress y optimización SEO básica.",
     technologies: ["HTML5", "CSS3", "JavaScript", "WordPress"],
@@ -45,23 +45,23 @@ const defaultExperiences: Experience[] = [
   {
     id: 3,
     position: "Desarrollador Web Freelance",
-    company: "Trabajo Independiente",
-    period: "2019 - 2020",
+    company: "No Country",
+    period: "Febrero - Marzo | 2025",
     description:
       "Desarrollo de páginas web para pequeñas empresas y emprendedores. Creación de landing pages efectivas y sitios web responsive. Manejo directo con clientes y gestión de proyectos completos.",
-    technologies: ["HTML", "CSS", "Bootstrap", "jQuery"],
+    technologies: ["HTML", "CSS", "React", "TypeScript"],
     side: "left",
   },
-  {
-    id: 4,
-    position: "Estudiante de Informática",
-    company: "Universidad Nacional",
-    period: "2017 - 2019",
-    description:
-      "Formación académica en programación y desarrollo de software. Proyectos universitarios en Java, Python y bases de datos. Participación en hackathons y grupos de estudio de tecnología.",
-    technologies: ["Java", "Python", "SQL", "Git"],
-    side: "right",
-  },
+  // {
+  //   id: 4,
+  //   position: "Estudiante de Informática",
+  //   company: "Universidad Nacional",
+  //   period: "2017 - 2019",
+  //   description:
+  //     "Formación académica en programación y desarrollo de software. Proyectos universitarios en Java, Python y bases de datos. Participación en hackathons y grupos de estudio de tecnología.",
+  //   technologies: ["Java", "Python", "SQL", "Git"],
+  //   side: "right",
+  // },
 ];
 
 // Componente para cada item del timeline
