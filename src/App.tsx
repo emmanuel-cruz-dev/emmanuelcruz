@@ -8,6 +8,7 @@ const ScrollToTopButton = lazy(
   () => import("./components/common/ScrollButton/ScrollToTopButton")
 );
 const About = lazy(() => import("./sections/About/About"));
+const Experience = lazy(() => import("./sections/Experience/Experience"));
 const Education = lazy(() => import("./sections/Education/Education"));
 const Projects = lazy(() => import("./sections/Projects/Projects"));
 const Skills = lazy(() => import("./sections/Skills/Skills"));
@@ -25,6 +26,9 @@ function App() {
       <Suspense fallback={<Loader />}>
         <About />
         <ScrollToTopButton />
+      </Suspense>
+      <Suspense fallback={<Loader />}>
+        <Experience />
       </Suspense>
       <Suspense fallback={<Loader />}>
         <Education />
