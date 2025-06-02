@@ -7,13 +7,14 @@ function Experience() {
       id="experience"
     >
       <div className="text-center mb-5">
-        <h2 className="font-bold text-3xl mb-4">Título de la sección</h2>
-        <h3 className="text-lg">Descripción de la sección</h3>
+        <h2 className="font-bold text-3xl mb-4">Experiencia Laboral</h2>
+        <h3 className="text-lg">
+          Participación activa en equipos de trabajo aplicando metodologías
+          ágiles y contribuyendo con código limpio.
+        </h3>
       </div>
       <article>
-        <div className="">
-          <Timeline />
-        </div>
+        <Timeline />
       </article>
     </section>
   );

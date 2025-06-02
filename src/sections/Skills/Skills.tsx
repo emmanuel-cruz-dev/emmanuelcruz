@@ -39,7 +39,7 @@ function Skills() {
             <h2 className="font-bold text-3xl mb-4">
               {t("sections.skills.title")}
             </h2>
-            <h3 className="text-lg">{t("sections.skills.description")}</h3>
+            <h3 className="text-lg">{t("sections.skills.description")}.</h3>
           </div>
         </AnimatedComponent>
         <article className="flex flex-col gap-8 justify-center items-center w-full lg:flex-row lg:flex-wrap">

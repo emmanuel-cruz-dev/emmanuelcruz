@@ -70,10 +70,10 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
     experience;
 
   return (
-    <div className={`relative ${!isLast ? "mb-16 md:mb-24" : ""}`}>
+    <div className={`relative ${!isLast ? "mb-16 md:mb-0" : ""}`}>
       {/* Línea vertical (solo si no es el último elemento) */}
       {!isLast && (
-        <div className="absolute left-1/2 top-8 transform -translate-x-1/2 w-0.5 h-full bg-gradient-to-b from-emerald-500 to-emerald-600 z-0 hidden md:block" />
+        <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-600 z-0 hidden md:block" />
       )}
 
       {/* Línea vertical para móvil */}
@@ -82,7 +82,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ experience, isLast }) => {
       )}
 
       {/* Punto de conexión */}
-      <div className="absolute left-1/2 top-8 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full z-10 hidden md:block" />
+      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full z-10 hidden md:block" />
       <div className="absolute left-6 top-8 transform -translate-x-1/2 w-4 h-4 bg-emerald-500 rounded-full z-10 md:hidden" />
 
       {/* Contenido */}
@@ -177,12 +177,12 @@ const Timeline: React.FC<TimelineProps> = ({
     <div className="bg-gray-900 text-white min-h-screen py-12">
       <div className="container mx-auto px-4">
         {/* Título de la sección */}
-        <div className="text-center mb-16">
+        {/* <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent">
             Experiencia Laboral
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-emerald-400 to-emerald-600 mx-auto rounded-full"></div>
-        </div>
+        </div> */}
 
         {/* Timeline Container */}
         <div className="relative max-w-6xl mx-auto">
