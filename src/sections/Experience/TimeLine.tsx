@@ -174,7 +174,7 @@ const Timeline: React.FC<TimelineProps> = ({
   experiences = defaultExperiences,
 }) => {
   return (
-    <div className="bg-gray-900 text-white min-h-screen py-4">
+    <div className="bg-gray-900 text-white min-h-screen">
       <div className="mx-auto px-4">
         {/* Título de la sección */}
         {/* <div className="text-center mb-16">
