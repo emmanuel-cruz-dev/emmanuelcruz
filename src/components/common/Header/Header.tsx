@@ -43,6 +43,9 @@ function Header() {
         <li onClick={closeMenu} className="nav-item">
           <a href="#about">{t("navbar.about")}</a>
         </li>
+        {/* <li onClick={closeMenu} className="nav-item">
+          <a href="#experience">Experiencia</a>
+        </li> */}
         <li onClick={closeMenu} className="nav-item">
           <a href="#projects">{t("navbar.projects")}</a>
         </li>
