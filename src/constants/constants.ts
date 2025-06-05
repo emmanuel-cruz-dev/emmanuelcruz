@@ -16,3 +16,10 @@ export const TOAST_COLOR_ERROR = "#bf1d1d";
 export const THEME_DARK = "dark";
 export const THEME_LIGHT = "light";
 export const LOCAL_STORAGE_KEY = "theme";
+
+// useToast.ts
+const PROGRESS_INTERVAL_MS = 100;
+const TOAST_DURATION_MS = 5000;
+export const SLIDE_OUT_DURATION_MS = 500;
+export const PROGRESS_DECREMENT =
+  100 / (TOAST_DURATION_MS / PROGRESS_INTERVAL_MS);
