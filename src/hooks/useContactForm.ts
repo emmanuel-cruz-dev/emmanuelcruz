@@ -29,7 +29,6 @@ export const useContactForm = () => {
     setToast({ show: true, type, message });
   };
 
-  // Función que actualiza los valores de los campos
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
