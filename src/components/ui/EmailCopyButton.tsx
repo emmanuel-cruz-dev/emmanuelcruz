@@ -1,12 +1,12 @@
 import { useTheme } from "../../hooks/useThemeProvider";
 import { useTranslation } from "react-i18next";
 import { useCopyToClipboard } from "../../hooks/useCopyToClipboard";
+import { EMAIL } from "../../constants/constants";
 
 function EmailCopyButton() {
   const { t } = useTranslation();
   const { theme } = useTheme();
-  const email = "emmanuelgerr@gmail.com";
-  const { copied, copyToClipboard } = useCopyToClipboard(email);
+  const { copied, copyToClipboard } = useCopyToClipboard(EMAIL);
 
   return (
     <button
