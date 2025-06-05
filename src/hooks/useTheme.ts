@@ -1,8 +1,9 @@
+import {
+  LOCAL_STORAGE_KEY,
+  THEME_DARK,
+  THEME_LIGHT,
+} from "../constants/constants";
 import { useEffect, useState } from "react";
-
-const THEME_DARK = "dark";
-const THEME_LIGHT = "light";
-const LOCAL_STORAGE_KEY = "theme";
 
 const useThemeContext = () => {
   const [theme, setTheme] = useState(
