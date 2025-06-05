@@ -81,7 +81,7 @@ export type ProjectsIconsProps = {
 };
 
 export interface LastModifiedDateProps {
-  currentLanguage: string;
+  currentLanguage: Language;
 }
 
 export interface LoaderProps {
