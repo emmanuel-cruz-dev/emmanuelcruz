@@ -8,7 +8,7 @@ export const useCopyToClipboard = (text: string, resetInterval = 2000) => {
       .writeText(text)
       .then(() => {
         setCopied(true);
-        setTimeout(() => setCopied(false), resetInterval); // Restablece el estado después de 2 segundos
+        setTimeout(() => setCopied(false), resetInterval);
       })
       .catch((err) => {
         console.error("Error al copiar el email: ", err);

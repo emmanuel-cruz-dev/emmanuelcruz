@@ -16,7 +16,6 @@ const useLastModifiedDate = (currentLanguage: Language): LastModified => {
       return date.toLocaleDateString(locale, options);
     };
 
-    // Intenta importar buildInfo.json, si falla usa la fecha actual
     const getLastModified = async (): Promise<Date> => {
       try {
         const buildInfo = await import("../buildInfo.json");
