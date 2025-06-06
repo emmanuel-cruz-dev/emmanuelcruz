@@ -23,37 +23,31 @@ function FlipCards() {
       </AnimatedComponent>
       <article className="flip-cards__container flex flex-col lg:flex-row justify-center items-center gap-9 text-black">
         {/* Flip Card 1 */}
-        <AnimatedComponent animation="flip" delay={0}>
-          <Card
-            num={1}
-            img={FlipCard1}
-            alt="Icono de un monitor de computadora."
-            title={t("sections.services.cardTitle1")}
-            description={t("sections.services.cardDescription1")}
-          />
-        </AnimatedComponent>
+        <Card
+          num={1}
+          img={FlipCard1}
+          alt="Icono de un monitor de computadora."
+          title={t("sections.services.cardTitle1")}
+          description={t("sections.services.cardDescription1")}
+        />
 
         {/* Flip Card 2 */}
-        <AnimatedComponent animation="flip" delay={0}>
-          <Card
-            num={2}
-            img={FlipCard2}
-            alt="Icono de una nave espacial con un engranaje dentro, el cual es un logo de Search Engine Optimization (Optimización para motores de búsqueda)."
-            title={t("sections.services.cardTitle2")}
-            description={t("sections.services.cardDescription2")}
-          />
-        </AnimatedComponent>
+        <Card
+          num={2}
+          img={FlipCard2}
+          alt="Icono de una nave espacial con un engranaje dentro, el cual es un logo de Search Engine Optimization (Optimización para motores de búsqueda)."
+          title={t("sections.services.cardTitle2")}
+          description={t("sections.services.cardDescription2")}
+        />
 
         {/* Flip Card 3 */}
-        <AnimatedComponent animation="flip" delay={0}>
-          <Card
-            num={3}
-            img={FlipCard3}
-            alt="Icono de Diseño responsivo, en el cual se ven 4 dispositivos de diferentes tamaños: notebook, tablet, celular y monitor de computadora."
-            title={t("sections.services.cardTitle3")}
-            description={t("sections.services.cardDescription3")}
-          />
-        </AnimatedComponent>
+        <Card
+          num={3}
+          img={FlipCard3}
+          alt="Icono de Diseño responsivo, en el cual se ven 4 dispositivos de diferentes tamaños: notebook, tablet, celular y monitor de computadora."
+          title={t("sections.services.cardTitle3")}
+          description={t("sections.services.cardDescription3")}
+        />
       </article>
     </section>
   );
