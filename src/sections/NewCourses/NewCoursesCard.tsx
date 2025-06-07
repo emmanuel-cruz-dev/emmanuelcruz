@@ -1,3 +1,9 @@
+// TODO agregar colores para manejar un background personalizado en cada card
+// Colores por cada curso:
+// Academia ForIT #110b25
+// Alura Latam #061d3c
+// Talento Tech #153242
+
 interface NewCoursesCardProps {
   img: string;
   alt: string;
