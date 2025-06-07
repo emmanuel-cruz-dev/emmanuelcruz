@@ -7,27 +7,27 @@ import AluraLatamLogo from "../../assets/icons/alura-latam-logo.webp";
 const newCourses = [
   {
     id: 1,
-    img: ForITLogo,
-    alt: "Icono Academia ForIT",
-    title: "Academia ForIT",
-    description:
-      "Herramientas y metodologías: TypeScript, Docker, Git avanzado, TDD, Clean Code, Arquitectura limpia, Component-Driven Development.",
-  },
-  {
-    id: 2,
-    img: TalentoTechLogo,
-    alt: "Icono Talento Tech",
-    title: "Talento Tech",
-    description:
-      "Tecnologías y herramientas: Node.js, Express, Firestore y el ecosistema JavaScript para backend.",
-  },
-  {
-    id: 3,
     img: AluraLatamLogo,
     alt: "Icono Alura Latam",
     title: "Alura Latam",
     description:
-      " Tecnologías y herramientas: Java, Spring Boot, MySQL, Oracle Cloud, IA aplicada.",
+      " Tecnologías y herramientas: Java, Spring Boot, MySQL, Oracle Cloud, IA aplicada",
+  },
+  {
+    id: 2,
+    img: ForITLogo,
+    alt: "Icono Academia ForIT",
+    title: "Academia ForIT",
+    description:
+      "Herramientas y metodologías: TypeScript, Docker, Git avanzado, TDD, Clean Code, Arquitectura limpia",
+  },
+  {
+    id: 3,
+    img: TalentoTechLogo,
+    alt: "Icono Talento Tech",
+    title: "Talento Tech",
+    description:
+      "Tecnologías y herramientas: Node.js, Express, Firestore, ecosistema JavaScript para backend",
   },
 ];
 
@@ -46,7 +46,7 @@ function NewCourses() {
           </h3>
         </div>
       </AnimatedComponent>
-      <article className="flex flex-col lg:flex-row justify-center items-center gap-9 text-black">
+      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8">
         {/* Cards */}
         {newCourses.map((course, index) => (
           <NewCoursesCard key={index} {...course} />
