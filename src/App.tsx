@@ -2,6 +2,7 @@ import { lazy, Suspense } from "react";
 import "./styles/main.scss";
 import Loader from "./components/ui/Loader";
 import Hero from "./sections/Hero/Hero";
+// import NewCourses from "./sections/NewCourses/NewCourses";
 
 const Header = lazy(() => import("./components/common/Header/Header"));
 const ScrollToTopButton = lazy(
@@ -41,6 +42,7 @@ function App() {
       </Suspense>
       <Suspense fallback={<Loader />}>
         <FlipCards />
+        {/* <NewCourses /> */}
       </Suspense>
       <Suspense fallback={<Loader />}>
         <Contact />
