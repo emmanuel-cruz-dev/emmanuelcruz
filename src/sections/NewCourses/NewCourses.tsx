@@ -1,4 +1,35 @@
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
+import NewCoursesCard from "./NewCoursesCard";
+import ForITLogo from "../../assets/icons/fotIT-logo.webp";
+import TalentoTechLogo from "../../assets/icons/talento-tech-logo.webp";
+import AluraLatamLogo from "../../assets/icons/alura-latam-logo.webp";
+
+const newCourses = [
+  {
+    id: 1,
+    img: ForITLogo,
+    alt: "Icono Academia ForIT",
+    title: "Academia ForIT",
+    description:
+      "Herramientas y metodologías: TypeScript, Docker, Git avanzado, TDD, Clean Code, Arquitectura limpia, Component-Driven Development.",
+  },
+  {
+    id: 2,
+    img: TalentoTechLogo,
+    alt: "Icono Talento Tech",
+    title: "Talento Tech",
+    description:
+      "Tecnologías y herramientas: Node.js, Express, Firestore y el ecosistema JavaScript para backend.",
+  },
+  {
+    id: 3,
+    img: AluraLatamLogo,
+    alt: "Icono Alura Latam",
+    title: "Alura Latam",
+    description:
+      " Tecnologías y herramientas: Java, Spring Boot, MySQL, Oracle Cloud, IA aplicada.",
+  },
+];
 
 function NewCourses() {
   return (
@@ -16,9 +47,10 @@ function NewCourses() {
         </div>
       </AnimatedComponent>
       <article className="flex flex-col lg:flex-row justify-center items-center gap-9 text-black">
-        {/* Card 1 */}
-        {/* Card 2 */}
-        {/* Card 3 */}
+        {/* Cards */}
+        {newCourses.map((course, index) => (
+          <NewCoursesCard key={index} {...course} />
+        ))}
       </article>
     </section>
   );
