@@ -146,3 +146,10 @@ export interface GetAnimationClassesProps {
   direction?: string;
   delay?: number;
 }
+
+export interface NewCoursesCardProps {
+  img: string;
+  alt: string;
+  title: string;
+  description: string;
+}
