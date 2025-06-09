@@ -3,37 +3,29 @@ import NewCoursesCard from "./NewCoursesCard";
 import ForITLogo from "../../assets/icons/fotIT-logo.webp";
 import TalentoTechLogo from "../../assets/icons/talento-tech-logo.webp";
 import AluraLatamLogo from "../../assets/icons/alura-latam-logo.webp";
+import { NewCoursesCardProps } from "@/types/types";
 
-const newCourses = [
+const newCourses: NewCoursesCardProps[] = [
   {
-    id: 1,
     img: AluraLatamLogo,
     alt: "Icono Alura Latam",
     title: "Alura Latam",
     description:
-      "Formación en desarrollo backend con Java y Spring Boot, incluyendo bases de datos relacionales con MySQL y despliegue en Oracle Cloud. También se explora la aplicación de inteligencia artificial en proyectos.",
-    // description:
-    //   " Tecnologías y herramientas: Java, Spring Boot, MySQL, Oracle Cloud, IA aplicada",
+      "Formación en desarrollo backend con Java y Spring Boot, incluyendo bases de datos relacionales con MySQL y despliegue en Oracle Cloud",
   },
   {
-    id: 2,
     img: ForITLogo,
     alt: "Icono Academia ForIT",
     title: "Academia ForIT",
     description:
-      "Enfoque en buenas prácticas de desarrollo con TypeScript, uso avanzado de Git, integración de Docker, y metodologías como TDD, Clean Code y arquitectura limpia para crear código mantenible y escalable.",
-    // description:
-    //   "Herramientas y metodologías: TypeScript, Docker, Git avanzado, TDD, Clean Code, Arquitectura limpia",
+      "Enfoque en buenas prácticas de desarrollo con TypeScript, uso avanzado de Git, Docker, metodologías TDD, Clean Code y arquitectura limpia",
   },
   {
-    id: 3,
     img: TalentoTechLogo,
     alt: "Icono Talento Tech",
     title: "Talento Tech",
     description:
-      "Especialización en desarrollo backend con Node.js, Express y Firestore, trabajando con el ecosistema moderno de JavaScript y Firebase para construir APIs robustas y escalables.",
-    // description:
-    //   "Tecnologías y herramientas: Node.js, Express, Firestore, ecosistema JavaScript para backend",
+      "Especialización en desarrollo backend con Node.js, Express y Firestore, trabajando con el ecosistema moderno de JavaScript y Firebase",
   },
 ];
 
