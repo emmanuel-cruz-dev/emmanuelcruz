@@ -147,9 +147,11 @@ export interface GetAnimationClassesProps {
   delay?: number;
 }
 
+export type CourseTitle = "Academia ForIT" | "Alura Latam" | "Talento Tech";
+
 export interface NewCoursesCardProps {
   img: string;
   alt: string;
-  title: string;
+  title: CourseTitle;
   description: string;
 }
