@@ -11,6 +11,8 @@ import AngularLogo from "../../assets/icons/angular-logo.png";
 import NodeLogo from "../../assets/icons/nodejs-logo.png";
 import SassLogo from "../../assets/icons/sass-logo.png";
 import GitLogo from "../../assets/icons/git-logo.png";
+import ExpressLogo from "../../assets/icons/express-logo.png";
+import ExpressLogoNegro from "../../assets/icons/express-negro-logo.png";
 
 import TailwindLogo from "../../assets/icons/tailwindcss-logo.png";
 import BootstrapLogo from "../../assets/icons/bootstrap-logo.png";
@@ -27,9 +29,11 @@ import ResponsiveLogo from "../../assets/icons/responsive-logo.png";
 import BemLogo from "../../assets/icons/bem-logo.png";
 import SkillsCard from "./SkillsCard";
 import SkillsContainer from "./SkillsContainer";
+import { useTheme } from "../../hooks/useThemeProvider";
 
 function Skills() {
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
   return (
     <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
@@ -94,6 +98,12 @@ function Skills() {
               title={t("sections.skills.nodejs")}
               src={NodeLogo}
               alt="Node.js"
+            />
+
+            <SkillsCard
+              title={t("sections.skills.express")}
+              src={theme == "dark" ? ExpressLogo : ExpressLogoNegro}
+              alt="Express"
             />
 
             <SkillsCard
