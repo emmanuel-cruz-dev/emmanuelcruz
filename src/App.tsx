@@ -12,8 +12,7 @@ const About = lazy(() => import("./sections/About/About"));
 const Education = lazy(() => import("./sections/Education/Education"));
 const Projects = lazy(() => import("./sections/Projects/Projects"));
 const Skills = lazy(() => import("./sections/Skills/Skills"));
-const FlipCards = lazy(() => import("./sections/FlipCards/FlipCards"));
-// const NewCourses = lazy(() => import("./sections/NewCourses/NewCourses"));
+const NewCourses = lazy(() => import("./sections/NewCourses/NewCourses"));
 const Contact = lazy(() => import("./sections/Contact/Contact"));
 const Footer = lazy(() => import("./components/common/Footer/Footer"));
 
@@ -41,8 +40,7 @@ function App() {
         <Skills />
       </Suspense>
       <Suspense fallback={<Loader />}>
-        <FlipCards />
-        {/* <NewCourses /> */}
+        <NewCourses />
       </Suspense>
       <Suspense fallback={<Loader />}>
         <Contact />
