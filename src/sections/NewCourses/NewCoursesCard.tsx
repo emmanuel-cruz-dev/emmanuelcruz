@@ -1,7 +1,13 @@
+import { FC } from "react";
 import { backgroundColor } from "../../constants/constants";
 import { NewCoursesCardProps } from "../../types/types";
 
-function NewCoursesCard({ img, alt, title, description }: NewCoursesCardProps) {
+const NewCoursesCard: FC<NewCoursesCardProps> = ({
+  img,
+  alt,
+  title,
+  description,
+}) => {
   return (
     <article
       className={`text-center ${backgroundColor[title]} px-9 pt-7 pb-14 h-full text-white`}
@@ -22,6 +28,6 @@ function NewCoursesCard({ img, alt, title, description }: NewCoursesCardProps) {
       </div>
     </article>
   );
-}
+};
 
 export default NewCoursesCard;
