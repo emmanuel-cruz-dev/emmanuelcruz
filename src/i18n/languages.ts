@@ -1,7 +1,6 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-// Carga de recursos de traducción
 const resources = {
   en: {
     translation: {
@@ -105,20 +104,6 @@ const resources = {
           responsive: "Adaptive design for any device",
           bem: "Block Element Modifier",
         },
-        services: {
-          title: "Building Digital Experiences",
-          description:
-            "These core principles guide every line of code and design, ensuring that every project is accessible, engaging, and efficient",
-          cardTitle1: "Usability Above All",
-          cardDescription1:
-            "Every design decision is focused on delivering an engaging, frictionless experience",
-          cardTitle2: "Speed ​​that Matters",
-          cardDescription2:
-            "A well-optimized site delivers fast results, both in speed and search engine rankings",
-          cardTitle3: "Perfect in Every Screen",
-          cardDescription3:
-            "From mobile to desktop, a design that intuitively adjusts to each format with fluidity is essential",
-        },
         newCourses: {
           title: "Currently Learning",
           description:
@@ -164,7 +149,6 @@ const resources = {
           buttonTitle: "Watch the live demo of the project",
           githubTitle: "Explore the project source code",
         },
-        // más secciones...
       },
       scrollToTop: "Scroll to top",
       lastUpdate: "Last updated",
@@ -273,20 +257,6 @@ const resources = {
           responsive: "Diseño adaptable a cualquier dispositivo",
           bem: "Modelo de elementos en bloque",
         },
-        services: {
-          title: "Construyendo Experiencias Digitales",
-          description:
-            "Estos principios fundamentales guían cada línea de código y diseño, asegurando que cada proyecto sea accesible, atractivo y eficiente",
-          cardTitle1: "Usabilidad ante Todo",
-          cardDescription1:
-            "Cada decisión de diseño está enfocada en ofrecer una experiencia atractiva y sin fricciones",
-          cardTitle2: "Velocidad que Importa",
-          cardDescription2:
-            "Un sitio bien optimizado ofrece resultados rápidos, tanto en velocidad como en posicionamiento web",
-          cardTitle3: "Perfecto en Cada Pantalla",
-          cardDescription3:
-            "Desde móviles hasta escritorios, un diseño que se ajusta intuitivamente a cada formato con fluidez es esencial",
-        },
         newCourses: {
           title: "Actualmente Cursando",
           description:
@@ -333,7 +303,6 @@ const resources = {
           buttonTitle: "Ver la demo en vivo del proyecto",
           githubTitle: "Explorar el código fuente del proyecto",
         },
-        // más secciones...
       },
       scrollToTop: "Ir hacia arriba",
       lastUpdate: "Última actualización",
@@ -341,15 +310,13 @@ const resources = {
   },
 };
 
-i18n
-  .use(initReactI18next) // pasar i18n a react-i18next
-  .init({
-    resources,
-    lng: "es", // idioma por defecto
-    fallbackLng: "en", // idioma de respaldo
-    interpolation: {
-      escapeValue: false,
-    },
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  lng: "es",
+  fallbackLng: "en",
+  interpolation: {
+    escapeValue: false,
+  },
+});
 
 export default i18n;
