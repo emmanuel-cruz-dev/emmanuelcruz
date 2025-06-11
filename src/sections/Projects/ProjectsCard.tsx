@@ -4,7 +4,7 @@ import Carousel from "../../components/ui/Carousel";
 import { useTranslation } from "react-i18next";
 import ProjectsIcons from "./ProjectsIcons";
 import { FC } from "react";
-import { ProjectsCardProps } from "@/types/types";
+import { ProjectsCardProps } from "../../types/types";
 
 const ProjectsCard: FC<ProjectsCardProps> = ({
   title,
