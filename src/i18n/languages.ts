@@ -119,6 +119,17 @@ const resources = {
           cardDescription3:
             "From mobile to desktop, a design that intuitively adjusts to each format with fluidity is essential",
         },
+        newCourses: {
+          title: "Currently Learning",
+          description:
+            "Expanding my knowledge of Backend and Fullstack development through these courses",
+          aluraLatam:
+            "Training in backend development with Java and Spring Boot, including relational databases with MySQL and deployment in Oracle Cloud",
+          academiaForIt:
+            "Focus on best development practices with TypeScript, advanced use of Git, Docker, TDD methodologies, Clean Code, and Clean Architecture",
+          talentoTech:
+            "Specialization in backend development with Node.js, Express, and Firestore, working with the modern JavaScript and Firebase ecosystem",
+        },
         contact: {
           title: "I'm Just a Message Away",
           description:
@@ -275,6 +286,17 @@ const resources = {
           cardTitle3: "Perfecto en Cada Pantalla",
           cardDescription3:
             "Desde móviles hasta escritorios, un diseño que se ajusta intuitivamente a cada formato con fluidez es esencial",
+        },
+        newCourses: {
+          title: "Actualmente Cursando",
+          description:
+            "Ampliando mis conocimientos de desarrollo Backend y Fullstack a través de estos cursos",
+          aluraLatam:
+            "Formación en desarrollo backend con Java y Spring Boot, incluyendo bases de datos relacionales con MySQL y despliegue en Oracle Cloud",
+          academiaForIt:
+            "Enfoque en buenas prácticas de desarrollo con TypeScript, uso avanzado de Git, Docker, metodologías TDD, Clean Code y arquitectura limpia",
+          talentoTech:
+            "Especialización en desarrollo backend con Node.js, Express y Firestore, trabajando con el ecosistema moderno de JavaScript y Firebase",
         },
         contact: {
           title: "Estoy a un Mensaje de Distancia",
