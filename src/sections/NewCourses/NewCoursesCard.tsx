@@ -4,7 +4,7 @@ import { NewCoursesCardProps } from "../../types/types";
 function NewCoursesCard({ img, alt, title, description }: NewCoursesCardProps) {
   return (
     <article
-      className={`text-center ${backgroundColor[title]} px-9 pt-7 pb-9 h-full text-white`}
+      className={`text-center ${backgroundColor[title]} px-9 pt-7 pb-14 h-full text-white`}
     >
       <figure className="w-24 h-24 mx-auto mb-2">
         <img
@@ -16,7 +16,7 @@ function NewCoursesCard({ img, alt, title, description }: NewCoursesCardProps) {
       </figure>
       <div className="flex flex-col gap-2">
         <h3 className="font-bold text-lg lg:text-2xl">{title}</h3>
-        <p className="leading-7 w-10/12 mx-auto md:w-auto text-gray-300">
+        <p className="w-10/12 mx-auto md:w-auto text-gray-300">
           {description}.
         </p>
       </div>
