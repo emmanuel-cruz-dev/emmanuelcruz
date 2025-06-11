@@ -92,7 +92,10 @@ const resources = {
           angular: "JavaScript framework for building web applications",
           tailwind: "Utility CSS framework",
           bootstrap: "Front-End development framework",
-          nodejs: "JavaScript runtime environment",
+          nodejs:
+            "Server-side JavaScript runtime environment, based on Chrome's V8 engine",
+          express:
+            "Node.js framework for building backend applications and RESTful APIs",
           figma: "User interface design tool",
           git: "Version control system",
           github: "Collaborative development platform",
@@ -245,7 +248,10 @@ const resources = {
           angular: "Framework de JavaScript para construir aplicaciones web",
           tailwind: "Framework de CSS utilitario",
           bootstrap: "Marco de desarrollo de Front-End",
-          nodejs: "Entorno de ejecución de JavaScript",
+          nodejs:
+            "Entorno de ejecución de JavaScript del lado del servidor, basado en el motor V8 de Chrome",
+          express:
+            "Framework de Node.js para construir aplicaciones backend y APIs RESTful",
           figma: "Herramienta de diseño de interfaz de usuario",
           git: "Sistema de control de versiones",
           github: "Plataforma de desarrollo colaborativo",
