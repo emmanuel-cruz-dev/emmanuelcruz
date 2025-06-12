@@ -18,10 +18,15 @@ import BootstrapLogo from "../assets/icons/bootstrap-logo.png";
 import GitLogo from "../assets/icons/git-logo.png";
 import GithubLogo from "../assets/icons/github-logo.png";
 import VsCodeLogo from "../assets/icons/vscode-logo.png";
+import PostmanLogo from "../assets/icons/postman-logo.png";
 
 import FigmaLogo from "../assets/icons/figma-logo.png";
 import PhotoshopLogo from "../assets/icons/photoshop-logo.png";
 import WebflowLogo from "../assets/icons/webflow-logo.png";
+
+import MobileFirstLogo from "../assets/icons/mobilefirst-logo.png";
+import ResponsiveLogo from "../assets/icons/responsive-logo.png";
+import BemLogo from "../assets/icons/bem-logo.png";
 
 export const getWebSkills = (t: TFunction): SkillsCardProps[] => [
   {
@@ -105,6 +110,11 @@ export const getDevelopmentTools = (t: TFunction) => [
     alt: "VS Code",
     title: t("sections.skills.vscode"),
   },
+  {
+    src: PostmanLogo,
+    alt: "Postman",
+    title: t("sections.skills.postman"),
+  },
 ];
 
 export const getDesignPrototyping = (t: TFunction) => [
@@ -122,5 +132,23 @@ export const getDesignPrototyping = (t: TFunction) => [
     src: WebflowLogo,
     alt: "Webflow",
     title: t("sections.skills.webflow"),
+  },
+];
+
+export const getMethodologies = (t: TFunction) => [
+  {
+    src: MobileFirstLogo,
+    alt: "Mobile-first",
+    title: t("sections.skills.mobileFirst"),
+  },
+  {
+    src: ResponsiveLogo,
+    alt: "Responsive Design",
+    title: t("sections.skills.responsive"),
+  },
+  {
+    src: BemLogo,
+    alt: "BEM",
+    title: t("sections.skills.bem"),
   },
 ];
