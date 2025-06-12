@@ -15,7 +15,9 @@ import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
 import SassLogo from "../assets/icons/sass-logo.png";
 import BootstrapLogo from "../assets/icons/bootstrap-logo.png";
 
-// import GitLogo from "../assets/icons/git-logo.png";
+import GitLogo from "../assets/icons/git-logo.png";
+import GithubLogo from "../assets/icons/github-logo.png";
+import VsCodeLogo from "../assets/icons/vscode-logo.png";
 
 export const getWebSkills = (t: TFunction): SkillsCardProps[] => [
   {
@@ -80,5 +82,23 @@ export const getFrameworks = (t: TFunction, theme: string) => [
     src: BootstrapLogo,
     alt: "Bootstrap",
     title: t("sections.skills.bootstrap"),
+  },
+];
+
+export const getDevelopmentTools = (t: TFunction) => [
+  {
+    src: GitLogo,
+    alt: "Git",
+    title: t("sections.skills.git"),
+  },
+  {
+    src: GithubLogo,
+    alt: "GitHub",
+    title: t("sections.skills.github"),
+  },
+  {
+    src: VsCodeLogo,
+    alt: "VS Code",
+    title: t("sections.skills.vscode"),
   },
 ];
