@@ -28,7 +28,7 @@ function Links() {
               className={`${
                 theme === "dark" ? "shadow__dark" : "shadow__light"
               } btn btn--red uno text-sm py-7`}
-              href="/emmanuel-cruz-CV.pdf"
+              href="/CV-Emmanuel-Cruz-Frontend.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
