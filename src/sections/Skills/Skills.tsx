@@ -1,10 +1,5 @@
-import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
-
-import MobileFirstLogo from "../../assets/icons/mobilefirst-logo.png";
-import ResponsiveLogo from "../../assets/icons/responsive-logo.png";
-import BemLogo from "../../assets/icons/bem-logo.png";
-
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import SkillsCard from "./SkillsCard";
 import SkillsContainer from "./SkillsContainer";
 import { useTheme } from "../../hooks/useThemeProvider";
@@ -12,6 +7,7 @@ import {
   getDesignPrototyping,
   getDevelopmentTools,
   getFrameworks,
+  getMethodologies,
   getWebSkills,
 } from "../../data/skills";
 
@@ -22,6 +18,7 @@ function Skills() {
   const frameworks = getFrameworks(t, theme);
   const developmentTools = getDevelopmentTools(t);
   const designTools = getDesignPrototyping(t);
+  const methodologies = getMethodologies(t);
 
   return (
     <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
@@ -65,23 +62,9 @@ function Skills() {
 
           {/* Metodologías */}
           <SkillsContainer title={t("sections.skills.subtitle5")}>
-            <SkillsCard
-              title={t("sections.skills.mobileFirst")}
-              src={MobileFirstLogo}
-              alt="Mobile-first"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.responsive")}
-              src={ResponsiveLogo}
-              alt="Responsive Design"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.bem")}
-              src={BemLogo}
-              alt="BEM"
-            />
+            {methodologies.map((methodology, index) => (
+              <SkillsCard key={index} {...methodology} />
+            ))}
           </SkillsContainer>
         </article>
       </section>
