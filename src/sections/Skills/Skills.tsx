@@ -1,17 +1,7 @@
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import ReactLogo from "../../assets/icons/react-logo.png";
-import ReactNativeLogo from "../../assets/icons/react-native-logo.png";
-import AngularLogo from "../../assets/icons/angular-logo.png";
-import NodeLogo from "../../assets/icons/nodejs-logo.png";
-import SassLogo from "../../assets/icons/sass-logo.png";
 import GitLogo from "../../assets/icons/git-logo.png";
-import ExpressLogo from "../../assets/icons/express-logo.png";
-import ExpressLogoNegro from "../../assets/icons/express-negro-logo.png";
-
-import TailwindLogo from "../../assets/icons/tailwindcss-logo.png";
-import BootstrapLogo from "../../assets/icons/bootstrap-logo.png";
 
 import VsCodeLogo from "../../assets/icons/vscode-logo.png";
 import GithubLogo from "../../assets/icons/github-logo.png";
@@ -26,12 +16,13 @@ import BemLogo from "../../assets/icons/bem-logo.png";
 import SkillsCard from "./SkillsCard";
 import SkillsContainer from "./SkillsContainer";
 import { useTheme } from "../../hooks/useThemeProvider";
-import { getWebSkills } from "../../data/skills";
+import { getFrameworks, getWebSkills } from "../../data/skills";
 
 function Skills() {
   const { t } = useTranslation();
   const { theme } = useTheme();
   const webSkills = getWebSkills(t);
+  const frameworks = getFrameworks(t, theme);
 
   return (
     <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
@@ -54,53 +45,9 @@ function Skills() {
 
           {/* Frameworks y Bibliotecas */}
           <SkillsContainer title={t("sections.skills.subtitle2")}>
-            <SkillsCard
-              title={t("sections.skills.react")}
-              src={ReactLogo}
-              alt="React"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.reactNative")}
-              src={ReactNativeLogo}
-              alt="React Native"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.angular")}
-              src={AngularLogo}
-              alt="Angular"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.nodejs")}
-              src={NodeLogo}
-              alt="Node.js"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.express")}
-              src={theme == "dark" ? ExpressLogo : ExpressLogoNegro}
-              alt="Express"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.tailwind")}
-              src={TailwindLogo}
-              alt="Tailwind CSS"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.sass")}
-              src={SassLogo}
-              alt="Sass"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.bootstrap")}
-              src={BootstrapLogo}
-              alt="Bootstrap"
-            />
+            {frameworks.map((framework, index) => (
+              <SkillsCard key={index} {...framework} />
+            ))}
           </SkillsContainer>
 
           {/* Herramientas de Desarrollo */}
