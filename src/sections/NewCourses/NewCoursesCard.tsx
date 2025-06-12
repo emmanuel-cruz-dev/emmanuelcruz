@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { backgroundColor } from "../../constants/constants";
 import { NewCoursesCardProps } from "../../types/types";
+import { useTheme } from "../../hooks/useThemeProvider";
 
 const NewCoursesCard: FC<NewCoursesCardProps> = ({
   img,
@@ -8,9 +9,15 @@ const NewCoursesCard: FC<NewCoursesCardProps> = ({
   title,
   description,
 }) => {
+  const { theme } = useTheme();
+
   return (
     <article
-      className={`text-center ${backgroundColor[title]} px-9 pt-7 pb-14 h-full text-white`}
+      className={`${
+        theme === "dark" ? "shadow__dark" : "shadow__light"
+      } text-center ${
+        backgroundColor[title]
+      } px-9 pt-7 pb-14 h-full text-white`}
     >
       <figure className="w-24 h-24 mx-auto mb-2">
         <img
