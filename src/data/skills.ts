@@ -5,6 +5,18 @@ import CSSLogo from "../assets/icons/css-logo.png";
 import JavascriptLogo from "../assets/icons/javascript-logo.png";
 import TypescriptLogo from "../assets/icons/typescript-logo.png";
 
+import ReactLogo from "../assets/icons/react-logo.png";
+import ReactNativeLogo from "../assets/icons/react-native-logo.png";
+import AngularLogo from "../assets/icons/angular-logo.png";
+import NodeLogo from "../assets/icons/nodejs-logo.png";
+import ExpressLogo from "../assets/icons/express-logo.png";
+import ExpressLogoNegro from "../assets/icons/express-negro-logo.png";
+import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
+import SassLogo from "../assets/icons/sass-logo.png";
+import BootstrapLogo from "../assets/icons/bootstrap-logo.png";
+
+// import GitLogo from "../assets/icons/git-logo.png";
+
 export const getWebSkills = (t: TFunction): SkillsCardProps[] => [
   {
     src: HTMLLogo,
@@ -25,5 +37,48 @@ export const getWebSkills = (t: TFunction): SkillsCardProps[] => [
     src: TypescriptLogo,
     alt: "TypeScript",
     title: t("sections.skills.typescript"),
+  },
+];
+
+export const getFrameworks = (t: TFunction, theme: string) => [
+  {
+    src: ReactLogo,
+    alt: "React",
+    title: t("sections.skills.react"),
+  },
+  {
+    src: ReactNativeLogo,
+    alt: "React Native",
+    title: t("sections.skills.reactNative"),
+  },
+  {
+    src: AngularLogo,
+    alt: "Angular",
+    title: t("sections.skills.angular"),
+  },
+  {
+    src: NodeLogo,
+    alt: "Node.js",
+    title: t("sections.skills.nodejs"),
+  },
+  {
+    src: theme == "dark" ? ExpressLogo : ExpressLogoNegro,
+    alt: "Express",
+    title: t("sections.skills.express"),
+  },
+  {
+    src: TailwindLogo,
+    alt: "Talwind CSS",
+    title: t("sections.skills.tailwind"),
+  },
+  {
+    src: SassLogo,
+    alt: "Sass",
+    title: t("sections.skills.sass"),
+  },
+  {
+    src: BootstrapLogo,
+    alt: "Bootstrap",
+    title: t("sections.skills.bootstrap"),
   },
 ];
