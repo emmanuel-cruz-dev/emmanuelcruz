@@ -1,11 +1,6 @@
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import GitLogo from "../../assets/icons/git-logo.png";
-
-import VsCodeLogo from "../../assets/icons/vscode-logo.png";
-import GithubLogo from "../../assets/icons/github-logo.png";
-
 import FigmaLogo from "../../assets/icons/figma-logo.png";
 import PhotoshopLogo from "../../assets/icons/photoshop-logo.png";
 import WebflowLogo from "../../assets/icons/webflow-logo.png";
@@ -13,16 +8,22 @@ import WebflowLogo from "../../assets/icons/webflow-logo.png";
 import MobileFirstLogo from "../../assets/icons/mobilefirst-logo.png";
 import ResponsiveLogo from "../../assets/icons/responsive-logo.png";
 import BemLogo from "../../assets/icons/bem-logo.png";
+
 import SkillsCard from "./SkillsCard";
 import SkillsContainer from "./SkillsContainer";
 import { useTheme } from "../../hooks/useThemeProvider";
-import { getFrameworks, getWebSkills } from "../../data/skills";
+import {
+  getDevelopmentTools,
+  getFrameworks,
+  getWebSkills,
+} from "../../data/skills";
 
 function Skills() {
   const { t } = useTranslation();
   const { theme } = useTheme();
   const webSkills = getWebSkills(t);
   const frameworks = getFrameworks(t, theme);
+  const developmentTools = getDevelopmentTools(t);
 
   return (
     <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
@@ -52,22 +53,9 @@ function Skills() {
 
           {/* Herramientas de Desarrollo */}
           <SkillsContainer title={t("sections.skills.subtitle3")}>
-            <SkillsCard
-              title={t("sections.skills.git")}
-              src={GitLogo}
-              alt="Git"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.github")}
-              src={GithubLogo}
-              alt="GitHub"
-            />
-            <SkillsCard
-              title={t("sections.skills.vscode")}
-              src={VsCodeLogo}
-              alt="VS Code"
-            />
+            {developmentTools.map((tools, index) => (
+              <SkillsCard key={index} {...tools} />
+            ))}
           </SkillsContainer>
 
           {/* Diseño y Prototipado */}
