@@ -1,10 +1,6 @@
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
 
-import FigmaLogo from "../../assets/icons/figma-logo.png";
-import PhotoshopLogo from "../../assets/icons/photoshop-logo.png";
-import WebflowLogo from "../../assets/icons/webflow-logo.png";
-
 import MobileFirstLogo from "../../assets/icons/mobilefirst-logo.png";
 import ResponsiveLogo from "../../assets/icons/responsive-logo.png";
 import BemLogo from "../../assets/icons/bem-logo.png";
@@ -13,6 +9,7 @@ import SkillsCard from "./SkillsCard";
 import SkillsContainer from "./SkillsContainer";
 import { useTheme } from "../../hooks/useThemeProvider";
 import {
+  getDesignPrototyping,
   getDevelopmentTools,
   getFrameworks,
   getWebSkills,
@@ -24,6 +21,7 @@ function Skills() {
   const webSkills = getWebSkills(t);
   const frameworks = getFrameworks(t, theme);
   const developmentTools = getDevelopmentTools(t);
+  const designTools = getDesignPrototyping(t);
 
   return (
     <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
@@ -60,23 +58,9 @@ function Skills() {
 
           {/* Diseño y Prototipado */}
           <SkillsContainer title={t("sections.skills.subtitle4")}>
-            <SkillsCard
-              title={t("sections.skills.figma")}
-              src={FigmaLogo}
-              alt="Figma"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.photoshop")}
-              src={PhotoshopLogo}
-              alt="Photoshop"
-            />
-
-            <SkillsCard
-              title={t("sections.skills.webflow")}
-              src={WebflowLogo}
-              alt="Webflow"
-            />
+            {designTools.map((tools, index) => (
+              <SkillsCard key={index} {...tools} />
+            ))}
           </SkillsContainer>
 
           {/* Metodologías */}
