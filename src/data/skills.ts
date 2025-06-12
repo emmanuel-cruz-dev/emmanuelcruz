@@ -18,6 +18,7 @@ import BootstrapLogo from "../assets/icons/bootstrap-logo.png";
 import GitLogo from "../assets/icons/git-logo.png";
 import GithubLogo from "../assets/icons/github-logo.png";
 import VsCodeLogo from "../assets/icons/vscode-logo.png";
+import IntelliJLogo from "../assets/icons/intellij-logo.png";
 import PostmanLogo from "../assets/icons/postman-logo.png";
 
 import FigmaLogo from "../assets/icons/figma-logo.png";
@@ -109,6 +110,11 @@ export const getDevelopmentTools = (t: TFunction) => [
     src: VsCodeLogo,
     alt: "VS Code",
     title: t("sections.skills.vscode"),
+  },
+  {
+    src: IntelliJLogo,
+    alt: "IntelliJ IDEA",
+    title: t("sections.skills.intelliJ"),
   },
   {
     src: PostmanLogo,
