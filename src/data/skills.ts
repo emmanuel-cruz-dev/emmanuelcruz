@@ -19,6 +19,10 @@ import GitLogo from "../assets/icons/git-logo.png";
 import GithubLogo from "../assets/icons/github-logo.png";
 import VsCodeLogo from "../assets/icons/vscode-logo.png";
 
+import FigmaLogo from "../assets/icons/figma-logo.png";
+import PhotoshopLogo from "../assets/icons/photoshop-logo.png";
+import WebflowLogo from "../assets/icons/webflow-logo.png";
+
 export const getWebSkills = (t: TFunction): SkillsCardProps[] => [
   {
     src: HTMLLogo,
@@ -100,5 +104,23 @@ export const getDevelopmentTools = (t: TFunction) => [
     src: VsCodeLogo,
     alt: "VS Code",
     title: t("sections.skills.vscode"),
+  },
+];
+
+export const getDesignPrototyping = (t: TFunction) => [
+  {
+    src: FigmaLogo,
+    alt: "Figma",
+    title: t("sections.skills.figma"),
+  },
+  {
+    src: PhotoshopLogo,
+    alt: "Photoshop",
+    title: t("sections.skills.photoshop"),
+  },
+  {
+    src: WebflowLogo,
+    alt: "Webflow",
+    title: t("sections.skills.webflow"),
   },
 ];
