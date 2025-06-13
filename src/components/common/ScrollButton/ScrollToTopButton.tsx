@@ -1,5 +1,5 @@
+import { handleClick } from "../../../utils/utils";
 import { useScrollToTop } from "../../../hooks/useScrollToTop";
-import { handleClick } from "../../../utils/handleClick";
 import { useTheme } from "../../../hooks/useThemeProvider";
 import { useTranslation } from "react-i18next";
 
