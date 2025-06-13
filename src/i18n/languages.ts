@@ -64,13 +64,18 @@ const resources = {
           platziSpan: "Platzi | March - April 2024",
           javascript:
             "Key concepts: Algorithms, data structures, Object-Oriented Programming (OOP) and Functional Programming (FP)",
+          javascriptSpan: "freeCodeCamp | May - June 2024",
           responsive:
             "Technologies and tools: HTML, CSS, Flexbox, CSS Grid, Responsive Design and web accessibility",
+          responsiveSpan: "freeCodeCamp | April - May 2024",
           htmlcss:
             "Technologies and concepts: Semantic HTML, CSS, Responsive Design and Mobile first",
+          htmlcssSpan: "Academia BA Emprende | September - October 2024",
           uxresearch:
             "Tools and methodologies: Figma, Canva, Behance, UX research (quantitative/qualitative methods), heuristic analysis, user flows",
+          uxresearchSpan: "Academia BA Emprende | September - October 2024",
           nucba: "Tools: Notion, Framer, Figma and Webflow",
+          nucbaSpan: "NUCBA | October - November 2024",
           url: "Go to website",
           img: "Expand image",
         },
@@ -222,13 +227,18 @@ const resources = {
           platziSpan: "Platzi | Marzo - Abril 2024",
           javascript:
             "Conceptos clave: Algoritmos, estructuras de datos, Programación Orientada a Objetos (OOP) y Programación Funcional (FP)",
+          javascriptSpan: "freeCodeCamp | Mayo - Junio 2024",
           responsive:
             "Tecnologías y herramientas: HTML, CSS, Flexbox, CSS Grid, Diseño Responsivo y accesibilidad web",
+          responsiveSpan: "freeCodeCamp | Abril - Mayo 2024",
           htmlcss:
             "Tecnologías y conceptos: HTML semántico, CSS, Diseño Responsivo y Mobile first",
+          htmlcssSpan: "Academia BA Emprende | Septiembre - Octubre 2024",
           uxresearch:
             "Herramientas y metodologías: Figma, Canva, Behance, investigación UX (métodos cuantitativos/cualitativos), análisis heurístico, user flows",
+          uxresearchSpan: "Academia BA Emprende | Septiembre - Octubre 2024",
           nucba: "Herramientas: Notion, Framer, Figma y Webflow",
+          nucbaSpan: "NUCBA | Octubre - Noviembre 2024",
           url: "Ir al sitio web",
           img: "Expandir imagen",
         },
