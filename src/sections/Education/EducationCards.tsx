@@ -5,6 +5,7 @@ import { useGallery } from "../../hooks/useGallery";
 import { certificates } from "../../data/certificatesLarge";
 import { FC } from "react";
 import { EducationCardsProps } from "../../types/types";
+import { formatTextWithLabels } from "../../helpers/formatText";
 
 const EducationCards: FC<EducationCardsProps> = ({
   img,
@@ -55,7 +56,7 @@ const EducationCards: FC<EducationCardsProps> = ({
               {span}
             </strong>
             <br />
-            {description}.
+            {formatTextWithLabels(description)}.
           </p>
         </div>
       </div>
