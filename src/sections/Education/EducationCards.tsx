@@ -56,7 +56,7 @@ const EducationCards: FC<EducationCardsProps> = ({
               {span}
             </strong>
             <br />
-            {formatTextWithLabels(description)}.
+            {formatTextWithLabels(description)}
           </p>
         </div>
       </div>
