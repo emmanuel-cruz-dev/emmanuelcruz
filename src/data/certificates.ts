@@ -21,7 +21,7 @@ const getCertificates = (t: TFunction) => [
     href: "https://platzi.com",
     logo: Platzi,
     title: "Programación Básica",
-    span: "Platzi | 2024",
+    span: t("sections.certifications.platziSpan"),
     description: t("sections.certifications.platzi"),
     num: 0,
   },
