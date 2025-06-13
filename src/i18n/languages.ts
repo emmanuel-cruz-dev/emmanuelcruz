@@ -36,7 +36,7 @@ const resources = {
         hero: {
           title: "frontend developer",
           description:
-            "Passionate about technology and creativity, always looking for new opportunities to learn and improve in the world of web development.",
+            "Currently delving into backend technologies while applying agile methodologies to real-world projects. I combine design creativity with solid technical foundations.",
           cv: "Download",
           email: "Copy Email",
           emailCopied: "¡Email copied!",
@@ -47,7 +47,7 @@ const resources = {
             "Discover how my experience and skills can add value to your projects.",
           hi: "I'm",
           paragraph:
-            "Enthusiast of functional aesthetics and usability in projects. My interest in problem solving and creativity led me to the world of web development, where I constantly strive to learn and improve my skills.",
+            "Transitioning to Fullstack, expanding my backend knowledge while applying React, TypeScript, and agile methodologies in real projects. I have developed MVPs working with stakeholders and complete development teams.",
           contactMe: "Contact me",
           courses: "online courses",
           practice: "practice hours",
@@ -193,7 +193,7 @@ const resources = {
         hero: {
           title: "desarrollador frontend",
           description:
-            "Apasionado por la tecnología y la creatividad, siempre en busca de nuevas oportunidades para aprender y mejorar en el mundo del desarrollo web.",
+            "Actualmente profundizando en tecnologías backend mientras aplico metodologías ágiles en proyectos reales. Combino creatividad en el diseño con sólidos fundamentos técnicos.",
           cv: "Descargar",
           email: "Copiar Email",
           emailCopied: "¡Email copiado!",
@@ -204,7 +204,7 @@ const resources = {
             "Descubrí cómo mi experiencia y habilidades pueden agregar valor a tus proyectos.",
           hi: "Soy",
           paragraph:
-            "Entusiasta de la estética funcional y la usabilidad en los proyectos. Mi interés por la resolución de problemas y la creatividad me llevaron al mundo del desarrollo web, donde me esfuerzo por aprender y mejorar mis habilidades.",
+            "En transición hacia Fullstack, expandiendo mis conocimientos en backend mientras aplico React, TypeScript y metodologías ágiles en proyectos reales. He desarrollado MVPs trabajando con stakeholders y equipos de desarrollo completos.",
           contactMe: "Contactame",
           courses: "cursos en línea",
           practice: "horas de práctica",
