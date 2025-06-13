@@ -61,6 +61,7 @@ const resources = {
             "Courses, titles and certifications that support my knowledge and skills",
           platzi:
             "Technologies and tools: HTML, CSS, JavaScript, Node.js, Express, Git, and GitHub",
+          platziSpan: "Platzi | March - April 2024",
           javascript:
             "Key concepts: Algorithms, data structures, Object-Oriented Programming (OOP) and Functional Programming (FP)",
           responsive:
@@ -218,6 +219,7 @@ const resources = {
             "Cursos, títulos y certificaciones que avalan mis conocimientos y habilidades",
           platzi:
             "Tecnologías y herramientas: HTML, CSS, JavaScript, Node.js, Express, Git y GitHub",
+          platziSpan: "Platzi | Marzo - Abril 2024",
           javascript:
             "Conceptos clave: Algoritmos, estructuras de datos, Programación Orientada a Objetos (OOP) y Programación Funcional (FP)",
           responsive:
