@@ -50,7 +50,7 @@ const getCertificates = (t: TFunction) => [
   {
     id: 4,
     img: HTMLCSSTitulo,
-    href: "https://academiaba.buenosaires.gob.ar/",
+    href: "https://buenosaires.gob.ar/academia-ba-emprende-0",
     logo: AcademiaBA,
     blackLogo: AcademiaBANegro,
     title: "HTML Y CSS AVANZADO",
@@ -61,7 +61,7 @@ const getCertificates = (t: TFunction) => [
   {
     id: 5,
     img: UXResearchTitulo,
-    href: "https://academiaba.buenosaires.gob.ar/",
+    href: "https://buenosaires.gob.ar/academia-ba-emprende-0",
     logo: AcademiaBA,
     blackLogo: AcademiaBANegro,
     title: "UX Research",
