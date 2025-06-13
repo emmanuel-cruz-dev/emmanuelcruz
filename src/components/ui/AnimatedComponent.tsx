@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { useAnimation } from "../../hooks/useAnimation";
-import { getAnimationClasses } from "../../utils/getAnimationClasses";
-import { AnimatedComponentProps } from "@/types/types";
+import { AnimatedComponentProps } from "../../types/types";
+import { getAnimationClasses } from "../../utils/utils";
 
 const AnimatedComponent: FC<AnimatedComponentProps> = ({
   children,
