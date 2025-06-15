@@ -111,10 +111,11 @@ const resources = {
           vscode: "Source code editor",
           intelliJ: "Integrated development environment specialized in Java",
           postman: "Tool for testing APIs and managing HTTP requests",
-          jira: "Design approach that prioritizes mobile devices",
-          clickUp: "Adaptive design for any device",
-          notion: "",
-          trello: "Block Element Modifier",
+          jira: "Agile project management and development tracking",
+          clickUp:
+            "Comprehensive project and task management with agile methodologies",
+          notion: "Organization, documentation, and collaborative databases",
+          trello: "Kanban boards for visual task organization",
         },
         newCourses: {
           title: "Currently Learning",
@@ -276,10 +277,11 @@ const resources = {
           vscode: "Editor de código fuente",
           intelliJ: "Entorno de desarrollo integrado especializado en Java",
           postman: "Herramienta para probar APIs y gestionar peticiones HTTP",
-          jira: "Enfoque de diseño que prioriza dispositivos móviles",
-          clickUp: "Diseño adaptable a cualquier dispositivo",
-          notion: "Modelo de elementos en bloque",
-          trello: "",
+          jira: "Gestión ágil de proyectos y seguimiento de desarrollo",
+          clickUp:
+            "Gestión integral de proyectos y tareas con metodologías ágiles",
+          notion: "Organización, documentación y bases de datos colaborativas",
+          trello: "Tableros Kanban para organización visual de tareas",
         },
         newCourses: {
           title: "Actualmente Cursando",
