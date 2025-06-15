@@ -25,9 +25,10 @@ import FigmaLogo from "../assets/icons/figma-logo.png";
 import PhotoshopLogo from "../assets/icons/photoshop-logo.png";
 import WebflowLogo from "../assets/icons/webflow-logo.png";
 
-import MobileFirstLogo from "../assets/icons/mobilefirst-logo.png";
-import ResponsiveLogo from "../assets/icons/responsive-logo.png";
-import BemLogo from "../assets/icons/bem-logo.png";
+import JiraLogo from "../assets/icons/jira-logo.png";
+import ClickupLogo from "../assets/icons/clickup-logo.png";
+import NotionLogo from "../assets/icons/notion-logo.png";
+import TrelloLogo from "../assets/icons/trello-logo.png";
 
 export const getWebSkills = (t: TFunction): SkillsCardProps[] => [
   {
@@ -141,20 +142,25 @@ export const getDesignPrototyping = (t: TFunction) => [
   },
 ];
 
-export const getMethodologies = (t: TFunction) => [
+export const getManageTools = (t: TFunction) => [
   {
-    src: MobileFirstLogo,
-    alt: "Mobile-first",
-    title: t("sections.skills.mobileFirst"),
+    src: JiraLogo,
+    alt: "Jira",
+    title: t("sections.skills.jira"),
   },
   {
-    src: ResponsiveLogo,
-    alt: "Responsive Design",
-    title: t("sections.skills.responsive"),
+    src: ClickupLogo,
+    alt: "ClickUp",
+    title: t("sections.skills.clickUp"),
   },
   {
-    src: BemLogo,
-    alt: "BEM",
-    title: t("sections.skills.bem"),
+    src: NotionLogo,
+    alt: "Notion",
+    title: t("sections.skills.notion"),
+  },
+  {
+    src: TrelloLogo,
+    alt: "Trello",
+    title: t("sections.skills.trello"),
   },
 ];
