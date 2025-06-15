@@ -7,7 +7,7 @@ import {
   getDesignPrototyping,
   getDevelopmentTools,
   getFrameworks,
-  getMethodologies,
+  getManageTools,
   getWebSkills,
 } from "../../data/skills";
 
@@ -18,7 +18,7 @@ function Skills() {
   const frameworks = getFrameworks(t, theme);
   const developmentTools = getDevelopmentTools(t);
   const designTools = getDesignPrototyping(t);
-  const methodologies = getMethodologies(t);
+  const manageTools = getManageTools(t);
 
   return (
     <main className="scroll-top py-10 w-11/12 mx-auto select-none" id="skills">
@@ -60,9 +60,9 @@ function Skills() {
             ))}
           </SkillsContainer>
 
-          {/* Metodologías */}
+          {/* Herramients de Gestión */}
           <SkillsContainer title={t("sections.skills.subtitle5")}>
-            {methodologies.map((methodology, index) => (
+            {manageTools.map((methodology, index) => (
               <SkillsCard key={index} {...methodology} />
             ))}
           </SkillsContainer>
