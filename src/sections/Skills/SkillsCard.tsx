@@ -3,7 +3,7 @@ import { FC } from "react";
 
 const SkillsCard: FC<SkillsCardProps> = ({ src, alt, title }) => {
   return (
-    <article className="card group" title={title}>
+    <article className="card group" title={title} aria-label={alt}>
       <img
         src={src}
         alt={`${alt} logo`}
