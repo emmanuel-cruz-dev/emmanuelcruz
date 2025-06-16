@@ -1,7 +1,5 @@
 @use "../variables" as *;
 
-// --- Projects --- //
-
 .card__btn {
   display: flex;
   justify-content: center;
@@ -99,7 +97,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block; /* Esto elimina el espacio extra debajo de la imagen */
+  display: block;
 }
 
 .slick-slide > div {
@@ -110,7 +108,6 @@
   height: 100% !important;
 }
 
-// Estilos para los puntos de navegación
 .slick-dots {
   position: absolute;
   bottom: 8px;
@@ -124,8 +121,8 @@
 }
 
 .slick-dots li button:before {
-  font-size: 14px; // Tamaño de los puntos
-  color: #8b8b8bb0; // Color de los puntos
+  font-size: 14px;
+  color: #8b8b8bb0;
   opacity: 0.6;
   transition: opacity 0.2s ease-in-out;
 }
@@ -140,5 +137,3 @@
 }
 
 // --- Fin: Slider Carrusel --- //
-
-// --- Projects --- //

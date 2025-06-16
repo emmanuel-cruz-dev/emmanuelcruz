@@ -1,7 +1,5 @@
 @use "variables" as *;
 
-// --- Estilos Globales --- //
-
 html {
   background: $light-background;
   color: $light-text;
@@ -51,8 +49,6 @@ span {
 .scroll-top {
   scroll-margin-top: 80px;
 }
-
-// --- Estilos Globales --- //
 
 // --- Inicio: Efectos de Sombras --- //
 
