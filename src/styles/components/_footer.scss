@@ -1,7 +1,5 @@
 @use "../variables" as *;
 
-// --- Footer --- //
-
 .footer {
   background: linear-gradient(0deg, #000, #131313);
 }
@@ -52,7 +50,7 @@
 
 .footer__list {
   li {
-    padding: 0 10px; // ajusta el padding según sea necesario
+    padding: 0 10px;
     position: relative;
 
     &:not(:last-child)::after {
@@ -71,4 +69,30 @@
   }
 }
 
-// --- Footer --- //
+.footer .social-links__container a {
+  position: relative;
+  z-index: 5;
+}
+
+.footer .social-links__container a::after {
+  position: absolute;
+  content: attr(aria-label);
+  inset: -45% auto auto 50%;
+  z-index: -1;
+  translate: -50%;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  color: #fff;
+  background: #070707;
+  border-radius: 0.25rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: inset 0.4s cubic-bezier(0.47, 2, 0.41, 1.5),
+    visibility 0.3s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+.footer .social-links__container a:hover::after {
+  opacity: 1;
+  visibility: visible;
+  inset-block-start: -110%;
+}
