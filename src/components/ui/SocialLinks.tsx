@@ -24,7 +24,6 @@ function SocialLinks() {
       <a
         className="social__links"
         href="mailto:emmanuelgerr@gmail.com"
-        target="_blank"
         rel="noopener noreferrer"
         aria-label="Email"
       >
