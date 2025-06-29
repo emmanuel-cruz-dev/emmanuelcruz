@@ -20,6 +20,7 @@ import GithubLogo from "../assets/icons/github-logo.png";
 import VsCodeLogo from "../assets/icons/vscode-logo.png";
 import IntelliJLogo from "../assets/icons/intellij-logo.png";
 import PostmanLogo from "../assets/icons/postman-logo.png";
+import InsomniaLogo from "../assets/icons/insomnia-logo.png";
 
 import FigmaLogo from "../assets/icons/figma-logo.png";
 import PhotoshopLogo from "../assets/icons/photoshop-logo.png";
@@ -121,6 +122,11 @@ export const getDevelopmentTools = (t: TFunction) => [
     src: PostmanLogo,
     alt: "Postman",
     title: t("sections.skills.postman"),
+  },
+  {
+    src: InsomniaLogo,
+    alt: "Insomnia",
+    title: t("sections.skills.insomnia"),
   },
 ];
 
