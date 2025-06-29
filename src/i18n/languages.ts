@@ -94,7 +94,7 @@ const resources = {
           typescript: "Superset of JavaScript with static typing",
           react: "JavaScript library for building user interfaces",
           reactNative:
-            "JavaScript framework for building native mobile aplications",
+            "JavaScript framework for building native mobile applications",
           angular: "JavaScript framework for building web applications",
           tailwind: "Utility CSS framework",
           bootstrap: "Front-End development framework",
@@ -111,6 +111,8 @@ const resources = {
           vscode: "Source code editor",
           intelliJ: "Integrated development environment specialized in Java",
           postman: "Tool for testing APIs and managing HTTP requests",
+          insomnia:
+            "Tool for designing, testing, and debugging APIs, compatible with REST, GraphQL, and OpenAPI",
           jira: "Agile project management and development tracking",
           clickUp:
             "Comprehensive project and task management with agile methodologies",
@@ -277,6 +279,8 @@ const resources = {
           vscode: "Editor de código fuente",
           intelliJ: "Entorno de desarrollo integrado especializado en Java",
           postman: "Herramienta para probar APIs y gestionar peticiones HTTP",
+          insomnia:
+            "Herramienta para diseñar, probar y depurar APIs, compatible con REST, GraphQL y OpenAPI",
           jira: "Gestión ágil de proyectos y seguimiento de desarrollo",
           clickUp:
             "Gestión integral de proyectos y tareas con metodologías ágiles",
