@@ -5,6 +5,8 @@ import AcademiaBANegro from "../assets/icons/academiaba-negro.png";
 import AcademiaBA from "../assets/icons/academiaba.png";
 import Nucba from "../assets/icons/nucba.png";
 import NucbaNegro from "../assets/icons/nucba-negro.png";
+import TalentoTech from "../assets/icons/talento-tech.png";
+import TalentoTechNegro from "../assets/icons/talento-tech-negro.png";
 
 import PlatziTitulo from "../assets/images/platzi-mini.webp";
 import freeCodeCampJavascript from "../assets/images/freecodecamp-javascript-mini.webp";
@@ -12,6 +14,7 @@ import freeCodeCampResponsive from "../assets/images/freecodecamp-responsive-min
 import HTMLCSSTitulo from "../assets/images/html-css-mini.webp";
 import UXResearchTitulo from "../assets/images/ux-research-mini.webp";
 import NucbaTitulo from "../assets/images/nucba-mini.webp";
+import TalentoTechTitulo from "../assets/images/node-js-mini.webp";
 import { TFunction } from "i18next";
 
 const getCertificates = (t: TFunction) => [
@@ -79,6 +82,17 @@ const getCertificates = (t: TFunction) => [
     span: t("sections.certifications.nucbaSpan"),
     description: t("sections.certifications.nucba"),
     num: 5,
+  },
+  {
+    id: 7,
+    img: TalentoTechTitulo,
+    href: "https://talentotech.bue.edu.ar/#/",
+    logo: TalentoTech,
+    blackLogo: TalentoTechNegro,
+    title: "Back-End/NodeJS",
+    span: t("sections.certifications.nodeJsSpan"),
+    description: t("sections.certifications.nodeJs"),
+    num: 6,
   },
 ];
 
