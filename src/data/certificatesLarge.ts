@@ -4,6 +4,7 @@ import Responsive from "../assets/images/freecodecamp-responsive.webp";
 import HTMLCSSTitulo from "../assets/images/html-css.webp";
 import UXResearchTitulo from "../assets/images/ux-research.webp";
 import NucbaTitulo from "../assets/images/nucba.webp";
+import TalentoTechTitulo from "../assets/images/node-js.webp";
 
 export const certificates = [
   PlatziTitulo,
@@ -12,4 +13,5 @@ export const certificates = [
   HTMLCSSTitulo,
   UXResearchTitulo,
   NucbaTitulo,
+  TalentoTechTitulo,
 ];
