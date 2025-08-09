@@ -76,6 +76,9 @@ const resources = {
           uxresearchSpan: "Academia BA Emprende | September - October 2024",
           nucba: "Tools: Notion, Framer, Figma and Webflow",
           nucbaSpan: "NUCBA | October - November 2024",
+          nodeJs:
+            "Technologies and tools: Node.js, Express, Firestore, and JavaScript for the backend",
+          nodeJsSpan: "Talento Tech | March - July 2025",
           url: "Go to website",
           img: "Expand image",
         },
@@ -243,6 +246,9 @@ const resources = {
           uxresearchSpan: "Academia BA Emprende | Septiembre - Octubre 2024",
           nucba: "Herramientas: Notion, Framer, Figma y Webflow",
           nucbaSpan: "NUCBA | Octubre - Noviembre 2024",
+          nodeJs:
+            "Tecnologías y herramientas: Node.js, Express, Firestore y JavaScript para el backend",
+          nodeJsSpan: "Talento Tech | Marzo - Julio 2025",
           url: "Ir al sitio web",
           img: "Expandir imagen",
         },
