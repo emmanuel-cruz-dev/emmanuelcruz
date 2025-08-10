@@ -131,7 +131,7 @@ const resources = {
           academiaForIt:
             "Focus on best development practices with TypeScript, advanced use of Git, Docker, TDD methodologies, Clean Code, and Clean Architecture",
           talentoTech:
-            "Specialization in backend development with Node.js, Express, and Firestore, working with the modern JavaScript and Firebase ecosystem",
+            "Specialization in React.js, state management, protected routes, and authentication. Development of SPAs using Vite, React Router, etc",
         },
         contact: {
           title: "I'm Just a Message Away",
@@ -302,7 +302,7 @@ const resources = {
           academiaForIt:
             "Enfoque en buenas prácticas de desarrollo con TypeScript, uso avanzado de Git, Docker, metodologías TDD, Clean Code y arquitectura limpia",
           talentoTech:
-            "Especialización en desarrollo backend con Node.js, Express y Firestore, trabajando con el ecosistema moderno de JavaScript y Firebase",
+            "Especialización en React.js, manejo de estado, rutas protegidas y autenticación. Desarrollo de SPAs usando Vite, React Router, etc",
         },
         contact: {
           title: "Estoy a un Mensaje de Distancia",
