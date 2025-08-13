@@ -13,12 +13,12 @@ function NewCourses() {
       id="new-courses"
     >
       <AnimatedComponent animation="fade" delay={1}>
-        <div className="text-center mb-5">
+        <header className="text-center mb-5">
           <h2 className="font-bold text-3xl mb-4">
             {t("sections.newCourses.title")}
           </h2>
           <h3 className="text-lg">{t("sections.newCourses.description")}.</h3>
-        </div>
+        </header>
       </AnimatedComponent>
       <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center items-center gap-8">
         {newCourses.map((course, index) => (
