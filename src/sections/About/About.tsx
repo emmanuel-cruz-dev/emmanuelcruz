@@ -16,12 +16,12 @@ function About() {
       id="about"
     >
       <AnimatedComponent animation="fade" delay={1}>
-        <div className="text-center mb-5">
+        <header className="text-center mb-5">
           <h2 className="font-bold text-3xl mb-4">
             {t("sections.about.title")}
           </h2>
           <h3 className="text-lg">{t("sections.about.description")}</h3>
-        </div>
+        </header>
       </AnimatedComponent>
       <article className="grid md:grid-cols-3 gap-4 md:mx-auto lg:w-11/12">
         <div
