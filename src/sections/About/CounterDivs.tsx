@@ -6,7 +6,7 @@ export const CounterDivs: FC<CounterDivsProps> = ({ num, title }) => {
   const { theme } = useTheme();
 
   return (
-    <div
+    <article
       className={`${
         theme === "dark" ? "shadow__dark" : "shadow__light"
       } bg-gradient-to-r from-cyan-500 to-blue-500/60 w-full h-full rounded-xl py-4`}
@@ -19,6 +19,6 @@ export const CounterDivs: FC<CounterDivsProps> = ({ num, title }) => {
         </span>
         {title}
       </p>
-    </div>
+    </article>
   );
 };
