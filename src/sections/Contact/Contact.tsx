@@ -14,18 +14,18 @@ function Contact() {
       id="contact"
     >
       <AnimatedComponent animation="fade" delay={1}>
-        <div className="text-center mb-5">
+        <header className="text-center mb-5">
           <h2 className="font-bold text-3xl mb-4">
             {t("sections.contact.title")}
           </h2>
           <h3 className="text-lg">{t("sections.contact.description")}</h3>
-        </div>
+        </header>
       </AnimatedComponent>
 
       <article className="flex gap-8 py-16">
-        <div className="flex-1">
+        <article className="flex-1">
           <ContactForm />
-        </div>
+        </article>
 
         <article
           className={`${
