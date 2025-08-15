@@ -32,35 +32,30 @@ function Skills() {
           </header>
         </AnimatedComponent>
         <article className="flex flex-col gap-8 justify-center items-center w-full lg:flex-row lg:flex-wrap">
-          {/* Desarrollo Web */}
           <SkillsContainer title={t("sections.skills.subtitle1")}>
             {webSkills.map((skill, index) => (
               <SkillsCard key={index} {...skill} />
             ))}
           </SkillsContainer>
 
-          {/* Frameworks y Bibliotecas */}
           <SkillsContainer title={t("sections.skills.subtitle2")}>
             {frameworks.map((framework, index) => (
               <SkillsCard key={index} {...framework} />
             ))}
           </SkillsContainer>
 
-          {/* Herramientas de Desarrollo */}
           <SkillsContainer title={t("sections.skills.subtitle3")}>
             {developmentTools.map((tools, index) => (
               <SkillsCard key={index} {...tools} />
             ))}
           </SkillsContainer>
 
-          {/* Diseño y Prototipado */}
           <SkillsContainer title={t("sections.skills.subtitle4")}>
             {designTools.map((tools, index) => (
               <SkillsCard key={index} {...tools} />
             ))}
           </SkillsContainer>
 
-          {/* Herramients de Gestión */}
           <SkillsContainer title={t("sections.skills.subtitle5")}>
             {manageTools.map((methodology, index) => (
               <SkillsCard key={index} {...methodology} />
