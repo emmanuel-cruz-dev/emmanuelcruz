@@ -79,6 +79,9 @@ const resources = {
           nodeJs:
             "Technologies and tools: Node.js, Express, Firestore, and JavaScript for the backend",
           nodeJsSpan: "Talento Tech | March - July 2025",
+          fullStack:
+            "Tools and methodologies: TypeScript, Docker, advanced Git, TDD, Clean Code, Clean Architecture, Component-Driven Development",
+          fullStackSpan: "For IT Academy | May - August 2025",
           url: "Go to website",
           img: "Expand image",
         },
@@ -249,6 +252,9 @@ const resources = {
           nodeJs:
             "Tecnologías y herramientas: Node.js, Express, Firestore y JavaScript para el backend",
           nodeJsSpan: "Talento Tech | Marzo - Julio 2025",
+          fullStack:
+            "Herramientas y metodologías: TypeScript, Docker, Git avanzado, TDD, Clean Code, Arquitectura limpia, Component-Driven Development",
+          fullStackSpan: "For IT Academy | Mayo - Agosto 2025",
           url: "Ir al sitio web",
           img: "Expandir imagen",
         },
