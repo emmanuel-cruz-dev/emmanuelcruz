@@ -7,6 +7,8 @@ import Nucba from "../assets/icons/nucba.png";
 import NucbaNegro from "../assets/icons/nucba-negro.png";
 import TalentoTech from "../assets/icons/talento-tech.png";
 import TalentoTechNegro from "../assets/icons/talento-tech-negro.png";
+import ForIT from "../assets/icons/fotIT.png";
+import ForITNegro from "../assets/icons/fotIT-negro.png";
 
 import PlatziTitulo from "../assets/images/platzi-mini.webp";
 import freeCodeCampJavascript from "../assets/images/freecodecamp-javascript-mini.webp";
@@ -15,6 +17,7 @@ import HTMLCSSTitulo from "../assets/images/html-css-mini.webp";
 import UXResearchTitulo from "../assets/images/ux-research-mini.webp";
 import NucbaTitulo from "../assets/images/nucba-mini.webp";
 import TalentoTechTitulo from "../assets/images/node-js-mini.webp";
+import ForITTitulo from "../assets/images/full-stack-mini.webp";
 import { TFunction } from "i18next";
 
 const getCertificates = (t: TFunction) => [
@@ -93,6 +96,17 @@ const getCertificates = (t: TFunction) => [
     span: t("sections.certifications.nodeJsSpan"),
     description: t("sections.certifications.nodeJs"),
     num: 6,
+  },
+  {
+    id: 8,
+    img: ForITTitulo,
+    href: "https://forit.ar/",
+    logo: ForIT,
+    blackLogo: ForITNegro,
+    title: "Programador Web Full Stack",
+    span: t("sections.certifications.fullStackSpan"),
+    description: t("sections.certifications.fullStack"),
+    num: 7,
   },
 ];
 
