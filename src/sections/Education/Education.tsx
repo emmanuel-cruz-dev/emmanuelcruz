@@ -23,9 +23,11 @@ function Education() {
         </header>
       </AnimatedComponent>
       <article className="flex flex-col gap-6 xl:w-10/12 mx-auto">
-        {certificates.map((certificate, index) => (
-          <EducationCards key={index} {...certificate} />
-        ))}
+        {certificates
+          .map((certificate, index) => (
+            <EducationCards key={index} {...certificate} />
+          ))
+          .reverse()}
       </article>
     </section>
   );
