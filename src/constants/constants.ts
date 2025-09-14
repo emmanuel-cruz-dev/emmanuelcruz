@@ -31,4 +31,5 @@ export const backgroundColor: Record<CourseTitle, string> = {
   "Academia ForIT": "bg-[#110b25]",
   "Alura Latam": "bg-[#061d3c]",
   "Talento Tech": "bg-[#153242]",
+  "Tech Advanced": "bg-[#1a3e43]",
 };
