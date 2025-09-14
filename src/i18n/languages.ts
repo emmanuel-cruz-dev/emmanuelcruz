@@ -135,6 +135,8 @@ const resources = {
             "Focus on best development practices with TypeScript, advanced use of Git, Docker, TDD methodologies, Clean Code, and Clean Architecture",
           talentoTech:
             "Specialization in React.js, state management, protected routes, and authentication. Development of SPAs using Vite, React Router, etc",
+          techAdvanced:
+            "Training in SQL and MySQL database administration. Introduction to Oracle Cloud Infrastructure, OCI Foundations Associate Certification prep",
         },
         contact: {
           title: "I'm Just a Message Away",
@@ -309,6 +311,8 @@ const resources = {
             "Enfoque en buenas prácticas de desarrollo con TypeScript, uso avanzado de Git, Docker, metodologías TDD, Clean Code y arquitectura limpia",
           talentoTech:
             "Especialización en React.js, manejo de estado, rutas protegidas y autenticación. Desarrollo de SPAs usando Vite, React Router, etc",
+          techAdvanced:
+            "Formación en SQL y administración de bases de datos con MySQL. Introducción a Oracle Cloud Infrastructure (OCI)",
         },
         contact: {
           title: "Estoy a un Mensaje de Distancia",
