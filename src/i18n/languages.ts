@@ -128,7 +128,7 @@ const resources = {
         newCourses: {
           title: "Currently Learning",
           description:
-            "Expanding my knowledge of Backend and Fullstack development through these courses",
+            "Expanding my development knowledge through these trainings",
           aluraLatam:
             "Training in backend development with Java and Spring Boot, including relational databases with MySQL and deployment in Oracle Cloud",
           academiaForIt:
@@ -304,7 +304,7 @@ const resources = {
         newCourses: {
           title: "Actualmente Cursando",
           description:
-            "Ampliando mis conocimientos de desarrollo Backend y Fullstack a través de estos cursos",
+            "Ampliando mis conocimientos de desarrollo a través de estas formaciones",
           aluraLatam:
             "Formación en desarrollo backend con Java y Spring Boot, incluyendo bases de datos relacionales con MySQL y despliegue en Oracle Cloud",
           academiaForIt:
