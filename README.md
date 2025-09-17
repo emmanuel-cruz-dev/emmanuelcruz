@@ -34,6 +34,7 @@ Este es mi portafolio como desarrollador frontend, un proyecto que marca un gran
 - Animaciones on-scroll: Interacciones dinámicas al desplazarse por la página.
 - Navbar funcional: Navegación fluida entre las secciones.
 - Galería de proyectos: Enlaces a versiones en vivo y repositorios de mis otros proyectos.
+- Contacto: Formulario de contacto con envío de mensajes.
 
 Además, diseñé el sitio por completo, incluyendo algunas imágenes editadas en Photoshop, lo que me permitió personalizar cada detalle y plasmar mi visión de cómo debería lucir mi "casa virtual".
 
