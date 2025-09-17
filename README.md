@@ -42,4 +42,4 @@ Este proyecto no solo es una muestra de mis habilidades técnicas, sino también
 
 ## Estado
 
-- Completado por el momento, tengo más proyectos en curso que iré agregando.
+- Completado por el momento, agregando nuevas tecnologías y proyectos.
