@@ -15,8 +15,8 @@ Este es mi portafolio como desarrollador frontend, un proyecto que marca un gran
   <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/about-banner.jpg" alt="About" width="300px">
   <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/education-banner.jpg" alt="Education" width="300px">
   <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/projects-banner.jpg" alt="Projects" width="300px">
-  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/stack-banner.jpg" alt="Stack" width="300px">
-  <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/services-banner.jpg" alt="Services" width="300px">
+<!--   <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/stack-banner.jpg" alt="Stack" width="300px"> -->
+<!--   <img src="https://github.com/EmmaLCruz/emmanuelcruz/blob/main/public/services-banner.jpg" alt="Services" width="300px"> -->
 </p>
 
 ## Tecnologías utilizadas
