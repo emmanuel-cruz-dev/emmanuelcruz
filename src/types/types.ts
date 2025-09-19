@@ -159,3 +159,23 @@ export interface NewCoursesCardProps {
   title: CourseTitle;
   description: string;
 }
+
+export interface Experience {
+  id: number;
+  position: string;
+  company: string;
+  period: string;
+  description: string;
+  github: string;
+  technologies: string[];
+  side: "left" | "right";
+}
+
+export interface TimelineItemProps {
+  experience: Experience;
+  isLast: boolean;
+}
+
+export interface TimelineProps {
+  experiences?: Experience[];
+}
