@@ -8,9 +8,13 @@ export const workExperiences: Experience[] = [
     period: "Febrero - Marzo | 2025",
     description:
       "Desarrollo de Lock Key utilizando Vite, React, TypeScript y Tailwind CSS. Implementación de interfaces responsivas y optimización de rendimiento. Colaboración en equipos ágiles.",
-    github: "https://github.com/NoCountry/lock-key",
+    github:
+      "https://github.com/No-Country-simulation/equipo-c24-70-ft-webapp/tree/frontend",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
     side: "left",
+    startDate: new Date("2025-02-01"),
+    endDate: new Date("2025-03-31"),
+    isCurrent: false,
   },
   {
     id: 2,
@@ -19,9 +23,12 @@ export const workExperiences: Experience[] = [
     period: "Marzo - Abril | 2025",
     description:
       "Desarrollo de FitFlow web corporativos y e-commerce. Maquetación de diseños usando HTML5, CSS3 y JavaScript vanilla. Integración con CMS como WordPress y optimización SEO básica.",
-    github: "https://github.com/NoCountry/fitflow",
+    github: "https://github.com/deimos-et-fobos/fitflow",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
     side: "right",
+    startDate: new Date("2025-03-01"),
+    endDate: new Date("2025-04-30"),
+    isCurrent: false,
   },
   {
     id: 3,
@@ -30,18 +37,42 @@ export const workExperiences: Experience[] = [
     period: "Abril - Junio | 2025",
     description:
       "Desarrollo de Aura, plataforma integral de gestión de registros y atenciones para el centro terapéutico Rayuela. Creación de landing pages efectivas y sitios web responsive.",
-    github: "https://github.com/FooTalentGroup/aura",
+    github: "https://github.com/FooTalentGroup/AURA",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
     side: "left",
+    startDate: new Date("2025-04-01"),
+    endDate: new Date("2025-06-30"),
+    isCurrent: false,
   },
   {
     id: 4,
     position: "Desarrollador Frontend",
     company: "Kramer E-Commerce",
-    period: "Junio - 2025 | Presente",
+    period: "Junio 2025 - Presente",
     description:
       "Desarrollo de aplicación E-Commerce multiplataforma junto a equipo multidisciplinario.",
-    github: "https://github.com/KramerE-Commerce/Kramer-E-Commerce",
+    github: "https://github.com/LumDev86/Kramer",
+    technologies: [
+      "Vite",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Axios",
+      "React-Query",
+    ],
+    side: "left",
+    startDate: new Date("2025-06-01"),
+    endDate: null,
+    isCurrent: true,
+  },
+  {
+    id: 5,
+    position: "Desarrollador Frontend",
+    company: "Foo Talent Group",
+    period: "Julio - Septiembre | 2025",
+    description:
+      "Desarrollo de Flowik, software de gestión de inventario para productos de mascotas.",
+    github: "https://github.com/petshop112/Flowik/tree/main",
     technologies: [
       "Vite",
       "React",
@@ -51,23 +82,8 @@ export const workExperiences: Experience[] = [
       "React-Query",
     ],
     side: "right",
-  },
-  {
-    id: 5,
-    position: "Desarrollador Frontend",
-    company: "Foo Talent Group",
-    period: "Julio - Septiembre | 2025",
-    description:
-      "Desarrollo de Flowik, software de gestión de inventario para productos de mascotas.",
-    github: "https://github.com/FooTalentGroup/flowik",
-    technologies: [
-      "Vite",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Axios",
-      "React-Query",
-    ],
-    side: "left",
+    startDate: new Date("2025-07-01"),
+    endDate: new Date("2025-09-15"),
+    isCurrent: false,
   },
 ];
