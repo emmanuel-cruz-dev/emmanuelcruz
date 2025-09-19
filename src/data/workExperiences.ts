@@ -3,7 +3,6 @@ import { Experience } from "../types/types";
 export const workExperiences: Experience[] = [
   {
     id: 1,
-    position: "Frontend Developer",
     company: "No Country",
     period: "Febrero - Marzo | 2025",
     description:
@@ -18,7 +17,6 @@ export const workExperiences: Experience[] = [
   },
   {
     id: 2,
-    position: "Desarrollador Frontend",
     company: "No Country",
     period: "Marzo - Abril | 2025",
     description:
@@ -32,7 +30,6 @@ export const workExperiences: Experience[] = [
   },
   {
     id: 3,
-    position: "Desarrollador Frontend",
     company: "Foo Talent Group",
     period: "Abril - Junio | 2025",
     description:
@@ -46,7 +43,6 @@ export const workExperiences: Experience[] = [
   },
   {
     id: 4,
-    position: "Desarrollador Frontend",
     company: "Kramer E-Commerce",
     period: "Junio 2025 - Presente",
     description:
@@ -67,7 +63,6 @@ export const workExperiences: Experience[] = [
   },
   {
     id: 5,
-    position: "Desarrollador Frontend",
     company: "Foo Talent Group",
     period: "Julio - Septiembre | 2025",
     description:
