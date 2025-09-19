@@ -9,6 +9,7 @@ import TalentoTech from "../assets/icons/talento-tech.png";
 import TalentoTechNegro from "../assets/icons/talento-tech-negro.png";
 import ForIT from "../assets/icons/fotIT.png";
 import ForITNegro from "../assets/icons/fotIT-negro.png";
+import FooTalentGroup from "../assets/icons/foo-talent-group.png";
 
 import PlatziTitulo from "../assets/images/platzi-mini.webp";
 import freeCodeCampJavascript from "../assets/images/freecodecamp-javascript-mini.webp";
@@ -18,6 +19,7 @@ import UXResearchTitulo from "../assets/images/ux-research-mini.webp";
 import NucbaTitulo from "../assets/images/nucba-mini.webp";
 import TalentoTechTitulo from "../assets/images/node-js-mini.webp";
 import ForITTitulo from "../assets/images/full-stack-mini.webp";
+import FooTalentGroupTitulo from "../assets/images/foo-talent-group-mini.webp";
 import { TFunction } from "i18next";
 
 const getCertificates = (t: TFunction) => [
@@ -107,6 +109,17 @@ const getCertificates = (t: TFunction) => [
     span: t("sections.certifications.fullStackSpan"),
     description: t("sections.certifications.fullStack"),
     num: 7,
+  },
+  {
+    id: 9,
+    img: FooTalentGroupTitulo,
+    href: "https://www.foo-talent.com.ar/",
+    logo: FooTalentGroup,
+    blackLogo: FooTalentGroup,
+    title: "Foo Talent Group - Smart Projects",
+    span: t("sections.certifications.fooTalentGroupSpan"),
+    description: t("sections.certifications.fooTalentGroup"),
+    num: 8,
   },
 ];
 
