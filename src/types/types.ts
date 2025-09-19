@@ -169,6 +169,9 @@ export interface Experience {
   github: string;
   technologies: string[];
   side: "left" | "right";
+  startDate: Date;
+  endDate: Date | null;
+  isCurrent: boolean;
 }
 
 export interface TimelineItemProps {
