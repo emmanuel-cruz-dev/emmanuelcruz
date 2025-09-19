@@ -55,6 +55,11 @@ const resources = {
           copy: "Discover my latest projects, created with dedication and focus on every detail.",
           button: "See more",
         },
+        experience: {
+          title: "Professional Experience",
+          description:
+            "Working as a Frontend Developer in multidisciplinary teams under agile methodologies, ensuring code quality.",
+        },
         certifications: {
           title: "Formation and Certifications",
           description:
@@ -232,6 +237,11 @@ const resources = {
           subtitle: "Querés",
           copy: "Descubrí mis últimos proyectos, creados con dedicación y enfoque en cada detalle.",
           button: "Ver más",
+        },
+        experience: {
+          title: "Experiencia Laboral",
+          description:
+            "Desempeño como Desarrollador Frontend en equipos multidisciplinarios bajo metodologías ágiles, asegurando calidad de código.",
         },
         certifications: {
           title: "Formación y Certificaciones",
