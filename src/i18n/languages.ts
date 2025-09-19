@@ -82,6 +82,9 @@ const resources = {
           fullStack:
             "Tools and methodologies: TypeScript, Docker, advanced Git, TDD, Clean Code, Clean Architecture, Component-Driven Development",
           fullStackSpan: "For IT Academy | May - August 2025",
+          fooTalentGroup:
+            "Role and responsibilities: Front-End Developer in administrative management platform for pymes. Implementation of interfaces with React, TypeScript and Tailwind CSS, in a multidisciplinary team",
+          fooTalentGroupSpan: "Foo Talent Group | July - September 2025",
           url: "Go to website",
           img: "Expand image",
         },
@@ -257,6 +260,9 @@ const resources = {
           fullStack:
             "Herramientas y metodologías: TypeScript, Docker, Git avanzado, TDD, Clean Code, Arquitectura limpia, Component-Driven Development",
           fullStackSpan: "For IT Academy | Mayo - Agosto 2025",
+          fooTalentGroup:
+            "Rol y responsabilidades: Desarrollador Front-End en plataforma de gestión administrativa para pymes. Implementación de interfaces con React, TypeScript y Tailwind CSS, en un equipo multidisciplinario",
+          fooTalentGroupSpan: "Foo Talent Group | Julio - Septiembre 2025",
           url: "Ir al sitio web",
           img: "Expandir imagen",
         },
