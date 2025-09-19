@@ -1,7 +1,7 @@
+import { useTranslation } from "react-i18next";
 import { workExperiences } from "../../data/workExperiences";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import Timeline from "./TimeLine";
-import { useTranslation } from "react-i18next";
 
 function Experience() {
   const { t } = useTranslation();
