@@ -43,7 +43,7 @@ const EducationCards: FC<EducationCardsProps> = ({
         </a>
         <div className="flex flex-col gap-1">
           <h3 className="font-bold text-xl">{title}</h3>
-          <p
+          <div
             className={`md:text-sm w-full lg:w-fit lg:max-w-10/12 ${
               theme === "dark" ? "text-gray-400" : "text-gray-600"
             }`}
@@ -57,7 +57,7 @@ const EducationCards: FC<EducationCardsProps> = ({
             </strong>
             <br />
             {FormatTextWithLabels(description)}
-          </p>
+          </div>
         </div>
       </div>
 
