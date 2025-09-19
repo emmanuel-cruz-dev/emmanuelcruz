@@ -1,4 +1,4 @@
-import { GetAnimationClassesProps } from "../types/types";
+import { Experience, GetAnimationClassesProps } from "../types/types";
 
 export const getAnimationClasses = ({
   animation,
@@ -20,4 +20,15 @@ export const getAnimationClasses = ({
 
 export const handleClick = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
+};
+
+export const getSortedExperiences = (
+  experiences: Experience[]
+): Experience[] => {
+  return experiences.sort((a, b) => {
+    if (a.isCurrent && !b.isCurrent) return -1;
+    if (!a.isCurrent && b.isCurrent) return 1;
+
+    return b.startDate.getTime() - a.startDate.getTime();
+  });
 };
