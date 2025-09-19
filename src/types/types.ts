@@ -180,5 +180,5 @@ export interface TimelineItemProps {
 }
 
 export interface TimelineProps {
-  experiences?: Experience[];
+  experiences: Experience[];
 }
