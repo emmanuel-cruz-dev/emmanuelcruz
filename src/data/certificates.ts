@@ -113,7 +113,7 @@ const getCertificates = (t: TFunction) => [
   {
     id: 9,
     img: FooTalentGroupTitulo,
-    href: "https://www.foo-talent.com.ar/",
+    href: "https://www.linkedin.com/company/footalentgroup/posts/?feedView=all",
     logo: FooTalentGroup,
     blackLogo: FooTalentGroup,
     title: "Foo Talent Group - Smart Projects",
