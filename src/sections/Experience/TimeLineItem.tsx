@@ -3,11 +3,11 @@ import { FC } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
 const TimelineItem: FC<TimelineItemProps> = ({ experience, isLast }) => {
-  const { position, company, period, description, github, technologies, side } =
+  const { company, period, description, github, technologies, side } =
     experience;
 
   return (
-    <div className={`relative ${!isLast ? "pb-8 md:mb-0" : ""}`}>
+    <article className={`relative ${!isLast ? "pb-8 md:mb-0" : ""}`}>
       {/* Línea vertical (solo si no es el último elemento) */}
       {!isLast && (
         <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 w-0.5 h-full bg-gray-600 z-0 hidden md:block" />
@@ -38,10 +38,9 @@ const TimelineItem: FC<TimelineItemProps> = ({ experience, isLast }) => {
                 }
               `}
               >
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  {position}
+                <h3 className="text-2xl font-medium text-emerald-400 mb-1">
+                  {company}
                 </h3>
-                <h4 className="text-xl text-emerald-400 mb-1">{company}</h4>
                 <p className="text-emerald-300 mb-3 font-medium">{period}</p>
                 <p className="text-gray-300 leading-relaxed mb-3">
                   {description}
@@ -84,10 +83,9 @@ const TimelineItem: FC<TimelineItemProps> = ({ experience, isLast }) => {
                 className={`
                 bg-gray-800 p-6 shadow-lg hover:shadow-xl transition-all duration-300 border-l-4 border-emerald-500  after:z-[-1] after:content-[''] after:absolute after:left-1/2 after:top-1/2 after:translate-y-[7px] after:w-12 after:h-0.5 after:bg-emerald-500`}
               >
-                <h3 className="text-2xl font-bold text-white mb-2">
-                  {position}
+                <h3 className="text-2xl font-medium text-emerald-400 mb-3">
+                  {company}
                 </h3>
-                <h4 className="text-xl text-emerald-400 mb-3">{company}</h4>
                 <p className="text-emerald-300 mb-4 font-medium">{period}</p>
                 <p className="text-gray-300 leading-relaxed mb-2">
                   {description}
@@ -116,7 +114,7 @@ const TimelineItem: FC<TimelineItemProps> = ({ experience, isLast }) => {
           </>
         )}
       </div>
-    </div>
+    </article>
   );
 };
 
