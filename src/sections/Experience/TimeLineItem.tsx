@@ -1,6 +1,6 @@
-import { TimelineItemProps } from "@/types/types";
 import { FC } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { TimelineItemProps } from "../../types/types";
 
 const TimelineItem: FC<TimelineItemProps> = ({ experience, isLast }) => {
   const { company, period, description, github, technologies, side } =
