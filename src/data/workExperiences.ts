@@ -6,7 +6,7 @@ export const workExperiences: Experience[] = [
     company: "No Country",
     period: "Febrero - Marzo | 2025",
     description:
-      "Desarrollo de Lock Key utilizando Vite, React, TypeScript y Tailwind CSS. Implementación de interfaces responsivas y optimización de rendimiento. Colaboración en equipos ágiles.",
+      "Desarrollo de Lock Key, gestor de contraseñas diseñado para facilitar el almacenamiento y la gestión confiable de credenciales, utilizando Vite, React, TypeScript y Tailwind CSS. Implementación de interfaces responsivas y optimización de rendimiento. Colaboración en equipos ágiles.",
     github:
       "https://github.com/No-Country-simulation/equipo-c24-70-ft-webapp/tree/frontend",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
