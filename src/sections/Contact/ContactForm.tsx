@@ -6,7 +6,6 @@ import { useContactForm } from "../../hooks/useContactForm";
 function ContactForm() {
   const {
     toast,
-    showToastItem,
     isSending,
     formValues,
     form,
@@ -100,16 +99,14 @@ function ContactForm() {
         </form>
       </div>
 
-      <div className="toast__container">
-        {showToastItem && (
-          <Toast
-            type={toast.type}
-            message={toast.message}
-            show={toast.show}
-            onClose={handleCloseToast}
-          />
-        )}
-      </div>
+      <footer className="toast__container">
+        <Toast
+          type={toast.type}
+          message={toast.message}
+          show={toast.show}
+          onClose={handleCloseToast}
+        />
+      </footer>
     </article>
   );
 }
