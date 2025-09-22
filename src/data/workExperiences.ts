@@ -6,7 +6,7 @@ export const workExperiences: Experience[] = [
     company: "No Country",
     period: "Febrero - Marzo | 2025",
     description:
-      "Desarrollo de Lock Key, gestor de contraseñas diseñado para facilitar el almacenamiento y la gestión confiable de credenciales, utilizando Vite, React, TypeScript y Tailwind CSS. Implementación de interfaces responsivas y optimización de rendimiento. Colaboración en equipos ágiles.",
+      "Desarrollo de Lock Key, gestor de contraseñas diseñado para facilitar el almacenamiento y la gestión confiable de credenciales, utilizando Vite, React, TypeScript y Tailwind CSS. Implementación de interfaces responsivas y optimización de rendimiento.",
     github:
       "https://github.com/No-Country-simulation/equipo-c24-70-ft-webapp/tree/frontend",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
@@ -20,7 +20,7 @@ export const workExperiences: Experience[] = [
     company: "No Country",
     period: "Marzo - Abril | 2025",
     description:
-      "Desarrollo de FitFlow web corporativos y e-commerce. Maquetación de diseños usando HTML5, CSS3 y JavaScript vanilla. Integración con CMS como WordPress y optimización SEO básica.",
+      "Desarrollo de FitFlow, plataforma integral de salud y fitness que utiliza inteligencia artificial para ofrecer planes personalizados de dieta, ejercicio y seguimiento de progreso.",
     github: "https://github.com/deimos-et-fobos/fitflow",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
     side: "right",
@@ -33,7 +33,7 @@ export const workExperiences: Experience[] = [
     company: "Foo Talent Group",
     period: "Abril - Junio | 2025",
     description:
-      "Desarrollo de Aura, plataforma integral de gestión de registros y atenciones para el centro terapéutico Rayuela. Creación de landing pages efectivas y sitios web responsive.",
+      "Desarrollo de Aura, plataforma integral de gestión de registros y atenciones para el centro terapéutico Rayuela.",
     github: "https://github.com/FooTalentGroup/AURA",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
     side: "left",
