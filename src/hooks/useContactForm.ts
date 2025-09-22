@@ -1,7 +1,7 @@
 import { ChangeEvent, FormEvent, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
-import { FormValues, ToastType } from "@/types/types";
+import { FormValues, ToastType } from "../types/types";
 
 export const useContactForm = () => {
   const [toast, setToast] = useState<{
@@ -9,7 +9,7 @@ export const useContactForm = () => {
     type: ToastType;
     message: string;
   }>({ show: false, type: "", message: "" });
-  const [showToastItem, setShowToast] = useState(false);
+
   const { t } = useTranslation();
   const form = useRef<HTMLFormElement | null>(null);
 
@@ -21,11 +21,10 @@ export const useContactForm = () => {
   });
 
   const handleCloseToast = () => {
-    setShowToast(false);
+    setToast((prev) => ({ ...prev, show: false }));
   };
 
   const showToast = (type: ToastType, message: string) => {
-    setShowToast(true);
     setToast({ show: true, type, message });
   };
 
@@ -49,29 +48,32 @@ export const useContactForm = () => {
     setIsSending(false);
   };
 
-  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+  const sendEmail = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (!form.current) {
+      console.error("El formulario no está disponible.");
+      showToast("error", t("sections.contact.error"));
+      return;
+    }
+
     setIsSending(true);
 
-    if (form.current) {
-      emailjs
-        .sendForm("service_2soir9w", "template_7xdnr2c", form.current, {
-          publicKey: "NVL36_MsNJ__5erJH",
-        })
-        .then(
-          () => {
-            console.log("SUCCESS!");
-            showToast("success", t("sections.contact.success"));
-            cleanForm();
-          },
-          (error) => {
-            console.log("FAILED...", error.text);
-            showToast("error", t("sections.contact.error"));
-            cleanForm();
-          }
-        );
-    } else {
-      console.error("El formulario no está disponible.");
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY,
+        }
+      );
+
+      console.log("SUCCESS!");
+      showToast("success", t("sections.contact.success"));
+      cleanForm();
+    } catch (error) {
+      console.error("Error enviando email:", error);
       showToast("error", t("sections.contact.error"));
       setIsSending(false);
     }
@@ -79,7 +81,6 @@ export const useContactForm = () => {
 
   return {
     toast,
-    showToastItem,
     isSending,
     formValues,
     form,
