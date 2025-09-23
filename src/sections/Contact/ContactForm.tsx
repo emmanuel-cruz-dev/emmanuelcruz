@@ -31,7 +31,7 @@ function ContactForm() {
           ref={form}
           onSubmit={sendEmail}
         >
-          <div className="grid lg:grid-cols-2 lg:gap-4">
+          <header className="grid lg:grid-cols-2 lg:gap-4">
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -68,9 +68,9 @@ function ContactForm() {
                 autoComplete="off"
               />
             </div>
-          </div>
+          </header>
 
-          <div className="mb-4">
+          <main className="mb-4">
             <label
               htmlFor="message"
               className="block mb-1 text-gray-700"
@@ -86,7 +86,7 @@ function ContactForm() {
               className="w-full bg-white/20 border border-gray-300 py-2 px-3 focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
             ></textarea>
-          </div>
+          </main>
           <button
             type="submit"
             disabled={isSending}
