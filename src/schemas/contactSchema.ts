@@ -10,23 +10,21 @@ export const contactSchema = z.object({
       /^[a-zA-ZÀ-ÿ\u00f1\u00d1\s]+$/,
       "El nombre solo puede contener letras y espacios"
     )
-    .refine((name) => name.trim().length > 0, "El nombre no puede estar vacío"),
+    .transform((val) => val.trim()),
 
   user_email: z
     .string()
     .min(1, "El email es requerido")
-    .email("Por favor ingresa un email válido")
-    .max(100, "El email no puede exceder 100 caracteres"),
+    .email("Debe ser un email válido")
+    .max(100, "El email no puede exceder 100 caracteres")
+    .transform((val) => val.trim().toLowerCase()),
 
   message: z
     .string()
     .min(1, "El mensaje es requerido")
     .min(10, "El mensaje debe tener al menos 10 caracteres")
     .max(1000, "El mensaje no puede exceder 1000 caracteres")
-    .refine(
-      (message) => message.trim().length >= 10,
-      "El mensaje debe tener contenido significativo"
-    ),
+    .transform((val) => val.trim()),
 });
 
 export type ContactFormData = z.infer<typeof contactSchema>;
