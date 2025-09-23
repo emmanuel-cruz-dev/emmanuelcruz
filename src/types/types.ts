@@ -181,3 +181,9 @@ export interface TimelineItemProps {
 export interface TimelineProps {
   experiences: Experience[];
 }
+
+export interface FormErrors {
+  user_name?: string;
+  user_email?: string;
+  message?: string;
+}
