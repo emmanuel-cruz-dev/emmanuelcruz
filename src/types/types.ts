@@ -133,14 +133,6 @@ export interface CounterDivsProps {
   title: string;
 }
 
-export interface FlipCardProps {
-  num: number;
-  img: string;
-  alt: string;
-  title: string;
-  description: string;
-}
-
 export interface GetAnimationClassesProps {
   animation: string;
   direction?: string;
@@ -152,32 +144,3 @@ export type CourseTitle =
   | "Alura Latam"
   | "Talento Tech"
   | "Tech Advanced";
-
-export interface NewCoursesCardProps {
-  img: string;
-  alt: string;
-  title: CourseTitle;
-  description: string;
-}
-
-export interface Experience {
-  id: number;
-  company: string;
-  period: string;
-  description: string;
-  github: string;
-  technologies: string[];
-  side: "left" | "right";
-  startDate: Date;
-  endDate: Date | null;
-  isCurrent: boolean;
-}
-
-export interface TimelineItemProps {
-  experience: Experience;
-  isLast: boolean;
-}
-
-export interface TimelineProps {
-  experiences: Experience[];
-}
