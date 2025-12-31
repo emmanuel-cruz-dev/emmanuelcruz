@@ -7,6 +7,7 @@ import NucbaTitulo from "../assets/images/nucba.webp";
 import TalentoTechTitulo from "../assets/images/node-js.webp";
 import ForITTitulo from "../assets/images/full-stack.webp";
 import FooTalentGroupTitulo from "../assets/images/foo-talent-group.webp";
+import TalentoTechTituloReact from "../assets/images/react-js.webp";
 
 export const certificates = [
   PlatziTitulo,
@@ -18,4 +19,5 @@ export const certificates = [
   TalentoTechTitulo,
   ForITTitulo,
   FooTalentGroupTitulo,
+  TalentoTechTituloReact,
 ];

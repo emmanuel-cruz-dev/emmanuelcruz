@@ -20,6 +20,7 @@ import NucbaTitulo from "../assets/images/nucba-mini.webp";
 import TalentoTechTitulo from "../assets/images/node-js-mini.webp";
 import ForITTitulo from "../assets/images/full-stack-mini.webp";
 import FooTalentGroupTitulo from "../assets/images/foo-talent-group-mini.webp";
+import TalentoTechTituloReact from "../assets/images/react-js-mini.webp";
 import { TFunction } from "i18next";
 
 const getCertificates = (t: TFunction) => [
@@ -120,6 +121,17 @@ const getCertificates = (t: TFunction) => [
     span: t("sections.certifications.fooTalentGroupSpan"),
     description: t("sections.certifications.fooTalentGroup"),
     num: 8,
+  },
+  {
+    id: 10,
+    img: TalentoTechTituloReact,
+    href: "https://talentotech.bue.edu.ar/#/",
+    logo: TalentoTech,
+    blackLogo: TalentoTechNegro,
+    title: "Front-End/ReactJS",
+    span: t("sections.certifications.reactJsSpan"),
+    description: t("sections.certifications.reactJs"),
+    num: 9,
   },
 ];
 
