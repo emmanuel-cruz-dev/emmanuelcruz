@@ -1,4 +1,4 @@
-import { Experience, GetAnimationClassesProps } from "../types/types";
+import { GetAnimationClassesProps } from "../types/types";
 
 export const getAnimationClasses = ({
   animation,
@@ -22,13 +22,12 @@ export const handleClick = () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-export const getSortedExperiences = (
-  experiences: Experience[]
-): Experience[] => {
-  return experiences.sort((a, b) => {
-    if (a.isCurrent && !b.isCurrent) return -1;
-    if (!a.isCurrent && b.isCurrent) return 1;
+export const getInputClasses = (hasError: boolean) => {
+  const baseClasses =
+    "w-full bg-white/20 border py-2 px-3 focus:outline-none focus:ring-2 transition-colors duration-200";
+  const errorClasses = hasError
+    ? "border-red-500 focus:ring-red-500 focus:border-red-500"
+    : "border-gray-300 focus:ring-blue-500 focus:border-blue-500";
 
-    return b.startDate.getTime() - a.startDate.getTime();
-  });
+  return `${baseClasses} ${errorClasses}`;
 };
