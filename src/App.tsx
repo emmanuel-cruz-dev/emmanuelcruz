@@ -9,6 +9,7 @@ const ScrollToTopButton = lazy(
 );
 const About = lazy(() => import("./sections/About/About"));
 const Education = lazy(() => import("./sections/Education/Education"));
+const WorkExperience = lazy(() => import("./sections/WorkExperience/WorkExperience"));
 const Projects = lazy(() => import("./sections/Projects/Projects"));
 const Skills = lazy(() => import("./sections/Skills/Skills"));
 const Contact = lazy(() => import("./sections/Contact/Contact"));
@@ -27,6 +28,9 @@ function App() {
       </Suspense>
       <Suspense fallback={<Loader />}>
         <Education />
+      </Suspense>
+      <Suspense fallback={<Loader />}>
+        <WorkExperience />
       </Suspense>
       <Suspense fallback={<Loader />}>
         <Projects />
