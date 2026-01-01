@@ -43,17 +43,31 @@ const resources = {
         about: {
           title: "A Little About Me",
           description:
-            "Discover how my experience and skills can add value to your projects.",
-          hi: "I'm",
-          paragraph:
-            "Transitioning to Fullstack, expanding my backend knowledge while applying React, TypeScript, and agile methodologies in real projects. I have developed MVPs working with stakeholders and complete development teams.",
-          contactMe: "Contact me",
-          courses: "online courses",
-          practice: "practice hours",
-          subtitle: "Want to",
-          copy: "Discover my latest projects, created with dedication and focus on every detail.",
-          button: "See more",
+            "Developer with experience in collaborative projects under agile methodologies",
+          contactMe: "Contact Me",
+          highlight1: "production-ready projects",
+          highlight2: "multidisciplinary teams",
+          highlight3: "modern technologies",
+          cta: {
+            title: "Frontend solutions and",
+            titleAccent: "scalable architecture",
+            desc: "I enjoy building interfaces with React and TypeScript, working in teams, and adapting to agile methodologies to add real value to the product.",
+          },
+          experience: {
+            title: "Highlighted Experience",
+            desc: "Participation in more than 5 e-commerce, business management, and healthcare platform projects, working with teams of 4–15 people under Scrum and Kanban.",
+          },
+          skills: {
+            title: "Professional Focus",
+            desc: "Specialized in developing scalable web applications with React, TypeScript, and Next.js. REST API integration, reusable components, and clean architecture.",
+          },
+          learning: {
+            title: "Growing",
+            desc: "Currently strengthening a full-stack profile with Node.js, Express, NestJS, Java, Spring Boot, and databases, while pursuing a Software Development Technical Degree.",
+          },
+          viewExperience: "View Experience",
         },
+
         experience: {
           title: "Project Experience",
           description:
@@ -242,16 +256,29 @@ const resources = {
         about: {
           title: "Un Poco Sobre mí",
           description:
-            "Descubrí cómo mi experiencia y habilidades pueden agregar valor a tus proyectos.",
-          hi: "Soy",
-          paragraph:
-            "En transición hacia Fullstack, expandiendo mis conocimientos en backend mientras aplico React, TypeScript y metodologías ágiles en proyectos reales. He desarrollado MVPs trabajando con stakeholders y equipos de desarrollo completos.",
+            "Desarrollador con experiencia en proyectos colaborativos bajo metodologías ágiles",
           contactMe: "Contactame",
-          courses: "cursos en línea",
-          practice: "horas de práctica",
-          subtitle: "Querés",
-          copy: "Descubrí mis últimos proyectos, creados con dedicación y enfoque en cada detalle.",
-          button: "Ver más",
+          highlight1: "proyectos en producción",
+          highlight2: "equipos multidisciplinarios",
+          highlight3: "tecnologías modernas",
+          cta: {
+            title: "Soluciones Frontend y",
+            titleAccent: "arquitectura escalable",
+            desc: "Disfruto construir interfaces con React y TypeScript, trabajando en equipo y adaptándome a metodologías ágiles para aportar valor real al producto.",
+          },
+          experience: {
+            title: "Experiencia Destacada",
+            desc: "Participación en más de 5 proyectos de comercio electrónico, gestión empresarial y plataformas de salud, trabajando con equipos de 4-15 personas bajo Scrum y Kanban.",
+          },
+          skills: {
+            title: "Enfoque Profesional",
+            desc: "Especializado en desarrollo de aplicaciones web escalables con React, TypeScript y Next.js. Integración de APIs REST, componentes reutilizables y arquitectura limpia.",
+          },
+          learning: {
+            title: "En Crecimiento",
+            desc: "Actualmente consolidando perfil fullstack con Node.js, Express, NestJS, Java, Spring Boot y bases de datos, mientras curso Tecnicatura en Desarrollo de Software.",
+          },
+          viewExperience: "Ver trayectoria",
         },
         experience: {
           title: "Experiencia en Proyectos",
