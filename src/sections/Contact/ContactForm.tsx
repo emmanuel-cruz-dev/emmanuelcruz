@@ -48,7 +48,7 @@ function ContactForm() {
               <input
                 id="name"
                 type="text"
-                placeholder={t("sections.contact.name")}
+                placeholder={`${t("sections.contact.name")}*`}
                 title={t("sections.contact.nameTitle")}
                 className={getInputClasses(!!errors.user_name)}
                 autoComplete="off"
@@ -78,7 +78,7 @@ function ContactForm() {
               <input
                 id="email"
                 type="email"
-                placeholder={t("sections.contact.email")}
+                placeholder={`${t("sections.contact.email")}*`}
                 title={t("sections.contact.emailTitle")}
                 className={getInputClasses(!!errors.user_email)}
                 autoComplete="off"
@@ -108,7 +108,7 @@ function ContactForm() {
             ></label>
             <textarea
               id="message"
-              placeholder={t("sections.contact.message")}
+              placeholder={`${t("sections.contact.message")}*`}
               title={t("sections.contact.messageTitle")}
               rows={5}
               className={getInputClasses(!!errors.message)}
@@ -152,7 +152,7 @@ function ContactForm() {
             id="submit-help"
             className="mt-2 text-xs text-gray-500 text-center"
           >
-            * Campos obligatorios
+            {t("sections.contact.required")}
           </p>
         </form>
       </div>
