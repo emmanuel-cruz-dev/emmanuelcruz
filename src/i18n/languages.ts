@@ -132,6 +132,8 @@ const resources = {
           fooTalentGroupSpan: "Foo Talent Group | July - September 2025",
           url: "Go to website",
           img: "Expand image",
+          viewMore: "View more",
+          viewLess: "View less",
         },
         skills: {
           title: "Tech Stack",
@@ -344,6 +346,8 @@ const resources = {
           fooTalentGroupSpan: "Foo Talent Group | Julio - Septiembre 2025",
           url: "Ir al sitio web",
           img: "Expandir imagen",
+          viewMore: "Ver más",
+          viewLess: "Ver menos",
         },
         skills: {
           title: "Stack Tecnológico",
