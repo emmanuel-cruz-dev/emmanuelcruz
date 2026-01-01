@@ -4,12 +4,14 @@ import Loader from "./components/ui/Loader";
 import Hero from "./sections/Hero/Hero";
 
 const Header = lazy(() => import("./components/common/Header/Header"));
+const About = lazy(() => import("./sections/About/About"));
 const ScrollToTopButton = lazy(
   () => import("./components/common/ScrollButton/ScrollToTopButton")
 );
-const About = lazy(() => import("./sections/About/About"));
 const Education = lazy(() => import("./sections/Education/Education"));
-const WorkExperience = lazy(() => import("./sections/WorkExperience/WorkExperience"));
+const WorkExperience = lazy(
+  () => import("./sections/WorkExperience/WorkExperience")
+);
 const Projects = lazy(() => import("./sections/Projects/Projects"));
 const Skills = lazy(() => import("./sections/Skills/Skills"));
 const Contact = lazy(() => import("./sections/Contact/Contact"));
