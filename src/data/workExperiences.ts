@@ -1,52 +1,42 @@
-interface WorkExperience {
-  id: number;
-  company: string;
-  projectName: string;
-  period: string;
-  description: string;
-  github: string;
-  technologies: string[];
-}
+import { TFunction } from "i18next";
 
-export const workExperiences: WorkExperience[] = [
+export const getWorkExperiences = (t: TFunction) => [
   {
     id: 1,
     company: "No Country",
     projectName: "Lock Key",
-    period: "Febrero - Marzo | 2025",
-    description:
-      "Desarrollo de Lock Key, gestor de contraseñas diseñado para facilitar el almacenamiento y la gestión confiable de credenciales, utilizando Vite, React, TypeScript y Tailwind CSS. Implementación de interfaces responsivas y optimización de rendimiento.",
-    github:
-      "https://github.com/No-Country-simulation/equipo-c24-70-ft-webapp/tree/frontend",
+    period: t("sections.experience.period.lockKey"),
+    description: t("sections.experience.projectDescription.lockKey"),
+    github: "https://github.com/No-Country-simulation/equipo-c24-70-ft-webapp",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
+    tools: ["Notion", "Photoshop"],
   },
   {
     id: 2,
     company: "No Country",
     projectName: "FitFlow",
-    period: "Marzo - Abril | 2025",
-    description:
-      "Desarrollo de FitFlow, plataforma integral de salud y fitness que utiliza inteligencia artificial para ofrecer planes personalizados de dieta, ejercicio y seguimiento de progreso.",
+    period: t("sections.experience.period.fitflow"),
+    description: t("sections.experience.projectDescription.fitflow"),
     github: "https://github.com/deimos-et-fobos/fitflow",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
+    tools: ["Figma", "Swagger UI"],
   },
   {
     id: 3,
     company: "Foo Talent Group",
     projectName: "Aura",
-    period: "Abril - Junio | 2025",
-    description:
-      "Desarrollo de Aura, plataforma integral de gestión de registros y atenciones para el centro terapéutico Rayuela.",
+    period: t("sections.experience.period.aura"),
+    description: t("sections.experience.projectDescription.aura"),
     github: "https://github.com/FooTalentGroup/AURA",
     technologies: ["Vite", "React", "TypeScript", "Tailwind CSS"],
+    tools: ["ClickUp", "Figma", "Swagger UI", "Postman"],
   },
   {
     id: 4,
     company: "Kramer E-Commerce",
-    projectName: "Kramer",
-    period: "Junio - Septiembre | 2025",
-    description:
-      "Desarrollo de aplicación E-Commerce multiplataforma junto a equipo multidisciplinario.",
+    projectName: "Kramer E-Commerce",
+    period: t("sections.experience.period.kramer"),
+    description: t("sections.experience.projectDescription.kramer"),
     github: "https://github.com/LumDev86/Kramer",
     technologies: [
       "Vite",
@@ -54,16 +44,16 @@ export const workExperiences: WorkExperience[] = [
       "TypeScript",
       "Tailwind CSS",
       "Axios",
-      "React-Query",
+      "TanStack Query",
     ],
+    tools: ["Figma", "Jira", "Insomnia", "Swagger UI"],
   },
   {
     id: 5,
     company: "Foo Talent Group",
     projectName: "Flowik",
-    period: "Julio - Septiembre | 2025",
-    description:
-      "Desarrollo de Flowik, aplicación web de gestión para PYMES orientada a la administración de productos, clientes y proveedores. Implementación de un panel administrativo intuitivo con control de stock y precios, registro de ventas, alertas automatizadas y funcionalidades de importación y exportación masiva para optimizar tareas operativas.",
+    period: t("sections.experience.period.flowik"),
+    description: t("sections.experience.projectDescription.flowik"),
     github: "https://github.com/petshop112/Flowik/tree/main",
     technologies: [
       "Vite",
@@ -71,16 +61,16 @@ export const workExperiences: WorkExperience[] = [
       "TypeScript",
       "Tailwind CSS",
       "Axios",
-      "React-Query",
+      "TanStack Query",
     ],
+    tools: ["Figma", "Jira", "Postman", "Miro"],
   },
   {
     id: 6,
     company: "No Country",
     projectName: "Pyme Go",
-    period: "Septiembre - Octubre | 2025",
-    description:
-      "Desarrollo de Pyme Go, plataforma fintech para el onboarding digital de créditos para PYMES. Implementación del frontend con React y Vite, desarrollando formularios dinámicos, carga de documentación, rutas protegidas y seguimiento de solicitudes en tiempo real, priorizando una experiencia de usuario clara y eficiente.",
+    period: t("sections.experience.period.pymeGo"),
+    description: t("sections.experience.projectDescription.pymeGo"),
     github: "https://github.com/Rosariobelenn/Equipo13",
     technologies: [
       "Vite",
@@ -90,14 +80,14 @@ export const workExperiences: WorkExperience[] = [
       "Axios",
       "TanStack Query",
     ],
+    tools: ["Figma", "Insomnia", "Swagger UI", "Trello"],
   },
   {
     id: 7,
     company: "No Country",
     projectName: "EcoShop",
-    period: "Noviembre - Diciembre | 2025",
-    description:
-      "Desarrollo de EcoShop, plataforma de comercio electrónico sostenible orientada a marcas responsables. Implementación del frontend con Next.js, creando una experiencia de usuario moderna e intuitiva que integra catálogo de productos, carrito, checkout y visualización de indicadores de impacto ambiental por producto y compra.",
+    period: t("sections.experience.period.ecoShop"),
+    description: t("sections.experience.projectDescription.ecoShop"),
     github: "https://github.com/felipecalderon/nocountry-ecoshop",
     technologies: [
       "Next.js",
@@ -107,5 +97,6 @@ export const workExperiences: WorkExperience[] = [
       "Shadcn/ui",
       "Radix UI",
     ],
+    tools: ["Figma", "Postman", "Photoshop", "Swagger UI"],
   },
 ];
