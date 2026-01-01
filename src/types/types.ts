@@ -155,3 +155,15 @@ export type CourseTitle =
   | "Alura Latam"
   | "Talento Tech"
   | "Tech Advanced";
+
+export interface Certificate {
+  id: string | number;
+  img: string;
+  href: string;
+  logo: string;
+  blackLogo?: string;
+  title: string;
+  span: string;
+  description: string;
+  num: number;
+}
