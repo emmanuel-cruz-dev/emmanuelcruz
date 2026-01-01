@@ -7,9 +7,8 @@ const resources = {
       navbar: {
         home: "Home",
         about: "About Me",
-        certifications: "Studies",
+        experience: "Experience",
         projects: "Projects",
-        skills: "Skills",
         contact: "Contact",
         title: "Switch to Spanish",
         lightMode: "Switch to dark mode",
@@ -56,9 +55,33 @@ const resources = {
           button: "See more",
         },
         experience: {
-          title: "Professional Experience",
+          title: "Project Experience",
           description:
-            "Working as a Frontend Developer in multidisciplinary teams under agile methodologies, ensuring code quality.",
+            "Participation as a Frontend Developer in multidisciplinary teams under agile methodologies, with a focus on code quality and good practices.",
+          period: {
+            lockKey: "February - March | 2025",
+            fitflow: "March - April | 2025",
+            aura: "April - June | 2025",
+            kramer: "June - September | 2025",
+            flowik: "July - September | 2025",
+            pymeGo: "September - October | 2025",
+            ecoShop: "November - December | 2025",
+          },
+          projectDescription: {
+            lockKey:
+              "Password manager focused on secure storage and credential management, with responsive interfaces and a focus on usability and performance.",
+            fitflow:
+              "A comprehensive health and fitness platform that uses artificial intelligence to offer personalized diet, exercise, and progress tracking plans.",
+            aura: "Web platform for managing records and services at a therapeutic center, optimizing patient organization and administrative processes.",
+            kramer:
+              "Multiplatform e-commerce application, with a public catalog, shopping cart, administrative panel for products and inventory, and a basic customer CRM.",
+            flowik:
+              "Web management application for SMEs focused on managing products, customers, and suppliers through an intuitive administrative panel.",
+            pymeGo:
+              "Fintech platform for digital loan onboarding for SMEs, with dynamic forms, document upload, and application tracking.",
+            ecoShop:
+              "Sustainable e-commerce platform geared towards responsible brands, with a product catalog, shopping cart, checkout, and environmental impact indicators.",
+          },
         },
         certifications: {
           title: "Formation and Certifications",
@@ -144,6 +167,7 @@ const resources = {
           name: "Name",
           email: "Email Address",
           message: "Message...",
+          required: "* Required fields",
           send: "Send",
           sending: "Sending message...",
           nameTitle: "Please enter your name",
@@ -181,6 +205,7 @@ const resources = {
         home: "Inicio",
         about: "Sobre mí",
         certifications: "Estudios",
+        experience: "Experiencia",
         projects: "Proyectos",
         skills: "Habilidades",
         contact: "Contacto",
@@ -229,9 +254,33 @@ const resources = {
           button: "Ver más",
         },
         experience: {
-          title: "Experiencia Laboral",
+          title: "Experiencia en Proyectos",
           description:
-            "Desempeño como Desarrollador Frontend en equipos multidisciplinarios bajo metodologías ágiles, asegurando calidad de código.",
+            "Participación como Desarrollador Frontend en equipos multidisciplinarios bajo metodologías ágiles, con foco en calidad de código y buenas prácticas.",
+          period: {
+            lockKey: "Febrero - Marzo | 2025",
+            fitflow: "Marzo - Abril | 2025",
+            aura: "Abril - Junio | 2025",
+            kramer: "Junio - Septiembre | 2025",
+            flowik: "Julio - Septiembre | 2025",
+            pymeGo: "Septiembre - Octubre | 2025",
+            ecoShop: "Noviembre - Diciembre | 2025",
+          },
+          projectDescription: {
+            lockKey:
+              "Gestor de contraseñas orientado al almacenamiento seguro y la administración de credenciales, con interfaces responsivas y enfoque en usabilidad y rendimiento.",
+            fitflow:
+              "Plataforma integral de salud y fitness que utiliza inteligencia artificial para ofrecer planes personalizados de dieta, ejercicio y seguimiento de progreso.",
+            aura: "Plataforma web para la gestión de registros y atenciones de un centro terapéutico, optimizando la organización de pacientes y procesos administrativos.",
+            kramer:
+              "Aplicación e-commerce multiplataforma, con catálogo público, carrito de compras, panel administrativo para productos y stock, y un CRM básico de clientes.",
+            flowik:
+              "Aplicación web de gestión para PYMES enfocada en la administración de productos, clientes y proveedores mediante un panel administrativo intuitivo.",
+            pymeGo:
+              "Plataforma fintech para el onboarding digital de créditos para PYMES, con formularios dinámicos, carga de documentación y seguimiento de solicitudes.",
+            ecoShop:
+              "Plataforma de comercio electrónico sostenible orientada a marcas responsables, con catálogo de productos, carrito, checkout e indicadores de impacto ambiental.",
+          },
         },
         certifications: {
           title: "Formación y Certificaciones",
@@ -318,6 +367,7 @@ const resources = {
           name: "Nombre",
           email: "Correo electrónico",
           message: "Mensaje...",
+          required: "* Campos obligatorios",
           send: "Enviar",
           sending: "Enviando mensaje...",
           nameTitle: "Ingresa tu nombre",
