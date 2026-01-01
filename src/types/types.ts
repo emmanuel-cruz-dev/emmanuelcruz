@@ -80,6 +80,17 @@ export type ProjectsIconsProps = {
   type: string;
 };
 
+export interface WorkExperience {
+  id: number;
+  company: string;
+  projectName: string;
+  period: string;
+  description: string;
+  github: string;
+  technologies: string[];
+  tools?: string[];
+}
+
 export interface LastModifiedDateProps {
   currentLanguage: Language;
 }
