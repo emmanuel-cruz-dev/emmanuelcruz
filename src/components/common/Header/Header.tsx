@@ -43,14 +43,11 @@ function Header() {
         <li onClick={closeMenu} className="nav-item">
           <a href="#about">{t("navbar.about")}</a>
         </li>
-        {/* <li onClick={closeMenu} className="nav-item">
-          <a href="#experience">Experiencia</a>
-        </li> */}
         <li onClick={closeMenu} className="nav-item">
-          <a href="#projects">{t("navbar.projects")}</a>
+          <a href="#experience">{t("navbar.experience")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
-          <a href="#skills">{t("navbar.skills")}</a>
+          <a href="#projects">{t("navbar.projects")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
           <a href="#contact">{t("navbar.contact")}</a>
