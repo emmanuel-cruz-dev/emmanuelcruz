@@ -1,10 +1,13 @@
 import { useTranslation } from "react-i18next";
-import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTheme } from "../../hooks/useThemeProvider";
-import { CounterDivs } from "./CounterDivs";
-import Logo from "../../assets/icons/logo-negro.png";
-import Screens from "../../assets/images/responsive-screens.avif";
-import Background from "../../assets/images/front_end-background.webp";
+import StatCard from "./StatCard";
+import FeatureCard from "./FeatureCard";
+import { FaUsers } from "react-icons/fa";
+import { HiOutlineRocketLaunch } from "react-icons/hi2";
+import { MdOutlineLocalLibrary } from "react-icons/md";
+import { TbTargetArrow } from "react-icons/tb";
+import { PiSuitcaseSimple } from "react-icons/pi";
+import { AiOutlineThunderbolt } from "react-icons/ai";
 
 function About() {
   const { t } = useTranslation();
@@ -12,134 +15,105 @@ function About() {
 
   return (
     <section
-      className="scroll-top py-10 flex flex-col gap-8 w-11/12 mx-auto select-none"
+      className={`scroll-top py-20 w-11/12 max-w-7xl mx-auto ${
+        theme === "dark" ? "text-white" : "text-gray-900"
+      }`}
       id="about"
     >
-      <AnimatedComponent animation="fade" delay={1}>
-        <header className="text-center mb-5">
-          <h2 className="font-bold text-3xl mb-4">
-            {t("sections.about.title")}
-          </h2>
-          <h3 className="text-lg">{t("sections.about.description")}</h3>
-        </header>
-      </AnimatedComponent>
-      <article className="grid md:grid-cols-3 gap-4 md:mx-auto lg:w-11/12">
-        <div
-          className={`${
-            theme === "dark" ? "shadow__dark" : "shadow__light"
-          } bg-gradient-to-br from-gray-200/50 to-gray-700/50 md:col-span-2 rounded-xl flex flex-col gap-8 justify-between p-6`}
-        >
-          <div className="flex flex-col gap-6 lg:flex-row lg:justify-between">
-            <h4 className="font-bold text-2xl lg:w-3/5">
-              <span className="font-medium">{t("sections.about.hi")}</span>{" "}
-              Emmanuel Cruz,
-              <br />
-              {t("sections.hero.title")}.
-            </h4>
-            <p className="text-sm lg:text-right lg:w-3/5">
-              {t("sections.about.paragraph")}
-            </p>
-          </div>
-          <div className="flex justify-end">
-            <a
-              href="#contact"
-              className={`${
-                theme === "dark" ? "btn__shadow__dark" : "btn__shadow__light"
-              } btn__rounded tres`}
-            >
-              <span className="flex items-center gap-2">
-                {t("sections.about.contactMe")}
-                <span className="text-[28px] material-icons-outlined">
-                  keyboard_double_arrow_right
-                </span>
-              </span>
-            </a>
-          </div>
-        </div>
-        <div
-          className={`${
-            theme === "dark" ? "shadow__dark" : "shadow__light"
-          } bg-gradient-to-br from-[#F5F5F5]/80 to-[#E0E0E0]/80 rounded-xl p-4 overflow-hidden`}
-        >
-          <figure className="flex justify-self-end items-center bg-gradient-to-bl from-gray-300 to-white rounded-full w-14 h-14">
-            <img
-              className="w-9 mx-auto"
-              src={Logo}
-              alt="Una letra e, entre corchetes"
-              loading="lazy"
-              width="100"
-              height="100"
+      <div className="text-center mb-16">
+        <h2 className="font-bold text-4xl md:text-5xl mb-4">
+          {t("sections.about.title")}
+        </h2>
+        <p className="text-xl md:text-2xl font-semibold mb-2">
+          {t("sections.about.description")}
+        </p>
+      </div>
+
+      <div className="grid lg:grid-cols-2 gap-8 mb-12">
+        <div className="space-y-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+            <StatCard
+              icon={<PiSuitcaseSimple />}
+              number={5}
+              label={t("sections.about.highlight1")}
+              delay={0}
             />
-          </figure>
-          <figure className="w-fit h-fit">
-            <img
-              className="-ml-4 -mb-2 min-w-80 lg:min-w-[21rem]"
-              src={Screens}
-              alt="Un celular y una notebook"
-              loading="lazy"
-              width="700"
-              height="411"
+            <StatCard
+              icon={<FaUsers />}
+              number={5}
+              label={t("sections.about.highlight2")}
+              delay={100}
             />
-          </figure>
-        </div>
-        <figure
-          className={`${
-            theme === "dark" ? "shadow__dark" : "shadow__light"
-          } hidden lg:block rounded-xl overflow-hidden max-w-fit`}
-        >
-          <img
-            className="object-cover w-full lg:w-full lg:h-full"
-            src={Background}
-            alt="Computadora de escritorio con fondo azul"
-            loading="lazy"
-            width="600"
-            height="347"
-          />
-        </figure>
-        <div className="flex flex-col md:flex-row gap-4 md:col-span-3 lg:col-span-2">
-          <div className="h-full flex md:flex-col gap-4 md:w-3/6">
-            <CounterDivs num={10} title={t("sections.about.courses")} />
-            <CounterDivs num={500} title={t("sections.about.practice")} />
+            <StatCard
+              icon={<AiOutlineThunderbolt />}
+              number={15}
+              label={t("sections.about.highlight3")}
+              delay={200}
+            />
           </div>
+
           <div
-            className={`bg-gradient-to-br ${
+            className={`${
               theme === "dark"
-                ? "from-red-500/40 to-accent/60 shadow__dark"
-                : " from-accent/70 to-red-800 shadow__light"
-            } rounded-xl w-full p-6 flex flex-col gap-8 justify-between`}
+                ? "shadow__dark bg-gradient-to-br from-neutral-500/10 to-neutral-600/10 border-neutral-500/20"
+                : "shadow__light bg-gradient-to-br from-neutral-50 to-neutral-100 border-neutral-200"
+            } p-8`}
           >
-            <div className="flex flex-col gap-6 md:flex-row">
-              <h3 className="text-2xl font-medium">
-                {t("sections.about.subtitle")}{" "}
-                <span className="font-bold lowercase">
-                  {t("sections.about.button")}
-                </span>
-                <span className="font-bold">?</span>
-              </h3>
-              <p className="md:text-right lg:w-11/12">
-                {t("sections.about.copy")}
-              </p>
-            </div>
-            <div className="flex justify-end">
+            <h3 className="text-2xl font-bold mb-4">
+              {t("sections.about.cta.title")}{" "}
+              <span className="text-accent">
+                {t("sections.about.cta.titleAccent")}
+              </span>
+            </h3>
+            <p
+              className={`mb-6 ${
+                theme === "dark" ? "text-gray-300" : "text-gray-700"
+              }`}
+            >
+              {t("sections.about.cta.desc")}
+            </p>
+            <div className="flex flex-wrap gap-3">
               <a
-                href="#projects"
+                href="#contact"
+                className="bg-accent text-white font-semibold px-6 py-3 transition-all duration-300 inline-flex items-center gap-2 group"
+              >
+                {t("sections.about.contactMe")}
+                <span className="material-icons-outlined text-2xl group-hover:translate-x-1 transition-transform duration-300">
+                  arrow_forward
+                </span>
+              </a>
+              <a
+                href="#experience"
                 className={`${
                   theme === "dark"
-                    ? "btn__shadow__dark--red"
-                    : "btn__shadow__light--red"
-                } btn__rounded tres`}
+                    ? "bg-gray-800 hover:bg-gray-700 border-gray-700"
+                    : "bg-white hover:bg-gray-50 border-gray-300"
+                } font-semibold px-6 py-3 transition-all duration-300 border-2 inline-flex items-center gap-2`}
               >
-                <span className="flex items-center gap-2">
-                  {t("sections.about.button")}
-                  <span className="text-[28px] material-icons-outlined">
-                    search
-                  </span>
-                </span>
+                {t("sections.about.viewExperience")}
               </a>
             </div>
           </div>
         </div>
-      </article>
+
+        <div className="space-y-6">
+          <FeatureCard
+            icon={<HiOutlineRocketLaunch />}
+            title={t("sections.about.experience.title")}
+            description={t("sections.about.experience.desc")}
+          />
+          <FeatureCard
+            icon={<TbTargetArrow />}
+            title={t("sections.about.skills.title")}
+            description={t("sections.about.skills.desc")}
+          />
+          <FeatureCard
+            icon={<MdOutlineLocalLibrary />}
+            title={t("sections.about.learning.title")}
+            description={t("sections.about.learning.desc")}
+          />
+        </div>
+      </div>
     </section>
   );
 }
