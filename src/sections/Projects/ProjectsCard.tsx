@@ -40,19 +40,14 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
           <p className="text-sm xl:w-11/12">{description}.</p>
         </div>
 
-        <div className="technologies flex gap-1">
+        <div className="flex gap-2 items-center">
           {technologies.map((tech, index) => (
-            <div key={index} className="technology-item">
-              <img
-                src={tech.img}
-                alt={`${tech.name} logo`}
-                className="technology-logo w-10"
-                title={tech.name}
-                loading="lazy"
-                width="100"
-                height="100"
-              />
-            </div>
+            <span
+              key={index}
+              className="bg-white text-gray-800 text-xs px-2 py-1 rounded-full"
+            >
+              {tech}
+            </span>
           ))}
         </div>
 
