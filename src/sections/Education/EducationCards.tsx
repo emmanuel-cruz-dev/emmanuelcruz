@@ -48,13 +48,7 @@ const EducationCards: FC<EducationCardsProps> = ({
               theme === "dark" ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            <strong
-              className={`${
-                theme === "dark" ? "text-neutral-300" : "text-accent"
-              }`}
-            >
-              {span}
-            </strong>
+            <strong className="text-accent">{span}</strong>
             <br />
             {FormatTextWithLabels(description)}
           </div>
