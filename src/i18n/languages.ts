@@ -9,6 +9,7 @@ const resources = {
         about: "About Me",
         experience: "Experience",
         projects: "Projects",
+        skills: "Skills",
         contact: "Contact",
         title: "Switch to Spanish",
         lightMode: "Switch to dark mode",
@@ -67,7 +68,6 @@ const resources = {
           },
           viewExperience: "View Experience",
         },
-
         experience: {
           title: "Project Experience",
           description:
@@ -139,11 +139,9 @@ const resources = {
           title: "Tech Stack",
           description:
             "Technologies and methodologies that I use to take your projects to the next level",
-          subtitle1: "Web Development",
-          subtitle2: "Frameworks and Libraries",
-          subtitle3: "Development Tools",
-          subtitle4: "Design and Prototyping",
-          subtitle5: "Project Management",
+          backend: "Backend & Databases",
+          tools: "Tools",
+          management: "Management tools",
           html: "Hypertext Markup Language",
           css: "Cascading Style Sheets",
           javascript: "Web programming language",
@@ -174,6 +172,23 @@ const resources = {
             "Comprehensive project and task management with agile methodologies",
           notion: "Organization, documentation, and collaborative databases",
           trello: "Kanban boards for visual task organization",
+          nextjs:
+            "React framework for building web applications with server-side rendering and static generation",
+          reactBootstrap: "React component library based on Bootstrap",
+          shadcn:
+            "Collection of reusable components built with Tailwind CSS and Radix UI",
+          primeng: "Rich and flexible UI component library for Angular",
+          java: "Object-oriented programming language widely used in enterprise applications",
+          springBoot:
+            "Java framework for quickly and easily building backend applications and microservices",
+          nestjs:
+            "Node.js framework for building scalable backend applications using TypeScript",
+          mysql: "Open-source relational database management system",
+          mongodb: "Highly scalable, document-oriented NoSQL database",
+          prisma:
+            "Modern ORM for Node.js and TypeScript that simplifies database access",
+          typeorm:
+            "ORM for TypeScript and JavaScript compatible with multiple databases",
         },
         contact: {
           title: "I'm Just a Message Away",
@@ -353,11 +368,9 @@ const resources = {
           title: "Stack Tecnológico",
           description:
             "Tecnologías y metodologías que utilizo para llevar tus proyectos al siguiente nivel",
-          subtitle1: "Desarrollo Web",
-          subtitle2: "Frameworks y Bibliotecas",
-          subtitle3: "Herramientas de Desarrollo",
-          subtitle4: "Diseño y Prototipado",
-          subtitle5: "Gestión de Proyectos",
+          backend: "Backend y Bases de datos",
+          tools: "Herramientas",
+          management: "Herramientas de Gestión",
           html: "Lenguaje de Marcado de Hipertexto",
           css: "Hojas de Estilo en Cascada",
           javascript: "Lenguaje de programación web",
@@ -389,6 +402,26 @@ const resources = {
             "Gestión integral de proyectos y tareas con metodologías ágiles",
           notion: "Organización, documentación y bases de datos colaborativas",
           trello: "Tableros Kanban para organización visual de tareas",
+          nextjs:
+            "Framework de React para aplicaciones web con renderizado del lado del servidor y generación estática",
+          reactBootstrap:
+            "Biblioteca de componentes de React basada en Bootstrap",
+          shadcn:
+            "Colección de componentes reutilizables construidos con Tailwind CSS y Radix UI",
+          primeng: "Biblioteca de componentes UI rica y flexible para Angular",
+          java: "Lenguaje de programación orientado a objetos ampliamente usado en aplicaciones empresariales",
+          springBoot:
+            "Framework de Java para crear aplicaciones backend y microservicios de forma rápida y sencilla",
+          nestjs:
+            "Framework de Node.js para construir aplicaciones backend escalables usando TypeScript",
+          mysql:
+            "Sistema de gestión de bases de datos relacional de código abierto",
+          mongodb:
+            "Base de datos NoSQL orientada a documentos y altamente escalable",
+          prisma:
+            "ORM moderno para Node.js y TypeScript que facilita el acceso a bases de datos",
+          typeorm:
+            "ORM para TypeScript y JavaScript compatible con múltiples bases de datos",
         },
         contact: {
           title: "Estoy a un Mensaje de Distancia",
