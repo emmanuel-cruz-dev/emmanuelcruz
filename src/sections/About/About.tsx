@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useTheme } from "../../hooks/useThemeProvider";
 import StatCard from "./StatCard";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import FeatureCard from "./FeatureCard";
 import { FaUsers } from "react-icons/fa";
 import { HiOutlineRocketLaunch } from "react-icons/hi2";
@@ -15,19 +16,19 @@ function About() {
 
   return (
     <section
-      className={`scroll-top py-20 w-11/12 max-w-7xl mx-auto ${
+      className={`scroll-top py-10 w-11/12 max-w-7xl mx-auto ${
         theme === "dark" ? "text-white" : "text-gray-900"
       }`}
       id="about"
     >
-      <div className="text-center mb-16">
-        <h2 className="font-bold text-4xl md:text-5xl mb-4">
-          {t("sections.about.title")}
-        </h2>
-        <p className="text-xl md:text-2xl font-semibold mb-2">
-          {t("sections.about.description")}
-        </p>
-      </div>
+      <AnimatedComponent animation="fade" delay={1}>
+        <div className="text-center mb-12">
+          <h2 className="font-bold text-3xl mb-4">
+            {t("sections.about.title")}
+          </h2>
+          <h3 className="text-lg">{t("sections.about.description")}</h3>
+        </div>
+      </AnimatedComponent>
 
       <div className="grid lg:grid-cols-2 gap-8 mb-12">
         <div className="space-y-6">
@@ -72,10 +73,10 @@ function About() {
             >
               {t("sections.about.cta.desc")}
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex gap-3">
               <a
                 href="#contact"
-                className="bg-accent text-white font-semibold px-6 py-3 transition-all duration-300 inline-flex items-center gap-2 group"
+                className="bg-accent text-white font-semibold px-4 md:px-6 py-3 transition-all duration-300 inline-flex items-center gap-2 group"
               >
                 {t("sections.about.contactMe")}
                 <span className="material-icons-outlined text-2xl group-hover:translate-x-1 transition-transform duration-300">
@@ -88,7 +89,7 @@ function About() {
                   theme === "dark"
                     ? "bg-gray-800 hover:bg-gray-700 border-gray-700"
                     : "bg-white hover:bg-gray-50 border-gray-300"
-                } font-semibold px-6 py-3 transition-all duration-300 border-2 inline-flex items-center gap-2`}
+                } font-semibold px-4 md:px-6 py-3 transition-all duration-300 border-2 inline-flex items-center gap-2`}
               >
                 {t("sections.about.viewExperience")}
               </a>
