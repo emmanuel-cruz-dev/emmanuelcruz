@@ -1,19 +1,23 @@
-import { SkillsCardProps } from "../../types/types";
-import { FC } from "react";
+import { Skill } from "../../types/types";
 
-const SkillsCard: FC<SkillsCardProps> = ({ src, alt, title }) => {
+const SkillsCard = (skill: Skill) => {
   return (
-    <article className="card group" title={title} aria-label={alt}>
-      <img
-        src={src}
-        alt={`${alt} logo`}
-        loading="lazy"
-        className="w-16 group-hover:scale-110 transition-all duration-300 ease-in-out"
-        width="100"
-        height="100"
-      />
-      <p className="font-semibold">{alt}</p>
-    </article>
+    <section
+      className="flex flex-col items-center gap-2 group"
+      title={skill.title}
+    >
+      <figure className="w-16 h-16 flex items-center justify-center rounded-lg p-2 group-hover:scale-110 transition-all duration-300 ease-in-out">
+        <img
+          src={skill.logo}
+          alt={`${skill.name} logo`}
+          loading="lazy"
+          className="w-full h-full object-contain"
+          width={100}
+          height={100}
+        />
+      </figure>
+      <p className="text-xs font-semibold">{skill.name}</p>
+    </section>
   );
 };
 
