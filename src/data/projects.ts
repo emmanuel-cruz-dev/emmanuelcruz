@@ -1,12 +1,3 @@
-import HTMLLogo from "../assets/icons/html-logo.png";
-import CssLogo from "../assets/icons/css-logo.png";
-import JavascriptLogo from "../assets/icons/javascript-logo.png";
-import TypeScriptLogo from "../assets/icons/typescript-logo.png";
-import JqueryLogo from "../assets/icons/jquery-logo.png";
-import ReactLogo from "../assets/icons/react-logo.png";
-import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
-import SassLogo from "../assets/icons/sass-logo.png";
-
 import CardPollosHermanos1 from "../assets/images/card-pollos-hermanos1.webp";
 import CardPollosHermanos2 from "../assets/images/card-pollos-hermanos2.webp";
 import CardPollosHermanos3 from "../assets/images/card-pollos-hermanos3.webp";
@@ -37,12 +28,7 @@ const getPProjects = (t: TFunction) => [
     img2: CardPollosHermanos2,
     img3: CardPollosHermanos3,
     flyer: "responsive",
-    technologies: [
-      { name: "HTML", img: HTMLLogo },
-      { name: "CSS", img: CssLogo },
-      { name: "Javascript", img: JavascriptLogo },
-      { name: "JQuery", img: JqueryLogo },
-    ],
+    technologies: ["HTML", "CSS", "Javascript", "JQuery"],
     link: "https://emmanuel-cruz-dev.github.io/los-pollos-hermanos-website/",
     github: "https://github.com/emmanuel-cruz-dev/los-pollos-hermanos-website",
   },
@@ -54,11 +40,7 @@ const getPProjects = (t: TFunction) => [
     img2: CardLockKey2,
     img3: CardLockKey3,
     flyer: "darkMode",
-    technologies: [
-      { name: "React", img: ReactLogo },
-      { name: "TypeScript", img: TypeScriptLogo },
-      { name: "Tailwind CSS", img: TailwindLogo },
-    ],
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://lock-key.vercel.app/",
     github: "https://github.com/emmanuel-cruz-dev/lockkey-no-country-mvp",
   },
@@ -70,12 +52,7 @@ const getPProjects = (t: TFunction) => [
     img2: CardJinjer2,
     img3: CardJinjer3,
     flyer: "language",
-    technologies: [
-      { name: "React", img: ReactLogo },
-      { name: "TypeScript", img: TypeScriptLogo },
-      { name: "Tailwind CSS", img: TailwindLogo },
-      { name: "Sass", img: SassLogo },
-    ],
+    technologies: ["React", "TypeScript", "Tailwind CSS", "Sass"],
     link: "https://jinjer.vercel.app/",
     github: "https://github.com/emmanuel-cruz-dev/jinjer",
   },
@@ -87,11 +64,7 @@ const getPProjects = (t: TFunction) => [
     img2: CardLiterarium2,
     img3: CardLiterarium3,
     flyer: "responsive",
-    technologies: [
-      { name: "React", img: ReactLogo },
-      { name: "TypeScript", img: TypeScriptLogo },
-      { name: "Tailwind CSS", img: TailwindLogo },
-    ],
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://literarium.netlify.app/",
     github: "https://github.com/emmanuel-cruz-dev/literarium",
   },
@@ -104,10 +77,12 @@ const getPProjects = (t: TFunction) => [
     img3: CardPortfolio3,
     flyer: "darkMode",
     technologies: [
-      { name: "React", img: ReactLogo },
-      { name: "TypeScript", img: TypeScriptLogo },
-      { name: "Tailwind CSS", img: TailwindLogo },
-      { name: "Sass", img: SassLogo },
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Sass",
+      "React Hook Form",
+      "Zod",
     ],
     link: "https://emmanuel-cruz.netlify.app/",
     github: "https://github.com/emmanuel-cruz-dev/emmanuelcruz",

@@ -46,11 +46,6 @@ export interface EducationCardsProps {
   num: number;
 }
 
-export interface TechnologiesProps {
-  img: string;
-  name: string;
-}
-
 export type IconType = "responsive" | "darkMode" | "language" | "flyer";
 
 export interface ProjectsCardProps {
@@ -60,7 +55,7 @@ export interface ProjectsCardProps {
   img2: string;
   img3: string;
   flyer: string;
-  technologies: TechnologiesProps[];
+  technologies: string[];
   link: string;
   github: string;
 }
