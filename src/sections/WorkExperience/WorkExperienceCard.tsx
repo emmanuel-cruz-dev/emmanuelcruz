@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { useTheme } from "../../hooks/useThemeProvider";
 import { FaGithub } from "react-icons/fa";
+import { useTheme } from "../../hooks/useThemeProvider";
 import { WorkExperience } from "../../types/types";
 
 const WorkExperienceCard: FC<WorkExperience> = ({
@@ -30,13 +30,7 @@ const WorkExperienceCard: FC<WorkExperience> = ({
               theme === "dark" ? "text-gray-400" : "text-gray-600"
             }`}
           >
-            <strong
-              className={`${
-                theme === "dark" ? "text-neutral-300" : "text-accent"
-              }`}
-            >
-              {company}
-            </strong>
+            <strong className="text-accent">{company}</strong>
             <br />
             <span className="text-xs">{period}</span>
           </div>
@@ -85,7 +79,6 @@ const WorkExperienceCard: FC<WorkExperience> = ({
           href={github}
           target="_blank"
           rel="noopener noreferrer"
-          title="Ver repositorio en GitHub"
         >
           <div className="icono">
             <span className="text-[1.2rem]">
