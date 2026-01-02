@@ -189,6 +189,10 @@ const resources = {
             "Modern ORM for Node.js and TypeScript that simplifies database access",
           typeorm:
             "ORM for TypeScript and JavaScript compatible with multiple databases",
+          firebase:
+            "Platform for managing cloud-based databases with Firestore and integrating them with the backend",
+          swagger:
+            "Tool for documenting and testing REST APIs, facilitating endpoint consumption and testing",
         },
         contact: {
           title: "I'm Just a Message Away",
@@ -422,6 +426,10 @@ const resources = {
             "ORM moderno para Node.js y TypeScript que facilita el acceso a bases de datos",
           typeorm:
             "ORM para TypeScript y JavaScript compatible con múltiples bases de datos",
+          firebase:
+            "Plataforma para gestionar bases de datos en la nube con Firestore e integrarlas con el backend",
+          swagger:
+            "Herramienta para documentar y probar APIs REST, facilitando el consumo y testeo de endpoints",
         },
         contact: {
           title: "Estoy a un Mensaje de Distancia",
