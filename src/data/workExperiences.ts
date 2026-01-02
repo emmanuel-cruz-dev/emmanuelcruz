@@ -93,6 +93,7 @@ export const getWorkExperiences = (t: TFunction) => [
       "Next.js",
       "React",
       "TypeScript",
+      "Zustand",
       "Tailwind CSS",
       "Shadcn/ui",
       "Radix UI",

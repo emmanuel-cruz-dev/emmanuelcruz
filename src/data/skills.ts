@@ -8,6 +8,7 @@ import ReactLogo from "../assets/icons/react-logo.png";
 import AngularLogo from "../assets/icons/angular-logo.png";
 import NextLogo from "../assets/icons/nextjs-logo.png";
 import ReactNativeLogo from "../assets/icons/react-native-logo.png";
+import ZustandLogo from "../assets/icons/zustand-logo.png";
 import TailwindLogo from "../assets/icons/tailwindcss-logo.png";
 import SassLogo from "../assets/icons/sass-logo.png";
 import BootstrapLogo from "../assets/icons/bootstrap-logo.png";
@@ -74,6 +75,11 @@ export const getSkillsByCategory = (t: TFunction): SkillCategory[] => {
           name: "React Native",
           logo: ReactNativeLogo,
           title: t("sections.skills.reactNative"),
+        },
+        {
+          name: "Zustand",
+          logo: ZustandLogo,
+          title: t("sections.skills.zustand"),
         },
         {
           name: "Tailwind CSS",

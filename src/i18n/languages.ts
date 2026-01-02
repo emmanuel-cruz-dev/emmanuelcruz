@@ -149,6 +149,7 @@ const resources = {
           react: "JavaScript library for building user interfaces",
           reactNative:
             "JavaScript framework for building native mobile applications",
+          zustand: "JavaScript state manager for React",
           angular: "JavaScript framework for building web applications",
           tailwind: "Utility CSS framework",
           bootstrap: "Front-End development framework",
@@ -384,6 +385,7 @@ const resources = {
           reactNative:
             "Framework de JavaScript para crear aplicaciones móviles nativas",
           angular: "Framework de JavaScript para construir aplicaciones web",
+          zustand: "Gestor de estado para React",
           tailwind: "Framework de CSS utilitario",
           bootstrap: "Marco de desarrollo de Front-End",
           nodejs:
@@ -407,7 +409,7 @@ const resources = {
           notion: "Organización, documentación y bases de datos colaborativas",
           trello: "Tableros Kanban para organización visual de tareas",
           nextjs:
-            "Framework de React para aplicaciones web con renderizado del lado del servidor y generación estática",
+            "Framework de React con renderizado del lado del servidor y generación estática",
           reactBootstrap:
             "Biblioteca de componentes de React basada en Bootstrap",
           shadcn:
