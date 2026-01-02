@@ -22,7 +22,7 @@ function Projects() {
       </AnimatedComponent>
       <article>
         <main className="card-container flex flex-wrap gap-12 mx-auto">
-          {projects.map((project, index) => (
+          {projects.reverse().map((project, index) => (
             <ProjectsCard key={index} {...project} />
           ))}
         </main>
