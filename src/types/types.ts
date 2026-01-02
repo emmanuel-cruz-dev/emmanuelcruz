@@ -46,12 +46,6 @@ export interface EducationCardsProps {
   num: number;
 }
 
-export interface SkillsCardProps {
-  src: string;
-  alt: string;
-  title: string;
-}
-
 export interface TechnologiesProps {
   img: string;
   name: string;
@@ -161,4 +155,16 @@ export interface Certificate {
   span: string;
   description: string;
   num: number;
+}
+
+export interface Skill {
+  name: string;
+  logo: string;
+  title: string;
+}
+
+export interface SkillCategory {
+  title: string;
+  mainSkills: Skill[];
+  otherSkills: string[];
 }
