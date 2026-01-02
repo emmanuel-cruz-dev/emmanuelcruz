@@ -23,7 +23,7 @@ function Footer() {
               <a href="#experience">{t("navbar.experience")}</a>
             </li>
             <li>
-              <a href="#projects">{t("navbar.projects")}</a>
+              <a href="#skills">{t("navbar.skills")}</a>
             </li>
             <li>
               <a href="#contact">{t("navbar.contact")}</a>

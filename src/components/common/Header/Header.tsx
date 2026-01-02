@@ -47,7 +47,7 @@ function Header() {
           <a href="#experience">{t("navbar.experience")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
-          <a href="#projects">{t("navbar.projects")}</a>
+          <a href="#skills">{t("navbar.skills")}</a>
         </li>
         <li onClick={closeMenu} className="nav-item">
           <a href="#contact">{t("navbar.contact")}</a>
