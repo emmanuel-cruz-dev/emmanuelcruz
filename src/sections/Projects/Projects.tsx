@@ -22,7 +22,6 @@ function Projects() {
       </AnimatedComponent>
       <article>
         <main className="card-container flex flex-wrap gap-12 mx-auto">
-          {/* Mapeo de proyectos */}
           {projects.map((project, index) => (
             <ProjectsCard key={index} {...project} />
           ))}
