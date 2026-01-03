@@ -112,7 +112,7 @@ const getPProjects = (t: TFunction) => [
       "MockAPI",
     ],
     link: "https://nova-store-shop.vercel.app/",
-    github: "https://github.com/emmanuel-cruz-dev/proyecto-final-25235-EC",
+    github: "https://github.com/emmanuel-cruz-dev/nova-store",
   },
 ];
 
