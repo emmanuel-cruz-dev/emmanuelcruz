@@ -2,15 +2,16 @@ import { useTranslation } from "react-i18next";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import EducationCards from "./EducationCards";
 import getCertificates from "../../data/certificates";
-import { useCertificates } from "../../hooks/useCertificates";
+import { useItemPagination } from "../../hooks/useItemPagination";
 
 function Education() {
   const { t } = useTranslation();
   const certificates = getCertificates(t);
-  const { sectionRef, visibleCertificates, isShowingAll, toggleCertificates } =
-    useCertificates({
-      certificates,
+  const { sectionRef, visibleItems, isShowingAll, toggleItems, hasMore } =
+    useItemPagination({
+      items: certificates,
       initialLimit: 3,
+      reverse: true,
     });
 
   return (
@@ -30,20 +31,20 @@ function Education() {
       </AnimatedComponent>
 
       <article className="flex flex-col gap-6 xl:w-10/12 mx-auto">
-        {visibleCertificates.map((certificate) => (
+        {visibleItems.map((certificate) => (
           <EducationCards key={certificate.id} {...certificate} />
         ))}
       </article>
 
-      <div className="flex justify-center mt-4">
-        <button onClick={toggleCertificates} className="btn dos shadow-xl">
-          <span className="flex items-center gap-2 normal-case">
-            {isShowingAll
-              ? t("sections.certifications.viewLess")
-              : t("sections.certifications.viewMore")}
-          </span>
-        </button>
-      </div>
+      {hasMore && (
+        <div className="flex justify-center mt-4">
+          <button onClick={toggleItems} className="btn dos shadow-xl">
+            <span className="flex items-center gap-2 normal-case">
+              {isShowingAll ? t("viewLess") : t("viewMore")}
+            </span>
+          </button>
+        </div>
+      )}
     </section>
   );
 }
