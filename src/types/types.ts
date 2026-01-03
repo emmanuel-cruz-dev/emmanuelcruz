@@ -54,7 +54,7 @@ export interface ProjectsCardProps {
   img1: string;
   img2: string;
   img3: string;
-  flyer: string;
+  flyer?: string;
   technologies: string[];
   link: string;
   github: string;
