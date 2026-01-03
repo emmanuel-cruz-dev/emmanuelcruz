@@ -1,28 +1,29 @@
 import { useState, useRef, useEffect, useMemo } from "react";
-import { Certificate } from "../types/types";
 
-export function useCertificates({
-  certificates,
+export function useItemPagination<T>({
+  items,
   initialLimit = 3,
+  reverse = false,
 }: {
-  certificates: Certificate[];
+  items: T[];
   initialLimit?: number;
+  reverse?: boolean;
 }) {
   const sectionRef = useRef<HTMLElement>(null);
   const [visibleCount, setVisibleCount] = useState(initialLimit);
   const [shouldScroll, setShouldScroll] = useState(false);
 
-  const reversedCertificates = useMemo(
-    () => [...certificates].reverse(),
-    [certificates]
+  const processedItems = useMemo(
+    () => (reverse ? [...items].reverse() : items),
+    [items, reverse]
   );
 
-  const visibleCertificates = useMemo(
-    () => reversedCertificates.slice(0, visibleCount),
-    [reversedCertificates, visibleCount]
+  const visibleItems = useMemo(
+    () => processedItems.slice(0, visibleCount),
+    [processedItems, visibleCount]
   );
 
-  const isShowingAll = visibleCount >= reversedCertificates.length;
+  const isShowingAll = visibleCount >= processedItems.length;
 
   useEffect(() => {
     if (shouldScroll && visibleCount === initialLimit) {
@@ -34,19 +35,20 @@ export function useCertificates({
     }
   }, [visibleCount, initialLimit, shouldScroll]);
 
-  const toggleCertificates = () => {
+  const toggleItems = () => {
     if (isShowingAll) {
       setShouldScroll(true);
       setVisibleCount(initialLimit);
     } else {
-      setVisibleCount(reversedCertificates.length);
+      setVisibleCount(processedItems.length);
     }
   };
 
   return {
     sectionRef,
-    visibleCertificates,
+    visibleItems,
     isShowingAll,
-    toggleCertificates,
+    toggleItems,
+    hasMore: processedItems.length > initialLimit,
   };
 }
