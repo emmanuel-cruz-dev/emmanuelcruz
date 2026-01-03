@@ -132,8 +132,6 @@ const resources = {
           fooTalentGroupSpan: "Foo Talent Group | July - September 2025",
           url: "Go to website",
           img: "Expand image",
-          viewMore: "View more",
-          viewLess: "View less",
         },
         skills: {
           title: "Tech Stack",
@@ -225,6 +223,8 @@ const resources = {
             "Music artist platform inspired by the band Jinjer. The site offers a complete experience: bilingual navigation (English/Spanish) with interactive sections, including news, biographies, tour dates, discography, music player, multimedia gallery and an online store",
           literarium:
             "Digital library modern that blends the traditional library experience with cutting-edge technology. Intuitive navigation between detailed sections, content adapted to each section, and responsive design for a personalized experience",
+          novaStore:
+            "E-commerce with product browsing, shopping cart and smooth navigation experience, with authentication system and administrative panel",
           button: "Visit site",
           link: "More details",
           buttonTitle: "Watch the live demo of the project",
@@ -233,6 +233,8 @@ const resources = {
       },
       scrollToTop: "Scroll to top",
       lastUpdate: "Last updated",
+      viewMore: "View more",
+      viewLess: "View less",
     },
   },
   es: {
@@ -366,8 +368,6 @@ const resources = {
           fooTalentGroupSpan: "Foo Talent Group | Julio - Septiembre 2025",
           url: "Ir al sitio web",
           img: "Expandir imagen",
-          viewMore: "Ver más",
-          viewLess: "Ver menos",
         },
         skills: {
           title: "Stack Tecnológico",
@@ -464,6 +464,8 @@ const resources = {
             "Plataforma de artista musical inspirada en la banda Jinjer. El sitio ofrece una experiencia completa: navegación bilingüe (inglés/español) con secciones interactivas, incluye noticias, biografías, fechas de gira, discografía, reproductor de música, galería multimedia y una tienda en línea",
           literarium:
             "Biblioteca digital moderna que fusiona la experiencia de una librería tradicional con tecnología de vanguardia. Navegación intuitiva entre secciones detalladas, contenido adaptado a cada sección y diseño responsivo para una experiencia personalizada",
+          novaStore:
+            "E-commerce con exploración de productos, carrito de compras y experiencia de navegación fluida, con sistema de autenticación y panel administrativo",
           button: "Visitar sitio",
           link: "Más detalles",
           buttonTitle: "Ver la demo en vivo del proyecto",
@@ -472,6 +474,8 @@ const resources = {
       },
       scrollToTop: "Ir hacia arriba",
       lastUpdate: "Última actualización",
+      viewMore: "Ver más",
+      viewLess: "Ver menos",
     },
   },
 };

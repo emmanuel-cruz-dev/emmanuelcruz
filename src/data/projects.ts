@@ -17,6 +17,11 @@ import CardJinjer3 from "../assets/images/card-jinjer3.webp";
 import CardLiterarium1 from "../assets/images/card-literarium1.webp";
 import CardLiterarium2 from "../assets/images/card-literarium2.webp";
 import CardLiterarium3 from "../assets/images/card-literarium3.webp";
+
+import CardNovaStore1 from "../assets/images/card-nova-store1.webp";
+import CardNovaStore2 from "../assets/images/card-nova-store2.webp";
+import CardNovaStore3 from "../assets/images/card-nova-store3.webp";
+
 import { TFunction } from "i18next";
 
 const getPProjects = (t: TFunction) => [
@@ -86,6 +91,28 @@ const getPProjects = (t: TFunction) => [
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://lock-key.vercel.app/",
     github: "https://github.com/emmanuel-cruz-dev/lockkey-no-country-mvp",
+  },
+  {
+    id: 6,
+    title: "Nova Store | E-Commerce",
+    description: t("sections.projects.novaStore"),
+    img1: CardNovaStore1,
+    img2: CardNovaStore2,
+    img3: CardNovaStore3,
+    technologies: [
+      "React",
+      "TypeScript",
+      "Zustand",
+      "SWR",
+      "Axios",
+      "React-Hook-Form",
+      "Zod",
+      "Bootstrap",
+      "React-Bootstrap",
+      "MockAPI",
+    ],
+    link: "https://nova-store-shop.vercel.app/",
+    github: "https://github.com/emmanuel-cruz-dev/proyecto-final-25235-EC",
   },
 ];
 
