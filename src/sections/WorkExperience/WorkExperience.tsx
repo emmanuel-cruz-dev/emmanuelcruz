@@ -2,10 +2,17 @@ import { useTranslation } from "react-i18next";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import WorkExperienceCard from "./WorkExperienceCard";
 import { getWorkExperiences } from "../../data/workExperiences";
+import { useItemPagination } from "../../hooks/useItemPagination";
 
 function WorkExperience() {
   const { t } = useTranslation();
   const workExperiences = getWorkExperiences(t);
+  const { sectionRef, visibleItems, isShowingAll, toggleItems, hasMore } =
+    useItemPagination({
+      items: workExperiences,
+      initialLimit: 3,
+      reverse: true,
+    });
 
   return (
     <section
@@ -13,7 +20,7 @@ function WorkExperience() {
       id="experience"
     >
       <AnimatedComponent animation="fade" delay={1}>
-        <header className="text-center mb-5">
+        <header ref={sectionRef} className="text-center mb-5">
           <h2 className="font-bold text-3xl mb-4">
             {t("sections.experience.title")}
           </h2>
@@ -23,12 +30,20 @@ function WorkExperience() {
         </header>
       </AnimatedComponent>
       <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 xl:w-11/12 mx-auto">
-        {workExperiences
-          .map((experience, index) => (
-            <WorkExperienceCard key={index} {...experience} />
-          ))
-          .reverse()}
+        {visibleItems.map((experience) => (
+          <WorkExperienceCard key={experience.id} {...experience} />
+        ))}
       </article>
+
+      {hasMore && (
+        <div className="flex justify-center mt-4">
+          <button onClick={toggleItems} className="btn dos shadow-xl">
+            <span className="flex items-center gap-2 normal-case">
+              {isShowingAll ? t("viewLess") : t("viewMore")}
+            </span>
+          </button>
+        </div>
+      )}
     </section>
   );
 }
