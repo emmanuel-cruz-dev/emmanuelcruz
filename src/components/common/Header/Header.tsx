@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import logoBlanco from "../../../assets/icons/logo-blanco.png";
-import logoNegro from "../../../assets/icons/logo-negro.png";
+import WhiteLogo from "../../../assets/icons/e-logo-white.png";
+import Logo from "../../../assets/icons/e-logo.png";
 import LanguageSwitcher from "../../ui/LanguageSwitcher";
 import { useTheme } from "../../../hooks/useThemeProvider";
 import { useMenu } from "../../../hooks/useMenu";
@@ -22,7 +22,7 @@ function Header() {
       <a className="my-auto z-20" href="/" title={t("navbar.home")}>
         <img
           className="w-8 opacity-80 hover:opacity-100 transition-all duration-500 ease-in-out"
-          src={theme === "dark" ? logoBlanco : logoNegro}
+          src={theme === "dark" ? WhiteLogo : Logo}
           alt="Una letra e, entre corchetes"
           loading="lazy"
           width="100"
