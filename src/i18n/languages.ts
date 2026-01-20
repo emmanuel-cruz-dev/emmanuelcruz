@@ -121,6 +121,8 @@ const resources = {
           nodeJs:
             "Technologies and tools: Node.js, Express, Firestore, and JavaScript for the backend",
           nodeJsSpan: "Talento Tech | March - July 2025",
+          java: "Technologies and concepts: Java, Spring Boot, REST APIs, Spring Data JPA, MySQL, JWT security, validations and good practices in backend",
+          javaSpan: "Alura Latam | April - July 2025",
           reactJs:
             "Technologies and tools: React, React-Bootstrap, React Router, Context API, Styled Components, Hooks, Vite and JavaScript for the frontend",
           reactJsSpan: "Talento Tech | August - December 2025",
@@ -357,6 +359,8 @@ const resources = {
           nodeJs:
             "Tecnologías y herramientas: Node.js, Express, Firestore y JavaScript para el backend",
           nodeJsSpan: "Talento Tech | Marzo - Julio 2025",
+          java: "Tecnologías y conceptos: Java, Spring Boot, APIs REST, Spring Data JPA, MySQL, seguridad con JWT, validaciones y buenas prácticas backend",
+          javaSpan: "Alura Latam | Abril - Julio 2025",
           reactJs:
             "Tecnologías y herramientas: React, React-Bootstrap, React Router, Context API, Styled Components, Hooks, Vite y JavaScript para el frontend",
           reactJsSpan: "Talento Tech | Agosto - Diciembre 2025",
