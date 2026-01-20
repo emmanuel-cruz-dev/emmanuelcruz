@@ -7,6 +7,8 @@ import Nucba from "../assets/icons/nucba.png";
 import NucbaNegro from "../assets/icons/nucba-negro.png";
 import TalentoTech from "../assets/icons/talento-tech.png";
 import TalentoTechNegro from "../assets/icons/talento-tech-negro.png";
+import AluraLatam from "../assets/icons/alura-latam.png";
+import AluraLatamNegro from "../assets/icons/alura-latam-negro.png";
 import ForIT from "../assets/icons/fotIT.png";
 import ForITNegro from "../assets/icons/fotIT-negro.png";
 import FooTalentGroup from "../assets/icons/foo-talent-group.png";
@@ -18,6 +20,7 @@ import HTMLCSSTitulo from "../assets/images/html-css-mini.webp";
 import UXResearchTitulo from "../assets/images/ux-research-mini.webp";
 import NucbaTitulo from "../assets/images/nucba-mini.webp";
 import TalentoTechTitulo from "../assets/images/node-js-mini.webp";
+import AluraJavaTitulo from "../assets/images/alura-java-mini.webp";
 import ForITTitulo from "../assets/images/full-stack-mini.webp";
 import FooTalentGroupTitulo from "../assets/images/foo-talent-group-mini.webp";
 import TalentoTechTituloReact from "../assets/images/react-js-mini.webp";
@@ -102,6 +105,17 @@ const getCertificates = (t: TFunction) => [
   },
   {
     id: 8,
+    img: AluraJavaTitulo,
+    href: "https://www.aluracursos.com/",
+    logo: AluraLatam,
+    blackLogo: AluraLatamNegro,
+    title: "Java y Spring Framework G8 - ONE",
+    span: t("sections.certifications.javaSpan"),
+    description: t("sections.certifications.java"),
+    num: 7,
+  },
+  {
+    id: 9,
     img: ForITTitulo,
     href: "https://forit.ar/",
     logo: ForIT,
@@ -109,10 +123,10 @@ const getCertificates = (t: TFunction) => [
     title: "Programador Web Full Stack",
     span: t("sections.certifications.fullStackSpan"),
     description: t("sections.certifications.fullStack"),
-    num: 7,
+    num: 8,
   },
   {
-    id: 9,
+    id: 10,
     img: FooTalentGroupTitulo,
     href: "https://www.linkedin.com/company/footalentgroup/posts/?feedView=all",
     logo: FooTalentGroup,
@@ -120,10 +134,10 @@ const getCertificates = (t: TFunction) => [
     title: "Foo Talent Group - Smart Projects",
     span: t("sections.certifications.fooTalentGroupSpan"),
     description: t("sections.certifications.fooTalentGroup"),
-    num: 8,
+    num: 9,
   },
   {
-    id: 10,
+    id: 11,
     img: TalentoTechTituloReact,
     href: "https://talentotech.bue.edu.ar/#/",
     logo: TalentoTech,
@@ -131,7 +145,7 @@ const getCertificates = (t: TFunction) => [
     title: "Front-End/ReactJS",
     span: t("sections.certifications.reactJsSpan"),
     description: t("sections.certifications.reactJs"),
-    num: 9,
+    num: 10,
   },
 ];
 
