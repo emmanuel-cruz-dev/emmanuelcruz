@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { useTheme } from "../../hooks/useThemeProvider";
+import { useTheme } from "../../hooks";
 
 const FeatureCard = ({
   icon,

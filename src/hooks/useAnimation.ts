@@ -1,5 +1,5 @@
-import { UseAnimationProps, UseAnimationReturn } from "@/types/types";
 import { useEffect, useRef } from "react";
+import { UseAnimationProps, UseAnimationReturn } from "../types/types";
 
 export const useAnimation = ({
   threshold = 0.1,

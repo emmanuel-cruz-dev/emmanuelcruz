@@ -1,9 +1,8 @@
 import { useTranslation } from "react-i18next";
+import { useTheme, useMenu } from "../../../hooks";
+import LanguageSwitcher from "../../ui/LanguageSwitcher";
 import WhiteLogo from "../../../assets/icons/e-logo-white.png";
 import Logo from "../../../assets/icons/e-logo.png";
-import LanguageSwitcher from "../../ui/LanguageSwitcher";
-import { useTheme } from "../../../hooks/useThemeProvider";
-import { useMenu } from "../../../hooks/useMenu";
 
 function Header() {
   const { t } = useTranslation();

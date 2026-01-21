@@ -1,8 +1,8 @@
-import { useTheme } from "../../hooks/useThemeProvider";
 import { useTranslation } from "react-i18next";
-import picture from "../../assets/images/img-profile.webp";
+import { useTheme } from "../../hooks";
 import Links from "../../components/ui/Links";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
+import picture from "../../assets/images/img-profile.webp";
 
 function Hero() {
   const { t } = useTranslation();

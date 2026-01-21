@@ -1,7 +1,6 @@
-import { FaTimes, FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
-import useToast from "../../hooks/useToast";
 import { FC } from "react";
-import { ToastProps } from "../../types/types";
+import { FaTimes, FaCheckCircle, FaExclamationCircle } from "react-icons/fa";
+import { useToast } from "../../hooks";
 import {
   ICON_COLOR_ERROR,
   ICON_COLOR_SUCCESS,
@@ -9,6 +8,7 @@ import {
   TOAST_COLOR_ERROR,
   TOAST_COLOR_SUCCESS,
 } from "../../constants/constants";
+import { ToastProps } from "../../types/types";
 
 const Toast: FC<ToastProps> = ({ message, type, show, onClose }) => {
   const { progress, isEntering, isVisibleSlide, handleClose } = useToast({

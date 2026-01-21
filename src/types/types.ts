@@ -75,10 +75,6 @@ export interface WorkExperience {
   tools?: string[];
 }
 
-export interface LastModifiedDateProps {
-  currentLanguage: Language;
-}
-
 export interface LoaderProps {
   size?: string;
   color?: string;
@@ -107,8 +103,6 @@ export type FormValues = {
   message: string;
 };
 
-export type Language = "es" | "en";
-
 export type LastModified = string | null;
 
 export type UseToastProps = {
@@ -133,12 +127,6 @@ export interface GetAnimationClassesProps {
   direction?: string;
   delay?: number;
 }
-
-export type CourseTitle =
-  | "Academia ForIT"
-  | "Alura Latam"
-  | "Talento Tech"
-  | "Tech Advanced";
 
 export interface Certificate {
   id: string | number;

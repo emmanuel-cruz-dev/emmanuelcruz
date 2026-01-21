@@ -1,9 +1,9 @@
-import { useTheme } from "../../hooks/useThemeProvider";
 import { useTranslation } from "react-i18next";
+import { useTheme } from "../../hooks";
 import EmailCopyButton from "./EmailCopyButton";
-import { AiOutlineDownload } from "react-icons/ai";
 import SocialLinks from "./SocialLinks";
 import AnimatedComponent from "./AnimatedComponent";
+import { AiOutlineDownload } from "react-icons/ai";
 
 function Links() {
   const { t } = useTranslation();

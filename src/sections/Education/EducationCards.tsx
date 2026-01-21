@@ -1,9 +1,8 @@
-import { useTranslation } from "react-i18next";
-import { useTheme } from "../../hooks/useThemeProvider";
-import Gallery from "../../components/ui/Gallery";
-import { useGallery } from "../../hooks/useGallery";
-import { certificates } from "../../data/certificatesLarge";
 import { FC } from "react";
+import { useTranslation } from "react-i18next";
+import { useTheme, useGallery } from "../../hooks";
+import Gallery from "../../components/ui/Gallery";
+import { certificates } from "../../data/certificatesLarge";
 import { EducationCardsProps } from "../../types/types";
 import { FormatTextWithLabels } from "../../helpers/formatText";
 

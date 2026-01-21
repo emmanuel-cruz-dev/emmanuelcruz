@@ -1,9 +1,9 @@
-import { useTheme } from "../../hooks/useThemeProvider";
+import { FC } from "react";
+import { useTranslation } from "react-i18next";
+import { useTheme } from "../../hooks";
 import { FaGithub, FaGlobe } from "react-icons/fa";
 import Carousel from "../../components/ui/Carousel";
-import { useTranslation } from "react-i18next";
 import ProjectsIcons from "./ProjectsIcons";
-import { FC } from "react";
 import { ProjectsCardProps } from "../../types/types";
 
 const ProjectsCard: FC<ProjectsCardProps> = ({

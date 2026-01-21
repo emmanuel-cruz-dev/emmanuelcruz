@@ -1,7 +1,6 @@
-import { useTheme } from "../../hooks/useThemeProvider";
 import { useTranslation } from "react-i18next";
+import { useTheme, useContactForm } from "../../hooks";
 import Toast from "../../components/ui/Toast";
-import { useContactForm } from "../../hooks/useContactForm";
 import { getInputClasses } from "../../utils/utils";
 
 function ContactForm() {

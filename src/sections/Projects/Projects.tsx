@@ -1,6 +1,6 @@
-import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import { useTranslation } from "react-i18next";
-import { useItemPagination } from "../../hooks/useItemPagination";
+import { useItemPagination } from "../../hooks";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import ProjectsCard from "./ProjectsCard";
 import getPProjects from "../../data/projects";
 

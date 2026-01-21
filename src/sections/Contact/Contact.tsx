@@ -1,7 +1,7 @@
-import { useTheme } from "../../hooks/useThemeProvider";
-import AnimatedComponent from "../../components/ui/AnimatedComponent";
-import { FaMapMarkerAlt } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { useTheme } from "../../hooks";
+import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import ContactForm from "./ContactForm";
 
 function Contact() {

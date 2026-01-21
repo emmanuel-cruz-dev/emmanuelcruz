@@ -1,6 +1,6 @@
 import { FC } from "react";
+import { useTheme } from "../../hooks";
 import { FaGithub } from "react-icons/fa";
-import { useTheme } from "../../hooks/useThemeProvider";
 import { WorkExperience } from "../../types/types";
 
 const WorkExperienceCard: FC<WorkExperience> = ({

@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
-import { useTheme } from "../../hooks/useThemeProvider";
-import { useStatCardAnimation } from "../../hooks/useStatCardAnimation";
+import { useTheme, useStatCardAnimation } from "../../hooks";
 
 const StatCard = ({
   icon,

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import {
   PROGRESS_DECREMENT,
   PROGRESS_INTERVAL_MS,
@@ -5,9 +6,8 @@ import {
   TOAST_DURATION_MS,
 } from "../constants/constants";
 import { UseToastProps, UseToastReturn } from "../types/types";
-import { useEffect, useState } from "react";
 
-const useToast = ({ show, onClose }: UseToastProps): UseToastReturn => {
+export const useToast = ({ show, onClose }: UseToastProps): UseToastReturn => {
   const [progress, setProgress] = useState(100);
   const [isVisibleSlide, setIsVisibleSlide] = useState(false);
   const [isEntering, setIsEntering] = useState(true);
@@ -50,5 +50,3 @@ const useToast = ({ show, onClose }: UseToastProps): UseToastReturn => {
 
   return { progress, isEntering, isVisibleSlide, handleClose };
 };
-
-export default useToast;

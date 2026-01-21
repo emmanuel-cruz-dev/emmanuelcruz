@@ -1,5 +1,5 @@
-import { useTheme } from "../hooks/useThemeProvider";
 import React from "react";
+import { useTheme } from "../hooks";
 
 export const FormatTextWithLabels = (text: string): React.JSX.Element => {
   const colonIndex = text.indexOf(":");

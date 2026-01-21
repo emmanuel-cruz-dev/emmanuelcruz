@@ -1,5 +1,5 @@
-import { LoaderProps } from "../../types/types";
 import { FC } from "react";
+import { LoaderProps } from "../../types/types";
 
 const Loader: FC<LoaderProps> = ({
   size = "medium",

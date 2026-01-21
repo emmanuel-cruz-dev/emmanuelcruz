@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { useTheme } from "../../hooks/useThemeProvider";
+import { useTheme } from "../../hooks";
 import StatCard from "./StatCard";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import FeatureCard from "./FeatureCard";

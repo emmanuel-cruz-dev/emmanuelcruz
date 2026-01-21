@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import EducationCards from "./EducationCards";
 import getCertificates from "../../data/certificates";
-import { useItemPagination } from "../../hooks/useItemPagination";
+import { useItemPagination } from "../../hooks";
 
 function Education() {
   const { t } = useTranslation();

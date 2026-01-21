@@ -1,7 +1,7 @@
+import { FC } from "react";
 import Slider, { Settings } from "react-slick";
 import { carouselSettings } from "../../data/carouselSettings";
-import { FC } from "react";
-import { CarouselProps } from "@/types/types";
+import { CarouselProps } from "../../types/types";
 
 const Carousel: FC<CarouselProps> = ({ img1, img2, img3 }) => {
   return (

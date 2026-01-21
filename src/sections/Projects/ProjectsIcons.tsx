@@ -1,8 +1,8 @@
+import React, { FC } from "react";
 import ResponsiveLogo from "../../assets/icons/responsiveweb-card-logo.png";
 import DarkMode from "../../assets/icons/darkmode-logo.png";
 import idiomasLogo from "../../assets/icons/idiomas-logo.png";
-import React, { FC } from "react";
-import { ProjectsIconsProps } from "@/types/types";
+import { ProjectsIconsProps } from "../../types/types";
 
 const ProjectsIcons: FC<ProjectsIconsProps> = ({ type }) => {
   const icons: Record<string, React.JSX.Element> = {

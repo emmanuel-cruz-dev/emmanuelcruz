@@ -1,9 +1,3 @@
-import { CourseTitle } from "../types/types";
-
-// LastModifiedDate.tsx
-export const LAST_UPDATE_TEXT_ES = "Última actualización";
-export const LAST_UPDATE_TEXT_EN = "Last update";
-
 // EmailCopyButton.tsx
 export const EMAIL = "emmanuelgerr@gmail.com";
 
@@ -25,11 +19,3 @@ export const TOAST_DURATION_MS = 5000;
 export const SLIDE_OUT_DURATION_MS = 500;
 export const PROGRESS_DECREMENT =
   100 / (TOAST_DURATION_MS / PROGRESS_INTERVAL_MS);
-
-// NewCoursesCard.tsx
-export const backgroundColor: Record<CourseTitle, string> = {
-  "Academia ForIT": "bg-[#110b25]",
-  "Alura Latam": "bg-[#061d3c]",
-  "Talento Tech": "bg-[#153242]",
-  "Tech Advanced": "bg-[#1a3e43]",
-};

@@ -1,6 +1,5 @@
-import { useTheme } from "../../hooks/useThemeProvider";
 import { useTranslation } from "react-i18next";
-import { useCopyToClipboard } from "../../hooks/useCopyToClipboard";
+import { useTheme, useCopyToClipboard } from "../../hooks";
 import { EMAIL } from "../../constants/constants";
 
 function EmailCopyButton() {

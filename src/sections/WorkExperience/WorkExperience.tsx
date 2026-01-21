@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
+import { useItemPagination } from "../../hooks";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import WorkExperienceCard from "./WorkExperienceCard";
 import { getWorkExperiences } from "../../data/workExperiences";
-import { useItemPagination } from "../../hooks/useItemPagination";
 
 function WorkExperience() {
   const { t } = useTranslation();
