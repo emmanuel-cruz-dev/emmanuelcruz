@@ -132,6 +132,9 @@ const resources = {
           fooTalentGroup:
             "Role and responsibilities: Front-End Developer in administrative management platform for pymes. Implementation of interfaces with React, TypeScript and Tailwind CSS, in a multidisciplinary team",
           fooTalentGroupSpan: "Foo Talent Group | July - September 2025",
+          mysqlSpan: "Alura Latam | October 2025 - January 2026",
+          mysql:
+            "Technologies and concepts: SQL, MySQL, data modeling, advanced queries, joins, subqueries, normalization and good practices in relational databases",
           url: "Go to website",
           img: "Expand image",
         },
@@ -370,6 +373,9 @@ const resources = {
           fooTalentGroup:
             "Rol y responsabilidades: Desarrollador Front-End en plataforma de gestión administrativa para pymes. Implementación de interfaces con React, TypeScript y Tailwind CSS, en un equipo multidisciplinario",
           fooTalentGroupSpan: "Foo Talent Group | Julio - Septiembre 2025",
+          mysqlSpan: "Alura Latam | Octubre 2025 - Enero 2026",
+          mysql:
+            "Tecnologías y conceptos: SQL, MySQL, modelado de datos, consultas avanzadas, joins, subqueries, normalización y buenas prácticas en bases de datos relacionales",
           url: "Ir al sitio web",
           img: "Expandir imagen",
         },
