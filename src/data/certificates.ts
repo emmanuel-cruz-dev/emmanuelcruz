@@ -24,6 +24,7 @@ import AluraJavaTitulo from "../assets/images/alura-java-mini.webp";
 import ForITTitulo from "../assets/images/full-stack-mini.webp";
 import FooTalentGroupTitulo from "../assets/images/foo-talent-group-mini.webp";
 import TalentoTechTituloReact from "../assets/images/react-js-mini.webp";
+import AluraMySQL from "../assets/images/alura-mysql-mini.webp";
 import { TFunction } from "i18next";
 
 const getCertificates = (t: TFunction) => [
@@ -146,6 +147,17 @@ const getCertificates = (t: TFunction) => [
     span: t("sections.certifications.reactJsSpan"),
     description: t("sections.certifications.reactJs"),
     num: 10,
+  },
+  {
+    id: 12,
+    img: AluraMySQL,
+    href: "https://www.aluracursos.com/",
+    logo: AluraLatam,
+    blackLogo: AluraLatamNegro,
+    title: "SQL con MySQL | Oracle ONE",
+    span: t("sections.certifications.mysqlSpan"),
+    description: t("sections.certifications.mysql"),
+    num: 11,
   },
 ];
 
