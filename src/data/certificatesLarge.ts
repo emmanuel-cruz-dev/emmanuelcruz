@@ -9,6 +9,7 @@ import AluraJavaTitulo from "../assets/images/alura-java.webp";
 import ForITTitulo from "../assets/images/full-stack.webp";
 import FooTalentGroupTitulo from "../assets/images/foo-talent-group.webp";
 import TalentoTechTituloReact from "../assets/images/react-js.webp";
+import AluraMySQL from "../assets/images/alura-mysql.webp";
 
 export const certificates = [
   PlatziTitulo,
@@ -22,4 +23,5 @@ export const certificates = [
   ForITTitulo,
   FooTalentGroupTitulo,
   TalentoTechTituloReact,
+  AluraMySQL,
 ];
