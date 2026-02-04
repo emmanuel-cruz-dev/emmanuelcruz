@@ -25,6 +25,7 @@ import ForITTitulo from "../assets/images/full-stack-mini.webp";
 import FooTalentGroupTitulo from "../assets/images/foo-talent-group-mini.webp";
 import TalentoTechTituloReact from "../assets/images/react-js-mini.webp";
 import AluraMySQL from "../assets/images/alura-mysql-mini.webp";
+import TalentoTechFigma from "../assets/images/figma-mini.webp";
 import { TFunction } from "i18next";
 
 const getCertificates = (t: TFunction) => [
@@ -158,6 +159,17 @@ const getCertificates = (t: TFunction) => [
     span: t("sections.certifications.mysqlSpan"),
     description: t("sections.certifications.mysql"),
     num: 11,
+  },
+  {
+    id: 13,
+    img: TalentoTechFigma,
+    href: "https://talentotech.bue.edu.ar/#/",
+    logo: TalentoTech,
+    blackLogo: TalentoTechNegro,
+    title: "Figma",
+    span: t("sections.certifications.figmaSpan"),
+    description: t("sections.certifications.figma"),
+    num: 12,
   },
 ];
 
