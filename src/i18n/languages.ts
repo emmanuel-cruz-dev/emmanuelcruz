@@ -135,6 +135,9 @@ const resources = {
           mysqlSpan: "Alura Latam | October 2025 - January 2026",
           mysql:
             "Technologies and concepts: SQL, MySQL, data modeling, advanced queries, joins, subqueries, normalization and good practices in relational databases",
+          figma:
+            "Tools and fundamentals: Figma, Atomic Design, Auto Layout, components, variants, and prototyping for scalable interfaces",
+          figmaSpan: "Talento Tech | January 2026",
           url: "Go to website",
           img: "Expand image",
         },
@@ -376,6 +379,9 @@ const resources = {
           mysqlSpan: "Alura Latam | Octubre 2025 - Enero 2026",
           mysql:
             "Tecnologías y conceptos: SQL, MySQL, modelado de datos, consultas avanzadas, joins, subqueries, normalización y buenas prácticas en bases de datos relacionales",
+          figma:
+            "Herramientas y fundamentos: Figma, Atomic Design, Auto Layout, componentes, variantes y prototipado para interfaces escalables",
+          figmaSpan: "Talento Tech | Enero 2026",
           url: "Ir al sitio web",
           img: "Expandir imagen",
         },
