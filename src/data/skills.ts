@@ -20,6 +20,7 @@ import NodeLogo from "../assets/icons/nodejs-logo.png";
 import ExpressLogoNegro from "../assets/icons/express-negro-logo.png";
 import JavaLogo from "../assets/icons/java-logo.png";
 import SpringBootLogo from "../assets/icons/spring-boot-logo.png";
+import PythonLogo from "../assets/icons/python-logo.png";
 import NestLogo from "../assets/icons/nestjs-logo.png";
 import MySQLLogo from "../assets/icons/mysql-logo.png";
 import MongoDBLogo from "../assets/icons/mongodb-logo.png";
@@ -113,11 +114,10 @@ export const getSkillsByCategory = (t: TFunction): SkillCategory[] => {
     {
       title: t("sections.skills.backend"),
       mainSkills: [
-        { name: "Node.js", logo: NodeLogo, title: t("sections.skills.nodejs") },
         {
-          name: "Express",
-          logo: ExpressLogoNegro,
-          title: t("sections.skills.express"),
+          name: "Python",
+          logo: PythonLogo,
+          title: t("sections.skills.python"),
         },
         {
           name: "Java",
@@ -128,6 +128,12 @@ export const getSkillsByCategory = (t: TFunction): SkillCategory[] => {
           name: "Spring Boot",
           logo: SpringBootLogo,
           title: t("sections.skills.springBoot"),
+        },
+        { name: "Node.js", logo: NodeLogo, title: t("sections.skills.nodejs") },
+        {
+          name: "Express",
+          logo: ExpressLogoNegro,
+          title: t("sections.skills.express"),
         },
         {
           name: "NestJS",
