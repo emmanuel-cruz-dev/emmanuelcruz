@@ -185,6 +185,8 @@ const resources = {
           shadcn:
             "Collection of reusable components built with Tailwind CSS and Radix UI",
           primeng: "Rich and flexible UI component library for Angular",
+          python:
+            "High-level programming language used in backend development, APIs, and web services",
           java: "Object-oriented programming language widely used in enterprise applications",
           springBoot:
             "Java framework for quickly and easily building backend applications and microservices",
@@ -431,6 +433,8 @@ const resources = {
           shadcn:
             "Colección de componentes reutilizables construidos con Tailwind CSS y Radix UI",
           primeng: "Biblioteca de componentes UI rica y flexible para Angular",
+          python:
+            "Lenguaje de programación de alto nivel utilizado en desarrollo backend, APIs y servicios web",
           java: "Lenguaje de programación orientado a objetos ampliamente usado en aplicaciones empresariales",
           springBoot:
             "Framework de Java para crear aplicaciones backend y microservicios de forma rápida y sencilla",
