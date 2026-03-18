@@ -235,6 +235,8 @@ const resources = {
             "Digital library modern that blends the traditional library experience with cutting-edge technology. Intuitive navigation between detailed sections, content adapted to each section, and responsive design for a personalized experience",
           novaStore:
             "E-commerce with product browsing, shopping cart and smooth navigation experience, with authentication system and administrative panel",
+          rescueConnect:
+            "A platform for pet adoption that connects animals looking for homes with people interested in adopting them. It includes secure authentication, pet management, and an application system with an administrative panel. (Project under development)",
           button: "Visit site",
           link: "More details",
           buttonTitle: "Watch the live demo of the project",
@@ -486,6 +488,8 @@ const resources = {
             "Biblioteca digital moderna que fusiona la experiencia de una librería tradicional con tecnología de vanguardia. Navegación intuitiva entre secciones detalladas, contenido adaptado a cada sección y diseño responsivo para una experiencia personalizada",
           novaStore:
             "E-commerce con exploración de productos, carrito de compras y experiencia de navegación fluida, con sistema de autenticación y panel administrativo",
+          rescueConnect:
+            "Plataforma para adopción de mascotas que conecta animales en busca de hogar con personas interesadas en adoptarlos. Incluye autenticación segura, gestión de mascotas y un sistema de solicitudes con panel administrativo. (Proyecto en desarrollo)",
           button: "Visitar sitio",
           link: "Más detalles",
           buttonTitle: "Ver la demo en vivo del proyecto",
