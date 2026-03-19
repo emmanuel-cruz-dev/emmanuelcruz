@@ -34,9 +34,9 @@ const resources = {
       sections: {
         welcome: "Hello! I'm Emmanuel",
         hero: {
-          title: "frontend developer",
+          title: "full stack developer",
           description:
-            "Currently delving into backend technologies while applying agile methodologies to real-world projects. I combine design creativity with solid technical foundations.",
+            "I develop web applications combining modern interfaces with robust backends. Experience with React, Angular, Node.js, REST APIs, and databases.",
           cv: "Download",
           email: "Copy Email",
           emailCopied: "¡Email copied!",
@@ -50,21 +50,21 @@ const resources = {
           highlight2: "multidisciplinary teams",
           highlight3: "modern technologies",
           cta: {
-            title: "Frontend solutions and",
+            title: "Full Stack solutions and",
             titleAccent: "scalable architecture",
-            desc: "I enjoy building interfaces with React and TypeScript, working in teams, and adapting to agile methodologies to add real value to the product.",
+            desc: "I develop full-stack solutions, building everything from modern interfaces to secure and scalable APIs, applying best practices and clean architecture.",
           },
           experience: {
-            title: "Highlighted Experience",
+            title: "Highlighted experience",
             desc: "Participation in more than 5 e-commerce, business management, and healthcare platform projects, working with teams of 4–15 people under Scrum and Kanban.",
           },
           skills: {
-            title: "Professional Focus",
-            desc: "Specialized in developing scalable web applications with React, TypeScript, and Next.js. REST API integration, reusable components, and clean architecture.",
+            title: "Professional focus",
+            desc: "Experience building web applications with React, Angular, and Next.js, along with Node.js, FastAPI, and Spring Boot. Experience integrating APIs, databases, and building scalable systems.",
           },
           learning: {
-            title: "Growing",
-            desc: "Currently strengthening a full-stack profile with Node.js, Express, NestJS, Java, Spring Boot, and databases, while pursuing a Software Development Technical Degree.",
+            title: "Constantly evolving",
+            desc: "Expanding my full-stack profile by incorporating new technologies and architectural patterns, strengthening my skills while pursuing a Technical Degree in Software Development.",
           },
           viewExperience: "View Experience",
         },
@@ -187,6 +187,8 @@ const resources = {
           primeng: "Rich and flexible UI component library for Angular",
           python:
             "High-level programming language used in backend development, APIs, and web services",
+          fastapi:
+            "Python framework for building scalable backend applications",
           java: "Object-oriented programming language widely used in enterprise applications",
           springBoot:
             "Java framework for quickly and easily building backend applications and microservices",
@@ -228,7 +230,7 @@ const resources = {
           lockKey:
             "Password manager designed to offer secure and efficient credential management. The project was developed as part of a No Country work simulation, geared toward collaborative experiences. (Test version, not final)",
           portfolio:
-            "This project showcases my ability to create responsive and efficient web interfaces, featuring dark mode options and language selection. Here you will find projects that reflect my commitment to detail, performance, and functionality in frontend development",
+            "This project showcases my ability to create responsive and efficient web interfaces, featuring dark mode options and language selection. Here you will find projects that reflect my commitment to detail, performance, and functionality in fullstack development",
           jinjer:
             "Music artist platform inspired by the band Jinjer. The site offers a complete experience: bilingual navigation (English/Spanish) with interactive sections, including news, biographies, tour dates, discography, music player, multimedia gallery and an online store",
           literarium:
@@ -236,7 +238,7 @@ const resources = {
           novaStore:
             "E-commerce with product browsing, shopping cart and smooth navigation experience, with authentication system and administrative panel",
           rescueConnect:
-            "A platform for pet adoption that connects animals looking for homes with people interested in adopting them. It includes secure authentication, pet management, and an application system with an administrative panel. (Project under development)",
+            "Pet adoption platform with authentication, post management, and application system with an administrative panel. (Project under development)",
           button: "Visit site",
           link: "More details",
           buttonTitle: "Watch the live demo of the project",
@@ -282,9 +284,9 @@ const resources = {
       sections: {
         welcome: "Hola! Soy Emmanuel",
         hero: {
-          title: "desarrollador frontend",
+          title: "desarrollador full stack",
           description:
-            "Actualmente profundizando en tecnologías backend mientras aplico metodologías ágiles en proyectos reales. Combino creatividad en el diseño con sólidos fundamentos técnicos.",
+            "Desarrollo aplicaciones web combinando interfaces modernas con backends robustos. Experiencia en React, Angular, Node.js, APIs REST y bases de datos.",
           cv: "Descargar",
           email: "Copiar Email",
           emailCopied: "¡Email copiado!",
@@ -298,21 +300,21 @@ const resources = {
           highlight2: "equipos multidisciplinarios",
           highlight3: "tecnologías modernas",
           cta: {
-            title: "Soluciones Frontend y",
+            title: "Soluciones Full Stack y",
             titleAccent: "arquitectura escalable",
-            desc: "Disfruto construir interfaces con React y TypeScript, trabajando en equipo y adaptándome a metodologías ágiles para aportar valor real al producto.",
+            desc: "Desarrollo soluciones fullstack, construyendo desde interfaces modernas hasta APIs seguras y escalables, aplicando buenas prácticas y arquitectura limpia.",
           },
           experience: {
-            title: "Experiencia Destacada",
+            title: "Experiencia destacada",
             desc: "Participación en más de 5 proyectos de comercio electrónico, gestión empresarial y plataformas de salud, trabajando con equipos de 4-15 personas bajo Scrum y Kanban.",
           },
           skills: {
-            title: "Enfoque Profesional",
-            desc: "Especializado en desarrollo de aplicaciones web escalables con React, TypeScript y Next.js. Integración de APIs REST, componentes reutilizables y arquitectura limpia.",
+            title: "Enfoque profesional",
+            desc: "Experiencia construyendo aplicaciones web completas con React, Angular y Next.js, junto a Node.js, FastAPI y Spring Boot. Integración de APIs, bases de datos y construcción de sistemas escalables.",
           },
           learning: {
-            title: "En Crecimiento",
-            desc: "Actualmente consolidando perfil fullstack con Node.js, Express, NestJS, Java, Spring Boot y bases de datos, mientras curso Tecnicatura en Desarrollo de Software.",
+            title: "En constante evolución",
+            desc: "Expandiendo mi perfil fullstack, incorporando nuevas tecnologías y patrones de aquitectura, fortaleciendo mis habilidades mientras curso la Tecnicatura en Desarrollo de Software.",
           },
           viewExperience: "Ver trayectoria",
         },
@@ -437,6 +439,8 @@ const resources = {
           primeng: "Biblioteca de componentes UI rica y flexible para Angular",
           python:
             "Lenguaje de programación de alto nivel utilizado en desarrollo backend, APIs y servicios web",
+          fastapi:
+            "Framework de Python para construir aplicaciones backend escalables",
           java: "Lenguaje de programación orientado a objetos ampliamente usado en aplicaciones empresariales",
           springBoot:
             "Framework de Java para crear aplicaciones backend y microservicios de forma rápida y sencilla",
@@ -481,7 +485,7 @@ const resources = {
           lockKey:
             "Administrador de contraseñas pensado para ofrecer una gestión segura y eficiente de credenciales. El proyecto fue desarrollado en el marco de una simulación laboral de No Country, orientada a experiencias colaborativas. (Versión de prueba, no final)",
           portfolio:
-            "Este proyecto demuestra mi habilidad para crear interfaces web responsivas y eficientes, cuenta con opciones de modo oscuro y selección de idioma. Aquí encontrarás proyectos que reflejan mi compromiso con el detalle, el rendimiento y la funcionalidad en desarrollo frontend",
+            "Este proyecto demuestra mi habilidad para crear interfaces web responsivas y eficientes, cuenta con opciones de modo oscuro y selección de idioma. Aquí encontrarás proyectos que reflejan mi compromiso con el detalle, el rendimiento y la funcionalidad en desarrollo fullstack",
           jinjer:
             "Plataforma de artista musical inspirada en la banda Jinjer. El sitio ofrece una experiencia completa: navegación bilingüe (inglés/español) con secciones interactivas, incluye noticias, biografías, fechas de gira, discografía, reproductor de música, galería multimedia y una tienda en línea",
           literarium:
@@ -489,7 +493,7 @@ const resources = {
           novaStore:
             "E-commerce con exploración de productos, carrito de compras y experiencia de navegación fluida, con sistema de autenticación y panel administrativo",
           rescueConnect:
-            "Plataforma para adopción de mascotas que conecta animales en busca de hogar con personas interesadas en adoptarlos. Incluye autenticación segura, gestión de mascotas y un sistema de solicitudes con panel administrativo. (Proyecto en desarrollo)",
+            "Plataforma de adopción de mascotas con autenticación, gestión de publicaciones y sistema de solicitudes con panel administrativo. (Proyecto en desarrollo)",
           button: "Visitar sitio",
           link: "Más detalles",
           buttonTitle: "Ver la demo en vivo del proyecto",
