@@ -21,6 +21,7 @@ import ExpressLogoNegro from "../assets/icons/express-negro-logo.png";
 import JavaLogo from "../assets/icons/java-logo.png";
 import SpringBootLogo from "../assets/icons/spring-boot-logo.png";
 import PythonLogo from "../assets/icons/python-logo.png";
+import FastApiLogo from "../assets/icons/fastapi-logo.png";
 import NestLogo from "../assets/icons/nestjs-logo.png";
 import MySQLLogo from "../assets/icons/mysql-logo.png";
 import MongoDBLogo from "../assets/icons/mongodb-logo.png";
@@ -118,6 +119,11 @@ export const getSkillsByCategory = (t: TFunction): SkillCategory[] => {
           name: "Python",
           logo: PythonLogo,
           title: t("sections.skills.python"),
+        },
+        {
+          name: "FastAPI",
+          logo: FastApiLogo,
+          title: t("sections.skills.fastapi"),
         },
         {
           name: "Java",
