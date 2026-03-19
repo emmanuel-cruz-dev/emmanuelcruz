@@ -50,6 +50,7 @@ export const useContactForm = () => {
 
   const sanitizeFormData = (data: ContactFormData) => {
     return {
+      subject: "Nuevo mensaje Portfolio",
       user_name: data.user_name.trim(),
       user_email: data.user_email.trim().toLowerCase(),
       message: data.message.trim(),
