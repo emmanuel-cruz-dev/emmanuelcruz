@@ -22,6 +22,10 @@ import CardNovaStore1 from "../assets/images/card-nova-store1.webp";
 import CardNovaStore2 from "../assets/images/card-nova-store2.webp";
 import CardNovaStore3 from "../assets/images/card-nova-store3.webp";
 
+import CardRescueConnect1 from "../assets/images/card-rescue-connect1.webp";
+import CardRescueConnect2 from "../assets/images/card-rescue-connect2.webp";
+import CardRescueConnect3 from "../assets/images/card-rescue-connect3.webp";
+
 import { TFunction } from "i18next";
 
 const getPProjects = (t: TFunction) => [
@@ -99,6 +103,7 @@ const getPProjects = (t: TFunction) => [
     img1: CardNovaStore1,
     img2: CardNovaStore2,
     img3: CardNovaStore3,
+    flyer: "responsive",
     technologies: [
       "React",
       "TypeScript",
@@ -109,10 +114,36 @@ const getPProjects = (t: TFunction) => [
       "Zod",
       "Bootstrap",
       "React-Bootstrap",
+      "Motion",
       "MockAPI",
     ],
     link: "https://nova-store-shop.vercel.app/",
     github: "https://github.com/emmanuel-cruz-dev/nova-store",
+  },
+  {
+    id: 7,
+    title: "Rescue Connect | Web App",
+    description: t("sections.projects.rescueConnect"),
+    img1: CardRescueConnect1,
+    img2: CardRescueConnect2,
+    img3: CardRescueConnect3,
+    flyer: "darkMode",
+    technologies: [
+      "Angular",
+      "TypeScript",
+      "Tailwind CSS",
+      "PrimeNG",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mongoose",
+      "JWT",
+      "Zod",
+      "Cloudinary",
+      "Swagger UI",
+    ],
+    link: "https://rescue-connect-rs.vercel.app/",
+    github: "https://github.com/emmanuel-cruz-dev/rescue-connect",
   },
 ];
 
