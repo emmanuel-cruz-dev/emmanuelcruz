@@ -20,7 +20,7 @@ function Hero() {
               <h1 className="font-bold text-3xl lg:text-5xl">
                 {t("sections.welcome")}
               </h1>
-              <h2 className="font-bold text-2xl lg:text-3xl capitalize">
+              <h2 className="font-semibold text-2xl lg:text-3xl capitalize">
                 {t("sections.hero.title")}
               </h2>
             </div>
