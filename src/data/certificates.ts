@@ -26,6 +26,7 @@ import FooTalentGroupTitulo from "../assets/images/foo-talent-group-mini.webp";
 import TalentoTechTituloReact from "../assets/images/react-js-mini.webp";
 import AluraMySQL from "../assets/images/alura-mysql-mini.webp";
 import TalentoTechFigma from "../assets/images/figma-mini.webp";
+import TalentoTechPython from "../assets/images/python-mini.webp";
 import { TFunction } from "i18next";
 
 const getCertificates = (t: TFunction) => [
@@ -170,6 +171,17 @@ const getCertificates = (t: TFunction) => [
     span: t("sections.certifications.figmaSpan"),
     description: t("sections.certifications.figma"),
     num: 12,
+  },
+  {
+    id: 14,
+    img: TalentoTechPython,
+    href: "https://talentotech.bue.edu.ar/#/",
+    logo: TalentoTech,
+    blackLogo: TalentoTechNegro,
+    title: "Iniciación a la Programación con Python",
+    span: t("sections.certifications.pythonSpan"),
+    description: t("sections.certifications.python"),
+    num: 13,
   },
 ];
 
