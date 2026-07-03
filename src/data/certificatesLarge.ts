@@ -11,6 +11,7 @@ import FooTalentGroupTitulo from "../assets/images/foo-talent-group.webp";
 import TalentoTechTituloReact from "../assets/images/react-js.webp";
 import AluraMySQL from "../assets/images/alura-mysql.webp";
 import Figma from "../assets/images/figma.webp";
+import Python from "../assets/images/python.webp";
 
 export const certificates = [
   PlatziTitulo,
@@ -26,4 +27,5 @@ export const certificates = [
   TalentoTechTituloReact,
   AluraMySQL,
   Figma,
+  Python,
 ];
