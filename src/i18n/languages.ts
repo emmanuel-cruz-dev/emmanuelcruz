@@ -138,6 +138,9 @@ const resources = {
           figma:
             "Tools and fundamentals: Figma, Atomic Design, Auto Layout, components, variants, and prototyping for scalable interfaces",
           figmaSpan: "Talento Tech | January 2026",
+          python:
+            "Technologies and concepts: Python, programming logic, control structures, functions, file handling, SQLite, CRUD operations and good programming practices",
+          pythonSpan: "Talento Tech | March - July 2026",
           url: "Go to website",
           img: "Expand image",
         },
@@ -388,6 +391,9 @@ const resources = {
           figma:
             "Herramientas y fundamentos: Figma, Atomic Design, Auto Layout, componentes, variantes y prototipado para interfaces escalables",
           figmaSpan: "Talento Tech | Enero 2026",
+          python:
+            "Tecnologías y conceptos: Python, lógica de programación, estructuras de control, funciones, manejo de archivos, SQLite, operaciones CRUD y buenas prácticas de programación",
+          pythonSpan: "Talento Tech | Marzo - Julio 2026",
           url: "Ir al sitio web",
           img: "Expandir imagen",
         },
