@@ -119,7 +119,7 @@ const resources = {
           nucba: "Tools: Notion, Framer, Figma and Webflow",
           nucbaSpan: "NUCBA | October - November 2024",
           nodeJs:
-            "Technologies and tools: Node.js, Express, Firestore, and JavaScript for the backend",
+            "Technologies and tools: Node.js, Express, Firestore, Postman, NPM, JWT, API Rest, Visual Studio Code and JavaScript for the backend",
           nodeJsSpan: "Talento Tech | March - July 2025",
           java: "Technologies and concepts: Java, Spring Boot, REST APIs, Spring Data JPA, MySQL, JWT security, validations and good practices in backend",
           javaSpan: "Alura Latam | April - July 2025",
@@ -372,7 +372,7 @@ const resources = {
           nucba: "Herramientas: Notion, Framer, Figma y Webflow",
           nucbaSpan: "NUCBA | Octubre - Noviembre 2024",
           nodeJs:
-            "Tecnologías y herramientas: Node.js, Express, Firestore y JavaScript para el backend",
+            "Tecnologías y herramientas: Node.js, Express, Firestore, Postman, NPM, JWT, API Rest, Visual Studio Code y JavaScript para el backend",
           nodeJsSpan: "Talento Tech | Marzo - Julio 2025",
           java: "Tecnologías y conceptos: Java, Spring Boot, APIs REST, Spring Data JPA, MySQL, seguridad con JWT, validaciones y buenas prácticas backend",
           javaSpan: "Alura Latam | Abril - Julio 2025",
