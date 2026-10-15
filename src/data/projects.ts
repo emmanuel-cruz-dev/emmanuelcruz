@@ -6,9 +6,9 @@ import CardLockKey1 from "../assets/images/card-lock-key1.webp";
 import CardLockKey2 from "../assets/images/card-lock-key2.webp";
 import CardLockKey3 from "../assets/images/card-lock-key3.webp";
 
-import CardPortfolio1 from "../assets/images/card-portfolio1.webp";
-import CardPortfolio2 from "../assets/images/card-portfolio2.webp";
-import CardPortfolio3 from "../assets/images/card-portfolio3.webp";
+// import CardPortfolio1 from "../assets/images/card-portfolio1.webp";
+// import CardPortfolio2 from "../assets/images/card-portfolio2.webp";
+// import CardPortfolio3 from "../assets/images/card-portfolio3.webp";
 
 import CardJinjer1 from "../assets/images/card-jinjer1.webp";
 import CardJinjer2 from "../assets/images/card-jinjer2.webp";
@@ -29,25 +29,25 @@ import CardRescueConnect3 from "../assets/images/card-rescue-connect3.webp";
 import { TFunction } from "i18next";
 
 const getPProjects = (t: TFunction) => [
-  {
-    id: 1,
-    title: "Emmanuel Cruz | Portfolio",
-    description: t("sections.projects.portfolio"),
-    img1: CardPortfolio1,
-    img2: CardPortfolio2,
-    img3: CardPortfolio3,
-    flyer: "darkMode",
-    technologies: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Sass",
-      "React Hook Form",
-      "Zod",
-    ],
-    link: "https://emmanuel-cruz.netlify.app/",
-    github: "https://github.com/emmanuel-cruz-dev/emmanuelcruz",
-  },
+  // {
+  //   id: 1,
+  //   title: "Emmanuel Cruz | Portfolio",
+  //   description: t("sections.projects.portfolio"),
+  //   img1: CardPortfolio1,
+  //   img2: CardPortfolio2,
+  //   img3: CardPortfolio3,
+  //   flyer: "darkMode",
+  //   technologies: [
+  //     "React",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "Sass",
+  //     "React-Hook-Form",
+  //     "Zod",
+  //   ],
+  //   link: "https://emmanuel-cruz.netlify.app/",
+  //   github: "https://github.com/emmanuel-cruz-dev/emmanuelcruz",
+  // },
   {
     id: 2,
     title: "Los Pollos Hermanos",
@@ -145,6 +145,27 @@ const getPProjects = (t: TFunction) => [
     link: "https://rescue-connect-rs.vercel.app/",
     github: "https://github.com/emmanuel-cruz-dev/rescue-connect",
   },
+  // {
+  //   id: 8,
+  //   title: "Emmanuel Cruz | Portfolio Full Stack",
+  //   description: t("sections.projects.portfolioFullStack"),
+  //   img1: CardPortfolioFullStack1,
+  //   img2: CardPortfolioFullStack2,
+  //   img3: CardPortfolioFullStack3,
+  //   flyer: "darkMode",
+  //   technologies: [
+  //     "Next.js",
+  //     "TypeScript",
+  //     "Tailwind CSS",
+  //     "Shadcn UI",
+  //     "Motion",
+  //     "React-Hook-Form",
+  //     "Zod",
+  //     "Supabase",
+  //   ],
+  //   link: "https://emmanuel-cruz-dev.vercel.app",
+  //   github: "https://github.com/emmanuel-cruz-dev/portfolio-fullstack",
+  // },
 ];
 
 export default getPProjects;
