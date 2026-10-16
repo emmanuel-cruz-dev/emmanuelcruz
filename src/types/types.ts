@@ -58,6 +58,7 @@ export interface ProjectsCardProps {
   technologies: string[];
   link: string;
   github: string;
+  highlighted: boolean;
 }
 
 export type ProjectsIconsProps = {
