@@ -28,7 +28,7 @@ import CardRescueConnect3 from "../assets/images/card-rescue-connect3.webp";
 
 import { TFunction } from "i18next";
 
-const getPProjects = (t: TFunction) => [
+const getProjects = (t: TFunction) => [
   // {
   //   id: 1,
   //   title: "Emmanuel Cruz | Portfolio",
@@ -59,6 +59,7 @@ const getPProjects = (t: TFunction) => [
     technologies: ["HTML", "CSS", "Javascript", "JQuery"],
     link: "https://emmanuel-cruz-dev.github.io/los-pollos-hermanos-website/",
     github: "https://github.com/emmanuel-cruz-dev/los-pollos-hermanos-website",
+    highlighted: false,
   },
   {
     id: 3,
@@ -71,6 +72,7 @@ const getPProjects = (t: TFunction) => [
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://literarium.netlify.app/",
     github: "https://github.com/emmanuel-cruz-dev/literarium",
+    highlighted: false,
   },
   {
     id: 4,
@@ -83,6 +85,7 @@ const getPProjects = (t: TFunction) => [
     technologies: ["React", "TypeScript", "Tailwind CSS", "Sass"],
     link: "https://jinjer.vercel.app/",
     github: "https://github.com/emmanuel-cruz-dev/jinjer",
+    highlighted: false,
   },
   {
     id: 5,
@@ -95,6 +98,7 @@ const getPProjects = (t: TFunction) => [
     technologies: ["React", "TypeScript", "Tailwind CSS"],
     link: "https://lock-key.vercel.app/",
     github: "https://github.com/emmanuel-cruz-dev/lockkey-no-country-mvp",
+    highlighted: false,
   },
   {
     id: 6,
@@ -119,6 +123,7 @@ const getPProjects = (t: TFunction) => [
     ],
     link: "https://nova-store-shop.vercel.app/",
     github: "https://github.com/emmanuel-cruz-dev/nova-store",
+    highlighted: false,
   },
   {
     id: 7,
@@ -144,15 +149,16 @@ const getPProjects = (t: TFunction) => [
     ],
     link: "https://rescue-connect-rs.vercel.app/",
     github: "https://github.com/emmanuel-cruz-dev/rescue-connect",
+    highlighted: false,
   },
   // {
   //   id: 8,
   //   title: "Emmanuel Cruz | Portfolio Full Stack",
   //   description: t("sections.projects.portfolioFullStack"),
-  //   img1: CardPortfolioFullStack1,
-  //   img2: CardPortfolioFullStack2,
-  //   img3: CardPortfolioFullStack3,
-  //   flyer: "darkMode",
+  //   img1: CardPortfolioFullstack1,
+  //   img2: CardPortfolioFullstack2,
+  //   img3: CardPortfolioFullstack3,
+  //   flyer: "language",
   //   technologies: [
   //     "Next.js",
   //     "TypeScript",
@@ -161,11 +167,14 @@ const getPProjects = (t: TFunction) => [
   //     "Motion",
   //     "React-Hook-Form",
   //     "Zod",
+  //     "Zustand",
+  //     "next-intl",
   //     "Supabase",
   //   ],
   //   link: "https://emmanuel-cruz-dev.vercel.app",
   //   github: "https://github.com/emmanuel-cruz-dev/portfolio-fullstack",
+  //   highlighted: true,
   // },
 ];
 
-export default getPProjects;
+export default getProjects;
