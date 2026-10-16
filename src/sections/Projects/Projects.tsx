@@ -2,11 +2,11 @@ import { useTranslation } from "react-i18next";
 import { useItemPagination } from "../../hooks";
 import AnimatedComponent from "../../components/ui/AnimatedComponent";
 import ProjectsCard from "./ProjectsCard";
-import getPProjects from "../../data/projects";
+import getProjects from "../../data/projects";
 
 function Projects() {
   const { t } = useTranslation();
-  const projects = getPProjects(t);
+  const projects = getProjects(t);
   const { sectionRef, visibleItems, isShowingAll, toggleItems, hasMore } =
     useItemPagination({
       items: projects,
