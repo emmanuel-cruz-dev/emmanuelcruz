@@ -16,6 +16,7 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
   technologies,
   link,
   github,
+  highlighted,
 }) => {
   const { t } = useTranslation();
   const { theme } = useTheme();
@@ -31,9 +32,13 @@ const ProjectsCard: FC<ProjectsCardProps> = ({
         <Carousel img1={img1} img2={img2} img3={img3} />
       </div>
       <div
-        className={`flex flex-col lg:justify-around gap-6 p-4 lg:pl-8 lg:gap-4 ${
-          theme === "dark" ? "bg-slate-700" : "bg-slate-300"
-        } z-20`}
+        className={`flex flex-col lg:justify-around gap-6 p-4 lg:pl-8 lg:gap-4 z-20 ${
+          highlighted
+            ? "bg-cyan-500 text-black"
+            : theme === "dark"
+            ? "bg-slate-700"
+            : "bg-slate-300"
+        }`}
       >
         <div className="flex flex-col gap-4 lg:gap-2">
           <h2 className="font-bold text-lg lg:text-2xl">{title}</h2>
